@@ -8,16 +8,76 @@ import { Calendar, ArrowRight, Star, Users, Clock } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center bg-[#1B5E35] overflow-hidden pt-20">
-      {/* Botanical Background Pattern */}
+      {/* 1. Geometric Mesh */}
       <div 
-        className="absolute inset-0 opacity-5 pointer-events-none" 
-        style={{ 
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.83-2.69 2.69c.813-.42 1.637-.82 2.47-1.2l.623 1.897c-.89.377-1.78.74-2.67 1.08.625-.563 1.258-1.123 1.9-1.673l-1.347-1.48c-.687.593-1.383 1.187-2.093 1.777.407-.76.803-1.533 1.18-2.317L50.993.427c-.43.83-.87 1.657-1.32 2.477.16-1 .287-2 .377-3.003L48.067-.293c-.113 1.18-.283 2.353-.513 3.513-.377-.733-.767-1.46-1.173-2.177l-1.633.913c.47.817.92 1.64 1.34 2.47-.79-.543-1.603-1.077-2.437-1.597l-.987 1.74c.95.587 1.903 1.157 2.853 1.707-1.2-.237-2.42-.423-3.653-.553L42.23 7.82c1.377.14 2.753.34 4.113.6-.977-.283-1.967-.52-2.973-.703l.463-1.94c1.127.203 2.247.457 3.357.76-.797-.5-1.61-.98-2.44-1.44l1.01-1.727c.92.513 1.83 1.047 2.723 1.6-1.19-.243-2.4-.44-3.627-.583l-.337 1.97c1.36.16 2.713.373 4.053.64-.95-.36-1.917-.677-2.897-.943l.593-1.907c1.097.29 2.18.633 3.243 1.02-.757-.597-1.53-1.17-2.327-1.713l1.197-1.6c.883.6 1.747 1.22 2.583 1.867C52.793 4.67 51.52 4.417 50.22 4.22l.27-1.98C51.72 2.417 52.937 2.65 54.12 2.94c-.95-.45-1.913-.85-2.893-1.193l.737-1.853c1.09.387 2.163.83 3.21 1.317-.667-.73-1.36-1.437-2.077-2.113l1.413-1.42c.8.76 1.573 1.547 2.31 2.36-.613-1.047-1.28-2.063-2-3.047zM29.567.013L29.983 2c-1.393-.11-2.793-.163-4.197-.163h-1.98v-2h2.01c1.39.01 2.78.07 4.16.173l-.41.003zM5.38 0l1.4 1.433c-.76.79-1.493 1.6-2.197 2.433l-1.523-1.3c.773-.917 1.577-1.807 2.41-2.673l-.09.107zM.163 29.567l1.987.417c-.11-1.393-.163-2.793-.163-4.197v-1.98h-2v2.01c.01 1.39.07 2.78.173 4.16l.003-.41zM0 54.627l.83.83-2.69 2.69c-.42-.813-.82-1.637-1.2-2.47l1.897.623c.377-.89.74-1.78 1.08-2.67-.563.625-1.123 1.258-1.673 1.9l-1.48-1.347c.593-.687 1.187-1.383 1.777-2.093-.76.407-1.533.803-2.317 1.18L.427 50.993c.83-.43 1.657-.87 2.477-1.32-1 .16-2 .287-3.003.377L-.293 48.067c1.18-.113 2.353-.283 3.513-.513-.733-.377-1.46-.767-2.177-1.173l.913-1.633c.817.47 1.64.92 2.47 1.34-.543-.79-1.077-1.603-1.597-2.437l1.74-.987c.587.95 1.157 1.903 1.707 2.853-.237-1.2-.423-2.42-.553-3.653L7.82 42.23c.14 1.377.34 2.753.6 4.113-.283-.977-.52-1.967-.703-2.973l-1.94.463c.203 1.127.457 2.247.76 3.357-.5-.797-.98-1.61-1.44-2.44l-1.727 1.01c.513.92 1.047 1.83 1.6 2.723-.243-1.19-.44-2.4-.583-3.627l1.97-.337c.16 1.36.373 2.713.64 4.053-.36-.95-.677-1.917-.943-2.897l-1.907.593c.29 1.097.633 2.18 1.02 3.243-.597-.757-1.17-1.53-1.713-2.327l-1.6 1.197c.6.883 1.22 1.747 1.867 2.583-1.277-.167-2.53-.42-3.83-.617l-1.98.27c1.177.363 2.394.596 3.577.886-.45-.95-.85-1.913-1.193-2.893l-1.853.737c.387 1.09.83 2.163 1.317 3.21-.73-.667-1.437-1.36-2.113-2.077l-1.42 1.413c.76.8 1.547 1.573 2.36 2.31-1.047-.613-2.063-1.28-3.047-2z' fill='%23C9963A' fill-rule='evenodd'/%3E%3C/svg%3E")` 
-        }} 
+        className="absolute inset-0 opacity-[0.04] pointer-events-none z-0" 
+        style={{ backgroundImage: `radial-gradient(circle, #ffffff 1px, transparent 1px)`, backgroundSize: '24px 24px' }}
       />
 
-      {/* Radial Gradient Glow for Image */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#2E7D50] via-transparent to-transparent opacity-40 pointer-events-none" />
+      {/* 2. Botanical SVG Line Art */}
+      <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.05] pointer-events-none text-white overflow-hidden z-0">
+        <svg viewBox="0 0 200 200" fill="currentColor" className="w-full h-full transform translate-x-1/4 -translate-y-1/4 rotate-12">
+          <path d="M100 200 C 90 100 120 50 180 20 C 130 40 110 80 100 200 Z" />
+          <path d="M110 140 C 150 130 180 150 190 180 C 160 160 130 160 110 140 Z" />
+          <path d="M105 80 C 140 60 170 80 180 110 C 150 90 120 90 105 80 Z" />
+          <path d="M95 160 C 60 150 30 170 20 200 C 50 180 80 180 95 160 Z" />
+          <path d="M98 100 C 60 80 30 100 20 130 C 50 110 80 110 98 100 Z" />
+        </svg>
+      </div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 opacity-[0.05] pointer-events-none text-white overflow-hidden z-0">
+        <svg viewBox="0 0 200 200" fill="currentColor" className="w-full h-full transform -translate-x-1/4 translate-y-1/4 -rotate-12">
+          <path d="M100 0 C 110 100 80 150 20 180 C 70 160 90 120 100 0 Z" />
+          <path d="M90 60 C 50 70 20 50 10 20 C 40 40 70 40 90 60 Z" />
+          <path d="M95 120 C 60 140 30 120 20 90 C 50 110 80 110 95 120 Z" />
+        </svg>
+      </div>
+
+      {/* 3. Subtle Radial Glow Spots */}
+      <div className="absolute top-1/2 right-[5%] -translate-y-1/2 w-[600px] h-[600px] bg-[#C9963A] rounded-full blur-[120px] mix-blend-screen opacity-[0.15] pointer-events-none z-0" />
+      <div className="absolute top-1/3 -left-[10%] w-[500px] h-[500px] bg-[#2E7D50] rounded-full blur-[100px] mix-blend-screen opacity-40 pointer-events-none z-0" />
+
+      {/* 4. Animated Floating Particles */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={`particle-${i}`}
+            className="absolute rounded-full animate-drift mix-blend-screen"
+            style={{
+              width: `${Math.max(4, Math.random() * 14)}px`,
+              height: `${Math.max(4, Math.random() * 14)}px`,
+              left: `${Math.random() * 100}%`,
+              top: `${70 + Math.random() * 30}%`,
+              backgroundColor: Math.random() > 0.4 ? 'rgba(201, 150, 58, 0.3)' : 'rgba(144, 238, 144, 0.4)',
+              animationDuration: `${6 + Math.random() * 8}s`,
+              animationDelay: `${Math.random() * 5}s`
+            }}
+          />
+        ))}
+      </div>
+
+      {/* 5. Falling Leaf Animation */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={`leaf-${i}`}
+            className="absolute animate-fall text-[#C9963A] opacity-[0.15]"
+            style={{
+              left: `${10 + Math.random() * 90}%`,
+              top: `${-10 - Math.random() * 20}%`,
+              animationDuration: `${10 + Math.random() * 10}s`,
+              animationDelay: `${Math.random() * 10}s`,
+              transform: `scale(${0.4 + Math.random() * 0.6})`
+            }}
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C7 2 3 6 3 12C3 18 12 22 12 22C12 22 21 18 21 12C21 6 17 2 12 2Z" />
+            </svg>
+          </div>
+        ))}
+      </div>
+
+      {/* 6. Top Edge Light Beam */}
+      <div className="absolute top-0 left-0 w-[150%] h-[300px] bg-gradient-to-b from-white/[0.06] to-transparent transform -rotate-12 -translate-y-1/2 -translate-x-1/4 pointer-events-none mix-blend-overlay z-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:py-24 w-full">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
