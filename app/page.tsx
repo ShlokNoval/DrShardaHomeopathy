@@ -6,6 +6,7 @@ import DiseaseWidgets from "@/components/home/DiseaseWidgets";
 import HowItWorks from "@/components/home/HowItWorks";
 import BeforeAfterSlider from "@/components/home/BeforeAfterSlider";
 import DoctorVideoSection from "@/components/home/DoctorVideoSection";
+import ExpertiseParallax from "@/components/home/ExpertiseParallax";
 import TestimonialCarousel from "@/components/home/TestimonialCarousel";
 import BlogPreview from "@/components/home/BlogPreview";
 import FAQAccordion from "@/components/home/FAQAccordion";
@@ -21,6 +22,7 @@ export default function Home() {
       <WhyHomeopathy />
       <DiseaseWidgets />
       <HowItWorks />
+      <ExpertiseParallax />
       <BeforeAfterSlider />
       <DoctorVideoSection />
       <TestimonialCarousel />
