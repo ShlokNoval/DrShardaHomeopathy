@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { Check, Award, GraduationCap, Heart } from "lucide-react";
+import { Check } from "lucide-react";
 import ScrollReveal from "@/components/shared/ScrollReveal";
-import SectionHeading from "@/components/shared/SectionHeading";
 import BotanicalDecor from "@/components/shared/BotanicalDecor";
 import FloatingGlobules from "@/components/shared/FloatingGlobules";
 import CTABanner from "@/components/home/CTABanner";
@@ -19,12 +18,6 @@ const milestones = [
   { year: "2015", event: "Completed General Management Programme from IIM Bangalore (GS 10K)" },
   { year: "2020", event: "Expanded to online consultations for patients across India" },
   { year: "2025", event: "10,000+ patients treated with 4.9/5 satisfaction rating" },
-];
-
-const philosophy = [
-  { icon: Heart, title: "Patient First", desc: "Every treatment plan starts with truly listening to the patient — understanding not just symptoms, but their story, fears, and aspirations." },
-  { icon: GraduationCap, title: "Evidence-Based", desc: "Combining 200 years of homeopathic knowledge with modern clinical methods for the most effective outcomes." },
-  { icon: Award, title: "Excellence", desc: "Committed to continuous learning and staying updated with the latest developments in homeopathic medicine." },
 ];
 
 export default function AboutPage() {
@@ -82,20 +75,41 @@ export default function AboutPage() {
 
       {/* Philosophy */}
       <section className="bg-cream py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4">
-          <SectionHeading title="Treatment Philosophy" subtitle="The principles that guide every patient interaction" />
-          <div className="grid md:grid-cols-3 gap-6">
-            {philosophy.map((p, i) => (
-              <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="bg-white rounded-2xl p-8 text-center card-hover">
-                  <div className="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center mb-5">
-                    <p.icon size={28} className="text-primary" />
-                  </div>
-                  <h3 className="font-playfair text-xl text-charcoal mb-3">{p.title}</h3>
-                  <p className="text-muted text-sm leading-relaxed">{p.desc}</p>
-                </div>
-              </ScrollReveal>
-            ))}
+        <div className="max-w-4xl mx-auto px-4">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <h2 className="font-playfair text-charcoal mb-3">How I Treat My Patients</h2>
+              <div className="w-12 h-0.5 bg-secondary mx-auto" />
+            </div>
+          </ScrollReveal>
+
+          <div className="space-y-6">
+            <ScrollReveal delay={0.05}>
+              <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-primary">
+                <p className="font-playfair text-lg text-charcoal mb-2">&ldquo;I listen first, prescribe later.&rdquo;</p>
+                <p className="text-muted text-sm leading-relaxed">
+                  Many patients tell me they&apos;ve never been heard by a doctor before. I spend 30–45 minutes on the first consultation alone — understanding your symptoms, your daily life, your emotional state. That&apos;s how homeopathy works: the remedy must match <em>you</em>, not just your disease.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.1}>
+              <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-secondary">
+                <p className="font-playfair text-lg text-charcoal mb-2">&ldquo;No two patients get the same medicine.&rdquo;</p>
+                <p className="text-muted text-sm leading-relaxed">
+                  Ten people may come to me with eczema, but each one leaves with a different remedy. I study your constitution, triggers, family history, and temperament before choosing the right medicine. That&apos;s the beauty of individualized treatment.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.15}>
+              <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-primary">
+                <p className="font-playfair text-lg text-charcoal mb-2">&ldquo;I won&apos;t promise overnight miracles.&rdquo;</p>
+                <p className="text-muted text-sm leading-relaxed">
+                  Homeopathy heals from within — it takes time, but the results are deep and lasting. I&apos;ll always be honest with you about timelines. Some conditions show improvement in days, others take weeks. But we work together until you feel genuinely better, not just symptom-free.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
