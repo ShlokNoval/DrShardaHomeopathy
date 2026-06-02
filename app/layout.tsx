@@ -22,7 +22,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shardahomeopathy.com"),
+  metadataBase: new URL("https://www.drshardahomoeopathy.com"),
   title: {
     default: "Sharda Homeopathy Clinic | Dr. Sharda Tawale | Pune",
     template: "%s | Sharda Homeopathy Clinic",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://shardahomeopathy.com",
+    url: "https://www.drshardahomoeopathy.com",
     siteName: "Sharda Homeopathy Clinic",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
@@ -64,15 +64,15 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "MedicalBusiness",
-      "@id": "https://shardahomeopathy.com/#organization",
+      "@id": "https://www.drshardahomoeopathy.com/#organization",
       name: "Sharda Homeopathy Clinic",
-      url: "https://shardahomeopathy.com",
-      logo: "https://shardahomeopathy.com/icons/logo.png",
+      url: "https://www.drshardahomoeopathy.com",
+      logo: "https://www.drshardahomoeopathy.com/icons/logo.png",
       description:
         "Expert homeopathic treatment in Pune by Dr. Sharda Tawale. Natural healing for 100+ conditions.",
       medicalSpecialty: "Homeopathic Medicine",
       telephone: "+91-XXXXXXXXXX",
-      email: "info@shardahomeopathy.com",
+      email: "info@drshardahomoeopathy.com",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Pune",
@@ -110,17 +110,18 @@ const jsonLd = {
       ],
       priceRange: "₹₹",
       sameAs: [
-        "https://facebook.com/shardahomeopathy",
-        "https://instagram.com/shardahomeopathy",
+        "https://www.facebook.com/doctorsharda/",
+        "https://www.instagram.com/drshardahomeopathy/",
+        "https://www.youtube.com/channel/UCvu7GhIHzCnlVIx03Vk-RiA"
       ],
     },
     {
       "@type": "Person",
-      "@id": "https://shardahomeopathy.com/about#doctor",
+      "@id": "https://www.drshardahomoeopathy.com/about#doctor",
       name: "Dr. Sharda Tawale",
       jobTitle: "Homeopathic Physician",
       worksFor: {
-        "@id": "https://shardahomeopathy.com/#organization",
+        "@id": "https://www.drshardahomoeopathy.com/#organization",
       },
       description:
         "Expert homeopathic doctor with 15+ years of experience in Pune",

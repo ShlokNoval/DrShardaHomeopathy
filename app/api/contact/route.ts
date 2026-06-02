@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     if (resend) {
       const adminEmail = process.env.ADMIN_EMAIL || "info@shardahomeopathy.com";
       await resend.emails.send({
-        from: "Sharda Homeopathy <notifications@shardahomeopathy.com>",
+        from: "Sharda Homeopathy <onboarding@resend.dev>",
         to: adminEmail,
         subject: `New Contact Message from ${name}`,
         html: generateAdminContactEmail({ name, email, phone, message }),

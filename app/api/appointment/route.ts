@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
       const adminEmail = process.env.ADMIN_EMAIL || "info@shardahomeopathy.com";
 
       await resend.emails.send({
-        from: "Sharda Homeopathy <notifications@shardahomeopathy.com>",
+        from: "Sharda Homeopathy <onboarding@resend.dev>",
         to: adminEmail,
         subject: `🌿 New Appointment: ${name} - ${condition}`,
         html: generateAdminAppointmentEmail(data),
@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
       // 3. Send patient confirmation email (if email provided)
       if (email) {
         await resend.emails.send({
-          from: "Sharda Homeopathy <appointments@shardahomeopathy.com>",
+          from: "Sharda Homeopathy <onboarding@resend.dev>",
           to: email,
           subject: "✅ Appointment Request Received - Sharda Homeopathy",
           html: generatePatientConfirmationEmail(data),
