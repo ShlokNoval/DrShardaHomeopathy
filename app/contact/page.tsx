@@ -5,9 +5,10 @@ import ScrollReveal from "@/components/shared/ScrollReveal";
 import FloatingGlobules from "@/components/shared/FloatingGlobules";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/utils";
+import { treatments } from "@/data/treatments";
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", disease: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -15,7 +16,7 @@ export default function ContactPage() {
     setStatus("sending");
     try {
       const res = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
-      if (res.ok) { setStatus("sent"); setForm({ name: "", email: "", phone: "", message: "" }); }
+      if (res.ok) { setStatus("sent"); setForm({ name: "", email: "", phone: "", disease: "", message: "" }); }
       else { setStatus("error"); }
     } catch { setStatus("error"); }
   };
@@ -90,6 +91,13 @@ export default function ContactPage() {
                     <div>
                       <label className="block text-sm font-medium text-charcoal mb-1.5">Phone Number</label>
                       <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-sm" placeholder="+91 XXXXX XXXXX" />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-charcoal mb-1.5">Condition / Disease (Optional)</label>
+                      <input type="text" list="diseases-list" value={form.disease} onChange={(e) => setForm({ ...form, disease: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-sm" placeholder="E.g. Psoriasis, Asthma, or custom..." />
+                      <datalist id="diseases-list">
+                        {treatments.map(t => <option key={t.slug} value={t.name} />)}
+                      </datalist>
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-charcoal mb-1.5">Message *</label>

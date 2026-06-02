@@ -6,7 +6,7 @@ import { generateAdminContactEmail } from "@/lib/emailTemplates";
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
-    const { name, email, phone, message } = data;
+    const { name, email, phone, disease, message } = data;
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     // 1. Store in Supabase (if configured)
     const supabase = getSupabaseAdmin();
     if (supabase) {
-      await supabase.from("contacts").insert([{ name, email, phone, message }]);
+      await supabase.from("contacts").insert([{ name, email, phone, disease, message }]);
     }
 
     // 2. Send notification email (if Resend configured)
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
         from: "Sharda Homeopathy <onboarding@resend.dev>",
         to: adminEmail,
         subject: `New Contact Message from ${name}`,
-        html: generateAdminContactEmail({ name, email, phone, message }),
+        html: generateAdminContactEmail({ name, email, phone, disease, message }),
       });
     }
 

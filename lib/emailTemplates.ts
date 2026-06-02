@@ -17,6 +17,7 @@ interface ContactData {
   name: string;
   email: string;
   phone?: string;
+  disease?: string;
   message: string;
 }
 
@@ -115,6 +116,7 @@ export function generateAdminContactEmail(data: ContactData): string {
             <tr><td style="padding:10px;border-bottom:1px solid #eee;color:#666;width:100px;">Name</td><td style="padding:10px;border-bottom:1px solid #eee;font-weight:600;">${data.name}</td></tr>
             <tr><td style="padding:10px;border-bottom:1px solid #eee;color:#666;">Email</td><td style="padding:10px;border-bottom:1px solid #eee;">${data.email}</td></tr>
             ${data.phone ? `<tr><td style="padding:10px;border-bottom:1px solid #eee;color:#666;">Phone</td><td style="padding:10px;border-bottom:1px solid #eee;">${data.phone}</td></tr>` : ""}
+            ${data.disease ? `<tr><td style="padding:10px;border-bottom:1px solid #eee;color:#666;">Condition</td><td style="padding:10px;border-bottom:1px solid #eee;font-weight:600;color:#1B5E35;">${data.disease}</td></tr>` : ""}
             <tr><td style="padding:10px;border-bottom:1px solid #eee;color:#666;vertical-align:top;">Message</td><td style="padding:10px;border-bottom:1px solid #eee;line-height:1.6;">${data.message}</td></tr>
           </table>
         </div>

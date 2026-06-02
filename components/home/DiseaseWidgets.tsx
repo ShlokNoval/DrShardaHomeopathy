@@ -22,6 +22,17 @@ const CategoryIcons: Record<string, any> = {
   all: Activity,
 };
 
+const categoryImages: Record<string, string> = {
+  skin: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=400&h=300",
+  respiratory: "https://images.unsplash.com/photo-1584820927498-cafe4c10787e?auto=format&fit=crop&q=80&w=400&h=300",
+  digestive: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=400&h=300",
+  joint: "https://images.unsplash.com/photo-1552674605-15c2145eba67?auto=format&fit=crop&q=80&w=400&h=300",
+  children: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=400&h=300",
+  womens: "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?auto=format&fit=crop&q=80&w=400&h=300",
+  lifestyle: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=400&h=300",
+  all: "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=400&h=300"
+};
+
 export default function DiseaseWidgets() {
   const [active, setActive] = useState<"all" | TreatmentCategory>("all");
   const [visibleCount, setVisibleCount] = useState(8);
@@ -104,7 +115,7 @@ export default function DiseaseWidgets() {
                   >
                     {/* Background Image */}
                     <img
-                      src={`https://source.unsplash.com/400x300/?${t.slug.replace(/-/g, ',')},${t.category}`}
+                      src={categoryImages[t.category]}
                       alt={t.name}
                       className="absolute inset-0 w-full h-full object-cover transition-all duration-350 group-hover:blur-[3px] group-hover:brightness-[0.4]"
                     />
@@ -188,7 +199,7 @@ export default function DiseaseWidgets() {
 
               <div className="relative h-56 sm:h-72 w-full shrink-0">
                 <img
-                  src={`https://source.unsplash.com/800x400/?${selectedTreatment.slug.replace(/-/g, ',')},${selectedTreatment.category}`}
+                  src={categoryImages[selectedTreatment.category]}
                   alt={selectedTreatment.name}
                   className="w-full h-full object-cover"
                 />
@@ -235,13 +246,21 @@ export default function DiseaseWidgets() {
                   </ul>
                 </div>
 
-                <Link
-                  href={`/appointment?reason=${selectedTreatment.slug}`}
-                  className="flex justify-center items-center gap-2 w-full py-3.5 bg-[#C9963A] hover:bg-[#b58532] text-white font-semibold rounded-xl transition-all shadow-lg shadow-[#C9963A]/20 hover:shadow-[#C9963A]/40 hover:-translate-y-0.5"
-                >
-                  Book Consultation for {selectedTreatment.name}
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Link
+                    href={`/appointment?reason=${selectedTreatment.slug}`}
+                    className="flex-1 flex justify-center items-center gap-2 py-3.5 bg-[#C9963A] hover:bg-[#b58532] text-white font-semibold rounded-xl transition-all shadow-lg shadow-[#C9963A]/20 hover:shadow-[#C9963A]/40 hover:-translate-y-0.5"
+                  >
+                    Book Consultation
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link
+                    href={`/treatments/${selectedTreatment.slug}`}
+                    className="flex-1 flex justify-center items-center gap-2 py-3.5 bg-white border-2 border-[#1B5E35]/20 hover:border-[#1B5E35] hover:bg-[#1B5E35]/5 text-[#1B5E35] font-semibold rounded-xl transition-all"
+                  >
+                    Read Full Details
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </motion.div>
