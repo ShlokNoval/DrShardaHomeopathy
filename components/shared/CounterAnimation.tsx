@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { useInView } from "react-intersection-observer";
 
 interface CounterAnimationProps {
   target: number;
@@ -14,6 +13,10 @@ function easeOutQuart(t: number): number {
   return 1 - Math.pow(1 - t, 4);
 }
 
+function formatNumber(n: number): string {
+  return n.toLocaleString("en-IN");
+}
+
 export default function CounterAnimation({
   target,
   suffix = "",
@@ -24,11 +27,7 @@ export default function CounterAnimation({
   const [hasAnimated, setHasAnimated] = useState(false);
   const frameRef = useRef<number>(0);
   const startTimeRef = useRef<number>(0);
-
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-    triggerOnce: true,
-  });
+  const elementRef = useRef<HTMLSpanElement>(null);
 
   const animate = useCallback(
     (timestamp: number) => {
@@ -49,22 +48,33 @@ export default function CounterAnimation({
   );
 
   useEffect(() => {
-    if (inView && !hasAnimated) {
-      setHasAnimated(true);
-      startTimeRef.current = 0;
-      frameRef.current = requestAnimationFrame(animate);
-    }
+    const element = elementRef.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          startTimeRef.current = 0;
+          frameRef.current = requestAnimationFrame(animate);
+        }
+      },
+      { threshold: 0, rootMargin: "50px" }
+    );
+
+    observer.observe(element);
 
     return () => {
+      observer.disconnect();
       if (frameRef.current) {
         cancelAnimationFrame(frameRef.current);
       }
     };
-  }, [inView, hasAnimated, animate]);
+  }, [hasAnimated, animate]);
 
   return (
-    <span ref={ref} className={className}>
-      {count}
+    <span ref={elementRef} className={className}>
+      {formatNumber(count)}
       {suffix}
     </span>
   );

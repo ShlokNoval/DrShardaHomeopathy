@@ -32,15 +32,15 @@ export default function HowItWorks() {
         <SectionHeading title="Your Healing Journey" />
 
         <div className="relative">
-          {/* Connecting Line (desktop) */}
-          <div className="hidden lg:block absolute top-24 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-secondary/20 via-secondary to-secondary/20" />
+          {/* Connecting Line (desktop only) — positioned behind circles */}
+          <div className="hidden lg:block absolute top-8 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-secondary/10 via-secondary/40 to-secondary/10 z-0" />
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
             {steps.map((step, i) => (
               <ScrollReveal key={i} delay={i * 0.15}>
-                <div className="text-center relative">
+                <div className="text-center relative z-10">
                   {/* Step number circle */}
-                  <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary text-primary-dark font-playfair text-xl font-bold mb-6 shadow-lg">
+                  <div className="relative inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary text-primary-dark font-playfair text-xl font-bold mb-8 shadow-lg ring-4 ring-white">
                     {step.number}
                   </div>
 

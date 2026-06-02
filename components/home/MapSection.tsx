@@ -80,7 +80,7 @@ export default function MapSection() {
                       </a>
                     </p>
                     <p className="text-muted text-sm">
-                      ✉️ info@shardahomeopathy.com
+                      ✉️ drshardatawale@gmail.com
                     </p>
                   </div>
                 </div>

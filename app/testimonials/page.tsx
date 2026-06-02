@@ -57,6 +57,27 @@ export default function TestimonialsPage() {
               </ScrollReveal>
             ))}
           </div>
+
+          {/* Google Reviews CTA */}
+          <div className="mt-12 text-center">
+            <div className="bg-white rounded-2xl p-8 shadow-sm max-w-xl mx-auto border border-secondary/20">
+              <div className="flex items-center justify-center gap-1 mb-3">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={20} className="text-secondary fill-secondary" />
+                ))}
+              </div>
+              <h3 className="font-playfair text-xl text-charcoal mb-2">Read More on Google</h3>
+              <p className="text-muted text-sm mb-5">See all verified patient reviews directly on Google</p>
+              <a
+                href="https://www.google.com/search?sca_esv=b1b5cd030bce143a&sxsrf=ANbL-n55Og0o7vgPF7jKCc3kUDiEr9VygQ:1780409699271&si=AL3DRZHrmvnFAVQPOO2Bzhf8AX9KZZ6raUI_dT7DG_z0kV2_xzkhZCGpc0wIBfbs2Iwn68TC8o7YNaT1jbXTopVOaSBXY9AWU2qKnq_Ur6DQWY5DkFaDVWxgq4wYi_3QnoMR9PC0nwCzEo66TqPqGl-0h9OUaS6hLg%3D%3D&q=Dr+Sharda+Homoeopathy+Center+Reviews"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center gap-2"
+              >
+                ⭐ Read Our Google Reviews
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

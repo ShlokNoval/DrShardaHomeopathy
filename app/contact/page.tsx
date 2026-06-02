@@ -40,7 +40,7 @@ export default function ContactPage() {
                 {[
                   { icon: MapPin, title: "Address", content: process.env.NEXT_PUBLIC_CLINIC_ADDRESS || "Pune, Maharashtra, India 411001" },
                   { icon: Phone, title: "Phone", content: process.env.NEXT_PUBLIC_CLINIC_PHONE || "+91-XXXXXXXXXX" },
-                  { icon: Mail, title: "Email", content: "info@shardahomeopathy.com" },
+                  { icon: Mail, title: "Email", content: "drshardatawale@gmail.com" },
                   { icon: Clock, title: "Hours", content: "Mon–Sat: 10AM–2PM & 5PM–8PM | Sun: Closed" },
                 ].map((item, i) => (
                   <div key={i} className="bg-white rounded-2xl p-6 shadow-sm flex items-start gap-4">

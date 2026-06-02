@@ -72,7 +72,7 @@ const jsonLd = {
         "Expert homeopathic treatment in Pune by Dr. Sharda Tawale. Natural healing for 100+ conditions.",
       medicalSpecialty: "Homeopathic Medicine",
       telephone: "+91-9881255055",
-      email: "info@drshardahomoeopathy.com",
+      email: "drshardatawale@gmail.com",
       address: {
         "@type": "PostalAddress",
         addressLocality: "Pune",

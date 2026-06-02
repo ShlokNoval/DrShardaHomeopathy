@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
     // 2. Send admin notification email (if Resend configured)
     const resend = getResend();
     if (resend) {
-      const adminEmail = process.env.ADMIN_EMAIL || "info@shardahomeopathy.com";
+      const adminEmail = process.env.ADMIN_EMAIL || "drshardatawale@gmail.com";
 
       await resend.emails.send({
         from: "Sharda Homeopathy <onboarding@resend.dev>",
