@@ -43,8 +43,10 @@ export default function HeroSection() {
               </h1>
               
               <p className="text-white/80 text-lg sm:text-xl max-w-xl mb-10 leading-relaxed font-light">
-                Expert homeopathic care for 100+ conditions by Dr. Sharda
-                Tawale, Pune. Safe, natural, and lasting results.
+                Expert homeopathic care for 100+ conditions by Dr. Sharda Tawale.
+                <br className="hidden sm:block" />
+                <span className="sm:hidden"> </span>
+                Safe, natural, and lasting results.
               </p>
 
               {/* CTA Buttons */}
