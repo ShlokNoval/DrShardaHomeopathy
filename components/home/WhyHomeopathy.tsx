@@ -54,16 +54,18 @@ export default function WhyHomeopathy() {
         </div>
 
         {/* Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-10">
           {reasons.map((reason, i) => (
             <ScrollReveal key={i} delay={i * 0.06}>
-              <div className="flex gap-4 items-start">
-                <span className="text-2xl mt-0.5 shrink-0">{reason.emoji}</span>
+              <div className="flex gap-5 items-start p-6 sm:p-8 rounded-2xl bg-cream/30 border border-secondary/10 hover:bg-cream/60 transition-colors">
+                <div className="w-14 h-14 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 text-2xl">
+                  {reason.emoji}
+                </div>
                 <div>
-                  <h4 className="font-semibold text-charcoal mb-1 text-[15px]">
+                  <h4 className="font-semibold text-charcoal mb-2 text-lg">
                     {reason.title}
                   </h4>
-                  <p className="text-muted text-sm leading-relaxed">
+                  <p className="text-muted text-sm sm:text-base leading-relaxed">
                     {reason.desc}
                   </p>
                 </div>
