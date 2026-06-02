@@ -22,15 +22,36 @@ const CategoryIcons: Record<string, any> = {
   all: Activity,
 };
 
-const categoryImages: Record<string, string> = {
-  skin: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=400&h=300",
-  respiratory: "https://images.unsplash.com/photo-1584820927498-cafe4c10787e?auto=format&fit=crop&q=80&w=400&h=300",
-  digestive: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=400&h=300",
-  joint: "https://images.unsplash.com/photo-1552674605-15c2145eba67?auto=format&fit=crop&q=80&w=400&h=300",
-  children: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=400&h=300",
-  womens: "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?auto=format&fit=crop&q=80&w=400&h=300",
-  lifestyle: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=400&h=300",
-  all: "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=400&h=300"
+const diseaseImages: Record<string, string> = {
+  psoriasis: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=400&h=300",
+  eczema: "https://images.unsplash.com/photo-1605335129656-db26b7c02bb0?auto=format&fit=crop&q=80&w=400&h=300",
+  acne: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&q=80&w=400&h=300",
+  vitiligo: "https://images.unsplash.com/photo-1620247656641-591be245f32b?auto=format&fit=crop&q=80&w=400&h=300",
+  urticaria: "https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=400&h=300",
+  asthma: "https://images.unsplash.com/photo-1584486520270-19eca1efcce5?auto=format&fit=crop&q=80&w=400&h=300",
+  "allergic-rhinitis": "https://images.unsplash.com/photo-1584820927498-cafe4c10787e?auto=format&fit=crop&q=80&w=400&h=300",
+  sinusitis: "https://images.unsplash.com/photo-1606240724602-5b21f896eae8?auto=format&fit=crop&q=80&w=400&h=300",
+  tonsillitis: "https://images.unsplash.com/photo-1507742111867-b52b217a1ef2?auto=format&fit=crop&q=80&w=400&h=300",
+  ibs: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=400&h=300",
+  gastritis: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&q=80&w=400&h=300",
+  constipation: "https://images.unsplash.com/photo-1616428789547-511470ce238e?auto=format&fit=crop&q=80&w=400&h=300",
+  "piles-fissure": "https://images.unsplash.com/photo-1599709218274-13e7104b28de?auto=format&fit=crop&q=80&w=400&h=300",
+  arthritis: "https://images.unsplash.com/photo-1552674605-15c2145eba67?auto=format&fit=crop&q=80&w=400&h=300",
+  "back-pain": "https://images.unsplash.com/photo-1582216657929-2c70fb90236e?auto=format&fit=crop&q=80&w=400&h=300",
+  sciatica: "https://images.unsplash.com/photo-1579208030886-b937da0925dc?auto=format&fit=crop&q=80&w=400&h=300",
+  gout: "https://images.unsplash.com/photo-1517438322307-e67111335449?auto=format&fit=crop&q=80&w=400&h=300",
+  bedwetting: "https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80&w=400&h=300",
+  "recurrent-colds": "https://images.unsplash.com/photo-1511943826040-2bc645cb75ff?auto=format&fit=crop&q=80&w=400&h=300",
+  adhd: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&q=80&w=400&h=300",
+  "growth-issues": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=400&h=300",
+  "pcod-pcos": "https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?auto=format&fit=crop&q=80&w=400&h=300",
+  "thyroid-disorders": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&q=80&w=400&h=300",
+  infertility: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=400&h=300",
+  "menstrual-disorders": "https://images.unsplash.com/photo-1524508762098-fd966ffb6ef9?auto=format&fit=crop&q=80&w=400&h=300",
+  "diabetes-management": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=400&h=300",
+  hypertension: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&q=80&w=400&h=300",
+  migraine: "https://images.unsplash.com/photo-1535401991746-9d3e86c07ab2?auto=format&fit=crop&q=80&w=400&h=300",
+  "hair-fall": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=400&h=300",
 };
 
 export default function DiseaseWidgets() {
@@ -115,7 +136,7 @@ export default function DiseaseWidgets() {
                   >
                     {/* Background Image */}
                     <img
-                      src={categoryImages[t.category]}
+                      src={diseaseImages[t.slug] || "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=400&h=300"}
                       alt={t.name}
                       className="absolute inset-0 w-full h-full object-cover transition-all duration-350 group-hover:blur-[3px] group-hover:brightness-[0.4]"
                     />
@@ -199,7 +220,7 @@ export default function DiseaseWidgets() {
 
               <div className="relative h-56 sm:h-72 w-full shrink-0">
                 <img
-                  src={categoryImages[selectedTreatment.category]}
+                  src={diseaseImages[selectedTreatment.slug] || "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=400&h=300"}
                   alt={selectedTreatment.name}
                   className="w-full h-full object-cover"
                 />
