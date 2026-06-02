@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Patient Testimonials",
-  description: "Read real reviews from patients treated by Dr. Sharda Tawale at Sharda Homeopathy Clinic, Pune. 4.9/5 rating across 2000+ patients.",
+  description: "Read real reviews from patients treated by Dr. Sharda Tawale at Sharda Homeopathy Clinic, Pune. 4.9/5 rating across 10,000+ patients.",
 };
 
 export default function TestimonialsPage() {
@@ -24,6 +24,11 @@ export default function TestimonialsPage() {
               <Star key={i} size={24} className="text-secondary fill-secondary" />
             ))}
             <span className="text-white ml-2 font-bold text-lg">4.9/5</span>
+          </div>
+          <div className="mt-6">
+            <a href="https://www.google.com/search?q=Dr+Sharda+Homoeopathy+Center+Reviews" target="_blank" rel="noopener noreferrer" className="inline-block border border-white text-white hover:bg-white hover:text-primary px-6 py-2 rounded-full font-medium transition-colors">
+              Verify on Google Reviews →
+            </a>
           </div>
         </div>
       </section>

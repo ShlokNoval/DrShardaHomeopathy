@@ -5,10 +5,10 @@ import BotanicalDecor from "@/components/shared/BotanicalDecor";
 import { Check } from "lucide-react";
 
 const credentials = [
-  "BHMS — Maharashtra University of Health Sciences",
-  "MD (Homeopathy) — Specialization in Practice",
-  "15+ Years of Clinical Practice",
-  "2000+ Patients Successfully Treated",
+  "MD (Homeopath)",
+  "IIM Bangalore — General Management Programme (GS 10K)",
+  "25+ Years of Clinical Practice (Since 2001)",
+  "10,000+ Patients Successfully Treated",
   "Member — Maharashtra Homeopathic Medical Association",
 ];
 
@@ -33,7 +33,7 @@ export default function AboutPreview() {
                   />
                   {/* Badge overlay */}
                   <div className="absolute bottom-4 left-4 bg-primary/90 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-semibold">
-                    BHMS, MD Homeopathy
+                    MD (Homeopath) · IIM Bangalore
                   </div>
                 </div>
                 {/* Scattered pellet dots */}
@@ -54,10 +54,10 @@ export default function AboutPreview() {
                 Dr. Sharda Tawale
               </h2>
               <p className="text-muted leading-relaxed mb-4">
-                With over 15 years of dedicated practice in homeopathic
-                medicine, Dr. Sharda Tawale brings a unique blend of classical
-                homeopathic training and modern clinical experience to every
-                patient interaction.
+                With over 25 years of dedicated practice in homeopathic
+                medicine since 2001, Dr. Sharda Tawale brings a unique blend of classical
+                homeopathic training, an MD in Homeopathy, and management expertise
+                from IIM Bangalore to every patient interaction.
               </p>
               <p className="text-muted leading-relaxed mb-6">
                 Her approach goes beyond treating symptoms — she believes in

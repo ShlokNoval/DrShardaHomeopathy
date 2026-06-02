@@ -50,10 +50,10 @@ export default function HeroSection() {
                   <span className="text-secondary">⭐</span> 4.9/5 Rating
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <span className="text-secondary">🌿</span> 2000+ Patients
+                  <span className="text-secondary">🌿</span> 10,000+ Patients
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <span className="text-secondary">⏱️</span> 15+ Years
+                  <span className="text-secondary">⏱️</span> 25+ Years
                 </span>
               </div>
             </div>

@@ -3,8 +3,8 @@
 import CounterAnimation from "@/components/shared/CounterAnimation";
 
 const stats = [
-  { icon: "🌿", target: 2000, suffix: "+", label: "Patients Healed" },
-  { icon: "⏱️", target: 15, suffix: "+", label: "Years of Experience" },
+  { icon: "🌿", target: 10000, suffix: "+", label: "Patients Healed" },
+  { icon: "⏱️", target: 25, suffix: "+", label: "Years of Experience" },
   { icon: "🧬", target: 100, suffix: "+", label: "Diseases Treated" },
   { icon: "⭐", target: 4.9, suffix: "/5", label: "Patient Rating" },
 ];

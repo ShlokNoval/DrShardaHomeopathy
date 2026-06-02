@@ -76,7 +76,7 @@ export default function DoctorVideoSection() {
                 </p>
                 <div className="w-20 h-0.5 bg-primary mt-1" />
                 <p className="text-muted text-sm mt-2">
-                  BHMS, MD (Homeopathy)
+                  MD (Homeopath) · IIM Bangalore
                 </p>
               </div>
             </div>

@@ -90,9 +90,12 @@ export default function TestimonialCarousel() {
           </div>
         </div>
 
-        <div className="text-center mt-8">
-          <Link href="/testimonials" className="text-primary font-semibold hover:text-primary-light transition-colors">
-            Read All Reviews →
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+          <a href="https://www.google.com/search?q=Dr+Sharda+Homoeopathy+Center+Reviews" target="_blank" rel="noopener noreferrer" className="btn-ghost flex items-center justify-center gap-2">
+            ⭐ Read our Google Reviews
+          </a>
+          <Link href="/testimonials" className="btn-primary flex items-center justify-center gap-2">
+            View All Patient Stories →
           </Link>
         </div>
       </div>

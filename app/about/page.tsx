@@ -9,16 +9,16 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Dr. Sharda Tawale",
-  description: "Learn about Dr. Sharda Tawale, a leading homeopathic physician in Pune with 15+ years of experience. BHMS, MD Homeopathy. Treating 100+ conditions naturally.",
+  description: "Learn about Dr. Sharda Tawale, a leading homeopathic physician in Pune with 25+ years of experience since 2001. MD (Homeopath), IIM Bangalore. Treating 100+ conditions naturally.",
 };
 
 const milestones = [
-  { year: "2009", event: "Began practicing homeopathy after completing BHMS" },
-  { year: "2012", event: "Completed MD in Homeopathy with specialization in chronic cases" },
-  { year: "2015", event: "Crossed 500+ successfully treated patients" },
-  { year: "2018", event: "Expanded to online consultations for patients across India" },
-  { year: "2020", event: "Recognized as one of the top homeopathic practitioners in Pune" },
-  { year: "2024", event: "2000+ patients treated with 4.9/5 satisfaction rating" },
+  { year: "2001", event: "Began practicing homeopathy, driven by a passion for natural healing" },
+  { year: "2005", event: "Completed MD in Homeopathy with specialization in chronic conditions" },
+  { year: "2010", event: "Crossed 2,000+ successfully treated patients" },
+  { year: "2015", event: "Completed General Management Programme from IIM Bangalore (GS 10K)" },
+  { year: "2020", event: "Expanded to online consultations for patients across India" },
+  { year: "2025", event: "10,000+ patients treated with 4.9/5 satisfaction rating" },
 ];
 
 const philosophy = [
@@ -36,7 +36,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <span className="inline-block border border-white/30 text-white text-sm px-4 py-1.5 rounded-full mb-4">🌿 About</span>
           <h1 className="text-white mb-4">Dr. Sharda Tawale</h1>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">BHMS, MD (Homeopathy) · 15+ Years · Pune, Maharashtra</p>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">MD (Homeopath) · IIM Bangalore · 25+ Years · Pune, Maharashtra</p>
         </div>
       </section>
 
@@ -61,10 +61,10 @@ export default function AboutPage() {
                   My journey into homeopathy began with a deeply personal experience — watching a family member find lasting relief from chronic asthma through homeopathic treatment after years of struggling with conventional medicines. That experience planted the seed of what would become my life&apos;s calling.
                 </p>
                 <p className="text-muted leading-relaxed mb-4">
-                  After completing my BHMS from Maharashtra University of Health Sciences and subsequently my MD in Homeopathy, I established my practice in Pune with a simple mission: to bring the gentle, profound healing power of homeopathy to every family that seeks natural solutions.
+                  After completing my MD in Homeopathy and later a General Management Programme from IIM Bangalore, I established my practice in Pune in 2001 with a simple mission: to bring the gentle, profound healing power of homeopathy to every family that seeks natural solutions.
                 </p>
                 <p className="text-muted leading-relaxed mb-6">
-                  Over 15 years and 2000+ patients later, I remain as passionate as day one. Every case is unique, every patient teaches me something new, and every successful healing reinforces my belief in the remarkable potential of homeopathic medicine.
+                  Over 25 years and 10,000+ patients later, I remain as passionate as day one. Every case is unique, every patient teaches me something new, and every successful healing reinforces my belief in the remarkable potential of homeopathic medicine.
                 </p>
 
                 <div className="flex flex-wrap gap-3">
@@ -124,14 +124,14 @@ export default function AboutPage() {
           <SectionHeading title="Qualifications & Credentials" light />
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              "BHMS — Maharashtra University of Health Sciences",
-              "MD (Homeopathy) — Specialization in Practice of Medicine",
+              "MD (Homeopath)",
+              "IIM Bangalore — General Management Programme (GS 10K)",
               "Member — Maharashtra Homeopathic Medical Association",
               "Certified in Advanced Homeopathic Therapeutics",
               "Published researcher in homeopathic case studies",
               "Regular speaker at homeopathic conferences",
-              "15+ years of active clinical practice",
-              "2000+ patients successfully treated",
+              "25+ years of active clinical practice (Since 2001)",
+              "10,000+ patients successfully treated",
             ].map((q, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
                 <div className="flex items-start gap-3 bg-white/5 rounded-xl p-4 border border-white/10">
