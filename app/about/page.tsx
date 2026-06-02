@@ -49,7 +49,8 @@ export default function AboutPage() {
 
             <ScrollReveal direction="right" delay={0.15}>
               <div>
-                <SectionHeading title="My Journey in Healing" centered={false} />
+                <h2 className="font-playfair text-charcoal mb-3">My Journey in Healing</h2>
+                <div className="w-12 h-0.5 bg-secondary mb-6" />
                 <p className="text-muted leading-relaxed mb-4">
                   My journey into homeopathy began with a deeply personal experience — watching a family member find lasting relief from chronic asthma through homeopathic treatment after years of struggling with conventional medicines. That experience planted the seed of what would become my life&apos;s calling.
                 </p>
@@ -117,7 +118,10 @@ export default function AboutPage() {
       {/* Timeline */}
       <section className="bg-white py-16 sm:py-24">
         <div className="max-w-3xl mx-auto px-4">
-          <SectionHeading title="Professional Milestones" />
+          <div className="text-center mb-10">
+            <h2 className="font-playfair text-charcoal mb-3">Professional Milestones</h2>
+            <div className="w-12 h-0.5 bg-secondary mx-auto" />
+          </div>
           <div className="relative border-l-2 border-primary/20 ml-4">
             {milestones.map((m, i) => (
               <ScrollReveal key={i} delay={i * 0.08}>
@@ -135,7 +139,10 @@ export default function AboutPage() {
       {/* Qualifications */}
       <section className="bg-primary-dark py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4">
-          <SectionHeading title="Qualifications & Credentials" light />
+          <div className="text-center mb-10">
+            <h2 className="font-playfair text-white mb-3">Qualifications & Credentials</h2>
+            <div className="w-12 h-0.5 bg-secondary mx-auto" />
+          </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               "MD (Homeopath)",
