@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useState, useRef } from "react";
+import { useInView, animate } from "framer-motion";
 
 interface CounterAnimationProps {
   target: number;
@@ -9,11 +10,8 @@ interface CounterAnimationProps {
   className?: string;
 }
 
-function easeOutQuart(t: number): number {
-  return 1 - Math.pow(1 - t, 4);
-}
-
 function formatNumber(n: number): string {
+  // Use Indian number format (e.g. 10,000)
   return n.toLocaleString("en-IN");
 }
 
@@ -23,57 +21,27 @@ export default function CounterAnimation({
   duration = 2000,
   className = "",
 }: CounterAnimationProps) {
+  const ref = useRef<HTMLSpanElement>(null);
+  // Trigger animation when element comes into view
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
   const [count, setCount] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
-  const frameRef = useRef<number>(0);
-  const startTimeRef = useRef<number>(0);
-  const elementRef = useRef<HTMLSpanElement>(null);
-
-  const animate = useCallback(
-    (timestamp: number) => {
-      if (!startTimeRef.current) startTimeRef.current = timestamp;
-      const elapsed = timestamp - startTimeRef.current;
-      const progress = Math.min(elapsed / duration, 1);
-      const easedProgress = easeOutQuart(progress);
-
-      setCount(Math.floor(easedProgress * target));
-
-      if (progress < 1) {
-        frameRef.current = requestAnimationFrame(animate);
-      } else {
-        setCount(target);
-      }
-    },
-    [target, duration]
-  );
 
   useEffect(() => {
-    const element = elementRef.current;
-    if (!element) return;
+    if (isInView) {
+      const controls = animate(0, target, {
+        duration: duration / 1000,
+        ease: "easeOut",
+        onUpdate: (value) => {
+          setCount(Math.round(value));
+        },
+      });
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-          startTimeRef.current = 0;
-          frameRef.current = requestAnimationFrame(animate);
-        }
-      },
-      { threshold: 0, rootMargin: "50px" }
-    );
-
-    observer.observe(element);
-
-    return () => {
-      observer.disconnect();
-      if (frameRef.current) {
-        cancelAnimationFrame(frameRef.current);
-      }
-    };
-  }, [hasAnimated, animate]);
+      return () => controls.stop();
+    }
+  }, [isInView, target, duration]);
 
   return (
-    <span ref={elementRef} className={className}>
+    <span ref={ref} className={className}>
       {formatNumber(count)}
       {suffix}
     </span>
