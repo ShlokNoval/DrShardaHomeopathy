@@ -45,7 +45,7 @@ export default function AppointmentPage() {
               <div className="bg-white rounded-2xl p-5 shadow-sm">
                 <h3 className="font-semibold text-charcoal mb-3 flex items-center gap-2"><Clock size={18} /> Clinic Hours</h3>
                 <div className="text-sm space-y-2 text-muted">
-                  <p>Mon–Sat: 10AM–2PM, 5PM–8PM</p>
+                  <p>Mon–Sat: 10:30 AM – 12:30 PM, 5:00 PM – 7:30 PM</p>
                   <p className="text-red-500">Sunday: Closed</p>
                 </div>
               </div>
@@ -143,12 +143,14 @@ export default function AppointmentPage() {
                           <label className="block text-sm font-medium text-charcoal mb-1.5">Preferred Time</label>
                           <select value={form.preferred_time} onChange={(e) => update("preferred_time", e.target.value)} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-sm bg-white">
                             <option value="">Select</option>
-                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="10:30 AM">10:30 AM</option>
                             <option value="11:00 AM">11:00 AM</option>
+                            <option value="11:30 AM">11:30 AM</option>
                             <option value="12:00 PM">12:00 PM</option>
-                            <option value="1:00 PM">1:00 PM</option>
                             <option value="5:00 PM">5:00 PM</option>
+                            <option value="5:30 PM">5:30 PM</option>
                             <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
                             <option value="7:00 PM">7:00 PM</option>
                           </select>
                         </div>

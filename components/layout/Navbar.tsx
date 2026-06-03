@@ -54,9 +54,8 @@ export default function Navbar() {
     <>
       {/* Top Bar */}
       <div
-        className={`bg-primary text-white text-xs transition-all duration-300 ${
-          scrolled ? "h-0 overflow-hidden opacity-0" : "h-auto opacity-100"
-        }`}
+        className={`bg-primary text-white text-xs transition-all duration-300 ${scrolled ? "h-0 overflow-hidden opacity-0" : "h-auto opacity-100"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-4 sm:gap-6">
           <a
@@ -72,25 +71,24 @@ export default function Navbar() {
           </span>
           <span className="flex items-center gap-1.5">
             <Clock size={12} />
-            <span>Mon–Sat: 10AM–8PM</span>
+            <span>Mon–Sat: 10:30 AM – 12:30 PM, 5:00 PM – 7:30 PM</span>
           </span>
         </div>
       </div>
 
       {/* Main Navbar */}
       <nav
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          scrolled
+        className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
             ? "bg-white shadow-md"
             : "bg-white/80 backdrop-blur-md"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <span className="text-2xl">🌿</span>
             <span className="font-playfair text-xl font-bold text-primary group-hover:text-primary-light transition-colors">
-              Sharda Homeopathy
+              Dr. Sharda Homeopathy
             </span>
           </Link>
 
@@ -105,11 +103,10 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className={`nav-link px-3 py-2 text-sm font-medium transition-colors flex items-center gap-1 ${
-                    isActive(link.href)
+                  className={`nav-link px-3 py-2 text-sm font-medium transition-colors flex items-center gap-1 ${isActive(link.href)
                       ? "text-primary"
                       : "text-charcoal hover:text-primary"
-                  }`}
+                    }`}
                 >
                   {link.label}
                   {link.dropdown && <ChevronDown size={14} />}
@@ -195,11 +192,10 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className={`block text-2xl font-playfair py-3 px-6 transition-colors ${
-                        isActive(link.href)
+                      className={`block text-2xl font-playfair py-3 px-6 transition-colors ${isActive(link.href)
                           ? "text-secondary"
                           : "text-white hover:text-secondary-light"
-                      }`}
+                        }`}
                     >
                       {link.label}
                     </Link>
@@ -224,7 +220,7 @@ export default function Navbar() {
               {/* Bottom Info */}
               <div className="p-6 text-center text-white/60 text-sm">
                 <p>Pune, Maharashtra</p>
-                <p>Mon–Sat: 10AM–8PM</p>
+                <p>Mon–Sat: 10:30 AM – 12:30 PM, 5:00 PM – 7:30 PM</p>
               </div>
             </div>
           </motion.div>

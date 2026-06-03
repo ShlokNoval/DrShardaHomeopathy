@@ -106,7 +106,7 @@ export default function LoadingScreen() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.5 }}
           >
-            Healing Naturally Since 2009
+            Healing Naturally Since 2001
           </motion.p>
         </motion.div>
       )}

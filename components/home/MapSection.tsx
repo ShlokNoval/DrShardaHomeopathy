@@ -56,7 +56,7 @@ export default function MapSection() {
                     <div className="text-sm space-y-1">
                       <p className="flex justify-between gap-4">
                         <span className="text-muted">Monday – Saturday</span>
-                        <span className="text-charcoal font-medium">10AM – 2PM, 5PM – 8PM</span>
+                        <span className="text-charcoal font-medium">10:30 AM – 12:30 PM, 5:00 PM – 7:30 PM</span>
                       </p>
                       <p className="flex justify-between gap-4">
                         <span className="text-muted">Sunday</span>

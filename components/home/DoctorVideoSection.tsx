@@ -6,7 +6,7 @@ import ScrollReveal from "@/components/shared/ScrollReveal";
 import BotanicalDecor from "@/components/shared/BotanicalDecor";
 import { Play } from "lucide-react";
 
-const YOUTUBE_ID = "qGRbJKKcuMg";
+const YOUTUBE_ID = "1BQMKzzUfcU";
 
 export default function DoctorVideoSection() {
   const [playing, setPlaying] = useState(false);
