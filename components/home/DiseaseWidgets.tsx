@@ -5,10 +5,10 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { treatments, categoryLabels, type TreatmentCategory, type Treatment } from "@/data/treatments";
-import { Sparkles, Wind, Apple, Activity, Baby, HeartPulse, Coffee, ArrowRight, X, CheckCircle2 } from "lucide-react";
+import { Sparkles, Wind, Apple, Activity, Baby, HeartPulse, Coffee, ArrowRight, X, CheckCircle2, Brain, Ear } from "lucide-react";
 
 const categories: ("all" | TreatmentCategory)[] = [
-  "all", "skin", "respiratory", "digestive", "joint", "children", "womens", "lifestyle",
+  "all", "skin", "respiratory", "digestive", "joint", "children", "womens", "lifestyle", "mental-wellness", "ent",
 ];
 
 const CategoryIcons: Record<string, any> = {
@@ -19,6 +19,8 @@ const CategoryIcons: Record<string, any> = {
   children: Baby,
   womens: HeartPulse,
   lifestyle: Coffee,
+  "mental-wellness": Brain,
+  ent: Ear,
   all: Activity,
 };
 
