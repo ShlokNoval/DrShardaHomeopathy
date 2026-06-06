@@ -5,7 +5,9 @@ export type TreatmentCategory =
   | "joint"
   | "children"
   | "womens"
-  | "lifestyle";
+  | "lifestyle"
+  | "mental-wellness"
+  | "ent";
 
 export type Treatment = {
   slug: string;
@@ -31,6 +33,8 @@ export const categoryLabels: Record<TreatmentCategory, string> = {
   children: "Children",
   womens: "Women's Health",
   lifestyle: "Lifestyle",
+  "mental-wellness": "Mind & Wellness",
+  ent: "ENT & Throat",
 };
 
 export const treatments: Treatment[] = [
@@ -642,7 +646,7 @@ export const treatments: Treatment[] = [
     name: "Recurrent Colds & Infections",
     category: "children",
     icon: "👶",
-    shortDesc: "Frequent colds, coughs, and infections in children",
+    shortDesc: "Frequent cold/ coughs, and infections in children",
     overview:
       "Some children seem to catch every cold and infection going around. Recurrent respiratory infections — more than 6–8 upper respiratory infections per year — can indicate an underdeveloped or weakened immune system. These frequent illnesses disrupt schooling, cause parental anxiety, and often lead to repeated antibiotic courses that further compromise immunity.",
     symptoms: [
@@ -805,8 +809,8 @@ export const treatments: Treatment[] = [
       "Homeopathic thyroid treatment in Pune. Natural remedies for hypothyroidism, hyperthyroidism, and thyroid imbalance by Dr. Sharda Tawale.",
   },
   {
-    slug: "infertility",
-    name: "Infertility",
+    slug: "infertility/ Sterility",
+    name: "Infertility/ Sterility",
     category: "womens",
     icon: "🌸",
     shortDesc: "Difficulty conceiving and reproductive health support",
@@ -1003,5 +1007,579 @@ export const treatments: Treatment[] = [
     metaTitle: "Hair Fall Treatment in Pune | Sharda Homeopathy",
     metaDescription:
       "Natural hair fall treatment with homeopathy in Pune. Stop excessive hair loss and promote regrowth with Dr. Sharda Tawale's personalized approach.",
+  },
+
+  // ===== MENTAL & WELLNESS (6) =====
+  {
+    slug: "stress-anxiety",
+    name: "Stress & Anxiety",
+    category: "mental-wellness",
+    icon: "🧠",
+    shortDesc: "Chronic stress, anxiety, and nervous tension",
+    overview:
+      "Stress and anxiety are among the most prevalent health challenges today. Chronic stress suppresses immunity, disrupts sleep, and contributes to a cascade of physical ailments — from digestive issues to heart disease. Anxiety disorders affect millions and can manifest as generalized anxiety, panic attacks, social anxiety, or phobias, significantly impacting quality of life.",
+    symptoms: [
+      "Persistent worry, restlessness, and irritability",
+      "Rapid heartbeat, sweating, and trembling",
+      "Difficulty concentrating and mental fatigue",
+      "Insomnia and disrupted sleep patterns",
+      "Muscle tension, headaches, and digestive upset",
+      "Avoidance of social situations",
+    ],
+    causes: [
+      "Work pressure and lifestyle demands",
+      "Hormonal imbalances",
+      "Unresolved emotional trauma",
+      "Nutritional deficiencies (magnesium, B vitamins)",
+      "Overthinking and perfectionist tendencies",
+      "Genetic predisposition to anxiety",
+    ],
+    homeopathyApproach:
+      "Homeopathy addresses stress and anxiety holistically — calming the nervous system, improving resilience, and treating physical manifestations (palpitations, insomnia, digestive issues) simultaneously. Remedies are chosen based on the type and trigger of anxiety, the individual's temperament, and associated physical symptoms.",
+    doctorNote:
+      "Stress and anxiety respond beautifully to homeopathy. I use a gentle, judgement-free approach to understand the root of your anxiety. Many patients report feeling calmer and more grounded within the first 2–3 weeks of treatment, with progressive improvement over 2–3 months.",
+    relatedConditions: ["insomnia", "depression", "migraine"],
+    metaTitle: "Stress & Anxiety Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Natural homeopathic treatment for stress and anxiety in Pune. Calm your nervous system and restore balance with Dr. Sharda Tawale.",
+  },
+  {
+    slug: "depression",
+    name: "Depression",
+    category: "mental-wellness",
+    icon: "🧠",
+    shortDesc: "Persistent low mood, loss of interest, and emotional fatigue",
+    overview:
+      "Depression is a serious mood disorder that affects how you feel, think, and handle daily activities. It is more than just sadness — it can cause profound hopelessness, loss of interest in activities, changes in appetite and sleep, and physical fatigue. Depression is one of the leading causes of disability worldwide and benefits greatly from a holistic treatment approach.",
+    symptoms: [
+      "Persistent sadness, emptiness, or hopelessness",
+      "Loss of interest in activities once enjoyed",
+      "Fatigue, low energy, and slowed movements",
+      "Changes in appetite and weight",
+      "Difficulty concentrating and making decisions",
+      "Thoughts of worthlessness or self-harm",
+    ],
+    causes: [
+      "Neurochemical imbalances (serotonin, dopamine)",
+      "Life events — grief, trauma, loss",
+      "Hormonal changes (postpartum, menopause, thyroid)",
+      "Chronic illness and pain",
+      "Genetic predisposition",
+      "Substance abuse",
+    ],
+    homeopathyApproach:
+      "Homeopathic treatment for depression is complementary and deeply individualized. Remedies aim to restore emotional equilibrium, improve energy, and address the physical manifestations of depression. Treatment works on the mental-emotional plane alongside the physical, providing gentle yet profound healing without dependency.",
+    doctorNote:
+      "Depression treatment requires sensitivity and patience. Homeopathy works gently but deeply — I work closely with patients over time to select remedies that match their unique emotional state. Many patients experience lifting of mood and increased motivation within 4–6 weeks.",
+    relatedConditions: ["stress-anxiety", "insomnia", "hypertension"],
+    metaTitle: "Depression Homeopathic Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Natural support for depression with homeopathy in Pune. Gentle, holistic remedies to restore mood, energy, and emotional balance.",
+  },
+  {
+    slug: "insomnia",
+    name: "Insomnia & Sleeplessness",
+    category: "mental-wellness",
+    icon: "🧠",
+    shortDesc: "Difficulty falling or staying asleep, sleep disorders",
+    overview:
+      "Insomnia is a sleep disorder in which you have trouble falling asleep, staying asleep, or getting restful sleep. Chronic insomnia lasts for a month or more and has far-reaching effects on cognitive function, immunity, mood, and physical health. It affects approximately one-third of adults at some point in their lives.",
+    symptoms: [
+      "Difficulty falling asleep despite being tired",
+      "Waking up frequently during the night",
+      "Waking too early and unable to return to sleep",
+      "Daytime fatigue, irritability, and brain fog",
+      "Dependence on sleep aids",
+      "Anxiety about sleep",
+    ],
+    causes: [
+      "Stress, anxiety, and racing thoughts",
+      "Irregular sleep schedule and poor sleep hygiene",
+      "Caffeine, alcohol, and stimulants",
+      "Chronic pain, digestive issues, or respiratory problems",
+      "Menopause and hormonal changes",
+      "Certain medications",
+    ],
+    homeopathyApproach:
+      "Homeopathy treats insomnia by identifying and addressing the root cause — whether stress, pain, hormonal imbalance, or mental activity. Remedies promote natural, restful sleep without sedation or dependency. Treatment considers sleep patterns, dream quality, and the time of waking.",
+    doctorNote:
+      "Many patients come to me after years of sleeping pill dependency. Homeopathy offers a safe path back to natural sleep. I focus on the underlying cause — stress, pain, hormonal shifts — and select remedies that gently restore normal sleep architecture. Most patients notice improved sleep quality within 2–4 weeks.",
+    relatedConditions: ["stress-anxiety", "depression", "migraine"],
+    metaTitle: "Insomnia Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Natural insomnia and sleeplessness treatment with homeopathy in Pune. Restore restful sleep without dependency.",
+  },
+  {
+    slug: "lack-of-concentration",
+    name: "Lack of Concentration",
+    category: "mental-wellness",
+    icon: "🧠",
+    shortDesc: "Poor focus, memory weakness, and mental fatigue",
+    overview:
+      "Difficulty concentrating and weak memory affect people of all ages — from students struggling with studies to professionals experiencing cognitive fatigue and older adults worried about memory decline. Homeopathy offers gentle, natural support to sharpen focus, improve retention, and restore mental clarity.",
+    symptoms: [
+      "Inability to focus on tasks for extended periods",
+      "Frequent forgetfulness and memory lapses",
+      "Mental fatigue and brain fog",
+      "Difficulty retaining new information",
+      "Distraction and restlessness",
+      "Declining academic or professional performance",
+    ],
+    causes: [
+      "Stress, anxiety, and emotional overload",
+      "Poor sleep and fatigue",
+      "Nutritional deficiencies",
+      "Thyroid dysfunction",
+      "Screen overexposure and digital fatigue",
+      "Underlying ADHD or depression",
+    ],
+    homeopathyApproach:
+      "Constitutional homeopathic remedies improve cognitive function by addressing the root causes of poor concentration — whether stress, nutritional, hormonal, or neurological. Treatment is safe and non-stimulant, suitable for children and adults alike.",
+    doctorNote:
+      "Poor concentration affects every area of life. I evaluate the whole picture — sleep, stress, diet, emotional state — to find the right remedy. Students and professionals often see improvements in focus and retention within 4–6 weeks of consistent treatment.",
+    relatedConditions: ["stress-anxiety", "insomnia", "adhd"],
+    metaTitle: "Concentration & Memory Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Homeopathic treatment for poor concentration and memory in Pune. Natural remedies to improve focus and mental clarity.",
+  },
+  {
+    slug: "autism",
+    name: "Autism Spectrum Support",
+    category: "mental-wellness",
+    icon: "🧠",
+    shortDesc: "Supportive homeopathic care for autism spectrum behaviours",
+    overview:
+      "Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition affecting communication, social interaction, and behaviour. Homeopathy offers supportive, complementary care that aims to reduce associated difficulties — sensory sensitivities, sleep issues, digestive problems, anxiety, and tantrums — improving quality of life for children and families.",
+    symptoms: [
+      "Difficulty with social interaction and communication",
+      "Repetitive behaviours and restricted interests",
+      "Sensory sensitivities (sound, touch, light)",
+      "Speech delay or non-verbal communication",
+      "Sleep disturbances and digestive issues",
+      "Emotional meltdowns and anxiety",
+    ],
+    causes: [
+      "Genetic and chromosomal factors",
+      "Advanced parental age",
+      "Prenatal exposure to certain medications or chemicals",
+      "Immune dysregulation and gut-brain axis issues",
+      "Environmental factors",
+    ],
+    homeopathyApproach:
+      "Homeopathic treatment for autism is supportive and complementary — it does not claim to cure ASD, but can significantly improve associated symptoms. Individualized remedies address anxiety, sleep, digestion, and sensory sensitivity, helping children become calmer and more responsive to therapy.",
+    doctorNote:
+      "I approach autism cases with deep compassion and clinical care. Homeopathy can be a valuable addition to speech therapy, occupational therapy, and behavioural support. Many parents report their children becoming calmer, sleeping better, and communicating more within a few months of treatment.",
+    relatedConditions: ["adhd", "lack-of-concentration", "insomnia"],
+    metaTitle: "Autism Support with Homeopathy in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Complementary homeopathic care for autism spectrum behaviours in Pune. Safe support for communication, sleep, and sensory issues.",
+  },
+  {
+    slug: "chronic-fatigue",
+    name: "Chronic Weakness & Fatigue",
+    category: "mental-wellness",
+    icon: "🧠",
+    shortDesc: "Persistent tiredness, low energy, and muscle weakness",
+    overview:
+      "Chronic fatigue goes beyond normal tiredness — it is a persistent, debilitating exhaustion that doesn't improve with rest. It can include muscle pain, cognitive difficulties, sleep problems, and a general sense of being unwell. Homeopathy offers deep constitutional treatment to restore vitality from within.",
+    symptoms: [
+      "Persistent exhaustion not relieved by rest",
+      "Muscle pain and weakness",
+      "Post-exertional fatigue (worse after minimal activity)",
+      "Brain fog and difficulty concentrating",
+      "Unrefreshing sleep",
+      "Frequent illness due to low immunity",
+    ],
+    causes: [
+      "Post-viral syndrome (long COVID, EBV)",
+      "Chronic stress and adrenal fatigue",
+      "Nutritional deficiencies (iron, B12, D3)",
+      "Thyroid and hormonal disorders",
+      "Autoimmune conditions",
+      "Chronic pain conditions",
+    ],
+    homeopathyApproach:
+      "Homeopathic treatment for chronic fatigue focuses on identifying and correcting the constitutional weakness underlying exhaustion. Remedies stimulate the body's own energy-restoring mechanisms, improve cellular nutrition, and address the stress-immunity-hormonal triad.",
+    doctorNote:
+      "Chronic fatigue is often dismissed, but it is very real and very treatable with homeopathy. I take a thorough history to uncover the root — whether post-viral, hormonal, or nutritional — and build a customised plan. Patients begin to notice improved energy and stamina within 4–8 weeks.",
+    relatedConditions: ["stress-anxiety", "insomnia", "thyroid-disorders"],
+    metaTitle: "Chronic Fatigue Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Homeopathic treatment for chronic weakness and fatigue in Pune. Restore energy and vitality naturally with Dr. Sharda Tawale.",
+  },
+
+  // ===== JOINT & BONE — ADDITIONS =====
+  {
+    slug: "spondylitis",
+    name: "Spondylitis & Cervical Spondylitis",
+    category: "joint",
+    icon: "🦴",
+    shortDesc: "Spinal inflammation, cervical pain, and vertebral degeneration",
+    overview:
+      "Spondylitis refers to inflammation of the vertebrae (spinal joints). Cervical spondylitis affects the neck region causing stiffness, pain, and nerve compression. Lumbar spondylitis affects the lower back. Ankylosing spondylitis is an autoimmune form causing progressive spinal stiffness. All forms can severely restrict mobility and quality of life if untreated.",
+    symptoms: [
+      "Neck stiffness and pain radiating to shoulders and arms",
+      "Lower back pain and stiffness, worse in the morning",
+      "Tingling or numbness in hands and fingers",
+      "Headaches and dizziness from cervical compression",
+      "Reduced range of motion in the neck or spine",
+      "Chronic fatigue and difficulty in prolonged sitting or standing",
+    ],
+    causes: [
+      "Age-related degeneration of cervical/lumbar discs",
+      "Poor posture and prolonged desk work",
+      "Autoimmune inflammation (ankylosing spondylitis)",
+      "Injuries and trauma to the spine",
+      "Calcium/vitamin D deficiency",
+      "Genetic predisposition",
+    ],
+    homeopathyApproach:
+      "Homeopathic treatment for spondylitis addresses spinal inflammation, nerve compression, and degenerative changes constitutionally. Remedies reduce pain, improve mobility, slow disc degeneration, and address the autoimmune component in ankylosing spondylitis. Treatment is complementary to physiotherapy and posture correction.",
+    doctorNote:
+      "Spondylitis is one of the most common conditions I treat, particularly in IT professionals and desk workers. Homeopathy provides significant pain relief and prevents further degeneration. Combined with targeted exercises and posture correction, most patients see major improvement within 6–8 weeks.",
+    relatedConditions: ["back-pain", "sciatica", "arthritis"],
+    metaTitle: "Spondylitis Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Natural homeopathic treatment for cervical spondylitis and spinal pain in Pune. Reduce neck stiffness and back pain safely.",
+  },
+
+  // ===== LIFESTYLE — ADDITIONS =====
+  {
+    slug: "obesity",
+    name: "Obesity & Weight Management",
+    category: "lifestyle",
+    icon: "💊",
+    shortDesc: "Healthy weight management with constitutional homeopathic support",
+    overview:
+      "Obesity is a complex condition involving excess body fat that increases health risks including heart disease, diabetes, hypertension, and joint problems. Homeopathy supports weight management by addressing the root metabolic, hormonal, and emotional causes of weight gain rather than simply suppressing appetite.",
+    symptoms: [
+      "BMI above 30 (obese) or 25 (overweight)",
+      "Difficulty losing weight despite diet and exercise",
+      "Fatigue, breathlessness on exertion",
+      "Joint pain and mobility issues",
+      "Emotional eating, cravings, and hormonal imbalance",
+      "Associated conditions: thyroid, PCOS, diabetes",
+    ],
+    causes: [
+      "Hormonal imbalances (thyroid, insulin resistance)",
+      "Sedentary lifestyle and high-calorie diet",
+      "Emotional eating and stress",
+      "Medications (steroids, antidepressants)",
+      "Genetic predisposition to metabolic slowness",
+      "Sleep disorders",
+    ],
+    homeopathyApproach:
+      "Constitutional homeopathic remedies improve metabolic efficiency, regulate appetite, address hormonal imbalances, and reduce emotional eating patterns. Treatment is combined with nutritional guidance for sustainable, healthy weight loss — not crash dieting.",
+    doctorNote:
+      "Weight management is never just about willpower. I assess thyroid, insulin sensitivity, cortisol, and emotional factors before selecting the right remedy. Most patients begin to see metabolic improvements within 6–8 weeks and consistent weight reduction over 3–6 months.",
+    relatedConditions: ["thyroid-disorders", "diabetes-management", "hypertension"],
+    metaTitle: "Obesity & Weight Management in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Homeopathic support for weight management in Pune. Address the root cause of weight gain with Dr. Sharda Tawale's constitutional approach.",
+  },
+  {
+    slug: "low-immunity",
+    name: "Low Immunity",
+    category: "lifestyle",
+    icon: "💊",
+    shortDesc: "Frequent infections, poor immunity, and susceptibility to illness",
+    overview:
+      "A weakened immune system makes the body more vulnerable to infections, slow recovery, and chronic illness. Low immunity can manifest as frequent colds, recurring infections, slow wound healing, and persistent fatigue. Homeopathy excels at immune modulation — strengthening the body's natural defences without stimulants.",
+    symptoms: [
+      "Frequent infections — colds, throat, UTI",
+      "Slow recovery from illness",
+      "Chronic fatigue and low energy",
+      "Poor wound healing",
+      "Digestive disturbances",
+      "Sensitivity to environmental changes",
+    ],
+    causes: [
+      "Chronic stress and adrenal depletion",
+      "Nutritional deficiencies",
+      "Overuse of antibiotics",
+      "Autoimmune tendencies",
+      "Sedentary lifestyle and poor diet",
+      "Chronic illness burden",
+    ],
+    homeopathyApproach:
+      "Homeopathic remedies work as immune modulators — gently stimulating the body's own defence mechanisms without overstimulation. Constitutional treatment addresses the individual's unique immune pattern, while specific remedies target recurring infection tendencies.",
+    doctorNote:
+      "Building immunity is one of homeopathy's greatest strengths. Whether it's a child who catches every cold or an adult prone to recurrent infections, I customise a protocol that strengthens their specific immune pattern. Results are typically noticed within 2–3 months.",
+    relatedConditions: ["recurrent-colds", "chronic-fatigue", "stress-anxiety"],
+    metaTitle: "Low Immunity Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Boost immunity naturally with homeopathy in Pune. Dr. Sharda Tawale's constitutional approach to building lasting immune strength.",
+  },
+  {
+    slug: "muscle-pain",
+    name: "Muscle Pain & Fibromyalgia",
+    category: "lifestyle",
+    icon: "💊",
+    shortDesc: "Widespread muscle pain, tenderness, and myofascial discomfort",
+    overview:
+      "Muscle pain (myalgia) can range from localised soreness after exertion to widespread pain as seen in fibromyalgia. Fibromyalgia causes widespread musculoskeletal pain, fatigue, sleep problems, and cognitive issues. Homeopathy addresses both acute muscle pain and the complex chronic pattern of fibromyalgia.",
+    symptoms: [
+      "Widespread aching and tenderness in muscles",
+      "Stiffness, especially in the morning",
+      "Fatigue and unrefreshing sleep",
+      "Sensitivity to pressure at tender points",
+      "Headaches and brain fog",
+      "Muscle cramping and spasms",
+    ],
+    causes: [
+      "Physical overexertion and injury",
+      "Chronic stress and nervous system sensitization",
+      "Viral infections triggering fibromyalgia",
+      "Nutritional deficiencies (Mg, D3)",
+      "Autoimmune conditions",
+      "Sleep disorders",
+    ],
+    homeopathyApproach:
+      "Homeopathic remedies reduce muscle inflammation, ease spasms, and address the central sensitization that underlies fibromyalgia. Constitutional treatment helps regulate pain perception and improve sleep quality, providing multi-dimensional relief.",
+    doctorNote:
+      "Fibromyalgia patients are often dismissed or overtreated with harsh medications. Homeopathy provides gentle, consistent relief without side effects. I focus on pain patterns, sleep quality, and emotional wellbeing. Most patients notice improved pain tolerance and sleep within 4–8 weeks.",
+    relatedConditions: ["arthritis", "chronic-fatigue", "insomnia"],
+    metaTitle: "Muscle Pain & Fibromyalgia Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Natural treatment for muscle pain and fibromyalgia in Pune. Homeopathic remedies for widespread pain and fatigue.",
+  },
+  {
+    slug: "liver-disorders",
+    name: "Liver Disorders",
+    category: "digestive",
+    icon: "🫃",
+    shortDesc: "Fatty liver, hepatitis, and liver function support",
+    overview:
+      "The liver is the body's primary detoxification organ. Liver disorders ranging from fatty liver disease (NAFLD) to hepatitis and liver inflammation are increasingly common due to dietary habits, alcohol, and metabolic issues. Homeopathy provides supportive, protective treatment that supports liver regeneration and function.",
+    symptoms: [
+      "Fatigue and weakness",
+      "Abdominal discomfort in the upper right area",
+      "Jaundice (yellowing of skin/eyes)",
+      "Nausea and loss of appetite",
+      "Bloating and digestive difficulty",
+      "Elevated liver enzymes (SGPT/SGOT on blood tests)",
+    ],
+    causes: [
+      "Fatty liver (NAFLD) from obesity and diet",
+      "Viral hepatitis (A, B, C)",
+      "Alcohol-related liver damage",
+      "Medications and toxin exposure",
+      "Autoimmune hepatitis",
+      "Metabolic syndrome",
+    ],
+    homeopathyApproach:
+      "Homeopathic remedies support liver regeneration, reduce inflammation, and improve enzyme levels naturally. Constitutional treatment addresses the root cause — metabolic, viral, or toxic — while dietary guidance supports liver healing. Treatment is complementary to conventional monitoring.",
+    doctorNote:
+      "Fatty liver is now the most common liver condition I see. With the right remedies combined with dietary changes, enzyme levels often show improvement within 2–3 months. I monitor progress through regular liver function tests and adjust treatment accordingly.",
+    relatedConditions: ["gastritis", "ibs", "diabetes-management"],
+    metaTitle: "Liver Disorder Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Homeopathic support for liver disorders including fatty liver and hepatitis in Pune. Natural liver protection and regeneration.",
+  },
+  {
+    slug: "kidney-stone",
+    name: "Kidney Stone & Creatinine Issues",
+    category: "lifestyle",
+    icon: "💊",
+    shortDesc: "Kidney stone prevention, renal support, and creatinine management",
+    overview:
+      "Kidney stones are hard deposits of minerals and salts that form in the kidneys. They can cause intense pain, blood in urine, and recurrent urinary infections. Elevated creatinine indicates impaired kidney function and may precede chronic kidney disease. Homeopathy helps dissolve small stones, prevent recurrence, and support kidney health.",
+    symptoms: [
+      "Severe, sudden pain in the side and back (renal colic)",
+      "Blood in urine (haematuria)",
+      "Frequent and painful urination",
+      "Nausea and vomiting during stone attacks",
+      "Elevated creatinine and urea on blood tests",
+      "Recurrent urinary tract infections",
+    ],
+    causes: [
+      "Low water intake and dehydration",
+      "High oxalate, uric acid, or calcium diet",
+      "Recurrent UTIs",
+      "Metabolic disorders",
+      "Genetic predisposition to stone formation",
+      "Certain medications",
+    ],
+    homeopathyApproach:
+      "Homeopathic remedies help expel small stones, reduce urinary pain, and prevent new stone formation by correcting the underlying metabolic tendency. For elevated creatinine, constitutional treatment supports kidney filtration function and reduces further damage progression.",
+    doctorNote:
+      "Kidney stones are excruciatingly painful, and recurrence is very common without addressing the root cause. Homeopathy significantly reduces recurrence risk. For creatinine issues, I work alongside your nephrologist to provide complementary support that protects remaining kidney function.",
+    relatedConditions: ["hypertension", "diabetes-management", "gout"],
+    metaTitle: "Kidney Stone Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Homeopathic treatment for kidney stones and creatinine issues in Pune. Natural support for renal health and stone prevention.",
+  },
+  {
+    slug: "skin-glow-anti-aging",
+    name: "Skin Glow & Anti-Aging",
+    category: "skin",
+    icon: "🫧",
+    shortDesc: "Natural skin radiance, pigmentation correction, and youthful skin",
+    overview:
+      "Homeopathy offers a unique inside-out approach to skin health. By correcting internal imbalances — hormonal, digestive, and nutritional — homeopathic treatment restores the skin's natural glow, reduces dullness, improves texture, and slows premature aging. This is a natural alternative to chemical cosmetic treatments.",
+    symptoms: [
+      "Dull, dry, and lacklustre skin",
+      "Uneven skin tone and dark spots",
+      "Fine lines, wrinkles, and sagging skin",
+      "Enlarged pores and rough texture",
+      "Pigmentation and sun damage",
+      "Premature aging and loss of elasticity",
+    ],
+    causes: [
+      "Hormonal imbalances affecting skin turnover",
+      "Nutritional deficiencies (vitamins C, E, zinc)",
+      "Chronic dehydration and poor diet",
+      "Stress and cortisol-driven skin damage",
+      "Oxidative stress and free radicals",
+      "Digestive issues affecting skin health",
+    ],
+    homeopathyApproach:
+      "Constitutional remedies address the internal environment that determines skin health — improving circulation, hormonal balance, digestive absorption of nutrients, and reducing oxidative stress. The result is naturally radiant, younger-looking skin from within.",
+    doctorNote:
+      "True skin glow comes from within. I address the gut-skin axis, hormonal health, and stress patterns that affect your skin. Patients are often amazed at the improvement in skin texture and radiance within 6–8 weeks — a natural, chemical-free glow.",
+    relatedConditions: ["acne", "psoriasis", "thyroid-disorders"],
+    metaTitle: "Skin Glow & Anti-Aging Homeopathy in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Achieve natural skin glow and anti-aging results with homeopathy in Pune. Inside-out approach to radiant, youthful skin.",
+  },
+
+  // ===== ENT & THROAT (3) =====
+  {
+    slug: "tonsils-adenoid",
+    name: "Tonsils & Adenoid (Avoid Surgery)",
+    category: "ent",
+    icon: "👂",
+    shortDesc: "Enlarged tonsils and adenoids treated without surgery",
+    overview:
+      "Enlarged tonsils and adenoids are extremely common in children, often causing recurrent throat infections, breathing difficulties, snoring, and ear problems. Homeopathy has an excellent track record in treating chronic tonsil and adenoid enlargement, helping many children avoid surgical removal (tonsillectomy/adenoidectomy).",
+    symptoms: [
+      "Chronically enlarged or inflamed tonsils",
+      "Frequent throat pain and difficulty swallowing",
+      "Mouth breathing and snoring at night",
+      "Nasal voice and speech difficulties",
+      "Recurring ear infections and hearing difficulty",
+      "Frequent fevers and throat infections",
+    ],
+    causes: [
+      "Chronic or recurrent bacterial/viral infections",
+      "Weakened immune system",
+      "Allergic tendencies",
+      "Environmental pollutants",
+      "Family history of tonsil problems",
+    ],
+    homeopathyApproach:
+      "Homeopathic treatment reduces chronic tonsil and adenoid enlargement by correcting the underlying immune weakness and reducing chronic inflammation. Treatment significantly reduces infection frequency, improves breathing, and shrinks enlarged tissue — often eliminating the need for surgery.",
+    doctorNote:
+      "Surgery avoidance is possible in most early to moderate cases. I have successfully treated hundreds of children with enlarged tonsils and adenoids. Parents notice improved breathing, fewer infections, and better sleep within 2–3 months. The key is starting before the condition becomes severe.",
+    relatedConditions: ["tonsillitis", "allergic-rhinitis", "recurrent-colds"],
+    metaTitle: "Tonsils & Adenoid Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Avoid tonsil and adenoid surgery with homeopathy in Pune. Dr. Sharda Tawale treats enlarged tonsils and adenoids naturally in children.",
+  },
+  {
+    slug: "ent-issues",
+    name: "ENT Disorders",
+    category: "ent",
+    icon: "👂",
+    shortDesc: "Ear, nose, and throat conditions treated holistically",
+    overview:
+      "ENT (Ear, Nose, and Throat) disorders encompass a wide range of conditions including ear infections, tinnitus, vertigo, nasal polyps, deviated septum issues, voice problems, and throat disorders. Homeopathy treats the susceptibility to ENT problems by strengthening local mucosal immunity and reducing chronic inflammation.",
+    symptoms: [
+      "Chronic ear infections and ear pain",
+      "Tinnitus (ringing in the ears)",
+      "Dizziness and vertigo",
+      "Nasal polyps and chronic congestion",
+      "Voice hoarseness and throat discomfort",
+      "Hearing loss due to chronic fluid in ears",
+    ],
+    causes: [
+      "Recurrent infections and chronic inflammation",
+      "Allergies and immune weakness",
+      "Structural factors (deviated septum, nasal polyps)",
+      "Environmental irritants and pollution",
+      "Barotrauma (pressure changes)",
+      "Autoimmune conditions",
+    ],
+    homeopathyApproach:
+      "Constitutional homeopathic treatment addresses the chronic inflammatory and allergic tendency that underlies most ENT disorders. Remedies reduce mucous membrane sensitivity, improve local immunity, and target specific symptoms like tinnitus, vertigo, and hearing loss.",
+    doctorNote:
+      "ENT problems are often recurrent and frustrating. Homeopathy targets the root susceptibility, not just the symptoms. Chronic ear infections, persistent congestion, and tinnitus respond particularly well. Most patients see a significant reduction in episode frequency within 2–3 months.",
+    relatedConditions: ["tonsils-adenoid", "allergic-rhinitis", "sinusitis"],
+    metaTitle: "ENT Disorder Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Homeopathic treatment for ENT disorders in Pune. Natural remedies for ear infections, tinnitus, sinusitis, and throat problems.",
+  },
+  {
+    slug: "hyperacidity",
+    name: "Hyperacidity & Digestive Ulcers",
+    category: "digestive",
+    icon: "🫃",
+    shortDesc: "Severe acidity, heartburn, and stomach ulcers",
+    overview:
+      "Hyperacidity occurs when the stomach produces excess acid, leading to heartburn, acid reflux, and potentially peptic ulcers. Chronic hyperacidity erodes the stomach and intestinal lining, causing significant discomfort. Homeopathy provides lasting relief by healing the gastric lining and correcting the underlying acid-secretion imbalance.",
+    symptoms: [
+      "Severe burning sensation in the chest and stomach",
+      "Sour or bitter regurgitation",
+      "Heartburn worse after meals, bending, or lying down",
+      "Nausea and bloating after eating",
+      "Stomach pain or cramps",
+      "Vomiting acid in severe cases",
+    ],
+    causes: [
+      "Irregular meal timing and spicy/oily diet",
+      "Stress and emotional upsets",
+      "H. pylori infection",
+      "Overuse of NSAIDs and medications",
+      "Alcohol and tobacco use",
+      "Weak lower oesophageal sphincter",
+    ],
+    homeopathyApproach:
+      "Homeopathic remedies heal the gastric mucosa, regulate acid production, and address the stress and dietary factors contributing to chronic hyperacidity. Unlike antacids that only provide temporary relief, homeopathy works to restore healthy digestive function permanently.",
+    doctorNote:
+      "Hyperacidity is incredibly common and incredibly treatable with homeopathy. I help patients break the antacid dependency cycle by healing the root cause. Combined with simple dietary adjustments, most patients achieve lasting relief within 4–6 weeks.",
+    relatedConditions: ["gastritis", "ibs", "constipation"],
+    metaTitle: "Hyperacidity Treatment in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Natural homeopathic treatment for hyperacidity and digestive ulcers in Pune. Lasting relief from heartburn and acid reflux.",
+  },
+
+  // ===== CANCER SUPPORTIVE CARE =====
+  {
+    slug: "cancer-supportive-care",
+    name: "Cancer — Supportive Care (All Types)",
+    category: "lifestyle",
+    icon: "🎗️",
+    shortDesc: "Complementary homeopathic support during and after cancer treatment",
+    overview:
+      "Homeopathy does not claim to cure cancer — but it plays a powerful complementary role in supporting cancer patients through their journey. Whether undergoing chemotherapy, radiation, surgery, or immunotherapy, homeopathic treatment helps manage side effects, restore vitality, strengthen immunity, and improve overall quality of life. Dr. Sharda provides integrative supportive care for all cancer types — breast, lung, colorectal, prostate, cervical, blood cancers, and more — always alongside the patient's oncology team.",
+    symptoms: [
+      "Chemotherapy side effects — nausea, fatigue, hair loss, mouth sores",
+      "Radiation-related skin reactions and fatigue",
+      "Weakened immunity and susceptibility to infections",
+      "Emotional distress — anxiety, fear, depression",
+      "Sleep disturbances and chronic pain",
+      "Loss of appetite and significant weight loss",
+    ],
+    causes: [
+      "Genetic mutations and hereditary predisposition",
+      "Chronic inflammation and oxidative stress",
+      "Carcinogen exposure (tobacco, chemicals, radiation)",
+      "Viral infections (HPV, Hepatitis B/C, EBV)",
+      "Hormonal imbalances",
+      "Lifestyle factors (obesity, alcohol, sedentary habits)",
+    ],
+    homeopathyApproach:
+      "Homeopathic treatment in cancer care focuses on the individual's response to disease and its treatment — not on the tumour directly. Remedies are carefully selected to: (1) reduce side effects of chemotherapy and radiation, (2) support immune resilience, (3) address emotional trauma and fear, (4) improve sleep and appetite, and (5) restore energy and sense of wellbeing. This complementary approach works hand-in-hand with conventional oncology without interfering with treatment efficacy.",
+    doctorNote:
+      "I want to be completely honest — homeopathy is a supportive therapy in cancer, not a standalone cure. My role is to walk alongside the patient through their cancer journey. Many of my patients undergoing chemotherapy have found significant relief from nausea, fatigue, and emotional distress with carefully chosen remedies. I work in full coordination with your oncologist. The goal is better quality of life, emotional resilience, and helping the body respond better to conventional treatment.",
+    relatedConditions: [
+      "low-immunity",
+      "chronic-fatigue",
+      "depression",
+      "insomnia",
+    ],
+    metaTitle: "Cancer Supportive Homeopathic Care in Pune | Sharda Homeopathy",
+    metaDescription:
+      "Complementary homeopathic support for cancer patients in Pune. Dr. Sharda Tawale helps manage chemo side effects, build immunity, and improve quality of life during cancer treatment.",
   },
 ];

@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const categories: ("all" | TreatmentCategory)[] = [
-  "all", "skin", "respiratory", "digestive", "joint", "children", "womens", "lifestyle",
+  "all", "skin", "respiratory", "digestive", "joint", "children", "womens", "lifestyle", "mental-wellness", "ent",
 ];
 
 export default function TreatmentsPage() {
@@ -25,7 +25,7 @@ export default function TreatmentsPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <span className="inline-block border border-white/30 text-white text-sm px-4 py-1.5 rounded-full mb-4">🧬 Treatments</span>
           <h1 className="text-white mb-4">Conditions We Treat</h1>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">Expert homeopathic treatment for 100+ conditions across 7 speciality areas</p>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">Expert homeopathic treatment for 50+ conditions across 9 speciality areas</p>
         </div>
       </section>
 

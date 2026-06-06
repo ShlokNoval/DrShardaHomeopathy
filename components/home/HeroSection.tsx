@@ -207,7 +207,7 @@ export default function HeroSection() {
                 </h1>
 
                 <p className="text-white/80 text-lg sm:text-xl max-w-xl mb-8 leading-relaxed font-light">
-                  Expert homeopathic care for 100+ conditions by Dr. Sharda Tawale.
+                  Expert homeopathic care for 50+ conditions by Dr. Sharda Tawale.
                   <br className="hidden sm:block" />
                   <span className="sm:hidden"> </span>
                   Safe, natural, and lasting results.
@@ -336,21 +336,8 @@ export default function HeroSection() {
         {/* ── Scroll indicator ── */}
         <ScrollIndicator />
 
-        {/* ── Wave separator ── */}
-        <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-20">
-          <svg
-            viewBox="0 0 1440 100"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            className="w-full h-12 sm:h-20"
-          >
-            <path
-              d="M0,60 C360,100 720,20 1080,60 C1260,80 1380,70 1440,60 L1440,100 L0,100 Z"
-              fill="#FAF8F3"
-            />
-          </svg>
-        </div>
+        {/* ── Bottom edge — clean straight line into cream section ── */}
+        <div className="absolute bottom-0 left-0 right-0 w-full h-4 bg-cream z-20" />
       </section>
     </>
   );

@@ -78,7 +78,7 @@ export default function WhyHomeopathy() {
               {[
                 "98% Patient Satisfaction",
                 "10,000+ Treated",
-                "100+ Conditions",
+                "50+ Conditions",
                 "Zero Chemical Dependency"
               ].map((stat, idx) => (
                 <div key={idx} className="flex items-center gap-2 bg-[#1B5E35]/5 border border-[#1B5E35]/15 text-[#1B5E35] text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm">

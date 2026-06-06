@@ -41,7 +41,7 @@ const INTENTS: Intent[] = [
   {
     keywords: ["treatment", "condition", "disease", "problem", "cure", "heal", "medicine"],
     response: {
-      text: "Dr. Sharda treats 100+ conditions naturally. Which area concerns you?",
+      text: "Dr. Sharda treats 50+ conditions naturally. Which area concerns you?",
       chips: [
         { label: "🌸 Skin", value: "go:/treatments?cat=skin" },
         { label: "🫁 Respiratory", value: "go:/treatments?cat=respiratory" },
@@ -130,7 +130,7 @@ const INTENTS: Intent[] = [
   {
     keywords: ["doctor", "sharda", "about", "experience", "background", "qualification", "who"],
     response: {
-      text: "👩‍⚕️ Dr. Sharda Tawale is a highly experienced homeopathic physician with **25+ years** of practice in Pune (since 2001). She has successfully treated **10,000+ patients** across 100+ conditions.",
+      text: "👩‍⚕️ Dr. Sharda Tawale is a highly experienced homeopathic physician with **25+ years** of practice in Pune (since 2001). She has successfully treated **10,000+ patients** across 50+ conditions.",
       links: [{ label: "Read About Dr. Sharda →", href: "/about" }],
       chips: [{ label: "📅 Book with Her", value: "go:/appointment" }],
     },

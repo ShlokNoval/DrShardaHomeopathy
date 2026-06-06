@@ -70,7 +70,7 @@ const jsonLd = {
       url: "https://www.drshardahomoeopathy.com",
       logo: "https://www.drshardahomoeopathy.com/icons/logo.png",
       description:
-        "Expert homeopathic treatment in Pune by Dr. Sharda Tawale. Natural healing for 100+ conditions.",
+        "Expert homeopathic treatment in Pune by Dr. Sharda Tawale. Natural healing for 50+ conditions.",
       medicalSpecialty: "Homeopathic Medicine",
       telephone: "+91-9881255055",
       email: "drshardatawale@gmail.com",
