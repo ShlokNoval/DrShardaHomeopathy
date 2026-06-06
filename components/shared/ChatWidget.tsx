@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { X } from "lucide-react";
 
 /* ─────────────────────────────────────────────────────────────────────────
@@ -101,7 +102,7 @@ const INTENTS: Intent[] = [
     },
   },
   {
-    keywords: ["phone", "call", "number", "whatsapp", "message", "chat"],
+    keywords: ["phone", "call", "number", "whatsapp", "message"],
     response: {
       text: "You can reach Dr. Sharda via phone or WhatsApp! 📞",
       links: [{ label: "Contact Page →", href: "/contact" }],
@@ -112,7 +113,7 @@ const INTENTS: Intent[] = [
     },
   },
   {
-    keywords: ["time", "timing", "hour", "open", "available", "schedule", "when"],
+    keywords: ["time", "timing", "hour", "open", "available", "when"],
     response: {
       text: "🕙 Clinic Hours:\n\n**Mon – Sat**\n• Morning: 10:30 AM – 12:30 PM\n• Evening: 5:00 PM – 7:30 PM\n\nSunday: Closed",
       chips: [{ label: "📅 Book Appointment", value: "go:/appointment" }],
@@ -150,7 +151,7 @@ const INTENTS: Intent[] = [
     },
   },
   {
-    keywords: ["gallery", "photo", "image", "clinic picture", "look"],
+    keywords: ["gallery", "photo", "image", "look"],
     response: {
       text: "🖼️ Take a peek at our clinic and patient moments in the gallery!",
       links: [{ label: "View Gallery →", href: "/gallery" }],
@@ -188,7 +189,7 @@ function MAIN_MENU_CHIPS(): Chip[] {
 
 function WELCOME_MESSAGE(): Omit<Message, "id" | "from"> {
   return {
-    text: "Namaste! 🙏 I'm the Dr. Sharda Clinic Assistant.\n\nI can help you **book appointments**, find **treatments**, check **clinic timings**, and more — all without leaving this page.\n\nHow can I help you today?",
+    text: "Namaste! 🙏 I'm Shuddh, your clinic assistant.\n\nI can help you **book appointments**, find **treatments**, check **clinic timings**, and more — all without leaving this page.\n\nHow can I help you today?",
     chips: MAIN_MENU_CHIPS(),
   };
 }
@@ -211,7 +212,199 @@ function matchIntent(input: string): Omit<Message, "id" | "from"> {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
-   CHAT WIDGET COMPONENT
+   PROACTIVE GREETING BUBBLE
+───────────────────────────────────────────────────────────────────────── */
+const GREETING_LS_KEY = "shuddh_greeted_v1";
+
+interface GreetingBubbleProps {
+  onOpen: () => void;
+  onDismiss: () => void;
+  isGoldPulsing: boolean;
+}
+
+function GreetingBubble({ onOpen, onDismiss, isGoldPulsing }: GreetingBubbleProps) {
+  const [phase, setPhase] = useState<"typing" | "message" | "gone">("typing");
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    // fade in
+    const t1 = setTimeout(() => setVisible(true), 50);
+    // after 1.5s typing → show message
+    const t2 = setTimeout(() => setPhase("message"), 1500);
+    // auto dismiss after 8s total (1.5 typing + 6.5 reading)
+    const t3 = setTimeout(() => handleDismiss(), 8000);
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleDismiss = () => {
+    setPhase("gone");
+    setVisible(false);
+    setTimeout(onDismiss, 300);
+  };
+
+  const handleClick = () => {
+    handleDismiss();
+    setTimeout(onOpen, 300);
+  };
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        bottom: 160,
+        right: 24,
+        zIndex: 56,
+        width: 240,
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(12px)",
+        transition: "opacity 0.3s ease, transform 0.3s ease",
+        pointerEvents: phase === "gone" ? "none" : "auto",
+      }}
+    >
+      {/* Card */}
+      <div
+        onClick={handleClick}
+        style={{
+          background: "white",
+          borderRadius: "16px 16px 4px 16px",
+          boxShadow: "0 8px 32px rgba(27,94,53,0.18), 0 2px 8px rgba(0,0,0,0.08)",
+          padding: "12px 14px",
+          cursor: "pointer",
+          border: "1px solid rgba(201,150,58,0.15)",
+          position: "relative",
+        }}
+      >
+        {/* Close button */}
+        <button
+          onClick={(e) => { e.stopPropagation(); handleDismiss(); }}
+          aria-label="Dismiss greeting"
+          style={{
+            position: "absolute",
+            top: 8,
+            right: 8,
+            background: "rgba(0,0,0,0.06)",
+            border: "none",
+            borderRadius: "50%",
+            width: 20,
+            height: 20,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+            color: "#666",
+            padding: 0,
+          }}
+        >
+          <X size={11} />
+        </button>
+
+        {phase === "typing" ? (
+          /* ── Typing indicator ── */
+          <div style={{ display: "flex", alignItems: "center", gap: 10, paddingRight: 20 }}>
+            {/* Avatar */}
+            <div
+              style={{
+                width: 28,
+                height: 28,
+                borderRadius: "50%",
+                overflow: "hidden",
+                flexShrink: 0,
+                border: "2px solid rgba(27,94,53,0.2)",
+              }}
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face"
+                alt="Shuddh"
+                width={28}
+                height={28}
+                style={{ objectFit: "cover", display: "block" }}
+              />
+            </div>
+            <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+              {[0, 1, 2].map((i) => (
+                <span
+                  key={i}
+                  style={{
+                    width: 7,
+                    height: 7,
+                    borderRadius: "50%",
+                    background: "#1B5E35",
+                    display: "inline-block",
+                    animation: "greetDot 1.2s ease-in-out infinite",
+                    animationDelay: `${i * 0.2}s`,
+                  }}
+                />
+              ))}
+            </div>
+          </div>
+        ) : (
+          /* ── Message ── */
+          <div
+            style={{
+              display: "flex",
+              gap: 10,
+              alignItems: "flex-start",
+              animation: "greetFadeIn 0.35s ease forwards",
+              paddingRight: 16,
+            }}
+          >
+            {/* Avatar */}
+            <div
+              style={{
+                width: 28,
+                height: 28,
+                borderRadius: "50%",
+                overflow: "hidden",
+                flexShrink: 0,
+                border: "2px solid rgba(27,94,53,0.2)",
+                marginTop: 2,
+              }}
+            >
+              <Image
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face"
+                alt="Shuddh"
+                width={28}
+                height={28}
+                style={{ objectFit: "cover", display: "block" }}
+              />
+            </div>
+            <div>
+              <p style={{ margin: 0, fontSize: 12, fontWeight: 700, color: "#1B5E35", marginBottom: 3 }}>
+                Shuddh 🌿
+              </p>
+              <p style={{ margin: 0, fontSize: 12.5, color: "#2c2c2c", lineHeight: 1.5 }}>
+                👋 Hi! Not sure which treatment you need?{" "}
+                <strong>Ask me!</strong>
+              </p>
+              <p style={{ margin: "6px 0 0", fontSize: 11, color: "#1B5E35", fontWeight: 600 }}>
+                Tap to chat →
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Triangle tail pointing right-down toward the button */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: -8,
+          right: 20,
+          width: 0,
+          height: 0,
+          borderLeft: "8px solid transparent",
+          borderRight: "8px solid transparent",
+          borderTop: "8px solid white",
+          filter: "drop-shadow(0 2px 2px rgba(0,0,0,0.06))",
+        }}
+      />
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   MAIN CHAT WIDGET
 ───────────────────────────────────────────────────────────────────────── */
 let _id = 0;
 const nextId = () => ++_id;
@@ -222,6 +415,7 @@ export default function ChatWidget() {
   const [input, setInput] = useState("");
   const [typing, setTyping] = useState(false);
   const [unread, setUnread] = useState(1);
+  const [showGreeting, setShowGreeting] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -229,6 +423,14 @@ export default function ChatWidget() {
   useEffect(() => {
     const welcome = WELCOME_MESSAGE();
     setMessages([{ id: nextId(), from: "bot", ...welcome }]);
+  }, []);
+
+  /* Show proactive greeting after 3s, only once per session */
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (localStorage.getItem(GREETING_LS_KEY)) return;
+    const t = setTimeout(() => setShowGreeting(true), 3000);
+    return () => clearTimeout(t);
   }, []);
 
   /* Scroll to bottom on new message */
@@ -244,6 +446,18 @@ export default function ChatWidget() {
     }
   }, [open]);
 
+  const dismissGreeting = useCallback(() => {
+    setShowGreeting(false);
+    if (typeof window !== "undefined") {
+      localStorage.setItem(GREETING_LS_KEY, "1");
+    }
+  }, []);
+
+  const openChat = useCallback(() => {
+    setOpen(true);
+    dismissGreeting();
+  }, [dismissGreeting]);
+
   const addBotMessage = useCallback((payload: Omit<Message, "id" | "from">) => {
     setTyping(true);
     setTimeout(() => {
@@ -255,18 +469,8 @@ export default function ChatWidget() {
   const sendMessage = useCallback(
     (text: string) => {
       if (!text.trim()) return;
-
-      /* Handle navigation shortcuts from chips */
-      if (text.startsWith("go:")) {
-        const href = text.slice(3);
-        window.location.href = href;
-        return;
-      }
-      if (text === "whatsapp") {
-        window.open("https://wa.me/919881255055", "_blank");
-        return;
-      }
-
+      if (text.startsWith("go:")) { window.location.href = text.slice(3); return; }
+      if (text === "whatsapp") { window.open("https://wa.me/919881255055", "_blank"); return; }
       setMessages((prev) => [...prev, { id: nextId(), from: "user", text }]);
       setInput("");
       addBotMessage(matchIntent(text));
@@ -274,19 +478,24 @@ export default function ChatWidget() {
     [addBotMessage]
   );
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    sendMessage(input);
-  };
+  const handleSubmit = (e: React.FormEvent) => { e.preventDefault(); sendMessage(input); };
 
   /* ── Render ── */
   return (
     <>
-      {/* Keyframes */}
+      {/* ── All keyframes ── */}
       <style>{`
         @keyframes typingDot {
           0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
           30%            { transform: translateY(-5px); opacity: 1; }
+        }
+        @keyframes greetDot {
+          0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+          30%            { transform: translateY(-4px); opacity: 1; }
+        }
+        @keyframes greetFadeIn {
+          from { opacity: 0; transform: translateY(4px); }
+          to   { opacity: 1; transform: translateY(0); }
         }
         @keyframes badgePulse {
           0%, 100% { transform: scale(1); }
@@ -297,13 +506,27 @@ export default function ChatWidget() {
           70%  { transform: scale(1.65); opacity: 0; }
           100% { transform: scale(1.65); opacity: 0; }
         }
+        @keyframes goldPulseRing {
+          0%   { transform: scale(1);    opacity: 0.7; }
+          70%  { transform: scale(1.7);  opacity: 0; }
+          100% { transform: scale(1.7);  opacity: 0; }
+        }
       `}</style>
 
-      {/* ── Chat Panel (floats above the bubble) ── */}
+      {/* ── Proactive greeting bubble ── */}
+      {showGreeting && !open && (
+        <GreetingBubble
+          onOpen={openChat}
+          onDismiss={dismissGreeting}
+          isGoldPulsing={showGreeting}
+        />
+      )}
+
+      {/* ── Chat Panel ── */}
       <div
         style={{
           position: "fixed",
-          bottom: 152,          /* 88 bubble-bottom + 52 bubble-height + 12 gap */
+          bottom: 152,
           right: 24,
           zIndex: 55,
           transition: "opacity 0.25s ease, transform 0.25s ease",
@@ -337,27 +560,31 @@ export default function ChatWidget() {
               gap: "10px",
             }}
           >
+            {/* Avatar */}
             <div
               style={{
                 width: 38,
                 height: 38,
                 borderRadius: "50%",
-                background: "rgba(255,255,255,0.15)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 18,
+                overflow: "hidden",
                 flexShrink: 0,
+                border: "2px solid rgba(255,255,255,0.3)",
               }}
             >
-              🌿
+              <Image
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=100&h=100&fit=crop&crop=face"
+                alt="Shuddh"
+                width={38}
+                height={38}
+                style={{ objectFit: "cover", display: "block" }}
+              />
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <p style={{ color: "white", fontWeight: 700, fontSize: 14, margin: 0, lineHeight: 1.2 }}>
-              Shuddh — Clinic Assistant
+                Shuddh 🌿
               </p>
               <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 11, margin: 0, marginTop: 2 }}>
-                Dr. Sharda Homeopathy · Always here
+                Dr. Sharda Clinic Assistant · Always here
               </p>
             </div>
             <button
@@ -444,7 +671,6 @@ export default function ChatWidget() {
                           padding: "4px 12px",
                           textDecoration: "none",
                           display: "inline-block",
-                          transition: "background 0.15s",
                         }}
                       >
                         {lnk.label}
@@ -568,7 +794,7 @@ export default function ChatWidget() {
         </div>
       </div>
 
-      {/* ── Toggle Bubble ── */}
+      {/* ── Toggle Bubble + "Ask Shuddh" label ── */}
       <div
         style={{
           position: "fixed",
@@ -577,42 +803,71 @@ export default function ChatWidget() {
           zIndex: 55,
           display: "flex",
           alignItems: "center",
+          gap: 10,
         }}
         className="group"
       >
-        {/* Tooltip */}
-        <span
-          style={{
-            position: "absolute",
-            right: "calc(100% + 12px)",
-            top: "50%",
-            transform: "translateY(-50%)",
-            background: "#1B5E35",
-            color: "white",
-            fontSize: 12,
-            fontWeight: 500,
-            padding: "5px 12px",
-            borderRadius: 999,
-            whiteSpace: "nowrap",
-            opacity: open ? 0 : undefined,
-            pointerEvents: "none",
-            transition: "opacity 0.2s ease",
-            boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
-          }}
-          className="opacity-0 group-hover:opacity-100"
-        >
-          Chat with Shuddh 🌿
-        </span>
+        {/* "Ask Shuddh 🌿" always-visible pill label — hidden on mobile */}
+        {!open && (
+          <div
+            onClick={openChat}
+            className="hidden sm:flex"
+            style={{
+              alignItems: "center",
+              background: "white",
+              color: "#1B5E35",
+              fontSize: 12.5,
+              fontWeight: 700,
+              padding: "7px 14px",
+              borderRadius: 999,
+              boxShadow: "0 4px 16px rgba(27,94,53,0.15), 0 1px 4px rgba(0,0,0,0.08)",
+              cursor: "pointer",
+              whiteSpace: "nowrap",
+              border: "1px solid rgba(27,94,53,0.12)",
+              userSelect: "none",
+              transition: "transform 0.15s ease, box-shadow 0.15s ease",
+              position: "relative",
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLDivElement).style.transform = "translateY(-1px)";
+              (e.currentTarget as HTMLDivElement).style.boxShadow = "0 6px 20px rgba(27,94,53,0.22), 0 2px 6px rgba(0,0,0,0.1)";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
+              (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 16px rgba(27,94,53,0.15), 0 1px 4px rgba(0,0,0,0.08)";
+            }}
+          >
+            Ask Shuddh 🌿
+            {/* CSS tail pointing right */}
+            <span
+              style={{
+                position: "absolute",
+                right: -7,
+                top: "50%",
+                transform: "translateY(-50%)",
+                width: 0,
+                height: 0,
+                borderTop: "6px solid transparent",
+                borderBottom: "6px solid transparent",
+                borderLeft: "7px solid white",
+              }}
+            />
+          </div>
+        )}
 
         {/* Pulse ring */}
         {!open && (
           <span
             style={{
               position: "absolute",
-              inset: 0,
+              right: 0,
+              width: 52,
+              height: 52,
               borderRadius: "50%",
-              background: "#2E7D52",
-              animation: "chatPulseRing 2.5s ease-out infinite",
+              background: showGreeting ? "#C9963A" : "#2E7D52",
+              animation: showGreeting
+                ? "goldPulseRing 2s ease-out infinite"
+                : "chatPulseRing 2.5s ease-out infinite",
               pointerEvents: "none",
             }}
           />
@@ -620,7 +875,7 @@ export default function ChatWidget() {
 
         {/* Button */}
         <button
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => { if (!open) { openChat(); } else { setOpen(false); } }}
           aria-label={open ? "Close Shuddh chat" : "Open Shuddh clinic assistant"}
           style={{
             width: 52,
@@ -634,6 +889,7 @@ export default function ChatWidget() {
             justifyContent: "center",
             cursor: "pointer",
             position: "relative",
+            flexShrink: 0,
             transition: "transform 0.2s ease, box-shadow 0.2s ease",
           }}
           onMouseEnter={(e) => {
@@ -645,7 +901,7 @@ export default function ChatWidget() {
             (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 18px rgba(46,125,82,0.45)";
           }}
         >
-          {/* Chat icon (visible when closed) */}
+          {/* Chat icon */}
           <span
             style={{
               position: "absolute",
@@ -654,20 +910,19 @@ export default function ChatWidget() {
               opacity: open ? 0 : 1,
             }}
           >
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
               <path
                 d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
                 fill="white"
-                fillOpacity="0.9"
+                fillOpacity="0.95"
               />
-              {/* Three dots */}
               <circle cx="8.5"  cy="11" r="1.2" fill="#2E7D52" />
               <circle cx="12"   cy="11" r="1.2" fill="#2E7D52" />
               <circle cx="15.5" cy="11" r="1.2" fill="#2E7D52" />
             </svg>
           </span>
 
-          {/* X icon (visible when open) */}
+          {/* X icon */}
           <span
             style={{
               position: "absolute",
@@ -680,7 +935,7 @@ export default function ChatWidget() {
             <X size={22} />
           </span>
 
-          {/* Unread badge */}
+          {/* Gold unread badge */}
           {unread > 0 && !open && (
             <span
               style={{
