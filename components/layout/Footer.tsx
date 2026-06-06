@@ -29,13 +29,15 @@ export default function Footer() {
           {/* Col 1: About */}
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
-              <Image
-                src="/logo.png"
-                alt="Sharda Homeopathy Logo"
-                width={42}
-                height={42}
-                className="object-contain brightness-0 invert"
-              />
+              <div className="bg-white p-1 rounded-lg flex items-center justify-center">
+                <Image
+                  src="/logo.png"
+                  alt="Sharda Homeopathy Logo"
+                  width={36}
+                  height={36}
+                  className="object-contain"
+                />
+              </div>
               <span className="font-playfair text-xl font-bold">
                 Sharda Homeopathy
               </span>
