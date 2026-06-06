@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import LoadingScreen from "@/components/layout/LoadingScreen";
 import WhatsAppFloating from "@/components/shared/WhatsAppFloating";
 import CookieConsent from "@/components/shared/CookieConsent";
+import ChatWidget from "@/components/shared/ChatWidget";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -151,6 +152,7 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
         <Footer />
         <WhatsAppFloating />
+        <ChatWidget />
         <CookieConsent />
       </body>
     </html>
