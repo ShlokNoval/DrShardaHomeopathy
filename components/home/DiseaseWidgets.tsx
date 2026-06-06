@@ -54,6 +54,23 @@ const diseaseImages: Record<string, string> = {
   hypertension: "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&q=80&w=400&h=300",
   migraine: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=400&h=300",
   "hair-fall": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=400&h=300",
+  "stress-anxiety": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=400&h=300",
+  depression: "https://images.unsplash.com/photo-1519050965380-496da0ac8d12?auto=format&fit=crop&q=80&w=400&h=300",
+  insomnia: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&q=80&w=400&h=300",
+  "lack-of-concentration": "https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?auto=format&fit=crop&q=80&w=400&h=300",
+  autism: "https://images.unsplash.com/photo-1601053155700-1c313dc14443?auto=format&fit=crop&q=80&w=400&h=300",
+  "chronic-fatigue": "https://images.unsplash.com/photo-1528255915607-9012fda0f838?auto=format&fit=crop&q=80&w=400&h=300",
+  spondylitis: "https://images.unsplash.com/photo-1542736667-069246bdbc6d?auto=format&fit=crop&q=80&w=400&h=300",
+  obesity: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=400&h=300",
+  "low-immunity": "https://images.unsplash.com/photo-1584483766114-2cea6facdf57?auto=format&fit=crop&q=80&w=400&h=300",
+  "muscle-pain": "https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&q=80&w=400&h=300",
+  "liver-disorders": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=400&h=300",
+  "kidney-stone": "https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&q=80&w=400&h=300",
+  "skin-glow-anti-aging": "https://images.unsplash.com/photo-1615396899839-c99c1218cebf?auto=format&fit=crop&q=80&w=400&h=300",
+  "tonsils-adenoid": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=400&h=300",
+  "ent-issues": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=400&h=300",
+  hyperacidity: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&q=80&w=400&h=300",
+  "cancer-supportive-care": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=400&h=300",
 };
 
 export default function DiseaseWidgets() {

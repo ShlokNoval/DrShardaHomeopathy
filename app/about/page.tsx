@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Dr. Sharda Tawale",
-  description: "Learn about Dr. Sharda Tawale, a leading homeopathic physician in Pune with 25+ years of experience since 2001. MD (Homeopath), IIM Bangalore. Treating 100+ conditions naturally.",
+  description: "Learn about Dr. Sharda Tawale, a leading homeopathic physician in Pune with 25+ years of experience since 2001. MD (Homeopath), IIM Bangalore. Treating 50+ conditions naturally.",
 };
 
 const milestones = [
