@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/utils";
 
@@ -27,8 +28,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Col 1: About */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🌿</span>
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo.png"
+                alt="Sharda Homeopathy Logo"
+                width={42}
+                height={42}
+                className="object-contain brightness-0 invert"
+              />
               <span className="font-playfair text-xl font-bold">
                 Sharda Homeopathy
               </span>

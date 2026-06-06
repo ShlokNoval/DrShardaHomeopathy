@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone, MapPin, Clock, Menu, X, ChevronDown } from "lucide-react";
 
@@ -86,7 +87,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-2xl">🌿</span>
+            <Image
+              src="/logo.png"
+              alt="Sharda Homeopathy Logo"
+              width={38}
+              height={38}
+              className="object-contain"
+              priority
+            />
             <span className="font-playfair text-xl font-bold text-primary group-hover:text-primary-light transition-colors">
               Dr. Sharda Homeopathy
             </span>

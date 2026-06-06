@@ -608,6 +608,50 @@ export default function HeroSection() {
             <ScrollReveal direction="right" delay={0.2}>
               <div className="relative flex justify-center lg:justify-end">
                 <div className="relative z-10">
+
+                  {/* ── Health image floating card — top-right of image ── */}
+                  <div
+                    className="absolute hidden lg:block z-30"
+                    style={{
+                      top: "-28px",
+                      right: "-60px",
+                      animation: "vialFloat 7s ease-in-out infinite",
+                      animationDelay: "0.5s",
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 148,
+                        borderRadius: 16,
+                        overflow: "hidden",
+                        border: "2px solid rgba(201,150,58,0.55)",
+                        boxShadow: "0 8px 32px rgba(0,0,0,0.28), 0 0 0 4px rgba(27,94,53,0.4)",
+                        background: "#0F3D22",
+                      }}
+                    >
+                      <Image
+                        src="/hero-health.png"
+                        alt="Natural healing foods and holistic health"
+                        width={148}
+                        height={118}
+                        className="object-cover w-full"
+                        style={{ display: "block" }}
+                      />
+                      {/* Label */}
+                      <div
+                        style={{
+                          padding: "5px 10px",
+                          background: "rgba(15,61,34,0.95)",
+                          borderTop: "1px solid rgba(201,150,58,0.3)",
+                        }}
+                      >
+                        <p style={{ color: "#E8C96D", fontSize: 9, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", margin: 0, fontFamily: "Georgia, serif" }}>
+                          🌿 Natural Healing
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
                   {/* Double ring + glow */}
                   <div className="relative w-[260px] h-[260px] sm:w-[380px] sm:h-[380px] rounded-full p-2 border-[4px] border-white/10 ring-2 ring-[#C9963A]/50 ring-offset-4 ring-offset-[#1B5E35] shadow-[0_0_60px_rgba(201,150,58,0.25)]">
                     {/* Floral ornament top */}
