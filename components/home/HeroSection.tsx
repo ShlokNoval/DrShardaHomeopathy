@@ -5,53 +5,33 @@ import Image from "next/image";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import { Calendar, ArrowRight, Star, Users, Clock, ChevronDown } from "lucide-react";
 
-/* ─── Marquee strip ──────────────────────────────────────────────── */
-const MARQUEE_TEXT =
-  "🌿 Natural · Safe · Proven · 25+ Years · 10,000+ Patients · No Side Effects · 🌿 Natural · Safe · Proven · 25+ Years · 10,000+ Patients · No Side Effects · ";
+/* ─── Static trust micro-pills ───────────────────────────────────── */
+const TRUST_PILLS = [
+  { icon: "🌿", label: "Natural & Safe" },
+  { icon: "✦",  label: "No Side Effects" },
+  { icon: "⭐", label: "4.9/5 on Google" },
+];
 
-function MarqueeStrip() {
+function TrustPills() {
   return (
-    <div
-      className="w-full overflow-hidden pointer-events-none"
-      style={{
-        background: "transparent",
-        borderBottom: "1px solid rgba(201,150,58,0.12)",
-      }}
-      aria-hidden
-    >
-      <div
-        className="flex whitespace-nowrap"
-        style={{
-          animation: "marquee 32s linear infinite",
-        }}
-      >
+    <div className="flex flex-wrap gap-2 px-4 pt-3 pb-1" aria-label="Trust indicators">
+      {TRUST_PILLS.map((pill) => (
         <span
-          className="inline-block pr-8"
+          key={pill.label}
           style={{
-            color: "#C9963A",
-            opacity: 0.5,
+            background: "rgba(255,255,255,0.06)",
+            border: "1px solid rgba(201,150,58,0.35)",
+            borderRadius: "999px",
             fontSize: "11px",
-            letterSpacing: "0.04em",
-            fontWeight: 500,
+            color: "rgba(255,255,255,0.70)",
+            padding: "4px 12px",
+            letterSpacing: "0.02em",
+            whiteSpace: "nowrap",
           }}
         >
-          {MARQUEE_TEXT}
+          {pill.icon}&nbsp;&nbsp;{pill.label}
         </span>
-        {/* duplicate for seamless loop */}
-        <span
-          className="inline-block pr-8"
-          aria-hidden
-          style={{
-            color: "#C9963A",
-            opacity: 0.5,
-            fontSize: "11px",
-            letterSpacing: "0.04em",
-            fontWeight: 500,
-          }}
-        >
-          {MARQUEE_TEXT}
-        </span>
-      </div>
+      ))}
     </div>
   );
 }
@@ -86,12 +66,8 @@ function ScrollIndicator() {
 export default function HeroSection() {
   return (
     <>
-      {/* Marquee keyframes injected once via a style tag */}
+      {/* ── Bounce keyframe for scroll indicator ── */}
       <style>{`
-        @keyframes marquee {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
         @keyframes bounce {
           0%, 100% { transform: translateY(0); }
           50%       { transform: translateY(6px); }
@@ -102,9 +78,9 @@ export default function HeroSection() {
         className="relative flex flex-col bg-[#1B5E35] overflow-hidden"
         style={{ height: "calc(100vh - 88px)" }}
       >
-        {/* ── Marquee strip pinned at very top ── */}
-        <div className="relative z-20 py-1.5">
-          <MarqueeStrip />
+        {/* ── Trust pills pinned at very top ── */}
+        <div className="relative z-20">
+          <TrustPills />
         </div>
 
         {/* ── Background decorations ── */}
