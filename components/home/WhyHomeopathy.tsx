@@ -68,7 +68,7 @@ export default function WhyHomeopathy() {
                 Trust Homeopathy
                 {/* Hand-drawn SVG underline */}
                 <svg className="absolute w-[110%] h-4 -bottom-1 -left-2 text-[#C9963A]" viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 30 9 50 5 T 100 4" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
+                  <line x1="0" y1="5" x2="100" y2="5" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
                 </svg>
               </span>
             </h2>
