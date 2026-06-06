@@ -242,3 +242,12 @@ textarea:focus {
 .animate-fall {
   animation: fall-diagonal linear infinite;
 }
+
+/* Hide scrollbar while keeping scroll functional */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

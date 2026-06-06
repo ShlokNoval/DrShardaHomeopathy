@@ -44,10 +44,32 @@ export default function TestimonialsPage() {
         </div>
 
         {/* Video grid inside green zone */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 pb-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 pb-6">
           <VideoTestimonials />
         </div>
       </section>
+
+      {/* ── SVG wave transition: green → cream ── */}
+      <div
+        aria-hidden
+        style={{
+          marginTop: -2,
+          lineHeight: 0,
+          background: "#0F3D22",   /* same as section bottom so no gap */
+        }}
+      >
+        <svg
+          viewBox="0 0 1440 60"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          style={{ display: "block", width: "100%", height: 60 }}
+        >
+          <path
+            d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z"
+            fill="#F7F9F4"
+          />
+        </svg>
+      </div>
 
       {/* ══════════════════════════════════════════════
           WRITTEN REVIEWS — cream zone

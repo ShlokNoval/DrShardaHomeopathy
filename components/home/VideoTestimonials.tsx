@@ -336,7 +336,7 @@ export default function VideoTestimonials() {
   return (
     <>
       {/* Section label */}
-      <div className="flex items-center justify-center mb-8">
+      <div className="flex items-center justify-center mb-2">
         <div
           style={{
             display: "inline-flex",
@@ -366,7 +366,7 @@ export default function VideoTestimonials() {
         />
       </div>
 
-      {/* ── Remaining 5 videos ── */}
+      {/* ── Remaining 5 videos — horizontal peek carousel ── */}
       {isMobile ? (
         <MobileCarousel
           videos={restVideos as unknown as typeof VIDEO_DATA}
@@ -376,37 +376,34 @@ export default function VideoTestimonials() {
       ) : (
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(5, 1fr)",
+            overflowX: "auto",
+            display: "flex",
             gap: 12,
+            scrollSnapType: "x mandatory",
+            WebkitOverflowScrolling: "touch",
+            paddingBottom: 8,
+            /* Show 3.5 cards — 4th card peeks to signal scroll */
+            scrollPaddingLeft: 0,
           }}
-          className="hidden md:grid"
+          className="hide-scrollbar"
         >
           {restVideos.map((v) => (
-            <VideoCard
+            <div
               key={v.id}
-              video={v}
-              allRefs={allVideoRefs}
-              onLightboxOpen={openLightbox}
-            />
+              style={{
+                flex: "0 0 calc((100% - 3 * 12px) / 3.5)",
+                scrollSnapAlign: "start",
+              }}
+            >
+              <VideoCard
+                video={v}
+                allRefs={allVideoRefs}
+                onLightboxOpen={openLightbox}
+              />
+            </div>
           ))}
         </div>
       )}
-
-      {/* Tablet fallback: 3+2 */}
-      <div
-        style={{ gap: 12 }}
-        className="md:hidden hidden sm:grid grid-cols-3"
-      >
-        {restVideos.slice(0, 3).map((v) => (
-          <VideoCard key={v.id} video={v} allRefs={allVideoRefs} isMobile={isMobile} onLightboxOpen={openLightbox} />
-        ))}
-        <div className="col-start-1 col-end-4 grid grid-cols-2" style={{ gap: 12 }}>
-          {restVideos.slice(3).map((v) => (
-            <VideoCard key={v.id} video={v} allRefs={allVideoRefs} isMobile={isMobile} onLightboxOpen={openLightbox} />
-          ))}
-        </div>
-      </div>
 
       {/* Lightbox */}
       {lightboxVideo && (
