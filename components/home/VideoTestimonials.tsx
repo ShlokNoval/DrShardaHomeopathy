@@ -320,12 +320,37 @@ export default function VideoTestimonials() {
   const allVideoRefs = useRef<(HTMLVideoElement | null)[]>(Array(6).fill(null));
   const [lightboxVideo, setLightboxVideo] = useState<VideoItem | null>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
     check();
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const updateScrollState = useCallback(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 4);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 4);
+  }, []);
+
+  useEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    el.addEventListener("scroll", updateScrollState, { passive: true });
+    updateScrollState();
+    return () => el.removeEventListener("scroll", updateScrollState);
+  }, [updateScrollState]);
+
+  const scrollCarousel = useCallback((dir: 1 | -1) => {
+    const el = carouselRef.current;
+    if (!el) return;
+    const cardWidth = el.clientWidth / 3.5;
+    el.scrollBy({ left: dir * (cardWidth + 12), behavior: "smooth" });
   }, []);
 
   const openLightbox = useCallback((v: VideoItem) => setLightboxVideo(v), []);
@@ -374,34 +399,92 @@ export default function VideoTestimonials() {
           onLightboxOpen={openLightbox}
         />
       ) : (
-        <div
-          style={{
-            overflowX: "auto",
-            display: "flex",
-            gap: 12,
-            scrollSnapType: "x mandatory",
-            WebkitOverflowScrolling: "touch",
-            paddingBottom: 8,
-            /* Show 3.5 cards — 4th card peeks to signal scroll */
-            scrollPaddingLeft: 0,
-          }}
-          className="hide-scrollbar"
-        >
-          {restVideos.map((v) => (
-            <div
-              key={v.id}
-              style={{
-                flex: "0 0 calc((100% - 3 * 12px) / 3.5)",
-                scrollSnapAlign: "start",
-              }}
-            >
-              <VideoCard
-                video={v}
-                allRefs={allVideoRefs}
-                onLightboxOpen={openLightbox}
-              />
-            </div>
-          ))}
+        <div className="relative" style={{ marginLeft: 24, marginRight: 24 }}>
+          {/* Prev arrow */}
+          <button
+            onClick={() => scrollCarousel(-1)}
+            aria-label="Scroll left"
+            style={{
+              position: "absolute",
+              left: -24,
+              top: "50%",
+              transform: "translateY(-50%)",
+              zIndex: 20,
+              width: 40,
+              height: 40,
+              borderRadius: "50%",
+              background: "rgba(201,150,58,0.92)",
+              border: "none",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+              opacity: canScrollLeft ? 1 : 0,
+              pointerEvents: canScrollLeft ? "auto" : "none",
+              transition: "opacity 0.2s ease",
+            }}
+          >
+            <ChevronLeft size={20} color="white" />
+          </button>
+
+          {/* Scrollable track */}
+          <div
+            ref={carouselRef}
+            style={{
+              overflowX: "auto",
+              display: "flex",
+              gap: 12,
+              scrollSnapType: "x mandatory",
+              WebkitOverflowScrolling: "touch",
+              paddingBottom: 8,
+            }}
+            className="hide-scrollbar"
+          >
+            {restVideos.map((v) => (
+              <div
+                key={v.id}
+                style={{
+                  flex: "0 0 calc((100% - 3 * 12px) / 3.5)",
+                  scrollSnapAlign: "start",
+                }}
+              >
+                <VideoCard
+                  video={v}
+                  allRefs={allVideoRefs}
+                  onLightboxOpen={openLightbox}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Next arrow */}
+          <button
+            onClick={() => scrollCarousel(1)}
+            aria-label="Scroll right"
+            style={{
+              position: "absolute",
+              right: -24,
+              top: "50%",
+              transform: "translateY(-50%)",
+              zIndex: 20,
+              width: 40,
+              height: 40,
+              borderRadius: "50%",
+              background: "rgba(201,150,58,0.92)",
+              border: "none",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+              opacity: canScrollRight ? 1 : 0,
+              pointerEvents: canScrollRight ? "auto" : "none",
+              transition: "opacity 0.2s ease",
+            }}
+          >
+            <ChevronRight size={20} color="white" />
+          </button>
         </div>
       )}
 
