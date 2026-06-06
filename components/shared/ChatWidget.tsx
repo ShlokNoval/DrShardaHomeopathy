@@ -281,19 +281,38 @@ export default function ChatWidget() {
 
   /* ── Render ── */
   return (
-    <div className="fixed bottom-24 right-4 sm:right-6 z-[55] flex flex-col items-end gap-3">
+    <>
+      {/* Keyframes */}
+      <style>{`
+        @keyframes typingDot {
+          0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+          30%            { transform: translateY(-5px); opacity: 1; }
+        }
+        @keyframes badgePulse {
+          0%, 100% { transform: scale(1); }
+          50%       { transform: scale(1.18); }
+        }
+        @keyframes chatPulseRing {
+          0%   { transform: scale(1);    opacity: 0.55; }
+          70%  { transform: scale(1.65); opacity: 0; }
+          100% { transform: scale(1.65); opacity: 0; }
+        }
+      `}</style>
 
-      {/* ── Chat Panel ── */}
+      {/* ── Chat Panel (floats above the bubble) ── */}
       <div
         style={{
+          position: "fixed",
+          bottom: 152,          /* 88 bubble-bottom + 52 bubble-height + 12 gap */
+          right: 24,
+          zIndex: 55,
           transition: "opacity 0.25s ease, transform 0.25s ease",
           opacity: open ? 1 : 0,
-          transform: open ? "translateY(0) scale(1)" : "translateY(16px) scale(0.95)",
+          transform: open ? "translateY(0) scale(1)" : "translateY(16px) scale(0.96)",
           pointerEvents: open ? "auto" : "none",
           transformOrigin: "bottom right",
-          width: "100%",
+          width: "min(380px, calc(100vw - 32px))",
         }}
-        className="w-[340px] sm:w-[380px]"
       >
         <div
           style={{
@@ -335,7 +354,7 @@ export default function ChatWidget() {
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <p style={{ color: "white", fontWeight: 700, fontSize: 14, margin: 0, lineHeight: 1.2 }}>
-                Clinic Assistant
+              Shuddh — Clinic Assistant
               </p>
               <p style={{ color: "rgba(255,255,255,0.7)", fontSize: 11, margin: 0, marginTop: 2 }}>
                 Dr. Sharda Homeopathy · Always here
@@ -488,12 +507,6 @@ export default function ChatWidget() {
                     }}
                   />
                 ))}
-                <style>{`
-                  @keyframes typingDot {
-                    0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
-                    30% { transform: translateY(-5px); opacity: 1; }
-                  }
-                `}</style>
               </div>
             )}
 
@@ -556,80 +569,143 @@ export default function ChatWidget() {
       </div>
 
       {/* ── Toggle Bubble ── */}
-      <button
-        onClick={() => setOpen((v) => !v)}
-        aria-label={open ? "Close chat" : "Open clinic assistant"}
+      <div
         style={{
-          width: 54,
-          height: 54,
-          borderRadius: "50%",
-          background: "linear-gradient(135deg, #1B5E35, #2E7D50)",
-          border: "2px solid rgba(201,150,58,0.5)",
-          boxShadow: "0 4px 20px rgba(27,94,53,0.4), 0 0 0 6px rgba(27,94,53,0.12)",
+          position: "fixed",
+          bottom: 88,
+          right: 24,
+          zIndex: 55,
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
-          cursor: "pointer",
-          position: "relative",
-          transition: "transform 0.2s ease, box-shadow 0.2s ease",
         }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.08)";
-          (e.currentTarget as HTMLButtonElement).style.boxShadow =
-            "0 6px 28px rgba(27,94,53,0.5), 0 0 0 8px rgba(27,94,53,0.14)";
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
-          (e.currentTarget as HTMLButtonElement).style.boxShadow =
-            "0 4px 20px rgba(27,94,53,0.4), 0 0 0 6px rgba(27,94,53,0.12)";
-        }}
+        className="group"
       >
-        <span style={{ fontSize: 22, transition: "opacity 0.2s", opacity: open ? 0 : 1, position: "absolute" }}>
-          🌿
-        </span>
+        {/* Tooltip */}
         <span
           style={{
-            fontSize: 0,
-            transition: "opacity 0.2s",
-            opacity: open ? 1 : 0,
             position: "absolute",
+            right: "calc(100% + 12px)",
+            top: "50%",
+            transform: "translateY(-50%)",
+            background: "#1B5E35",
             color: "white",
+            fontSize: 12,
+            fontWeight: 500,
+            padding: "5px 12px",
+            borderRadius: 999,
+            whiteSpace: "nowrap",
+            opacity: open ? 0 : undefined,
+            pointerEvents: "none",
+            transition: "opacity 0.2s ease",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
           }}
+          className="opacity-0 group-hover:opacity-100"
         >
-          <X size={22} />
+          Chat with Shuddh 🌿
         </span>
 
-        {/* Unread badge */}
-        {unread > 0 && !open && (
+        {/* Pulse ring */}
+        {!open && (
           <span
             style={{
               position: "absolute",
-              top: -4,
-              right: -4,
-              background: "#C9963A",
-              color: "white",
+              inset: 0,
               borderRadius: "50%",
-              width: 18,
-              height: 18,
-              fontSize: 10,
-              fontWeight: 700,
+              background: "#2E7D52",
+              animation: "chatPulseRing 2.5s ease-out infinite",
+              pointerEvents: "none",
+            }}
+          />
+        )}
+
+        {/* Button */}
+        <button
+          onClick={() => setOpen((v) => !v)}
+          aria-label={open ? "Close Shuddh chat" : "Open Shuddh clinic assistant"}
+          style={{
+            width: 52,
+            height: 52,
+            borderRadius: "50%",
+            background: "#2E7D52",
+            border: "2px solid rgba(201,150,58,0.45)",
+            boxShadow: "0 4px 18px rgba(46,125,82,0.45)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+            position: "relative",
+            transition: "transform 0.2s ease, box-shadow 0.2s ease",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.08)";
+            (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 6px 24px rgba(46,125,82,0.6)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)";
+            (e.currentTarget as HTMLButtonElement).style.boxShadow = "0 4px 18px rgba(46,125,82,0.45)";
+          }}
+        >
+          {/* Chat icon (visible when closed) */}
+          <span
+            style={{
+              position: "absolute",
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
-              animation: "badgePulse 2s ease-in-out infinite",
+              transition: "opacity 0.2s",
+              opacity: open ? 0 : 1,
             }}
           >
-            {unread}
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                fill="white"
+                fillOpacity="0.9"
+              />
+              {/* Three dots */}
+              <circle cx="8.5"  cy="11" r="1.2" fill="#2E7D52" />
+              <circle cx="12"   cy="11" r="1.2" fill="#2E7D52" />
+              <circle cx="15.5" cy="11" r="1.2" fill="#2E7D52" />
+            </svg>
           </span>
-        )}
-        <style>{`
-          @keyframes badgePulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.15); }
-          }
-        `}</style>
-      </button>
-    </div>
+
+          {/* X icon (visible when open) */}
+          <span
+            style={{
+              position: "absolute",
+              display: "flex",
+              transition: "opacity 0.2s",
+              opacity: open ? 1 : 0,
+              color: "white",
+            }}
+          >
+            <X size={22} />
+          </span>
+
+          {/* Unread badge */}
+          {unread > 0 && !open && (
+            <span
+              style={{
+                position: "absolute",
+                top: -4,
+                right: -4,
+                background: "#C9963A",
+                color: "white",
+                borderRadius: "50%",
+                width: 18,
+                height: 18,
+                fontSize: 10,
+                fontWeight: 700,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
+                animation: "badgePulse 2s ease-in-out infinite",
+              }}
+            >
+              {unread}
+            </span>
+          )}
+        </button>
+      </div>
+    </>
   );
 }
