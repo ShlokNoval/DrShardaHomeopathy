@@ -15,7 +15,7 @@ const steps = [
     icon: Microscope,
     number: "02",
     title: "Deep Case Analysis",
-    desc: "Dr. Sharda studies your complete health history, lifestyle, and individual constitution.",
+    desc: "The Doctor studies your complete health history, lifestyle, and individual constitution.",
   },
   {
     icon: Pill,

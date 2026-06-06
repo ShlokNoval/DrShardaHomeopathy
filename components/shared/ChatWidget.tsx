@@ -189,7 +189,7 @@ function MAIN_MENU_CHIPS(): Chip[] {
 
 function WELCOME_MESSAGE(): Omit<Message, "id" | "from"> {
   return {
-    text: "Namaste! 🙏 I'm Shuddh, your clinic assistant.\n\nI can help you **book appointments**, find **treatments**, check **clinic timings**, and more — all without leaving this page.\n\nHow can I help you today?",
+    text: "Namaste! 🙏 I'm Shuddh, your clinic assistant.\n\nI can help you **book appointments**, find **treatments**, check **clinic timings**, and more.\n\nHow can I help you today?",
     chips: MAIN_MENU_CHIPS(),
   };
 }
@@ -234,7 +234,7 @@ function GreetingBubble({ onOpen, onDismiss, isGoldPulsing }: GreetingBubbleProp
     // auto dismiss after 8s total (1.5 typing + 6.5 reading)
     const t3 = setTimeout(() => handleDismiss(), 8000);
     return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleDismiss = () => {
@@ -916,8 +916,8 @@ export default function ChatWidget() {
                 fill="white"
                 fillOpacity="0.95"
               />
-              <circle cx="8.5"  cy="11" r="1.2" fill="#2E7D52" />
-              <circle cx="12"   cy="11" r="1.2" fill="#2E7D52" />
+              <circle cx="8.5" cy="11" r="1.2" fill="#2E7D52" />
+              <circle cx="12" cy="11" r="1.2" fill="#2E7D52" />
               <circle cx="15.5" cy="11" r="1.2" fill="#2E7D52" />
             </svg>
           </span>

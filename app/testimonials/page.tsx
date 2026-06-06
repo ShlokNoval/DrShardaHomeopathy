@@ -2,20 +2,26 @@ import { testimonials } from "@/data/testimonials";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import FloatingGlobules from "@/components/shared/FloatingGlobules";
 import CTABanner from "@/components/home/CTABanner";
+import VideoTestimonials from "@/components/home/VideoTestimonials";
 import { Star, Quote } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Patient Testimonials",
-  description: "Read real reviews from patients treated by Dr. Sharda Tawale at Sharda Homeopathy Clinic, Pune. 4.9/5 rating across 10,000+ patients.",
+  description: "Real video and written reviews from patients treated by Dr. Sharda Tawale at Sharda Homeopathy Clinic, Pune. 4.9/5 rating across 10,000+ patients.",
 };
 
 export default function TestimonialsPage() {
   return (
     <>
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark py-20 overflow-hidden">
+      {/* ══════════════════════════════════════════════
+          HERO + VIDEO ZONE — dark green
+      ══════════════════════════════════════════════ */}
+      <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
         <FloatingGlobules count={10} opacity={0.2} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
+
+        {/* Header */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 pt-20 pb-10 text-center">
           <span className="inline-block border border-white/30 text-white text-sm px-4 py-1.5 rounded-full mb-4">⭐ Testimonials</span>
           <h1 className="text-white mb-4">Voices of Healing</h1>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">Real stories from real patients who trusted us with their health</p>
@@ -26,15 +32,49 @@ export default function TestimonialsPage() {
             <span className="text-white ml-2 font-bold text-lg">4.9/5</span>
           </div>
           <div className="mt-6">
-            <a href="https://www.google.com/search?q=Dr+Sharda+Homoeopathy+Center+Reviews" target="_blank" rel="noopener noreferrer" className="inline-block border border-white text-white hover:bg-white hover:text-primary px-6 py-2 rounded-full font-medium transition-colors">
+            <a
+              href="https://www.google.com/search?q=Dr+Sharda+Homoeopathy+Center+Reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-white text-white hover:bg-white hover:text-primary px-6 py-2 rounded-full font-medium transition-colors"
+            >
               Verify on Google Reviews →
             </a>
           </div>
         </div>
+
+        {/* Video grid inside green zone */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 pb-16">
+          <VideoTestimonials />
+        </div>
       </section>
 
+      {/* ══════════════════════════════════════════════
+          WRITTEN REVIEWS — cream zone
+      ══════════════════════════════════════════════ */}
       <section className="bg-cream py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4">
+
+          {/* Written reviews label */}
+          <div className="flex items-center justify-center mb-10">
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                background: "rgba(27,94,53,0.07)",
+                border: "1px solid rgba(27,94,53,0.2)",
+                borderRadius: 999,
+                padding: "6px 18px",
+              }}
+            >
+              <span style={{ fontSize: 16 }}>✍️</span>
+              <span style={{ color: "#1B5E35", fontSize: 13, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" as const }}>
+                Written Reviews
+              </span>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <ScrollReveal key={t.id} delay={(i % 6) * 0.05}>
