@@ -74,7 +74,7 @@ export default function TreatmentsPage() {
                         {categoryLabels[t.category]}
                       </span>
                     </div>
-                    <h3 className="font-semibold text-lg text-charcoal group-hover:text-primary transition-colors mb-2">
+                    <h3 className="font-sans font-semibold text-lg text-charcoal group-hover:text-primary transition-colors mb-2">
                       {t.name}
                     </h3>
                     <p className="text-muted text-sm leading-relaxed mb-4">{t.shortDesc}</p>
