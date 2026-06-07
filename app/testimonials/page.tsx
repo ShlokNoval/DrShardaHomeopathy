@@ -18,12 +18,27 @@ export default function TestimonialsPage() {
           HERO + VIDEO ZONE — dark green
       ══════════════════════════════════════════════ */}
 
-      {/* Sparkle pulse animation */}
+      {/* Animations + decorative image hover styles */}
       <style>{`
         @keyframes sparklePulse {
           0%, 100% { opacity: 0.08; transform: scale(1) rotate(0deg); }
           50%       { opacity: 0.25; transform: scale(1.3) rotate(20deg); }
         }
+        @keyframes floatImg {
+          0%, 100% { transform: translateY(0px); }
+          50%       { transform: translateY(-10px); }
+        }
+        .deco-img {
+          transition: opacity 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+        }
+        .deco-img:hover {
+          opacity: 0.8 !important;
+          transform: scale(1.05) !important;
+          border-color: rgba(201,150,58,0.8) !important;
+        }
+        .deco-img-tilt-l:hover { transform: scale(1.05) rotate(-8deg) !important; }
+        .deco-img-tilt-r:hover { transform: scale(1.05) rotate(8deg) !important; }
+        @media (max-width: 1023px) { .deco-side { display: none !important; } }
       `}</style>
 
       <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
@@ -144,6 +159,85 @@ export default function TestimonialsPage() {
             }}
           >✦</div>
         ))}
+
+        {/* ── Photo Layer: Left circular stack + connectors ── */}
+        <div className="deco-side" aria-hidden style={{ position: "absolute", left: 20, top: 0, bottom: 0, width: 120, zIndex: 1, pointerEvents: "none", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", paddingTop: 60, paddingBottom: 60 }}>
+          {/* Leaf connector top */}
+          <span style={{ fontSize: 22, opacity: 0.4, marginBottom: -8 }}>🌿</span>
+          {/* Circle 1 — vegetables */}
+          <img
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=160"
+            alt=""
+            className="deco-img"
+            style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 5s ease-in-out infinite" }}
+          />
+          <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(15deg)", margin: "4px 0" }}>🌿</span>
+          {/* Circle 2 — herbs */}
+          <img
+            src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=160"
+            alt=""
+            className="deco-img"
+            style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 6s 2s ease-in-out infinite" }}
+          />
+          <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(-10deg)", margin: "4px 0" }}>🌿</span>
+          {/* Circle 3 — mortar pestle */}
+          <img
+            src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=160"
+            alt=""
+            className="deco-img"
+            style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 7s 4s ease-in-out infinite" }}
+          />
+          <span style={{ fontSize: 22, opacity: 0.4, marginTop: -8 }}>🌿</span>
+        </div>
+
+        {/* ── Photo Layer: Right circular stack + connectors ── */}
+        <div className="deco-side" aria-hidden style={{ position: "absolute", right: 20, top: 0, bottom: 0, width: 120, zIndex: 1, pointerEvents: "none", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", paddingTop: 60, paddingBottom: 60 }}>
+          <span style={{ fontSize: 22, opacity: 0.4, marginBottom: -8 }}>🌿</span>
+          {/* Circle 1 — ginger turmeric */}
+          <img
+            src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=160"
+            alt=""
+            className="deco-img"
+            style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 5.5s 1s ease-in-out infinite" }}
+          />
+          <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(-15deg)", margin: "4px 0" }}>🌿</span>
+          {/* Circle 2 — green nature */}
+          <img
+            src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=160"
+            alt=""
+            className="deco-img"
+            style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 6.5s 3s ease-in-out infinite" }}
+          />
+          <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(12deg)", margin: "4px 0" }}>🌿</span>
+          {/* Circle 3 — healthy food bowl */}
+          <img
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=160"
+            alt=""
+            className="deco-img"
+            style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 7.5s 5s ease-in-out infinite" }}
+          />
+          <span style={{ fontSize: 22, opacity: 0.4, marginTop: -8 }}>🌿</span>
+        </div>
+
+        {/* ── Photo Layer: Top-left corner accent ── */}
+        <div className="deco-side" aria-hidden style={{ position: "absolute", top: 24, left: 140, zIndex: 1, pointerEvents: "none" }}>
+          <img
+            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=200"
+            alt=""
+            className="deco-img deco-img-tilt-l"
+            style={{ width: 140, height: 90, borderRadius: 12, objectFit: "cover", opacity: 0.3, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", transform: "rotate(-8deg)", border: "2px solid rgba(201,150,58,0.3)" }}
+          />
+        </div>
+
+        {/* ── Photo Layer: Top-right corner accent ── */}
+        <div className="deco-side" aria-hidden style={{ position: "absolute", top: 24, right: 140, zIndex: 1, pointerEvents: "none" }}>
+          <img
+            src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=200"
+            alt=""
+            className="deco-img deco-img-tilt-r"
+            style={{ width: 140, height: 90, borderRadius: 12, objectFit: "cover", opacity: 0.3, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", transform: "rotate(8deg)", border: "2px solid rgba(201,150,58,0.3)" }}
+          />
+        </div>
 
         <FloatingGlobules count={10} opacity={0.2} />
 
