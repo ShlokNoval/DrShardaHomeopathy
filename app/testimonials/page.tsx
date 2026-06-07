@@ -17,7 +17,134 @@ export default function TestimonialsPage() {
       {/* ══════════════════════════════════════════════
           HERO + VIDEO ZONE — dark green
       ══════════════════════════════════════════════ */}
+
+      {/* Sparkle pulse animation */}
+      <style>{`
+        @keyframes sparklePulse {
+          0%, 100% { opacity: 0.08; transform: scale(1) rotate(0deg); }
+          50%       { opacity: 0.25; transform: scale(1.3) rotate(20deg); }
+        }
+      `}</style>
+
       <section className="relative bg-gradient-to-br from-primary to-primary-dark overflow-hidden">
+
+        {/* ── Layer 1: Dot grid texture ── */}
+        <div aria-hidden style={{
+          position: "absolute", inset: 0, zIndex: 0, pointerEvents: "none",
+          backgroundImage: "radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+        }} />
+
+        {/* ── Layer 2: Grain overlay ── */}
+        <div aria-hidden style={{
+          position: "absolute", inset: 0, zIndex: 0, pointerEvents: "none",
+          opacity: 0.03,
+          mixBlendMode: "overlay" as React.CSSProperties["mixBlendMode"],
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
+          backgroundSize: "200px 200px",
+        }} />
+
+        {/* ── Layer 3: Radial warm glow behind heading ── */}
+        <div aria-hidden style={{
+          position: "absolute", top: 0, left: "50%", transform: "translateX(-50%)",
+          width: 600, height: 400, zIndex: 0, pointerEvents: "none",
+          background: "radial-gradient(ellipse at center, rgba(201,150,58,0.10) 0%, transparent 70%)",
+        }} />
+
+        {/* ── Layer 4: Giant quotation marks ── */}
+        <div aria-hidden style={{
+          position: "absolute", top: 12, left: 24, zIndex: 0, pointerEvents: "none",
+          fontSize: 280, lineHeight: 1, fontFamily: "Georgia, 'Playfair Display', serif",
+          color: "rgba(255,255,255,0.04)", userSelect: "none", fontWeight: 700,
+        }}>"</div>
+        <div aria-hidden style={{
+          position: "absolute", bottom: 12, right: 24, zIndex: 0, pointerEvents: "none",
+          fontSize: 280, lineHeight: 1, fontFamily: "Georgia, 'Playfair Display', serif",
+          color: "rgba(255,255,255,0.04)", userSelect: "none", fontWeight: 700,
+        }}>"</div>
+
+        {/* ── Layer 5: Left botanical SVG ── */}
+        <div aria-hidden style={{
+          position: "absolute", top: 0, left: 0, bottom: 0, width: 120,
+          zIndex: 0, pointerEvents: "none", opacity: 0.07, overflow: "hidden",
+        }}>
+          <svg viewBox="0 0 120 800" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%" }} fill="none" stroke="white" strokeWidth="1.2">
+            <path d="M60 800 Q58 600 60 400 Q62 200 60 0" strokeLinecap="round"/>
+            <path d="M60 650 Q30 620 15 590" strokeLinecap="round"/>
+            <path d="M60 600 Q85 575 100 545" strokeLinecap="round"/>
+            <path d="M60 520 Q28 490 10 455" strokeLinecap="round"/>
+            <path d="M60 470 Q88 445 105 415" strokeLinecap="round"/>
+            <path d="M60 380 Q25 355 8 320" strokeLinecap="round"/>
+            <path d="M60 320 Q90 298 108 268" strokeLinecap="round"/>
+            <path d="M60 240 Q30 215 12 182" strokeLinecap="round"/>
+            <path d="M60 180 Q88 160 106 130" strokeLinecap="round"/>
+            <ellipse cx="15" cy="590" rx="12" ry="7" transform="rotate(-30 15 590)" fill="white" stroke="none"/>
+            <ellipse cx="100" cy="545" rx="12" ry="7" transform="rotate(20 100 545)" fill="white" stroke="none"/>
+            <ellipse cx="10" cy="455" rx="12" ry="7" transform="rotate(-25 10 455)" fill="white" stroke="none"/>
+            <ellipse cx="105" cy="415" rx="12" ry="7" transform="rotate(25 105 415)" fill="white" stroke="none"/>
+            <ellipse cx="8" cy="320" rx="12" ry="7" transform="rotate(-20 8 320)" fill="white" stroke="none"/>
+            <ellipse cx="108" cy="268" rx="12" ry="7" transform="rotate(30 108 268)" fill="white" stroke="none"/>
+            <ellipse cx="12" cy="182" rx="12" ry="7" transform="rotate(-35 12 182)" fill="white" stroke="none"/>
+            <ellipse cx="106" cy="130" rx="12" ry="7" transform="rotate(25 106 130)" fill="white" stroke="none"/>
+          </svg>
+        </div>
+
+        {/* ── Layer 5: Right botanical SVG (mirrored) ── */}
+        <div aria-hidden style={{
+          position: "absolute", top: 0, right: 0, bottom: 0, width: 120,
+          zIndex: 0, pointerEvents: "none", opacity: 0.06, overflow: "hidden",
+          transform: "scaleX(-1)",
+        }}>
+          <svg viewBox="0 0 120 800" xmlns="http://www.w3.org/2000/svg" style={{ width: "100%", height: "100%" }} fill="none" stroke="white" strokeWidth="1.2">
+            <path d="M60 800 Q58 600 60 400 Q62 200 60 0" strokeLinecap="round"/>
+            <path d="M60 650 Q30 620 15 590" strokeLinecap="round"/>
+            <path d="M60 600 Q85 575 100 545" strokeLinecap="round"/>
+            <path d="M60 520 Q28 490 10 455" strokeLinecap="round"/>
+            <path d="M60 470 Q88 445 105 415" strokeLinecap="round"/>
+            <path d="M60 380 Q25 355 8 320" strokeLinecap="round"/>
+            <path d="M60 320 Q90 298 108 268" strokeLinecap="round"/>
+            <path d="M60 240 Q30 215 12 182" strokeLinecap="round"/>
+            <path d="M60 180 Q88 160 106 130" strokeLinecap="round"/>
+            <ellipse cx="15" cy="590" rx="12" ry="7" transform="rotate(-30 15 590)" fill="white" stroke="none"/>
+            <ellipse cx="100" cy="545" rx="12" ry="7" transform="rotate(20 100 545)" fill="white" stroke="none"/>
+            <ellipse cx="10" cy="455" rx="12" ry="7" transform="rotate(-25 10 455)" fill="white" stroke="none"/>
+            <ellipse cx="105" cy="415" rx="12" ry="7" transform="rotate(25 105 415)" fill="white" stroke="none"/>
+            <ellipse cx="8" cy="320" rx="12" ry="7" transform="rotate(-20 8 320)" fill="white" stroke="none"/>
+            <ellipse cx="108" cy="268" rx="12" ry="7" transform="rotate(30 108 268)" fill="white" stroke="none"/>
+            <ellipse cx="12" cy="182" rx="12" ry="7" transform="rotate(-35 12 182)" fill="white" stroke="none"/>
+            <ellipse cx="106" cy="130" rx="12" ry="7" transform="rotate(25 106 130)" fill="white" stroke="none"/>
+          </svg>
+        </div>
+
+        {/* ── Layer 6: Gold sparkle scatter ── */}
+        {([
+          { top: "8%",  left: "6%",  size: 14, delay: "0s",    dur: "3s" },
+          { top: "18%", left: "2%",  size: 9,  delay: "1.2s",  dur: "4s" },
+          { top: "38%", left: "5%",  size: 16, delay: "0.5s",  dur: "2.5s" },
+          { top: "58%", left: "3%",  size: 10, delay: "2s",    dur: "3.5s" },
+          { top: "75%", left: "7%",  size: 12, delay: "0.8s",  dur: "4.5s" },
+          { top: "12%", right: "5%", size: 14, delay: "1.5s",  dur: "3s" },
+          { top: "28%", right: "2%", size: 8,  delay: "0.3s",  dur: "4s" },
+          { top: "50%", right: "6%", size: 18, delay: "2.2s",  dur: "2.8s" },
+          { top: "68%", right: "3%", size: 10, delay: "1s",    dur: "5s" },
+          { top: "85%", right: "8%", size: 12, delay: "0.6s",  dur: "3.8s" },
+        ] as Array<{ top?: string; left?: string; right?: string; size: number; delay: string; dur: string }>).map((s, i) => (
+          <div
+            key={i}
+            aria-hidden
+            style={{
+              position: "absolute",
+              top: s.top, left: s.left, right: s.right,
+              zIndex: 0, pointerEvents: "none",
+              fontSize: s.size,
+              color: "rgba(201,150,58,0.2)",
+              animation: `sparklePulse ${s.dur} ${s.delay} ease-in-out infinite`,
+              userSelect: "none",
+              lineHeight: 1,
+            }}
+          >✦</div>
+        ))}
+
         <FloatingGlobules count={10} opacity={0.2} />
 
         {/* Header */}
@@ -48,6 +175,7 @@ export default function TestimonialsPage() {
           <VideoTestimonials />
         </div>
       </section>
+
 
       {/* ── SVG wave transition: green → cream ── */}
       <div
