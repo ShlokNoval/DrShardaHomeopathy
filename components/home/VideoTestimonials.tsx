@@ -7,12 +7,12 @@ import { Play, X, ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 /* ─── Data ─────────────────────────────────────────────────────────── */
 const VIDEO_DATA = [
-  { id: 1, src: "/testimonials/video6.mp4", poster: "/testimonials/poster6.jpg", name: "Patient Story #1", condition: "Skin Disorder",    stars: 5 },
-  { id: 2, src: "/testimonials/video2.mp4", poster: "/testimonials/poster2.jpg", name: "Patient Story #2", condition: "Joint Pain",       stars: 5 },
-  { id: 3, src: "/testimonials/video3.mp4", poster: "/testimonials/poster3.jpg", name: "Patient Story #3", condition: "Digestive Issues", stars: 5 },
-  { id: 4, src: "/testimonials/video4.mp4", poster: "/testimonials/poster4.jpg", name: "Patient Story #4", condition: "Respiratory",      stars: 5 },
-  { id: 5, src: "/testimonials/video5.mp4", poster: "/testimonials/poster5.jpg", name: "Patient Story #5", condition: "Thyroid",          stars: 5 },
-  { id: 6, src: "/testimonials/video1.mp4", poster: "/testimonials/poster1.jpg", name: "Patient Story #6", condition: "Hair Fall",        stars: 5 },
+  { id: 1, src: "/testimonials/video6.mp4?v=2", poster: "/testimonials/poster6.jpg?v=2", name: "Patient Story #1", condition: "Skin Disorder",    stars: 5 },
+  { id: 2, src: "/testimonials/video2.mp4?v=2", poster: "/testimonials/poster2.jpg?v=2", name: "Patient Story #2", condition: "Joint Pain",       stars: 5 },
+  { id: 3, src: "/testimonials/video3.mp4?v=2", poster: "/testimonials/poster3.jpg?v=2", name: "Patient Story #3", condition: "Digestive Issues", stars: 5 },
+  { id: 4, src: "/testimonials/video4.mp4?v=2", poster: "/testimonials/poster4.jpg?v=2", name: "Patient Story #4", condition: "Respiratory",      stars: 5 },
+  { id: 5, src: "/testimonials/video5.mp4?v=2", poster: "/testimonials/poster5.jpg?v=2", name: "Patient Story #5", condition: "Thyroid",          stars: 5 },
+  { id: 6, src: "/testimonials/video1.mp4?v=2", poster: "/testimonials/poster1.jpg?v=2", name: "Patient Story #6", condition: "Hair Fall",        stars: 5 },
 ] as const;
 
 type VideoItem = typeof VIDEO_DATA[number];
