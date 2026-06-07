@@ -192,10 +192,11 @@ export default function TestimonialsPage() {
 
         {/* ── Layer 7: Prescription Pad Watermark ── */}
         <div className="deco-side" aria-hidden style={{
-          position: "absolute", top: "45%", right: -60, zIndex: 0, pointerEvents: "none",
-          fontSize: 48, fontFamily: "Georgia, 'Playfair Display', serif",
+          position: "absolute", top: "45%", right: -20, zIndex: 0, pointerEvents: "none",
+          fontSize: 36, fontFamily: "Georgia, 'Playfair Display', serif",
           color: "rgba(255,255,255,0.04)", fontWeight: 700, userSelect: "none",
-          transform: "rotate(-12deg) translateY(-50%)", whiteSpace: "nowrap"
+          transform: "rotate(-12deg) translateY(-50%)", whiteSpace: "nowrap",
+          transformOrigin: "right center"
         }}>
           Dr. Sharda Homeopathy
         </div>
