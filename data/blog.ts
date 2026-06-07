@@ -1,4 +1,4 @@
-export type BlogPost = {
+﻿export type BlogPost = {
   slug: string;
   title: string;
   category: string;
@@ -41,10 +41,10 @@ export const blogPosts: BlogPost[] = [
       <p>Best for: Allergies with copious watery discharge alternating with nasal blockage. Often accompanied by loss of smell and taste. The patient may feel worse in direct sunlight and have a craving for salty foods.</p>
 
       <h3>4. Sabadilla</h3>
-      <p>Best for: Violent sneezing fits with itching in the nose and watery eyes. The patient may sneeze 10-20 times in succession. Symptoms are triggered by the smell of flowers or being in a garden — very common during monsoon when everything is in bloom.</p>
+      <p>Best for: Violent sneezing fits with itching in the nose and watery eyes. The patient may sneeze 10-20 times in succession. Symptoms are triggered by the smell of flowers or being in a garden - very common during monsoon when everything is in bloom.</p>
 
       <h3>5. Dulcamara</h3>
-      <p>Best for: Allergies triggered specifically by damp weather and sudden temperature changes — making it particularly relevant for monsoon allergies. The patient develops a stuffy nose and sneezing when moving from warm to cold or damp environments.</p>
+      <p>Best for: Allergies triggered specifically by damp weather and sudden temperature changes - making it particularly relevant for monsoon allergies. The patient develops a stuffy nose and sneezing when moving from warm to cold or damp environments.</p>
 
       <h2>Prevention Tips for Monsoon Season</h2>
       <ul>
@@ -93,18 +93,18 @@ export const blogPosts: BlogPost[] = [
       <h2>The Homeopathic Approach to PCOD</h2>
       <p>Unlike conventional treatment that typically relies on birth control pills and metformin, homeopathy addresses PCOD at its root by:</p>
       <ol>
-        <li><strong>Regulating hormonal balance</strong> — Remedies help normalize androgen levels and restore the estrogen-progesterone balance</li>
-        <li><strong>Improving ovarian function</strong> — Treatment supports healthy follicle development and regular ovulation</li>
-        <li><strong>Addressing insulin resistance</strong> — Constitutional remedies help improve insulin sensitivity naturally</li>
-        <li><strong>Managing associated symptoms</strong> — Acne, hair growth, and weight gain are addressed as part of the holistic treatment</li>
-        <li><strong>Supporting emotional health</strong> — The emotional impact of PCOD is acknowledged and treated</li>
+        <li><strong>Regulating hormonal balance</strong> - Remedies help normalize androgen levels and restore the estrogen-progesterone balance</li>
+        <li><strong>Improving ovarian function</strong> - Treatment supports healthy follicle development and regular ovulation</li>
+        <li><strong>Addressing insulin resistance</strong> - Constitutional remedies help improve insulin sensitivity naturally</li>
+        <li><strong>Managing associated symptoms</strong> - Acne, hair growth, and weight gain are addressed as part of the holistic treatment</li>
+        <li><strong>Supporting emotional health</strong> - The emotional impact of PCOD is acknowledged and treated</li>
       </ol>
 
       <h2>Lifestyle Modifications That Help</h2>
       <p>Alongside homeopathic treatment, these lifestyle changes significantly improve PCOD outcomes:</p>
       <ul>
         <li><strong>Anti-inflammatory diet:</strong> Focus on whole grains, lean proteins, fruits, and vegetables. Reduce sugar, processed foods, and dairy</li>
-        <li><strong>Regular exercise:</strong> 30–45 minutes of moderate activity daily — walking, yoga, or swimming</li>
+        <li><strong>Regular exercise:</strong> 30–45 minutes of moderate activity daily - walking, yoga, or swimming</li>
         <li><strong>Stress management:</strong> Practice meditation, pranayama, or deep breathing exercises</li>
         <li><strong>Adequate sleep:</strong> Aim for 7–8 hours of quality sleep</li>
         <li><strong>Weight management:</strong> Even a 5–10% weight loss can significantly improve symptoms</li>
@@ -113,7 +113,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Success Stories from Our Clinic</h2>
       <p>At Sharda Homeopathy Clinic, we have successfully treated hundreds of women with PCOD. Many patients achieve regular menstrual cycles within 3–4 months of treatment. For women trying to conceive, improved ovulation is often observed within the first few months.</p>
 
-      <p>If you're struggling with PCOD/PCOS, remember — it's manageable, and you don't have to rely solely on hormonal medications. Homeopathy offers a gentle, effective path to hormonal balance.</p>
+      <p>If you're struggling with PCOD/PCOS, remember - it's manageable, and you don't have to rely solely on hormonal medications. Homeopathy offers a gentle, effective path to hormonal balance.</p>
     `,
     author: "Dr. Sharda Tawale",
     date: "2024-09-20",
@@ -141,12 +141,12 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <h2>The Role of Tonsils in Your Child's Immune System</h2>
-      <p>Tonsils are not useless tissue — they are an important part of your child's immune system, especially during the early years. They act as the first line of defense against pathogens entering through the mouth and nose. Removing them should be the last resort, not the default solution.</p>
+      <p>Tonsils are not useless tissue - they are an important part of your child's immune system, especially during the early years. They act as the first line of defense against pathogens entering through the mouth and nose. Removing them should be the last resort, not the default solution.</p>
 
       <h2>How Homeopathy Approaches Recurrent Tonsillitis</h2>
       <p>Homeopathic treatment for recurrent tonsillitis works on two levels:</p>
       <ol>
-        <li><strong>Acute management:</strong> Remedies help manage active infections quickly and reduce pain, swelling, and fever — often reducing the need for antibiotics</li>
+        <li><strong>Acute management:</strong> Remedies help manage active infections quickly and reduce pain, swelling, and fever - often reducing the need for antibiotics</li>
         <li><strong>Constitutional treatment:</strong> This is the key difference. Constitutional remedies strengthen the child's immune system, making them less susceptible to throat infections. Over time, the frequency and severity of episodes decrease significantly.</li>
       </ol>
 
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
       <ul>
         <li><strong>First 2–4 weeks:</strong> You may notice that if an infection occurs, it's milder and resolves faster</li>
         <li><strong>1–3 months:</strong> The gap between infections increases noticeably</li>
-        <li><strong>3–6 months:</strong> Most children experience a dramatic reduction in episodes — from monthly to perhaps 1–2 per year</li>
+        <li><strong>3–6 months:</strong> Most children experience a dramatic reduction in episodes - from monthly to perhaps 1–2 per year</li>
         <li><strong>6–12 months:</strong> Long-term immune strengthening takes hold, and many children are essentially free from the tonsillitis cycle</li>
       </ul>
 
@@ -172,7 +172,7 @@ export const blogPosts: BlogPost[] = [
     slug: "understanding-psoriasis-triggers-treatment-homeopathic-way",
     title: "Understanding Psoriasis: Triggers, Treatment, and the Homeopathic Way",
     category: "Skin Health",
-    excerpt: "Psoriasis is more than just a skin condition — it's an autoimmune disorder that affects millions. Learn about triggers, conventional vs. homeopathic treatment approaches.",
+    excerpt: "Psoriasis is more than just a skin condition - it's an autoimmune disorder that affects millions. Learn about triggers, conventional vs. homeopathic treatment approaches.",
     content: `
       <h2>Psoriasis: More Than Skin Deep</h2>
       <p>If you or someone you love has psoriasis, you know it's far more than a cosmetic issue. The red, scaly, often painful patches affect not just the skin but also self-confidence, social interactions, and mental health. Psoriasis is an autoimmune condition where the immune system mistakenly attacks healthy skin cells, causing them to regenerate at an abnormally rapid rate.</p>
@@ -180,7 +180,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Common Triggers That Cause Flare-Ups</h2>
       <p>Understanding your triggers is the first step to managing psoriasis:</p>
       <ul>
-        <li><strong>Stress:</strong> Perhaps the most common trigger — emotional or physical stress can initiate or worsen flare-ups</li>
+        <li><strong>Stress:</strong> Perhaps the most common trigger - emotional or physical stress can initiate or worsen flare-ups</li>
         <li><strong>Infections:</strong> Strep throat infections are particularly known to trigger guttate psoriasis</li>
         <li><strong>Weather:</strong> Cold, dry weather tends to worsen symptoms, while moderate sunlight often helps</li>
         <li><strong>Skin injuries:</strong> Cuts, scrapes, or sunburn can trigger new patches (Koebner phenomenon)</li>
@@ -195,7 +195,7 @@ export const blogPosts: BlogPost[] = [
       <p>The homeopathic approach is fundamentally different:</p>
       <ul>
         <li>Treats the immune system dysfunction at its root, not just the skin symptoms</li>
-        <li>Considers the whole person — physical symptoms, emotional state, and constitutional type</li>
+        <li>Considers the whole person - physical symptoms, emotional state, and constitutional type</li>
         <li>No side effects, no skin thinning, no immune suppression</li>
         <li>Aims for long-lasting improvement rather than temporary symptom control</li>
         <li>Can be used alongside conventional treatments during the transition</li>
@@ -203,17 +203,17 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Living with Psoriasis: Practical Tips</h2>
       <ul>
-        <li>Moisturize frequently — apply thick emollients immediately after bathing</li>
+        <li>Moisturize frequently - apply thick emollients immediately after bathing</li>
         <li>Take lukewarm (not hot) baths and showers</li>
         <li>Avoid scratching or picking at patches</li>
         <li>Manage stress through yoga, meditation, or counseling</li>
         <li>Maintain a healthy diet rich in anti-inflammatory foods</li>
         <li>Keep a trigger diary to identify your personal triggers</li>
-        <li>Seek emotional support — psoriasis support groups can be incredibly helpful</li>
+        <li>Seek emotional support - psoriasis support groups can be incredibly helpful</li>
       </ul>
 
       <h2>A Message of Hope</h2>
-      <p>At Sharda Homeopathy Clinic, we have treated hundreds of psoriasis patients. While every case is unique, the majority experience significant improvement — reduced patch size, less itching, longer remission periods, and improved quality of life. The journey requires patience and consistency, but the results are worth it.</p>
+      <p>At Sharda Homeopathy Clinic, we have treated hundreds of psoriasis patients. While every case is unique, the majority experience significant improvement - reduced patch size, less itching, longer remission periods, and improved quality of life. The journey requires patience and consistency, but the results are worth it.</p>
     `,
     author: "Dr. Sharda Tawale",
     date: "2024-08-12",
@@ -282,10 +282,10 @@ export const blogPosts: BlogPost[] = [
     excerpt: "In today's fast-paced world, stress and anxiety are at epidemic levels. Learn how homeopathy offers a gentle, effective approach to mental wellness without side effects.",
     content: `
       <h2>The Stress Epidemic</h2>
-      <p>As a homeopathic practitioner in Pune — a city known for its bustling IT industry, competitive academics, and urban pressures — I see the impact of stress and anxiety daily. Patients come for physical ailments like headaches, digestive issues, or skin problems, only for us to discover that chronic stress is the underlying driver.</p>
+      <p>As a homeopathic practitioner in Pune - a city known for its bustling IT industry, competitive academics, and urban pressures - I see the impact of stress and anxiety daily. Patients come for physical ailments like headaches, digestive issues, or skin problems, only for us to discover that chronic stress is the underlying driver.</p>
 
       <h2>How Stress Manifests in the Body</h2>
-      <p>Stress doesn't just affect your mind — it shows up throughout your body:</p>
+      <p>Stress doesn't just affect your mind - it shows up throughout your body:</p>
       <ul>
         <li><strong>Digestive system:</strong> IBS, acidity, loss of appetite, or stress eating</li>
         <li><strong>Skin:</strong> Eczema flares, psoriasis outbreaks, acne, hair fall</li>
@@ -296,7 +296,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
 
       <h2>Why Homeopathy for Anxiety and Stress?</h2>
-      <p>Conventional anxiety treatment often involves benzodiazepines or SSRIs, which, while effective, carry risks of dependency, withdrawal symptoms, and various side effects. Many patients — especially professionals who need mental clarity — seek alternatives.</p>
+      <p>Conventional anxiety treatment often involves benzodiazepines or SSRIs, which, while effective, carry risks of dependency, withdrawal symptoms, and various side effects. Many patients - especially professionals who need mental clarity - seek alternatives.</p>
 
       <p>Homeopathy offers several advantages:</p>
       <ul>
@@ -310,10 +310,10 @@ export const blogPosts: BlogPost[] = [
       <h2>Common Homeopathic Approaches for Anxiety</h2>
       <p>In homeopathy, the remedy is matched not just to the symptom 'anxiety,' but to the specific way each person experiences it:</p>
       <ul>
-        <li>The person who is restless and fears the worst — one remedy</li>
-        <li>The person who is paralyzed by performance anxiety — another remedy</li>
-        <li>The person who hides their anxiety behind a brave face — yet another</li>
-        <li>The person whose anxiety manifests primarily as digestive upset — a different approach entirely</li>
+        <li>The person who is restless and fears the worst - one remedy</li>
+        <li>The person who is paralyzed by performance anxiety - another remedy</li>
+        <li>The person who hides their anxiety behind a brave face - yet another</li>
+        <li>The person whose anxiety manifests primarily as digestive upset - a different approach entirely</li>
       </ul>
       <p>This individualization is what makes homeopathy uniquely effective for mental health conditions.</p>
 
@@ -324,11 +324,11 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Physical activity:</strong> Regular exercise is one of the most powerful anti-anxiety tools</li>
         <li><strong>Sleep hygiene:</strong> Maintain consistent sleep and wake times</li>
         <li><strong>Social connection:</strong> Spending time with loved ones buffers against stress</li>
-        <li><strong>Nature time:</strong> Pune's wonderful hills and gardens — use them! Nature exposure reduces stress hormones</li>
+        <li><strong>Nature time:</strong> Pune's wonderful hills and gardens - use them! Nature exposure reduces stress hormones</li>
       </ul>
 
       <h2>Seeking Help Is a Sign of Strength</h2>
-      <p>If stress or anxiety is affecting your quality of life, seeking help is not weakness — it's wisdom. Whether through homeopathy, counseling, or a combination, support is available. At Sharda Homeopathy Clinic, we create a safe, non-judgmental space for you to discuss your concerns and find a path to better mental wellness.</p>
+      <p>If stress or anxiety is affecting your quality of life, seeking help is not weakness - it's wisdom. Whether through homeopathy, counseling, or a combination, support is available. At Sharda Homeopathy Clinic, we create a safe, non-judgmental space for you to discuss your concerns and find a path to better mental wellness.</p>
     `,
     author: "Dr. Sharda Tawale",
     date: "2024-12-01",

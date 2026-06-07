@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef, useEffect, useState } from "react";
 import { Check } from "lucide-react";
@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const highlights = [
   "MD (Homeopath) with 25+ years of clinical practice",
-  "IIM Bangalore — General Management Programme (GS 10K)",
+  "IIM Bangalore - General Management Programme (GS 10K)",
   "10,000+ patients treated across skin, respiratory, joint, and lifestyle disorders",
-  "Personalized constitutional treatment — no two patients get the same medicine",
+  "Personalized constitutional treatment - no two patients get the same medicine",
   "Online + in-clinic consultations for patients across India",
 ];
 
@@ -53,7 +53,7 @@ export default function ExpertiseParallax() {
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-16 sm:py-24">
         <div className="grid lg:grid-cols-5 gap-10 items-center">
-          {/* Left — Doctor's message */}
+          {/* Left - Doctor's message */}
           <div className="lg:col-span-2">
             <span className="inline-block text-secondary text-xs font-semibold uppercase tracking-widest mb-3">
               Dr. Sharda Tawale
@@ -74,7 +74,7 @@ export default function ExpertiseParallax() {
             </Link>
           </div>
 
-          {/* Right — Credentials card */}
+          {/* Right - Credentials card */}
           <div className="lg:col-span-3">
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
               <h3 className="font-playfair text-charcoal text-xl mb-5">

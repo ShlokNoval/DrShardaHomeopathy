@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import SectionHeading from "@/components/shared/SectionHeading";
 import ScrollReveal from "@/components/shared/ScrollReveal";
@@ -32,7 +32,7 @@ export default function HowItWorks() {
         <SectionHeading title="Your Healing Journey" />
 
         <div className="relative">
-          {/* Connecting Line (desktop only) — positioned behind circles */}
+          {/* Connecting Line (desktop only) - positioned behind circles */}
           <div className="hidden lg:block absolute top-8 left-[20%] right-[20%] h-0.5 bg-gradient-to-r from-secondary/10 via-secondary/40 to-secondary/10 z-0" />
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">

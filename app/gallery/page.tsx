@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import FloatingGlobules from "@/components/shared/FloatingGlobules";
 import CTABanner from "@/components/home/CTABanner";
@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "View photos of Sharda Homeopathy Clinic in Pune — our facility, treatment rooms, and clinic environment.",
+  description: "View photos of Sharda Homeopathy Clinic in Pune - our facility, treatment rooms, and clinic environment.",
 };
 
 const gallery = [

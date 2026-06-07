@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -79,7 +79,7 @@ function MortarSilhouette() {
 function BotanicalSprigs() {
   return (
     <>
-      {/* Large sprig — bottom-left, cropped */}
+      {/* Large sprig - bottom-left, cropped */}
       <div
         className="absolute bottom-0 left-0 pointer-events-none z-[2] hidden sm:block"
         style={{ width: 280, height: 280, opacity: 0.14, filter: "sepia(60%) saturate(80%) hue-rotate(10deg)" }}
@@ -98,7 +98,7 @@ function BotanicalSprigs() {
         </svg>
       </div>
 
-      {/* Medium sprig — top-right (behind vials) */}
+      {/* Medium sprig - top-right (behind vials) */}
       <div
         className="absolute top-0 right-0 pointer-events-none z-[2] hidden sm:block"
         style={{ width: 220, height: 220, opacity: 0.10, filter: "sepia(40%) saturate(80%)" }}
@@ -114,7 +114,7 @@ function BotanicalSprigs() {
         </svg>
       </div>
 
-      {/* Small chamomile near badge — top-left content area */}
+      {/* Small chamomile near badge - top-left content area */}
       <div
         className="absolute pointer-events-none z-[2]"
         style={{ left: "3%", top: "18%", width: 90, height: 90, opacity: 0.13 }}
@@ -333,7 +333,7 @@ function IngredientCutouts() {
 function RemedyLabels() {
   return (
     <div className="absolute inset-0 pointer-events-none z-[7] hidden lg:block" aria-hidden>
-      {/* Card 1 — near top-right */}
+      {/* Card 1 - near top-right */}
       <div
         className="absolute"
         style={{
@@ -358,7 +358,7 @@ function RemedyLabels() {
         </p>
       </div>
 
-      {/* Card 2 — near bottom-left of image */}
+      {/* Card 2 - near bottom-left of image */}
       <div
         className="absolute"
         style={{
@@ -469,21 +469,21 @@ export default function HeroSection() {
           ))}
         </div>
 
-        {/* LAYER 1 — Mortar & Pestle silhouette */}
+        {/* LAYER 1 - Mortar & Pestle silhouette */}
         <MortarSilhouette />
 
-        {/* LAYER 2 — Botanical sprigs */}
+        {/* LAYER 2 - Botanical sprigs */}
         <BotanicalSprigs />
 
-        {/* LAYER 3 — Warm golden glow behind image */}
+        {/* LAYER 3 - Warm golden glow behind image */}
         <WarmGlow />
 
-        {/* LAYER 4 — Globule clusters */}
+        {/* LAYER 4 - Globule clusters */}
         <GlobuleClusters />
 
-        {/* LAYER 5 — Medicine vials (positioned relative to right column) */}
+        {/* LAYER 5 - Medicine vials (positioned relative to right column) */}
         <div className="absolute inset-0 pointer-events-none z-[5]" aria-hidden>
-          {/* Vial group — top-right of image area */}
+          {/* Vial group - top-right of image area */}
           <div className="absolute hidden lg:block" style={{ right: "6%", top: "8%", width: 180, height: 140 }}>
             {/* Vial 1 */}
             <div style={{ position:"absolute", left:0, top:0, animation:"vialFloat 5s ease-in-out infinite", animationDelay:"0s" }}>
@@ -497,7 +497,7 @@ export default function HeroSection() {
                 <rect x="8" y="19" width="3" height="38" rx="1.5" fill="rgba(255,255,255,0.18)" />
               </svg>
             </div>
-            {/* Vial 2 — taller, center */}
+            {/* Vial 2 - taller, center */}
             <div style={{ position:"absolute", left:42, top:-18, transform:"rotate(7deg)", animation:"vialFloat 6.5s ease-in-out infinite", animationDelay:"1.2s" }}>
               <svg viewBox="0 0 30 110" width={24} height={108} xmlns="http://www.w3.org/2000/svg">
                 <rect x="8" y="0" width="14" height="10" rx="3" fill="rgba(255,255,255,0.22)" stroke="rgba(255,255,255,0.45)" strokeWidth="1" />
@@ -507,7 +507,7 @@ export default function HeroSection() {
                 <rect x="8" y="19" width="3" height="44" rx="1.5" fill="rgba(255,255,255,0.15)" />
               </svg>
             </div>
-            {/* Vial 3 — short, right */}
+            {/* Vial 3 - short, right */}
             <div style={{ position:"absolute", left:80, top:10, transform:"rotate(18deg)", animation:"vialFloat 4.5s ease-in-out infinite", animationDelay:"2.1s" }}>
               <svg viewBox="0 0 36 75" width={32} height={68} xmlns="http://www.w3.org/2000/svg">
                 <rect x="8" y="0" width="20" height="12" rx="4" fill="rgba(255,255,255,0.22)" stroke="rgba(255,255,255,0.45)" strokeWidth="1" />
@@ -520,7 +520,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Small bottle — bottom-left of image frame */}
+          {/* Small bottle - bottom-left of image frame */}
           <div
             className="absolute hidden lg:block"
             style={{ right: "43%", bottom: "22%", transform: "rotate(-8deg)", animation: "vialFloat 7s ease-in-out infinite", animationDelay: "0.7s" }}
@@ -534,10 +534,10 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* LAYER 6 — Ingredient cutouts */}
+        {/* LAYER 6 - Ingredient cutouts */}
         <IngredientCutouts />
 
-        {/* LAYER 7 — Remedy label cards */}
+        {/* LAYER 7 - Remedy label cards */}
         <RemedyLabels />
 
         {/* ══════════════════════════════════════════════
@@ -546,7 +546,7 @@ export default function HeroSection() {
         <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto px-4 w-full py-0">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center w-full">
 
-            {/* Left Column — Text */}
+            {/* Left Column - Text */}
             <ScrollReveal direction="left">
               <div className="flex flex-col">
                 {/* Badge */}
@@ -604,12 +604,12 @@ export default function HeroSection() {
               </div>
             </ScrollReveal>
 
-            {/* Right Column — Doctor Image */}
+            {/* Right Column - Doctor Image */}
             <ScrollReveal direction="right" delay={0.2}>
               <div className="relative flex justify-center lg:justify-end">
                 <div className="relative z-10">
 
-                  {/* ── Health image floating card — top-right of image ── */}
+                  {/* ── Health image floating card - top-right of image ── */}
                   <div
                     className="absolute hidden lg:block z-30"
                     style={{
@@ -704,7 +704,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* ── Stats row — bottom ── */}
+        {/* ── Stats row - bottom ── */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pb-20 sm:pb-16">
           <div className="flex flex-wrap gap-3 text-white justify-center lg:justify-start">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-[#C9963A]/30 px-4 py-2.5 rounded-full shadow-sm hover:-translate-y-1 transition-transform">
@@ -725,7 +725,7 @@ export default function HeroSection() {
         {/* ── Scroll indicator ── */}
         <ScrollIndicator />
 
-        {/* ── Bottom edge — clean straight line into cream section ── */}
+        {/* ── Bottom edge - clean straight line into cream section ── */}
         <div className="absolute bottom-0 left-0 right-0 w-full h-4 bg-cream z-20" />
       </section>
     </>

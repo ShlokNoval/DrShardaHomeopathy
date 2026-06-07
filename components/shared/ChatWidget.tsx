@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
@@ -22,7 +22,7 @@ interface Message {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
-   INTENT ENGINE  (pure keyword matching — zero API calls)
+   INTENT ENGINE  (pure keyword matching - zero API calls)
 ───────────────────────────────────────────────────────────────────────── */
 interface Intent {
   keywords: string[];
@@ -88,7 +88,7 @@ const INTENTS: Intent[] = [
   {
     keywords: ["child", "kid", "baby", "pediatric", "infant", "toddler"],
     response: {
-      text: "Homeopathy is 100% safe and gentle for children — no side effects, no chemicals. 👶",
+      text: "Homeopathy is 100% safe and gentle for children - no side effects, no chemicals. 👶",
       links: [{ label: "Children's Treatments →", href: "/treatments?cat=children" }],
       chips: [{ label: "📅 Book Consultation", value: "go:/appointment" }],
     },
@@ -140,7 +140,7 @@ const INTENTS: Intent[] = [
     response: {
       text: "⭐ Dr. Sharda holds a **4.9/5 rating** from thousands of happy patients. Read their stories!",
       links: [{ label: "Read Testimonials →", href: "/testimonials" }],
-      chips: [{ label: "📅 Join Them — Book Now", value: "go:/appointment" }],
+      chips: [{ label: "📅 Join Them - Book Now", value: "go:/appointment" }],
     },
   },
   {
@@ -160,7 +160,7 @@ const INTENTS: Intent[] = [
   {
     keywords: ["safe", "side effect", "natural", "chemical", "harmless", "gentle"],
     response: {
-      text: "✅ Homeopathy is 100% natural, gentle, and free from side effects. It works with your body's own healing intelligence — suitable for all ages, including infants and pregnant women.",
+      text: "✅ Homeopathy is 100% natural, gentle, and free from side effects. It works with your body's own healing intelligence - suitable for all ages, including infants and pregnant women.",
       chips: [
         { label: "📋 Browse Treatments", value: "go:/treatments" },
         { label: "📅 Book Consultation", value: "go:/appointment" },
@@ -807,7 +807,7 @@ export default function ChatWidget() {
         }}
         className="group"
       >
-        {/* "Ask Shuddh 🌿" always-visible pill label — hidden on mobile */}
+        {/* "Ask Shuddh 🌿" always-visible pill label - hidden on mobile */}
         {!open && (
           <div
             onClick={openChat}

@@ -1,4 +1,4 @@
-import { treatments, categoryLabels } from "@/data/treatments";
+﻿import { treatments, categoryLabels } from "@/data/treatments";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { AlertCircle, Leaf, Stethoscope, ArrowLeft, ArrowRight } from "lucide-react";
@@ -111,7 +111,7 @@ export default function TreatmentDetail({ params }: Props) {
             <div className="bg-cream rounded-2xl p-8 mb-12 border-l-4 border-secondary">
               <h3 className="font-playfair text-xl text-charcoal mb-3">💬 A Note from Dr. Sharda</h3>
               <p className="text-charcoal/80 italic leading-relaxed">&ldquo;{treatment.doctorNote}&rdquo;</p>
-              <p className="text-muted text-sm mt-4 font-medium">— Dr. Sharda Tawale, MD (Homeopath)</p>
+              <p className="text-muted text-sm mt-4 font-medium">- Dr. Sharda Tawale, MD (Homeopath)</p>
             </div>
           </ScrollReveal>
 

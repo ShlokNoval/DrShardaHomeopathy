@@ -1,4 +1,4 @@
-import { testimonials } from "@/data/testimonials";
+﻿import { testimonials } from "@/data/testimonials";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import FloatingGlobules from "@/components/shared/FloatingGlobules";
 import CTABanner from "@/components/home/CTABanner";
@@ -15,7 +15,7 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* ══════════════════════════════════════════════
-          HERO + VIDEO ZONE — dark green
+          HERO + VIDEO ZONE - dark green
       ══════════════════════════════════════════════ */}
 
       {/* Animations + decorative image hover styles */}
@@ -164,7 +164,7 @@ export default function TestimonialsPage() {
         <div className="deco-side" aria-hidden style={{ position: "absolute", left: 20, top: 0, bottom: 0, width: 120, zIndex: 1, pointerEvents: "none", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", paddingTop: 60, paddingBottom: 60 }}>
           {/* Leaf connector top */}
           <span style={{ fontSize: 22, opacity: 0.4, marginBottom: -8 }}>🌿</span>
-          {/* Circle 1 — vegetables */}
+          {/* Circle 1 - vegetables */}
           <img
             src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=160"
             alt=""
@@ -172,7 +172,7 @@ export default function TestimonialsPage() {
             style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 5s ease-in-out infinite" }}
           />
           <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(15deg)", margin: "4px 0" }}>🌿</span>
-          {/* Circle 2 — herbs */}
+          {/* Circle 2 - herbs */}
           <img
             src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=160"
             alt=""
@@ -180,7 +180,7 @@ export default function TestimonialsPage() {
             style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 6s 2s ease-in-out infinite" }}
           />
           <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(-10deg)", margin: "4px 0" }}>🌿</span>
-          {/* Circle 3 — mortar pestle */}
+          {/* Circle 3 - mortar pestle */}
           <img
             src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=160"
             alt=""
@@ -193,7 +193,7 @@ export default function TestimonialsPage() {
         {/* ── Photo Layer: Right circular stack + connectors ── */}
         <div className="deco-side" aria-hidden style={{ position: "absolute", right: 20, top: 0, bottom: 0, width: 120, zIndex: 1, pointerEvents: "none", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", paddingTop: 60, paddingBottom: 60 }}>
           <span style={{ fontSize: 22, opacity: 0.4, marginBottom: -8 }}>🌿</span>
-          {/* Circle 1 — ginger turmeric */}
+          {/* Circle 1 - ginger turmeric */}
           <img
             src="https://images.unsplash.com/photo-1550572017-edd951b55104?w=160"
             alt=""
@@ -201,7 +201,7 @@ export default function TestimonialsPage() {
             style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 5.5s 1s ease-in-out infinite" }}
           />
           <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(-15deg)", margin: "4px 0" }}>🌿</span>
-          {/* Circle 2 — green nature */}
+          {/* Circle 2 - green nature */}
           <img
             src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=160"
             alt=""
@@ -209,7 +209,7 @@ export default function TestimonialsPage() {
             style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 6.5s 3s ease-in-out infinite" }}
           />
           <span style={{ fontSize: 20, opacity: 0.35, transform: "rotate(12deg)", margin: "4px 0" }}>🌿</span>
-          {/* Circle 3 — healthy food bowl */}
+          {/* Circle 3 - healthy food bowl */}
           <img
             src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=160"
             alt=""
@@ -294,7 +294,7 @@ export default function TestimonialsPage() {
       </div>
 
       {/* ══════════════════════════════════════════════
-          WRITTEN REVIEWS — cream zone
+          WRITTEN REVIEWS - cream zone
       ══════════════════════════════════════════════ */}
       <section className="bg-cream py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4">

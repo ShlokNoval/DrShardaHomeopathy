@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -17,7 +17,7 @@ export default function DoctorVideoSection() {
 
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left — Video */}
+          {/* Left - Video */}
           <ScrollReveal direction="left">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-charcoal">
               {!playing ? (
@@ -51,7 +51,7 @@ export default function DoctorVideoSection() {
             </div>
           </ScrollReveal>
 
-          {/* Right — Quote */}
+          {/* Right - Quote */}
           <ScrollReveal direction="right" delay={0.15}>
             <div>
               {/* Decorative Quote Mark */}
@@ -63,7 +63,7 @@ export default function DoctorVideoSection() {
                 A Message from Dr. Sharda
               </h3>
               <p className="font-playfair text-lg text-charcoal/80 italic leading-relaxed mb-6">
-                &ldquo;Homeopathy does not just cure diseases — it transforms
+                &ldquo;Homeopathy does not just cure diseases - it transforms
                 lives by treating the whole person, not just the symptoms. My
                 mission is to bring this gentle healing to every family in
                 Pune.&rdquo;

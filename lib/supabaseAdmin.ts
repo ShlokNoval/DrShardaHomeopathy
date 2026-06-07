@@ -1,6 +1,6 @@
-import { createClient, SupabaseClient } from "@supabase/supabase-js";
+﻿import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
-// Server-only admin client — uses service role key for full DB access
+// Server-only admin client - uses service role key for full DB access
 // NEVER import this in client components
 
 let _supabaseAdmin: SupabaseClient | null = null;

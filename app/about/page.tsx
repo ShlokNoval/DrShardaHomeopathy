@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import { Check } from "lucide-react";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import BotanicalDecor from "@/components/shared/BotanicalDecor";
@@ -52,7 +52,7 @@ export default function AboutPage() {
                 <h2 className="font-playfair text-charcoal mb-3">My Journey in Healing</h2>
                 <div className="w-12 h-0.5 bg-secondary mb-6" />
                 <p className="text-muted leading-relaxed mb-4">
-                  My journey into homeopathy began with a deeply personal experience — watching a family member find lasting relief from chronic asthma through homeopathic treatment after years of struggling with conventional medicines. That experience planted the seed of what would become my life&apos;s calling.
+                  My journey into homeopathy began with a deeply personal experience - watching a family member find lasting relief from chronic asthma through homeopathic treatment after years of struggling with conventional medicines. That experience planted the seed of what would become my life&apos;s calling.
                 </p>
                 <p className="text-muted leading-relaxed mb-4">
                   After completing my MD in Homeopathy and later a General Management Programme from IIM Bangalore, I established my practice in Pune in 2001 with a simple mission: to bring the gentle, profound healing power of homeopathy to every family that seeks natural solutions.
@@ -89,7 +89,7 @@ export default function AboutPage() {
               <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-primary">
                 <p className="font-playfair text-lg text-charcoal mb-2">&ldquo;I listen first, prescribe later.&rdquo;</p>
                 <p className="text-muted text-sm leading-relaxed">
-                  Many patients tell me they&apos;ve never been heard by a doctor before. I spend 30–45 minutes on the first consultation alone — understanding your symptoms, your daily life, your emotional state. That&apos;s how homeopathy works: the remedy must match <em>you</em>, not just your disease.
+                  Many patients tell me they&apos;ve never been heard by a doctor before. I spend 30–45 minutes on the first consultation alone - understanding your symptoms, your daily life, your emotional state. That&apos;s how homeopathy works: the remedy must match <em>you</em>, not just your disease.
                 </p>
               </div>
             </ScrollReveal>
@@ -107,7 +107,7 @@ export default function AboutPage() {
               <div className="bg-white rounded-xl p-6 sm:p-8 border-l-4 border-primary">
                 <p className="font-playfair text-lg text-charcoal mb-2">&ldquo;I won&apos;t promise overnight miracles.&rdquo;</p>
                 <p className="text-muted text-sm leading-relaxed">
-                  Homeopathy heals from within — it takes time, but the results are deep and lasting. I&apos;ll always be honest with you about timelines. Some conditions show improvement in days, others take weeks. But we work together until you feel genuinely better, not just symptom-free.
+                  Homeopathy heals from within - it takes time, but the results are deep and lasting. I&apos;ll always be honest with you about timelines. Some conditions show improvement in days, others take weeks. But we work together until you feel genuinely better, not just symptom-free.
                 </p>
               </div>
             </ScrollReveal>
@@ -146,8 +146,8 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               "MD (Homeopath)",
-              "IIM Bangalore — General Management Programme (GS 10K)",
-              "Member — Maharashtra Homeopathic Medical Association",
+              "IIM Bangalore - General Management Programme (GS 10K)",
+              "Member - Maharashtra Homeopathic Medical Association",
               "Certified in Advanced Homeopathic Therapeutics",
               "Published researcher in homeopathic case studies",
               "Regular speaker at homeopathic conferences",

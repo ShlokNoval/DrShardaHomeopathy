@@ -1,4 +1,4 @@
-export type TreatmentCategory =
+﻿export type TreatmentCategory =
   | "skin"
   | "respiratory"
   | "digestive"
@@ -64,9 +64,9 @@ export const treatments: Treatment[] = [
       "Cold weather and dry climate conditions",
     ],
     homeopathyApproach:
-      "Homeopathy treats psoriasis by addressing the root immune imbalance rather than just suppressing symptoms. Remedies are selected based on the individual's complete health picture — physical symptoms, emotional state, and constitutional type. This approach aims to regulate the overactive immune response, reduce inflammation naturally, and promote healthy skin cell turnover. Common remedies include Arsenicum Album, Graphites, Sulphur, and Petroleum, chosen based on individual case analysis.",
+      "Homeopathy treats psoriasis by addressing the root immune imbalance rather than just suppressing symptoms. Remedies are selected based on the individual's complete health picture - physical symptoms, emotional state, and constitutional type. This approach aims to regulate the overactive immune response, reduce inflammation naturally, and promote healthy skin cell turnover. Common remedies include Arsenicum Album, Graphites, Sulphur, and Petroleum, chosen based on individual case analysis.",
     doctorNote:
-      "Most patients with psoriasis see significant improvement within 3–6 months of consistent homeopathic treatment. I focus on understanding your unique triggers — whether stress, diet, or environmental — and create a personalized plan. Many of my patients have been able to reduce their dependency on steroid creams significantly.",
+      "Most patients with psoriasis see significant improvement within 3–6 months of consistent homeopathic treatment. I focus on understanding your unique triggers - whether stress, diet, or environmental - and create a personalized plan. Many of my patients have been able to reduce their dependency on steroid creams significantly.",
     relatedConditions: ["eczema", "vitiligo", "urticaria"],
     metaTitle: "Psoriasis Homeopathic Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -130,9 +130,9 @@ export const treatments: Treatment[] = [
       "Certain medications (corticosteroids, lithium)",
     ],
     homeopathyApproach:
-      "Homeopathy addresses acne by treating hormonal imbalances and regulating sebum production from within. Unlike topical treatments that only work on the surface, homeopathic remedies help correct the internal factors causing acne — whether hormonal, digestive, or stress-related. Remedies like Berberis Aquifolium, Pulsatilla, and Hepar Sulph are commonly used based on individual case analysis.",
+      "Homeopathy addresses acne by treating hormonal imbalances and regulating sebum production from within. Unlike topical treatments that only work on the surface, homeopathic remedies help correct the internal factors causing acne - whether hormonal, digestive, or stress-related. Remedies like Berberis Aquifolium, Pulsatilla, and Hepar Sulph are commonly used based on individual case analysis.",
     doctorNote:
-      "Teenage and hormonal acne responds excellently to homeopathy. I focus on the whole picture — your hormonal health, digestive system, and stress levels. Most patients see a visible reduction in new breakouts within 6–8 weeks, with the skin gradually clearing over 3–4 months.",
+      "Teenage and hormonal acne responds excellently to homeopathy. I focus on the whole picture - your hormonal health, digestive system, and stress levels. Most patients see a visible reduction in new breakouts within 6–8 weeks, with the skin gradually clearing over 3–4 months.",
     relatedConditions: ["eczema", "pcod-pcos", "hair-fall"],
     metaTitle: "Acne Homeopathic Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -165,7 +165,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathic treatment for vitiligo aims to halt the spread of white patches and stimulate re-pigmentation by correcting the underlying autoimmune dysfunction. Treatment is highly individualized and considers the pattern of patches, speed of progression, family history, and emotional impact. Remedies help regulate immune function and promote melanocyte regeneration.",
     doctorNote:
-      "Vitiligo requires patience and consistent treatment. Early-stage vitiligo responds best — I have seen re-pigmentation begin within 4–6 months in many cases. The key is starting treatment early and maintaining consistency. I also work with patients on managing the emotional aspects of the condition.",
+      "Vitiligo requires patience and consistent treatment. Early-stage vitiligo responds best - I have seen re-pigmentation begin within 4–6 months in many cases. The key is starting treatment early and maintaining consistency. I also work with patients on managing the emotional aspects of the condition.",
     relatedConditions: ["psoriasis", "eczema", "thyroid-disorders"],
     metaTitle: "Vitiligo Homeopathic Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -198,7 +198,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathy excels in treating chronic urticaria by addressing the underlying allergic tendency and immune hypersensitivity. Treatment reduces the frequency, duration, and severity of episodes while working on the root cause. Remedies are selected based on trigger factors, pattern of eruptions, and individual constitution.",
     doctorNote:
-      "Chronic urticaria can be incredibly frustrating — I understand the impact it has on daily life. In my experience, homeopathic treatment can significantly reduce episode frequency within 2–3 months and often achieve long-term remission within 6–8 months.",
+      "Chronic urticaria can be incredibly frustrating - I understand the impact it has on daily life. In my experience, homeopathic treatment can significantly reduce episode frequency within 2–3 months and often achieve long-term remission within 6–8 months.",
     relatedConditions: ["eczema", "psoriasis", "allergic-rhinitis"],
     metaTitle: "Urticaria Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -233,7 +233,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathic treatment for asthma aims to reduce the frequency and severity of attacks by strengthening respiratory immunity and reducing airway hypersensitivity. The approach addresses both the acute symptoms and the chronic tendency, working to reduce dependence on rescue inhalers over time. Treatment is complementary and does not require stopping existing medications abruptly.",
     doctorNote:
-      "Asthma management through homeopathy has been one of my most rewarding areas of practice. Many patients experience a significant reduction in attack frequency within 3–4 months. I always work alongside your existing treatment plan — the goal is gradual improvement, not abrupt changes.",
+      "Asthma management through homeopathy has been one of my most rewarding areas of practice. Many patients experience a significant reduction in attack frequency within 3–4 months. I always work alongside your existing treatment plan - the goal is gradual improvement, not abrupt changes.",
     relatedConditions: ["allergic-rhinitis", "sinusitis", "tonsillitis"],
     metaTitle: "Asthma Homeopathic Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -299,7 +299,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathic treatment for sinusitis addresses both acute infections and chronic tendency. Remedies help reduce sinus inflammation, improve drainage, and strengthen local immunity to prevent recurrence. The approach is particularly effective for patients with recurring sinusitis who have not found lasting relief with antibiotics.",
     doctorNote:
-      "Chronic sinusitis patients often come to me after multiple courses of antibiotics. Homeopathy offers a different path — by strengthening sinus immunity and reducing inflammation naturally, many patients experience a dramatic reduction in infection frequency. Results typically begin within 4–6 weeks.",
+      "Chronic sinusitis patients often come to me after multiple courses of antibiotics. Homeopathy offers a different path - by strengthening sinus immunity and reducing inflammation naturally, many patients experience a dramatic reduction in infection frequency. Results typically begin within 4–6 weeks.",
     relatedConditions: ["allergic-rhinitis", "asthma", "tonsillitis"],
     metaTitle: "Sinusitis Homeopathic Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -466,7 +466,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathy offers effective non-surgical treatment for piles and fissures by reducing venous congestion, promoting healing of fissures, and addressing the root cause (usually constipation). Treatment reduces pain, bleeding, and swelling while promoting long-term resolution. Many patients avoid surgery through timely homeopathic intervention.",
     doctorNote:
-      "Piles and fissures cause significant suffering that patients often tolerate silently. Homeopathic treatment can resolve early to moderate cases completely and significantly improve advanced cases. I encourage patients not to wait — early treatment yields the best results.",
+      "Piles and fissures cause significant suffering that patients often tolerate silently. Homeopathic treatment can resolve early to moderate cases completely and significantly improve advanced cases. I encourage patients not to wait - early treatment yields the best results.",
     relatedConditions: ["constipation", "ibs", "gastritis"],
     metaTitle: "Piles & Fissure Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -532,9 +532,9 @@ export const treatments: Treatment[] = [
       "Osteoporosis-related compression fractures",
     ],
     homeopathyApproach:
-      "Homeopathic treatment addresses the root cause of back pain — whether muscular, structural, or inflammatory. Remedies reduce pain, muscle spasm, and inflammation while promoting tissue healing. Treatment is particularly effective for chronic back pain that hasn't responded well to conventional painkillers.",
+      "Homeopathic treatment addresses the root cause of back pain - whether muscular, structural, or inflammatory. Remedies reduce pain, muscle spasm, and inflammation while promoting tissue healing. Treatment is particularly effective for chronic back pain that hasn't responded well to conventional painkillers.",
     doctorNote:
-      "Back pain often has multiple contributing factors — poor posture, stress, and structural issues all play a role. I take a comprehensive approach, combining homeopathic remedies with practical advice on posture, exercises, and lifestyle modifications. Many patients experience significant relief within 3–4 weeks.",
+      "Back pain often has multiple contributing factors - poor posture, stress, and structural issues all play a role. I take a comprehensive approach, combining homeopathic remedies with practical advice on posture, exercises, and lifestyle modifications. Many patients experience significant relief within 3–4 weeks.",
     relatedConditions: ["sciatica", "arthritis", "gout"],
     metaTitle: "Back Pain Homeopathic Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -648,7 +648,7 @@ export const treatments: Treatment[] = [
     icon: "👶",
     shortDesc: "Frequent cold/ coughs, and infections in children",
     overview:
-      "Some children seem to catch every cold and infection going around. Recurrent respiratory infections — more than 6–8 upper respiratory infections per year — can indicate an underdeveloped or weakened immune system. These frequent illnesses disrupt schooling, cause parental anxiety, and often lead to repeated antibiotic courses that further compromise immunity.",
+      "Some children seem to catch every cold and infection going around. Recurrent respiratory infections - more than 6–8 upper respiratory infections per year - can indicate an underdeveloped or weakened immune system. These frequent illnesses disrupt schooling, cause parental anxiety, and often lead to repeated antibiotic courses that further compromise immunity.",
     symptoms: [
       "Frequent cold and cough episodes (monthly or more)",
       "Recurring ear infections (otitis media)",
@@ -668,7 +668,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathic treatment strengthens the child's immune system naturally, reducing susceptibility to infections. Constitutional treatment addresses the underlying immune weakness, while acute remedies help manage individual episodes. The goal is to reduce infection frequency, duration, and severity over time.",
     doctorNote:
-      "Children caught in the cycle of repeated infections and antibiotics benefit enormously from homeopathy. I focus on building their natural immunity. Parents typically notice a significant reduction in infection frequency within 2–3 months — children are healthier, happier, and miss less school.",
+      "Children caught in the cycle of repeated infections and antibiotics benefit enormously from homeopathy. I focus on building their natural immunity. Parents typically notice a significant reduction in infection frequency within 2–3 months - children are healthier, happier, and miss less school.",
     relatedConditions: ["tonsillitis", "bedwetting", "growth-issues"],
     metaTitle: "Recurrent Infections Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -854,7 +854,7 @@ export const treatments: Treatment[] = [
       "Excessively heavy or prolonged menstrual bleeding",
       "Irregular cycle length (less than 21 or more than 35 days)",
       "Missed periods or absent menstruation",
-      "Premenstrual syndrome (PMS) — mood swings, bloating, breast tenderness",
+      "Premenstrual syndrome (PMS) - mood swings, bloating, breast tenderness",
       "Spotting between periods",
     ],
     causes: [
@@ -903,7 +903,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathic treatment for diabetes works as a complementary approach to support blood sugar management, reduce complications, and improve overall well-being. Remedies help improve insulin sensitivity, support pancreatic function, and address associated conditions like diabetic neuropathy and slow wound healing.",
     doctorNote:
-      "I want to be clear — homeopathy does not replace your diabetes medication. What it does is support better blood sugar control, reduce complications, and improve your quality of life. Many of my diabetic patients report better energy levels, improved wound healing, and more stable sugar readings with complementary homeopathic treatment.",
+      "I want to be clear - homeopathy does not replace your diabetes medication. What it does is support better blood sugar control, reduce complications, and improve your quality of life. Many of my diabetic patients report better energy levels, improved wound healing, and more stable sugar readings with complementary homeopathic treatment.",
     relatedConditions: ["hypertension", "migraine", "arthritis"],
     metaTitle: "Diabetes Management in Pune | Sharda Homeopathy",
     metaDescription:
@@ -934,9 +934,9 @@ export const treatments: Treatment[] = [
       "Kidney disease and hormonal disorders",
     ],
     homeopathyApproach:
-      "Homeopathic treatment for hypertension works as a complementary approach to support blood pressure management. Remedies help address the underlying factors contributing to high blood pressure — whether stress, kidney function, or arterial health. Treatment aims to reduce the cardiovascular impact and support overall cardiovascular well-being.",
+      "Homeopathic treatment for hypertension works as a complementary approach to support blood pressure management. Remedies help address the underlying factors contributing to high blood pressure - whether stress, kidney function, or arterial health. Treatment aims to reduce the cardiovascular impact and support overall cardiovascular well-being.",
     doctorNote:
-      "Like diabetes, hypertension management with homeopathy is complementary — it works alongside your prescribed medications. I focus on the stress, lifestyle, and metabolic factors that contribute to high blood pressure. Many patients report improved readings and a greater sense of well-being.",
+      "Like diabetes, hypertension management with homeopathy is complementary - it works alongside your prescribed medications. I focus on the stress, lifestyle, and metabolic factors that contribute to high blood pressure. Many patients report improved readings and a greater sense of well-being.",
     relatedConditions: ["diabetes-management", "migraine", "hair-fall"],
     metaTitle: "Hypertension Management in Pune | Sharda Homeopathy",
     metaDescription:
@@ -954,7 +954,7 @@ export const treatments: Treatment[] = [
       "Intense throbbing or pulsing pain, usually one-sided",
       "Nausea and vomiting",
       "Extreme sensitivity to light and sound",
-      "Visual disturbances (aura) — flashing lights, zigzag lines",
+      "Visual disturbances (aura) - flashing lights, zigzag lines",
       "Lightheadedness and blurred vision",
       "Attacks lasting 4 to 72 hours",
     ],
@@ -967,9 +967,9 @@ export const treatments: Treatment[] = [
       "Genetic predisposition",
     ],
     homeopathyApproach:
-      "Homeopathic treatment for migraines addresses the root triggers and underlying susceptibility rather than just managing acute pain. Remedies are selected based on the specific headache pattern — location, time of onset, triggers, associated symptoms, and modalities. Treatment aims to reduce attack frequency, duration, and intensity.",
+      "Homeopathic treatment for migraines addresses the root triggers and underlying susceptibility rather than just managing acute pain. Remedies are selected based on the specific headache pattern - location, time of onset, triggers, associated symptoms, and modalities. Treatment aims to reduce attack frequency, duration, and intensity.",
     doctorNote:
-      "Migraines are truly debilitating, and I have deep empathy for patients who suffer from them. Homeopathic treatment has been remarkably effective in reducing migraine frequency — many patients go from weekly attacks to perhaps one or two per month within 2–3 months of treatment. The key is identifying your unique triggers.",
+      "Migraines are truly debilitating, and I have deep empathy for patients who suffer from them. Homeopathic treatment has been remarkably effective in reducing migraine frequency - many patients go from weekly attacks to perhaps one or two per month within 2–3 months of treatment. The key is identifying your unique triggers.",
     relatedConditions: ["hypertension", "diabetes-management", "hair-fall"],
     metaTitle: "Migraine Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -1000,7 +1000,7 @@ export const treatments: Treatment[] = [
       "Harsh chemical treatments and tight hairstyles",
     ],
     homeopathyApproach:
-      "Homeopathic treatment for hair fall addresses the root cause — whether hormonal, nutritional, stress-related, or autoimmune. Remedies stimulate hair follicle health, improve blood circulation to the scalp, and correct internal imbalances causing excessive hair loss. Treatment is particularly effective for hormonal hair loss and alopecia areata.",
+      "Homeopathic treatment for hair fall addresses the root cause - whether hormonal, nutritional, stress-related, or autoimmune. Remedies stimulate hair follicle health, improve blood circulation to the scalp, and correct internal imbalances causing excessive hair loss. Treatment is particularly effective for hormonal hair loss and alopecia areata.",
     doctorNote:
       "Hair fall often has multiple contributing factors. I conduct a thorough assessment including hormonal screening recommendations and nutritional evaluation. Most patients see reduced hair fall within 6–8 weeks and new growth beginning within 3–4 months. Patience and consistency are key.",
     relatedConditions: ["thyroid-disorders", "pcod-pcos", "acne"],
@@ -1017,7 +1017,7 @@ export const treatments: Treatment[] = [
     icon: "🧠",
     shortDesc: "Chronic stress, anxiety, and nervous tension",
     overview:
-      "Stress and anxiety are among the most prevalent health challenges today. Chronic stress suppresses immunity, disrupts sleep, and contributes to a cascade of physical ailments — from digestive issues to heart disease. Anxiety disorders affect millions and can manifest as generalized anxiety, panic attacks, social anxiety, or phobias, significantly impacting quality of life.",
+      "Stress and anxiety are among the most prevalent health challenges today. Chronic stress suppresses immunity, disrupts sleep, and contributes to a cascade of physical ailments - from digestive issues to heart disease. Anxiety disorders affect millions and can manifest as generalized anxiety, panic attacks, social anxiety, or phobias, significantly impacting quality of life.",
     symptoms: [
       "Persistent worry, restlessness, and irritability",
       "Rapid heartbeat, sweating, and trembling",
@@ -1035,7 +1035,7 @@ export const treatments: Treatment[] = [
       "Genetic predisposition to anxiety",
     ],
     homeopathyApproach:
-      "Homeopathy addresses stress and anxiety holistically — calming the nervous system, improving resilience, and treating physical manifestations (palpitations, insomnia, digestive issues) simultaneously. Remedies are chosen based on the type and trigger of anxiety, the individual's temperament, and associated physical symptoms.",
+      "Homeopathy addresses stress and anxiety holistically - calming the nervous system, improving resilience, and treating physical manifestations (palpitations, insomnia, digestive issues) simultaneously. Remedies are chosen based on the type and trigger of anxiety, the individual's temperament, and associated physical symptoms.",
     doctorNote:
       "Stress and anxiety respond beautifully to homeopathy. I use a gentle, judgement-free approach to understand the root of your anxiety. Many patients report feeling calmer and more grounded within the first 2–3 weeks of treatment, with progressive improvement over 2–3 months.",
     relatedConditions: ["insomnia", "depression", "migraine"],
@@ -1050,7 +1050,7 @@ export const treatments: Treatment[] = [
     icon: "🧠",
     shortDesc: "Persistent low mood, loss of interest, and emotional fatigue",
     overview:
-      "Depression is a serious mood disorder that affects how you feel, think, and handle daily activities. It is more than just sadness — it can cause profound hopelessness, loss of interest in activities, changes in appetite and sleep, and physical fatigue. Depression is one of the leading causes of disability worldwide and benefits greatly from a holistic treatment approach.",
+      "Depression is a serious mood disorder that affects how you feel, think, and handle daily activities. It is more than just sadness - it can cause profound hopelessness, loss of interest in activities, changes in appetite and sleep, and physical fatigue. Depression is one of the leading causes of disability worldwide and benefits greatly from a holistic treatment approach.",
     symptoms: [
       "Persistent sadness, emptiness, or hopelessness",
       "Loss of interest in activities once enjoyed",
@@ -1061,7 +1061,7 @@ export const treatments: Treatment[] = [
     ],
     causes: [
       "Neurochemical imbalances (serotonin, dopamine)",
-      "Life events — grief, trauma, loss",
+      "Life events - grief, trauma, loss",
       "Hormonal changes (postpartum, menopause, thyroid)",
       "Chronic illness and pain",
       "Genetic predisposition",
@@ -1070,7 +1070,7 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathic treatment for depression is complementary and deeply individualized. Remedies aim to restore emotional equilibrium, improve energy, and address the physical manifestations of depression. Treatment works on the mental-emotional plane alongside the physical, providing gentle yet profound healing without dependency.",
     doctorNote:
-      "Depression treatment requires sensitivity and patience. Homeopathy works gently but deeply — I work closely with patients over time to select remedies that match their unique emotional state. Many patients experience lifting of mood and increased motivation within 4–6 weeks.",
+      "Depression treatment requires sensitivity and patience. Homeopathy works gently but deeply - I work closely with patients over time to select remedies that match their unique emotional state. Many patients experience lifting of mood and increased motivation within 4–6 weeks.",
     relatedConditions: ["stress-anxiety", "insomnia", "hypertension"],
     metaTitle: "Depression Homeopathic Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -1101,9 +1101,9 @@ export const treatments: Treatment[] = [
       "Certain medications",
     ],
     homeopathyApproach:
-      "Homeopathy treats insomnia by identifying and addressing the root cause — whether stress, pain, hormonal imbalance, or mental activity. Remedies promote natural, restful sleep without sedation or dependency. Treatment considers sleep patterns, dream quality, and the time of waking.",
+      "Homeopathy treats insomnia by identifying and addressing the root cause - whether stress, pain, hormonal imbalance, or mental activity. Remedies promote natural, restful sleep without sedation or dependency. Treatment considers sleep patterns, dream quality, and the time of waking.",
     doctorNote:
-      "Many patients come to me after years of sleeping pill dependency. Homeopathy offers a safe path back to natural sleep. I focus on the underlying cause — stress, pain, hormonal shifts — and select remedies that gently restore normal sleep architecture. Most patients notice improved sleep quality within 2–4 weeks.",
+      "Many patients come to me after years of sleeping pill dependency. Homeopathy offers a safe path back to natural sleep. I focus on the underlying cause - stress, pain, hormonal shifts - and select remedies that gently restore normal sleep architecture. Most patients notice improved sleep quality within 2–4 weeks.",
     relatedConditions: ["stress-anxiety", "depression", "migraine"],
     metaTitle: "Insomnia Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -1116,7 +1116,7 @@ export const treatments: Treatment[] = [
     icon: "🧠",
     shortDesc: "Poor focus, memory weakness, and mental fatigue",
     overview:
-      "Difficulty concentrating and weak memory affect people of all ages — from students struggling with studies to professionals experiencing cognitive fatigue and older adults worried about memory decline. Homeopathy offers gentle, natural support to sharpen focus, improve retention, and restore mental clarity.",
+      "Difficulty concentrating and weak memory affect people of all ages - from students struggling with studies to professionals experiencing cognitive fatigue and older adults worried about memory decline. Homeopathy offers gentle, natural support to sharpen focus, improve retention, and restore mental clarity.",
     symptoms: [
       "Inability to focus on tasks for extended periods",
       "Frequent forgetfulness and memory lapses",
@@ -1134,9 +1134,9 @@ export const treatments: Treatment[] = [
       "Underlying ADHD or depression",
     ],
     homeopathyApproach:
-      "Constitutional homeopathic remedies improve cognitive function by addressing the root causes of poor concentration — whether stress, nutritional, hormonal, or neurological. Treatment is safe and non-stimulant, suitable for children and adults alike.",
+      "Constitutional homeopathic remedies improve cognitive function by addressing the root causes of poor concentration - whether stress, nutritional, hormonal, or neurological. Treatment is safe and non-stimulant, suitable for children and adults alike.",
     doctorNote:
-      "Poor concentration affects every area of life. I evaluate the whole picture — sleep, stress, diet, emotional state — to find the right remedy. Students and professionals often see improvements in focus and retention within 4–6 weeks of consistent treatment.",
+      "Poor concentration affects every area of life. I evaluate the whole picture - sleep, stress, diet, emotional state - to find the right remedy. Students and professionals often see improvements in focus and retention within 4–6 weeks of consistent treatment.",
     relatedConditions: ["stress-anxiety", "insomnia", "adhd"],
     metaTitle: "Concentration & Memory Treatment in Pune | Sharda Homeopathy",
     metaDescription:
@@ -1149,7 +1149,7 @@ export const treatments: Treatment[] = [
     icon: "🧠",
     shortDesc: "Supportive homeopathic care for autism spectrum behaviours",
     overview:
-      "Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition affecting communication, social interaction, and behaviour. Homeopathy offers supportive, complementary care that aims to reduce associated difficulties — sensory sensitivities, sleep issues, digestive problems, anxiety, and tantrums — improving quality of life for children and families.",
+      "Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition affecting communication, social interaction, and behaviour. Homeopathy offers supportive, complementary care that aims to reduce associated difficulties - sensory sensitivities, sleep issues, digestive problems, anxiety, and tantrums - improving quality of life for children and families.",
     symptoms: [
       "Difficulty with social interaction and communication",
       "Repetitive behaviours and restricted interests",
@@ -1166,7 +1166,7 @@ export const treatments: Treatment[] = [
       "Environmental factors",
     ],
     homeopathyApproach:
-      "Homeopathic treatment for autism is supportive and complementary — it does not claim to cure ASD, but can significantly improve associated symptoms. Individualized remedies address anxiety, sleep, digestion, and sensory sensitivity, helping children become calmer and more responsive to therapy.",
+      "Homeopathic treatment for autism is supportive and complementary - it does not claim to cure ASD, but can significantly improve associated symptoms. Individualized remedies address anxiety, sleep, digestion, and sensory sensitivity, helping children become calmer and more responsive to therapy.",
     doctorNote:
       "I approach autism cases with deep compassion and clinical care. Homeopathy can be a valuable addition to speech therapy, occupational therapy, and behavioural support. Many parents report their children becoming calmer, sleeping better, and communicating more within a few months of treatment.",
     relatedConditions: ["adhd", "lack-of-concentration", "insomnia"],
@@ -1181,7 +1181,7 @@ export const treatments: Treatment[] = [
     icon: "🧠",
     shortDesc: "Persistent tiredness, low energy, and muscle weakness",
     overview:
-      "Chronic fatigue goes beyond normal tiredness — it is a persistent, debilitating exhaustion that doesn't improve with rest. It can include muscle pain, cognitive difficulties, sleep problems, and a general sense of being unwell. Homeopathy offers deep constitutional treatment to restore vitality from within.",
+      "Chronic fatigue goes beyond normal tiredness - it is a persistent, debilitating exhaustion that doesn't improve with rest. It can include muscle pain, cognitive difficulties, sleep problems, and a general sense of being unwell. Homeopathy offers deep constitutional treatment to restore vitality from within.",
     symptoms: [
       "Persistent exhaustion not relieved by rest",
       "Muscle pain and weakness",
@@ -1201,14 +1201,14 @@ export const treatments: Treatment[] = [
     homeopathyApproach:
       "Homeopathic treatment for chronic fatigue focuses on identifying and correcting the constitutional weakness underlying exhaustion. Remedies stimulate the body's own energy-restoring mechanisms, improve cellular nutrition, and address the stress-immunity-hormonal triad.",
     doctorNote:
-      "Chronic fatigue is often dismissed, but it is very real and very treatable with homeopathy. I take a thorough history to uncover the root — whether post-viral, hormonal, or nutritional — and build a customised plan. Patients begin to notice improved energy and stamina within 4–8 weeks.",
+      "Chronic fatigue is often dismissed, but it is very real and very treatable with homeopathy. I take a thorough history to uncover the root - whether post-viral, hormonal, or nutritional - and build a customised plan. Patients begin to notice improved energy and stamina within 4–8 weeks.",
     relatedConditions: ["stress-anxiety", "insomnia", "thyroid-disorders"],
     metaTitle: "Chronic Fatigue Treatment in Pune | Sharda Homeopathy",
     metaDescription:
       "Homeopathic treatment for chronic weakness and fatigue in Pune. Restore energy and vitality naturally with Dr. Sharda Tawale.",
   },
 
-  // ===== JOINT & BONE — ADDITIONS =====
+  // ===== JOINT & BONE - ADDITIONS =====
   {
     slug: "spondylitis",
     name: "Spondylitis & Cervical Spondylitis",
@@ -1243,7 +1243,7 @@ export const treatments: Treatment[] = [
       "Natural homeopathic treatment for cervical spondylitis and spinal pain in Pune. Reduce neck stiffness and back pain safely.",
   },
 
-  // ===== LIFESTYLE — ADDITIONS =====
+  // ===== LIFESTYLE - ADDITIONS =====
   {
     slug: "obesity",
     name: "Obesity & Weight Management",
@@ -1269,7 +1269,7 @@ export const treatments: Treatment[] = [
       "Sleep disorders",
     ],
     homeopathyApproach:
-      "Constitutional homeopathic remedies improve metabolic efficiency, regulate appetite, address hormonal imbalances, and reduce emotional eating patterns. Treatment is combined with nutritional guidance for sustainable, healthy weight loss — not crash dieting.",
+      "Constitutional homeopathic remedies improve metabolic efficiency, regulate appetite, address hormonal imbalances, and reduce emotional eating patterns. Treatment is combined with nutritional guidance for sustainable, healthy weight loss - not crash dieting.",
     doctorNote:
       "Weight management is never just about willpower. I assess thyroid, insulin sensitivity, cortisol, and emotional factors before selecting the right remedy. Most patients begin to see metabolic improvements within 6–8 weeks and consistent weight reduction over 3–6 months.",
     relatedConditions: ["thyroid-disorders", "diabetes-management", "hypertension"],
@@ -1284,9 +1284,9 @@ export const treatments: Treatment[] = [
     icon: "💊",
     shortDesc: "Frequent infections, poor immunity, and susceptibility to illness",
     overview:
-      "A weakened immune system makes the body more vulnerable to infections, slow recovery, and chronic illness. Low immunity can manifest as frequent colds, recurring infections, slow wound healing, and persistent fatigue. Homeopathy excels at immune modulation — strengthening the body's natural defences without stimulants.",
+      "A weakened immune system makes the body more vulnerable to infections, slow recovery, and chronic illness. Low immunity can manifest as frequent colds, recurring infections, slow wound healing, and persistent fatigue. Homeopathy excels at immune modulation - strengthening the body's natural defences without stimulants.",
     symptoms: [
-      "Frequent infections — colds, throat, UTI",
+      "Frequent infections - colds, throat, UTI",
       "Slow recovery from illness",
       "Chronic fatigue and low energy",
       "Poor wound healing",
@@ -1302,7 +1302,7 @@ export const treatments: Treatment[] = [
       "Chronic illness burden",
     ],
     homeopathyApproach:
-      "Homeopathic remedies work as immune modulators — gently stimulating the body's own defence mechanisms without overstimulation. Constitutional treatment addresses the individual's unique immune pattern, while specific remedies target recurring infection tendencies.",
+      "Homeopathic remedies work as immune modulators - gently stimulating the body's own defence mechanisms without overstimulation. Constitutional treatment addresses the individual's unique immune pattern, while specific remedies target recurring infection tendencies.",
     doctorNote:
       "Building immunity is one of homeopathy's greatest strengths. Whether it's a child who catches every cold or an adult prone to recurrent infections, I customise a protocol that strengthens their specific immune pattern. Results are typically noticed within 2–3 months.",
     relatedConditions: ["recurrent-colds", "chronic-fatigue", "stress-anxiety"],
@@ -1368,7 +1368,7 @@ export const treatments: Treatment[] = [
       "Metabolic syndrome",
     ],
     homeopathyApproach:
-      "Homeopathic remedies support liver regeneration, reduce inflammation, and improve enzyme levels naturally. Constitutional treatment addresses the root cause — metabolic, viral, or toxic — while dietary guidance supports liver healing. Treatment is complementary to conventional monitoring.",
+      "Homeopathic remedies support liver regeneration, reduce inflammation, and improve enzyme levels naturally. Constitutional treatment addresses the root cause - metabolic, viral, or toxic - while dietary guidance supports liver healing. Treatment is complementary to conventional monitoring.",
     doctorNote:
       "Fatty liver is now the most common liver condition I see. With the right remedies combined with dietary changes, enzyme levels often show improvement within 2–3 months. I monitor progress through regular liver function tests and adjust treatment accordingly.",
     relatedConditions: ["gastritis", "ibs", "diabetes-management"],
@@ -1416,7 +1416,7 @@ export const treatments: Treatment[] = [
     icon: "🫧",
     shortDesc: "Natural skin radiance, pigmentation correction, and youthful skin",
     overview:
-      "Homeopathy offers a unique inside-out approach to skin health. By correcting internal imbalances — hormonal, digestive, and nutritional — homeopathic treatment restores the skin's natural glow, reduces dullness, improves texture, and slows premature aging. This is a natural alternative to chemical cosmetic treatments.",
+      "Homeopathy offers a unique inside-out approach to skin health. By correcting internal imbalances - hormonal, digestive, and nutritional - homeopathic treatment restores the skin's natural glow, reduces dullness, improves texture, and slows premature aging. This is a natural alternative to chemical cosmetic treatments.",
     symptoms: [
       "Dull, dry, and lacklustre skin",
       "Uneven skin tone and dark spots",
@@ -1434,9 +1434,9 @@ export const treatments: Treatment[] = [
       "Digestive issues affecting skin health",
     ],
     homeopathyApproach:
-      "Constitutional remedies address the internal environment that determines skin health — improving circulation, hormonal balance, digestive absorption of nutrients, and reducing oxidative stress. The result is naturally radiant, younger-looking skin from within.",
+      "Constitutional remedies address the internal environment that determines skin health - improving circulation, hormonal balance, digestive absorption of nutrients, and reducing oxidative stress. The result is naturally radiant, younger-looking skin from within.",
     doctorNote:
-      "True skin glow comes from within. I address the gut-skin axis, hormonal health, and stress patterns that affect your skin. Patients are often amazed at the improvement in skin texture and radiance within 6–8 weeks — a natural, chemical-free glow.",
+      "True skin glow comes from within. I address the gut-skin axis, hormonal health, and stress patterns that affect your skin. Patients are often amazed at the improvement in skin texture and radiance within 6–8 weeks - a natural, chemical-free glow.",
     relatedConditions: ["acne", "psoriasis", "thyroid-disorders"],
     metaTitle: "Skin Glow & Anti-Aging Homeopathy in Pune | Sharda Homeopathy",
     metaDescription:
@@ -1468,7 +1468,7 @@ export const treatments: Treatment[] = [
       "Family history of tonsil problems",
     ],
     homeopathyApproach:
-      "Homeopathic treatment reduces chronic tonsil and adenoid enlargement by correcting the underlying immune weakness and reducing chronic inflammation. Treatment significantly reduces infection frequency, improves breathing, and shrinks enlarged tissue — often eliminating the need for surgery.",
+      "Homeopathic treatment reduces chronic tonsil and adenoid enlargement by correcting the underlying immune weakness and reducing chronic inflammation. Treatment significantly reduces infection frequency, improves breathing, and shrinks enlarged tissue - often eliminating the need for surgery.",
     doctorNote:
       "Surgery avoidance is possible in most early to moderate cases. I have successfully treated hundreds of children with enlarged tonsils and adenoids. Parents notice improved breathing, fewer infections, and better sleep within 2–3 months. The key is starting before the condition becomes severe.",
     relatedConditions: ["tonsillitis", "allergic-rhinitis", "recurrent-colds"],
@@ -1546,17 +1546,17 @@ export const treatments: Treatment[] = [
   // ===== CANCER SUPPORTIVE CARE =====
   {
     slug: "cancer-supportive-care",
-    name: "Cancer — Supportive Care (All Types)",
+    name: "Cancer - Supportive Care (All Types)",
     category: "lifestyle",
     icon: "🎗️",
     shortDesc: "Complementary homeopathic support during and after cancer treatment",
     overview:
-      "Homeopathy does not claim to cure cancer — but it plays a powerful complementary role in supporting cancer patients through their journey. Whether undergoing chemotherapy, radiation, surgery, or immunotherapy, homeopathic treatment helps manage side effects, restore vitality, strengthen immunity, and improve overall quality of life. Dr. Sharda provides integrative supportive care for all cancer types — breast, lung, colorectal, prostate, cervical, blood cancers, and more — always alongside the patient's oncology team.",
+      "Homeopathy does not claim to cure cancer - but it plays a powerful complementary role in supporting cancer patients through their journey. Whether undergoing chemotherapy, radiation, surgery, or immunotherapy, homeopathic treatment helps manage side effects, restore vitality, strengthen immunity, and improve overall quality of life. Dr. Sharda provides integrative supportive care for all cancer types - breast, lung, colorectal, prostate, cervical, blood cancers, and more - always alongside the patient's oncology team.",
     symptoms: [
-      "Chemotherapy side effects — nausea, fatigue, hair loss, mouth sores",
+      "Chemotherapy side effects - nausea, fatigue, hair loss, mouth sores",
       "Radiation-related skin reactions and fatigue",
       "Weakened immunity and susceptibility to infections",
-      "Emotional distress — anxiety, fear, depression",
+      "Emotional distress - anxiety, fear, depression",
       "Sleep disturbances and chronic pain",
       "Loss of appetite and significant weight loss",
     ],
@@ -1569,9 +1569,9 @@ export const treatments: Treatment[] = [
       "Lifestyle factors (obesity, alcohol, sedentary habits)",
     ],
     homeopathyApproach:
-      "Homeopathic treatment in cancer care focuses on the individual's response to disease and its treatment — not on the tumour directly. Remedies are carefully selected to: (1) reduce side effects of chemotherapy and radiation, (2) support immune resilience, (3) address emotional trauma and fear, (4) improve sleep and appetite, and (5) restore energy and sense of wellbeing. This complementary approach works hand-in-hand with conventional oncology without interfering with treatment efficacy.",
+      "Homeopathic treatment in cancer care focuses on the individual's response to disease and its treatment - not on the tumour directly. Remedies are carefully selected to: (1) reduce side effects of chemotherapy and radiation, (2) support immune resilience, (3) address emotional trauma and fear, (4) improve sleep and appetite, and (5) restore energy and sense of wellbeing. This complementary approach works hand-in-hand with conventional oncology without interfering with treatment efficacy.",
     doctorNote:
-      "I want to be completely honest — homeopathy is a supportive therapy in cancer, not a standalone cure. My role is to walk alongside the patient through their cancer journey. Many of my patients undergoing chemotherapy have found significant relief from nausea, fatigue, and emotional distress with carefully chosen remedies. I work in full coordination with your oncologist. The goal is better quality of life, emotional resilience, and helping the body respond better to conventional treatment.",
+      "I want to be completely honest - homeopathy is a supportive therapy in cancer, not a standalone cure. My role is to walk alongside the patient through their cancer journey. Many of my patients undergoing chemotherapy have found significant relief from nausea, fatigue, and emotional distress with carefully chosen remedies. I work in full coordination with your oncologist. The goal is better quality of life, emotional resilience, and helping the body respond better to conventional treatment.",
     relatedConditions: [
       "low-immunity",
       "chronic-fatigue",

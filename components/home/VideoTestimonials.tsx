@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 // TODO: Replace MP4s with compressed WebM versions for 60% smaller file size
 
@@ -122,7 +122,7 @@ function VideoCard({
     allRefs.current[idx] = videoRef.current;
   });
 
-  // IntersectionObserver — lazy-load the video src when card enters viewport
+  // IntersectionObserver - lazy-load the video src when card enters viewport
   // Poster image always shows immediately (no src needed for that)
   useEffect(() => {
     const el = containerRef.current;
@@ -188,7 +188,7 @@ function VideoCard({
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Play button overlay — hidden when playing */}
+        {/* Play button overlay - hidden when playing */}
         {!playing && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div
@@ -380,7 +380,7 @@ export default function VideoTestimonials() {
         </div>
       </div>
 
-      {/* ── Hero Video — full width ── */}
+      {/* ── Hero Video - full width ── */}
       <div className="mb-5">
         <VideoCard
           video={heroVideo}
@@ -391,7 +391,7 @@ export default function VideoTestimonials() {
         />
       </div>
 
-      {/* ── Remaining 5 videos — horizontal peek carousel ── */}
+      {/* ── Remaining 5 videos - horizontal peek carousel ── */}
       {isMobile ? (
         <MobileCarousel
           videos={restVideos as unknown as typeof VIDEO_DATA}

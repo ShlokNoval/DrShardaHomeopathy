@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/utils";
 
 export default function CTABanner() {
@@ -6,7 +6,7 @@ export default function CTABanner() {
     <section className="relative bg-primary-dark py-14 sm:py-16">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-          {/* Left — Text */}
+          {/* Left - Text */}
           <div className="text-center lg:text-left">
             <h2 className="font-playfair text-white text-2xl sm:text-3xl mb-2">
               Have a health concern?
@@ -16,7 +16,7 @@ export default function CTABanner() {
             </p>
           </div>
 
-          {/* Right — Actions */}
+          {/* Right - Actions */}
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <a
               href={getWhatsAppUrl("Hi Dr. Sharda, I'd like to discuss a health concern.")}

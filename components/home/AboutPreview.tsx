@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import BotanicalDecor from "@/components/shared/BotanicalDecor";
@@ -6,10 +6,10 @@ import { Check } from "lucide-react";
 
 const credentials = [
   "MD (Homeopath)",
-  "IIM Bangalore — General Management Programme (GS 10K)",
+  "IIM Bangalore - General Management Programme (GS 10K)",
   "25+ Years of Clinical Practice (Since 2001)",
   "10,000+ Patients Successfully Treated",
-  "Member — Maharashtra Homeopathic Medical Association",
+  "Member - Maharashtra Homeopathic Medical Association",
 ];
 
 export default function AboutPreview() {
@@ -17,7 +17,7 @@ export default function AboutPreview() {
     <section className="relative bg-white py-16 sm:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left — Doctor Image */}
+          {/* Left - Doctor Image */}
           <ScrollReveal direction="left">
             <div className="relative flex justify-center">
               <div className="relative">
@@ -44,7 +44,7 @@ export default function AboutPreview() {
             </div>
           </ScrollReveal>
 
-          {/* Right — Bio */}
+          {/* Right - Bio */}
           <ScrollReveal direction="right" delay={0.15}>
             <div>
               <span className="inline-block text-sm font-semibold uppercase tracking-wider text-secondary mb-3">
@@ -60,7 +60,7 @@ export default function AboutPreview() {
                 from IIM Bangalore to every patient interaction.
               </p>
               <p className="text-muted leading-relaxed mb-6">
-                Her approach goes beyond treating symptoms — she believes in
+                Her approach goes beyond treating symptoms - she believes in
                 understanding the whole person: their physical health, emotional
                 state, lifestyle, and individual constitution. This holistic
                 understanding allows her to prescribe the most effective remedies

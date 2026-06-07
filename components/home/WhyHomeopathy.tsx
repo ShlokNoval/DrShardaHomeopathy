@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import { getWhatsAppUrl } from "@/lib/utils";
@@ -20,7 +20,7 @@ const reasons = [
   {
     icon: Baby,
     title: "Safe for All Ages",
-    desc: "From 6-month-old babies to 80-year-old grandparents — works for everyone.",
+    desc: "From 6-month-old babies to 80-year-old grandparents - works for everyone.",
     colSpan: "lg:col-span-1",
   },
   {
@@ -32,7 +32,7 @@ const reasons = [
   {
     icon: Clock,
     title: "Results That Last",
-    desc: "Patients who completed treatment report lasting relief — not just temporary fixes.",
+    desc: "Patients who completed treatment report lasting relief - not just temporary fixes.",
     colSpan: "lg:col-span-1",
   },
   {
@@ -131,7 +131,7 @@ export default function WhyHomeopathy() {
         <ScrollReveal delay={0.4}>
           <div className="text-center mt-16">
             <p className="text-[#555] text-sm mb-5 font-medium">
-              Start your healing journey today — no pressure, no commitment.
+              Start your healing journey today - no pressure, no commitment.
             </p>
             <a
               href={getWhatsAppUrl("Hi, I want to switch to homeopathy. Can we talk?")}
