@@ -1,4 +1,4 @@
-﻿import { testimonials } from "@/data/testimonials";
+import { testimonials } from "@/data/testimonials";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import FloatingGlobules from "@/components/shared/FloatingGlobules";
 import CTABanner from "@/components/home/CTABanner";
@@ -188,6 +188,16 @@ export default function TestimonialsPage() {
             style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "2px solid rgba(201,150,58,0.4)", opacity: 0.55, mixBlendMode: "luminosity", filter: "saturate(0.7) brightness(0.85)", animation: "floatImg 7s 4s ease-in-out infinite" }}
           />
           <span style={{ fontSize: 22, opacity: 0.4, marginTop: -8 }}>🌿</span>
+        </div>
+
+        {/* ── Layer 7: Prescription Pad Watermark ── */}
+        <div className="deco-side" aria-hidden style={{
+          position: "absolute", top: "45%", right: 140, zIndex: 0, pointerEvents: "none",
+          fontSize: 48, fontFamily: "Georgia, 'Playfair Display', serif",
+          color: "rgba(255,255,255,0.04)", fontWeight: 700, userSelect: "none",
+          transform: "rotate(-12deg) translateY(-50%)", whiteSpace: "nowrap"
+        }}>
+          Dr. Sharda Homeopathy
         </div>
 
         {/* ── Photo Layer: Right circular stack + connectors ── */}
