@@ -419,7 +419,7 @@ export default function HeroSection() {
 
       <section
         className="relative flex flex-col bg-[#1B5E35] overflow-hidden"
-        style={{ height: "calc(100vh - 88px)" }}
+        style={{ minHeight: "calc(100vh - 88px)" }}
       >
         {/* ── Trust pills pinned at very top ── */}
         <div className="relative z-20">
@@ -543,7 +543,7 @@ export default function HeroSection() {
         {/* ══════════════════════════════════════════════
             MAIN CONTENT
         ══════════════════════════════════════════════ */}
-        <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto px-4 w-full py-0">
+        <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto px-4 w-full py-12 lg:py-0 mt-8 lg:mt-0">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center w-full">
 
             {/* Left Column - Text */}
