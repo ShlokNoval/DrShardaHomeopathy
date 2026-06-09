@@ -40,7 +40,7 @@ function TrustPills() {
 function ScrollIndicator() {
   return (
     <div
-      className="absolute bottom-24 sm:bottom-20 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1"
+      className="hidden sm:flex absolute bottom-20 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-1"
       style={{ opacity: 0.4 }}
       aria-hidden
     >
@@ -543,7 +543,7 @@ export default function HeroSection() {
         {/* ══════════════════════════════════════════════
             MAIN CONTENT
         ══════════════════════════════════════════════ */}
-        <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto px-4 w-full py-12 lg:py-0 mt-8 lg:mt-0">
+        <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto px-4 w-full pt-20 pb-12 lg:py-0 lg:mt-0">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center w-full">
 
             {/* Left Column - Text */}
@@ -584,8 +584,8 @@ export default function HeroSection() {
                   Safe, natural, and lasting results.
                 </p>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 mb-0">
+                {/* CTA Buttons (Desktop) */}
+                <div className="hidden lg:flex flex-row gap-4 mb-0">
                   <Link
                     href="/appointment"
                     className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#C9963A] to-[#E8C96D] hover:from-[#b58532] hover:to-[#d4b55c] text-[#0F3D22] text-base font-bold px-8 py-4 rounded-full transition-transform hover:scale-105 shadow-lg shadow-[#C9963A]/20"
@@ -606,8 +606,9 @@ export default function HeroSection() {
 
             {/* Right Column - Doctor Image */}
             <ScrollReveal direction="right" delay={0.2}>
-              <div className="relative flex justify-center lg:justify-end">
-                <div className="relative z-10">
+              <div className="flex flex-col gap-12 lg:gap-0 w-full items-center lg:items-end">
+                <div className="relative flex justify-center lg:justify-end">
+                  <div className="relative z-10">
 
                   {/* ── Health image floating card - top-right of image ── */}
                   <div
@@ -700,12 +701,31 @@ export default function HeroSection() {
                   <div className="absolute bottom-1/3 -right-8 w-4 h-4 rounded-full bg-white/60 animate-pulse" style={{ animationDelay: "1s" }} />
                 </div>
               </div>
+
+              {/* CTA Buttons (Mobile) */}
+              <div className="flex lg:hidden flex-col w-full max-w-[340px] gap-4">
+                <Link
+                  href="/appointment"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#C9963A] to-[#E8C96D] hover:from-[#b58532] hover:to-[#d4b55c] text-[#0F3D22] text-base font-bold px-6 py-4 rounded-full transition-transform shadow-lg shadow-[#C9963A]/20"
+                >
+                  <Calendar size={20} />
+                  Book Appointment
+                </Link>
+                <Link
+                  href="/treatments"
+                  className="w-full inline-flex items-center justify-center gap-2 border-2 border-[#C9963A] text-white hover:bg-[#C9963A]/10 text-base font-semibold px-6 py-4 rounded-full transition-colors"
+                >
+                  Explore Treatments
+                  <ArrowRight size={20} />
+                </Link>
+              </div>
+            </div>
             </ScrollReveal>
           </div>
         </div>
 
         {/* ── Stats row - bottom ── */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pb-20 sm:pb-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pb-12 pt-8 lg:pt-0 sm:pb-16 mt-8 lg:mt-0">
           <div className="flex flex-wrap gap-3 text-white justify-center lg:justify-start">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-[#C9963A]/30 px-4 py-2.5 rounded-full shadow-sm hover:-translate-y-1 transition-transform">
               <Star size={16} className="text-[#C9963A] fill-[#C9963A]" />
