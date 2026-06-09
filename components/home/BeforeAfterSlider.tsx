@@ -25,7 +25,7 @@ interface CompareSliderProps {
 function CompareSlider({ beforeImg, afterImg, condition }: CompareSliderProps) {
   const [position, setPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
-  const handleRef = useRef<HTMLDivElement>(null);
+  const handleRef = useRef<HTMLButtonElement>(null);
   const isDragging = useRef(false);
 
   const handleMove = useCallback((clientX: number) => {
@@ -106,10 +106,13 @@ function CompareSlider({ beforeImg, afterImg, condition }: CompareSliderProps) {
       </div>
 
       {/* Slider Handle Area (Wider for easy grabbing) */}
-      <div 
+      <button 
         ref={handleRef}
-        className="absolute top-0 bottom-0 w-12 flex items-center justify-center cursor-ew-resize z-30 touch-none"
-        style={{ left: `calc(${position}% - 24px)` }}
+        type="button"
+        onTouchStart={(e) => e.stopPropagation()}
+        onPointerDown={(e) => e.stopPropagation()}
+        className="absolute top-0 bottom-0 w-16 flex items-center justify-center cursor-ew-resize z-30 touch-none focus:outline-none appearance-none bg-transparent border-none"
+        style={{ left: `calc(${position}% - 32px)` }}
       >
         <div className="absolute top-0 bottom-0 w-[2px] bg-[rgba(201,150,58,0.6)]"></div>
         <div className="w-10 h-10 rounded-full bg-[#C9963A] flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.3)] transition-transform hover:scale-110 active:scale-95 z-10">
@@ -118,7 +121,7 @@ function CompareSlider({ beforeImg, afterImg, condition }: CompareSliderProps) {
             <path d="M13 7l5 5-5 5" />
           </svg>
         </div>
-      </div>
+      </button>
 
       {/* Footer Info Strip */}
       <div className="absolute bottom-0 left-0 right-0 h-10 bg-[rgba(0,0,0,0.35)] backdrop-blur-[2px] flex items-center justify-between px-4 z-40 pointer-events-none">
