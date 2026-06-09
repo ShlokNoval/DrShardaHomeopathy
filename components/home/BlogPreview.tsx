@@ -9,8 +9,15 @@ export default function BlogPreview() {
   const latestPosts = blogPosts.slice(0, 3);
 
   return (
-    <section className="bg-cream-alt py-16 sm:py-24">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="relative bg-cream-alt py-16 sm:py-24 overflow-hidden">
+      <Image
+        src="/insights-bg.jpg"
+        alt="Health Insights Background"
+        fill
+        className="object-cover opacity-20"
+        sizes="100vw"
+      />
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <SectionHeading
           title="Health Insights"
           subtitle="Articles and tips from Dr. Sharda on homeopathic wellness"
@@ -71,7 +78,7 @@ export default function BlogPreview() {
 
         <div className="text-center mt-10">
           <Link href="/blog" className="btn-ghost text-base px-8 py-3">
-            View All Articles →
+            View All Articles &rarr;
           </Link>
         </div>
       </div>

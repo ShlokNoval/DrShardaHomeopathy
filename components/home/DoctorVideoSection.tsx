@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -6,10 +6,9 @@ import ScrollReveal from "@/components/shared/ScrollReveal";
 import BotanicalDecor from "@/components/shared/BotanicalDecor";
 import { Play } from "lucide-react";
 
-const YOUTUBE_ID = "1BQMKzzUfcU";
+const VIDEO_SRC = "/testimonials/testimonial1.mp4";
 
 export default function DoctorVideoSection() {
-  const [playing, setPlaying] = useState(false);
 
   return (
     <section className="relative bg-cream py-16 sm:py-24 overflow-hidden">
@@ -20,34 +19,14 @@ export default function DoctorVideoSection() {
           {/* Left - Video */}
           <ScrollReveal direction="left">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-charcoal">
-              {!playing ? (
-                <button
-                  onClick={() => setPlaying(true)}
-                  className="relative w-full h-full group"
-                  aria-label="Play Dr. Sharda's video message"
-                >
-                  <Image
-                    src={`https://img.youtube.com/vi/${YOUTUBE_ID}/maxresdefault.jpg`}
-                    alt="Dr. Sharda Tawale's message about homeopathic healing"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-secondary flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
-                      <Play size={32} className="text-primary-dark ml-1" fill="currentColor" />
-                    </div>
-                  </div>
-                </button>
-              ) : (
-                <iframe
-                  src={`https://www.youtube.com/embed/${YOUTUBE_ID}?autoplay=1&rel=0`}
-                  allow="autoplay; encrypted-media"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                  title="Dr. Sharda Tawale - A Message About Homeopathy"
-                />
-              )}
+              <video
+                src={VIDEO_SRC}
+                poster="/testimonials/image1.jpeg"
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-contain"
+              />
             </div>
           </ScrollReveal>
 
@@ -60,13 +39,10 @@ export default function DoctorVideoSection() {
               </svg>
 
               <h3 className="font-playfair text-charcoal mb-4">
-                A Message from Dr. Sharda
+                Myths & Facts About Homeopathy
               </h3>
               <p className="font-playfair text-lg text-charcoal/80 italic leading-relaxed mb-6">
-                &ldquo;Homeopathy does not just cure diseases - it transforms
-                lives by treating the whole person, not just the symptoms. My
-                mission is to bring this gentle healing to every family in
-                Pune.&rdquo;
+                &ldquo;There are many misconceptions about homeopathic treatments. In this video, I address common myths and share the scientific reality behind how homeopathy gently and effectively treats the root cause of illness.&rdquo;
               </p>
 
               {/* Signature */}

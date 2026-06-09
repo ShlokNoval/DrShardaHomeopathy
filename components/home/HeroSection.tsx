@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -666,7 +666,7 @@ export default function HeroSection() {
 
                     <div className="relative w-full h-full rounded-full overflow-hidden bg-[#2E7D50]/20">
                       <Image
-                        src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&h=800&fit=crop&crop=face"
+                        src="/dr-sharda-hero.jpg"
                         alt="Dr. Sharda Tawale - Homeopathic Physician in Pune"
                         fill
                         className="object-cover"

@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import BotanicalDecor from "@/components/shared/BotanicalDecor";
@@ -19,13 +19,13 @@ export default function AboutPreview() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left - Doctor Image */}
           <ScrollReveal direction="left">
-            <div className="relative flex justify-center">
-              <div className="relative">
+            <div className="relative flex justify-center w-full">
+              <div className="relative w-full max-w-md">
                 {/* Decorative green circle */}
                 <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-primary/20 -z-0" />
-                <div className="relative rounded-2xl overflow-hidden shadow-xl w-full max-w-md aspect-[3/4]">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4]">
                   <Image
-                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=800&fit=crop"
+                    src="/dr-sharda.jpg"
                     alt="Dr. Sharda Tawale - Homeopathic Doctor in Pune"
                     fill
                     className="object-cover"

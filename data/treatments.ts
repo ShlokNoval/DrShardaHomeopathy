@@ -1,4 +1,4 @@
-﻿export type TreatmentCategory =
+export type TreatmentCategory =
   | "skin"
   | "respiratory"
   | "digestive"
@@ -744,7 +744,7 @@ export const treatments: Treatment[] = [
   // ===== WOMEN'S HEALTH (4) =====
   {
     slug: "pcod-pcos",
-    name: "PCOD / PCOS",
+    name: "Hair Fall",
     category: "womens",
     icon: "🌸",
     shortDesc: "Hormonal imbalance affecting menstruation and fertility",
@@ -809,7 +809,7 @@ export const treatments: Treatment[] = [
       "Homeopathic thyroid treatment in Pune. Natural remedies for hypothyroidism, hyperthyroidism, and thyroid imbalance by Dr. Sharda Tawale.",
   },
   {
-    slug: "infertility/ Sterility",
+    slug: "infertility",
     name: "Infertility/ Sterility",
     category: "womens",
     icon: "🌸",
@@ -977,7 +977,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "hair-fall",
-    name: "Hair Fall",
+    name: "Alopecia Areata",
     category: "lifestyle",
     icon: "💊",
     shortDesc: "Excessive hair loss, thinning, and alopecia",
@@ -1011,8 +1011,8 @@ export const treatments: Treatment[] = [
 
   // ===== MENTAL & WELLNESS (6) =====
   {
-    slug: "stress-anxiety",
-    name: "Stress & Anxiety",
+    slug: "anxiety-stress-depression",
+    name: "Anxiety, Stress & Depression",
     category: "mental-wellness",
     icon: "🧠",
     shortDesc: "Chronic stress, anxiety, and nervous tension",
@@ -1038,43 +1038,10 @@ export const treatments: Treatment[] = [
       "Homeopathy addresses stress and anxiety holistically - calming the nervous system, improving resilience, and treating physical manifestations (palpitations, insomnia, digestive issues) simultaneously. Remedies are chosen based on the type and trigger of anxiety, the individual's temperament, and associated physical symptoms.",
     doctorNote:
       "Stress and anxiety respond beautifully to homeopathy. I use a gentle, judgement-free approach to understand the root of your anxiety. Many patients report feeling calmer and more grounded within the first 2–3 weeks of treatment, with progressive improvement over 2–3 months.",
-    relatedConditions: ["insomnia", "depression", "migraine"],
+    relatedConditions: ["insomnia", "migraine"],
     metaTitle: "Stress & Anxiety Treatment in Pune | Sharda Homeopathy",
     metaDescription:
       "Natural homeopathic treatment for stress and anxiety in Pune. Calm your nervous system and restore balance with Dr. Sharda Tawale.",
-  },
-  {
-    slug: "depression",
-    name: "Depression",
-    category: "mental-wellness",
-    icon: "🧠",
-    shortDesc: "Persistent low mood, loss of interest, and emotional fatigue",
-    overview:
-      "Depression is a serious mood disorder that affects how you feel, think, and handle daily activities. It is more than just sadness - it can cause profound hopelessness, loss of interest in activities, changes in appetite and sleep, and physical fatigue. Depression is one of the leading causes of disability worldwide and benefits greatly from a holistic treatment approach.",
-    symptoms: [
-      "Persistent sadness, emptiness, or hopelessness",
-      "Loss of interest in activities once enjoyed",
-      "Fatigue, low energy, and slowed movements",
-      "Changes in appetite and weight",
-      "Difficulty concentrating and making decisions",
-      "Thoughts of worthlessness or self-harm",
-    ],
-    causes: [
-      "Neurochemical imbalances (serotonin, dopamine)",
-      "Life events - grief, trauma, loss",
-      "Hormonal changes (postpartum, menopause, thyroid)",
-      "Chronic illness and pain",
-      "Genetic predisposition",
-      "Substance abuse",
-    ],
-    homeopathyApproach:
-      "Homeopathic treatment for depression is complementary and deeply individualized. Remedies aim to restore emotional equilibrium, improve energy, and address the physical manifestations of depression. Treatment works on the mental-emotional plane alongside the physical, providing gentle yet profound healing without dependency.",
-    doctorNote:
-      "Depression treatment requires sensitivity and patience. Homeopathy works gently but deeply - I work closely with patients over time to select remedies that match their unique emotional state. Many patients experience lifting of mood and increased motivation within 4–6 weeks.",
-    relatedConditions: ["stress-anxiety", "insomnia", "hypertension"],
-    metaTitle: "Depression Homeopathic Treatment in Pune | Sharda Homeopathy",
-    metaDescription:
-      "Natural support for depression with homeopathy in Pune. Gentle, holistic remedies to restore mood, energy, and emotional balance.",
   },
   {
     slug: "insomnia",
@@ -1104,7 +1071,7 @@ export const treatments: Treatment[] = [
       "Homeopathy treats insomnia by identifying and addressing the root cause - whether stress, pain, hormonal imbalance, or mental activity. Remedies promote natural, restful sleep without sedation or dependency. Treatment considers sleep patterns, dream quality, and the time of waking.",
     doctorNote:
       "Many patients come to me after years of sleeping pill dependency. Homeopathy offers a safe path back to natural sleep. I focus on the underlying cause - stress, pain, hormonal shifts - and select remedies that gently restore normal sleep architecture. Most patients notice improved sleep quality within 2–4 weeks.",
-    relatedConditions: ["stress-anxiety", "depression", "migraine"],
+    relatedConditions: ["anxiety-stress-depression", "migraine"],
     metaTitle: "Insomnia Treatment in Pune | Sharda Homeopathy",
     metaDescription:
       "Natural insomnia and sleeplessness treatment with homeopathy in Pune. Restore restful sleep without dependency.",
@@ -1137,7 +1104,7 @@ export const treatments: Treatment[] = [
       "Constitutional homeopathic remedies improve cognitive function by addressing the root causes of poor concentration - whether stress, nutritional, hormonal, or neurological. Treatment is safe and non-stimulant, suitable for children and adults alike.",
     doctorNote:
       "Poor concentration affects every area of life. I evaluate the whole picture - sleep, stress, diet, emotional state - to find the right remedy. Students and professionals often see improvements in focus and retention within 4–6 weeks of consistent treatment.",
-    relatedConditions: ["stress-anxiety", "insomnia", "adhd"],
+    relatedConditions: ["anxiety-stress-depression", "insomnia", "adhd"],
     metaTitle: "Concentration & Memory Treatment in Pune | Sharda Homeopathy",
     metaDescription:
       "Homeopathic treatment for poor concentration and memory in Pune. Natural remedies to improve focus and mental clarity.",
@@ -1202,7 +1169,7 @@ export const treatments: Treatment[] = [
       "Homeopathic treatment for chronic fatigue focuses on identifying and correcting the constitutional weakness underlying exhaustion. Remedies stimulate the body's own energy-restoring mechanisms, improve cellular nutrition, and address the stress-immunity-hormonal triad.",
     doctorNote:
       "Chronic fatigue is often dismissed, but it is very real and very treatable with homeopathy. I take a thorough history to uncover the root - whether post-viral, hormonal, or nutritional - and build a customised plan. Patients begin to notice improved energy and stamina within 4–8 weeks.",
-    relatedConditions: ["stress-anxiety", "insomnia", "thyroid-disorders"],
+    relatedConditions: ["anxiety-stress-depression", "insomnia", "thyroid-disorders"],
     metaTitle: "Chronic Fatigue Treatment in Pune | Sharda Homeopathy",
     metaDescription:
       "Homeopathic treatment for chronic weakness and fatigue in Pune. Restore energy and vitality naturally with Dr. Sharda Tawale.",
@@ -1305,7 +1272,7 @@ export const treatments: Treatment[] = [
       "Homeopathic remedies work as immune modulators - gently stimulating the body's own defence mechanisms without overstimulation. Constitutional treatment addresses the individual's unique immune pattern, while specific remedies target recurring infection tendencies.",
     doctorNote:
       "Building immunity is one of homeopathy's greatest strengths. Whether it's a child who catches every cold or an adult prone to recurrent infections, I customise a protocol that strengthens their specific immune pattern. Results are typically noticed within 2–3 months.",
-    relatedConditions: ["recurrent-colds", "chronic-fatigue", "stress-anxiety"],
+    relatedConditions: ["recurrent-colds", "chronic-fatigue", "anxiety-stress-depression"],
     metaTitle: "Low Immunity Treatment in Pune | Sharda Homeopathy",
     metaDescription:
       "Boost immunity naturally with homeopathy in Pune. Dr. Sharda Tawale's constitutional approach to building lasting immune strength.",
@@ -1378,7 +1345,7 @@ export const treatments: Treatment[] = [
   },
   {
     slug: "kidney-stone",
-    name: "Kidney Stone & Creatinine Issues",
+    name: "Kidney Stone",
     category: "lifestyle",
     icon: "💊",
     shortDesc: "Kidney stone prevention, renal support, and creatinine management",
@@ -1575,11 +1542,106 @@ export const treatments: Treatment[] = [
     relatedConditions: [
       "low-immunity",
       "chronic-fatigue",
-      "depression",
       "insomnia",
     ],
     metaTitle: "Cancer Supportive Homeopathic Care in Pune | Sharda Homeopathy",
     metaDescription:
       "Complementary homeopathic support for cancer patients in Pune. Dr. Sharda Tawale helps manage chemo side effects, build immunity, and improve quality of life during cancer treatment.",
   },
+  {
+    slug: "high-cholesterol",
+    name: "High Cholesterol and Heart Care",
+    category: "lifestyle",
+    icon: "🫀",
+    shortDesc: "Management of high cholesterol levels and heart health support.",
+    overview: "High cholesterol can increase your risk of heart disease and stroke. Homeopathy offers natural support for cardiovascular health and lipid management, alongside dietary and lifestyle changes.",
+    symptoms: ["Often asymptomatic until complications arise", "High blood pressure (sometimes associated)"],
+    causes: ["Poor diet", "Sedentary lifestyle", "Genetics", "Stress"],
+    homeopathyApproach: "Homeopathic remedies aim to support metabolic function, improve lipid profiles, and promote overall cardiovascular health.",
+    doctorNote: "A holistic approach combining homeopathic remedies with diet and exercise is most effective for managing cholesterol and supporting heart health.",
+    relatedConditions: ["obesity", "hypertension", "diabetes-management"],
+    metaTitle: "High Cholesterol Treatment in Pune | Sharda Homeopathy",
+    metaDescription: "Natural high cholesterol and heart care treatment with homeopathy in Pune by Dr. Sharda Tawale."
+  },
+  {
+    slug: "nail-deformation",
+    name: "Nail Deformation",
+    category: "skin",
+    icon: "💅",
+    shortDesc: "Changes in nail shape, texture, or color due to underlying issues.",
+    overview: "Nail deformation can be a sign of nutritional deficiencies, fungal infections, trauma, or underlying systemic diseases. It can affect both fingernails and toenails.",
+    symptoms: ["Brittle or crumbly nails", "Discoloration", "Changes in nail shape", "Thickening of nails"],
+    causes: ["Fungal infections", "Psoriasis", "Nutritional deficiencies", "Trauma"],
+    homeopathyApproach: "Homeopathy addresses the root cause of nail deformation, whether it's an infection, an autoimmune condition like psoriasis, or poor nutrient absorption.",
+    doctorNote: "Nail changes can tell us a lot about your internal health. We address the systemic cause to promote the growth of healthy new nails.",
+    relatedConditions: ["psoriasis", "skin-glow-anti-aging", "low-immunity"],
+    metaTitle: "Nail Deformation Treatment in Pune | Sharda Homeopathy",
+    metaDescription: "Effective homeopathic treatment for nail deformation and infections in Pune."
+  },
+  {
+    slug: "melasma",
+    name: "Melasma",
+    category: "skin",
+    icon: "✨",
+    shortDesc: "Dark, discolored patches on your skin.",
+    overview: "Melasma is a common skin condition characterized by brown or blue-gray patches or freckle-like spots. It's often called the 'mask of pregnancy' because it frequently occurs during pregnancy.",
+    symptoms: ["Brownish colored patches", "Typically appears on the cheeks, forehead, nose, or chin"],
+    causes: ["Sun exposure", "Hormonal changes", "Genetics", "Certain medications"],
+    homeopathyApproach: "Homeopathic remedies work from within to regulate hormonal imbalances and improve skin pigmentation naturally without harsh chemicals.",
+    doctorNote: "Consistency is key with melasma. Along with homeopathic treatment, strict sun protection is essential for best results.",
+    relatedConditions: ["skin-glow-anti-aging", "acne", "thyroid-disorders"],
+    metaTitle: "Melasma Treatment in Pune | Sharda Homeopathy",
+    metaDescription: "Natural melasma and pigmentation treatment with homeopathy in Pune by Dr. Sharda Tawale."
+  }
 ];
+
+export const diseaseImages: Record<string, string> = {
+  "psoriasis": "/conditions/Psoriasis.jpeg",
+  "eczema": "/conditions/Skin Eczema.jpeg",
+  "acne": "/conditions/Body Acne.jpeg",
+  "vitiligo": "/conditions/Vitiligo.jpeg",
+  "urticaria": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/EMminor2010.JPG/330px-EMminor2010.JPG",
+  "asthma": "/conditions/asthma.jpg",
+  "allergic-rhinitis": "/conditions/allergic-rhinitis.jpg",
+  "sinusitis": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sinusitis_cdc.png/330px-Sinusitis_cdc.png",
+  "tonsillitis": "/conditions/Tonsilitis and Adenoid.jpeg",
+  "ibs": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Irritable_bowel_syndrome.jpg/330px-Irritable_bowel_syndrome.jpg",
+  "gastritis": "/conditions/gastritis.jpg",
+  "constipation": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Constipation.JPG/330px-Constipation.JPG",
+  "piles-fissure": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Internal_and_external_hemorrhoids.png/330px-Internal_and_external_hemorrhoids.png",
+  "arthritis": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Rheumatoid_Arthritis.JPG/330px-Rheumatoid_Arthritis.JPG",
+  "back-pain": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Spinal_column_curvature-en.svg/330px-Spinal_column_curvature-en.svg.png",
+  "sciatica": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Sciatic_nerve2.jpg/330px-Sciatic_nerve2.jpg",
+  "gout": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Gout_Signs_and_Symptoms.jpg/330px-Gout_Signs_and_Symptoms.jpg",
+  "bedwetting": "/conditions/bedwetting.jpg",
+  "recurrent-colds": "/conditions/recurrent-colds.jpg",
+  "adhd": "/conditions/adhd.jpg",
+  "growth-issues": "/conditions/growth-issues.jpg",
+  "pcod-pcos": "/conditions/Hairfall and PCOD.jpeg",
+  "thyroid-disorders": "/conditions/Thyroid Tumour.jpeg",
+  "infertility": "/conditions/infertility.jpg",
+  "menstrual-disorders": "/conditions/menstrual-disorders.jpg",
+  "diabetes-management": "/conditions/diabetes-management.png",
+  "hypertension": "/conditions/hypertension.png",
+  "migraine": "/conditions/migraine.jpg",
+  "hair-fall": "/conditions/alopecia areata.jpeg",
+  "anxiety-stress-depression": "/conditions/anxiety-stress-depression.jpg",
+  "insomnia": "/conditions/insomnia.jpg",
+  "lack-of-concentration": "/conditions/lack-of-concentration.png",
+  "autism": "/conditions/autism.png",
+  "chronic-fatigue": "/conditions/chronic-fatigue.jpg",
+  "spondylitis": "/conditions/spondylitis.png",
+  "obesity": "/conditions/obesity.jpg",
+  "low-immunity": "/conditions/low-immunity.png",
+  "muscle-pain": "/conditions/muscle-pain.jpg",
+  "liver-disorders": "/conditions/liver-disorders.png",
+  "kidney-stone": "/conditions/kidney-stone.jpg",
+  "skin-glow-anti-aging": "/conditions/skin-glow.jpg",
+  "tonsils-adenoid": "/conditions/Tonsilitis and Adenoid.jpeg",
+  "ent-issues": "/conditions/ent-issues.jpg",
+  "hyperacidity": "/conditions/hyperacidity.jpg",
+  "cancer-supportive-care": "/conditions/cancer.jpg",
+  "high-cholesterol": "/conditions/high-cholesterol.jpg",
+  "nail-deformation": "/conditions/nail-deformation.jpg",
+  "melasma": "/conditions/Melasma.jpeg"
+};

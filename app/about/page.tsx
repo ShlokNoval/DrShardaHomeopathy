@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import { Check } from "lucide-react";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import BotanicalDecor from "@/components/shared/BotanicalDecor";
@@ -24,12 +24,94 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary to-primary-dark pt-24 pb-32 overflow-hidden">
+        {/* Layer 1: Dot Grid Texture */}
+        <div aria-hidden className="absolute inset-0 z-0 pointer-events-none" style={{
+          backgroundImage: "radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px)",
+          backgroundSize: "24px 24px",
+        }} />
+
+        {/* Layer 2: Diagonal Light Beam */}
+        <div aria-hidden className="absolute inset-0 z-0 pointer-events-none" style={{
+          background: "linear-gradient(135deg, rgba(255,255,255,0.04) 0%, transparent 50%)",
+        }} />
+
+        {/* Layer 3: Warm Radial Glow */}
+        <div aria-hidden className="absolute z-0 pointer-events-none" style={{
+          top: "50%", left: "50%", transform: "translate(-50%, -50%)",
+          width: 600, height: 300,
+          background: "radial-gradient(ellipse 600px 300px at 50% 50%, rgba(201,150,58,0.10) 0%, transparent 70%)",
+        }} />
+
+        {/* Layer 4: Giant Watermark */}
+        <div aria-hidden className="absolute z-0 pointer-events-none text-center" style={{
+          fontSize: 180, fontFamily: "Georgia, 'Playfair Display', serif",
+          color: "rgba(255,255,255,0.03)", top: "50%", left: "50%",
+          transform: "translate(-50%, -50%)", whiteSpace: "nowrap", letterSpacing: "0.05em",
+        }}>
+          Sharda
+        </div>
+
+        {/* Layer 5: Left Side Decor */}
+        <div aria-hidden className="hidden md:flex absolute z-0 pointer-events-none flex-col items-center" style={{ left: 40, top: "50%", transform: "translateY(-50%)" }}>
+          {/* Stethoscope */}
+          <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1" opacity="0.08" style={{ transform: "rotate(-15deg)" }}>
+            <path d="M5 4h14a2 2 0 0 1 2 2v6a7 7 0 0 1-14 0V6a2 2 0 0 1 2-2z" />
+            <path d="M12 19v3" />
+            <circle cx="12" cy="16" r="3" />
+          </svg>
+          {/* Certificate Frame */}
+          <div className="mt-6 flex items-center justify-center border-double border-[3px]" style={{ width: 100, height: 70, borderColor: "rgba(201,150,58,0.12)", borderRadius: 4 }}>
+            <span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", fontWeight: "bold", letterSpacing: "1px" }}>BHMS · MD</span>
+          </div>
+        </div>
+
+        {/* Layer 6: Right Side Decor */}
+        <div aria-hidden className="hidden md:flex absolute z-0 pointer-events-none flex-col items-center" style={{ right: 40, top: "50%", transform: "translateY(-50%)" }}>
+          {/* Mortar & Pestle */}
+          <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.2" opacity="0.07">
+            <path d="M5 8l14 0" />
+            <path d="M6 8c0 0 1.5 12 6 12s6-12 6-12" />
+            <path d="M10 4l4 10" />
+          </svg>
+          {/* Botanical Sprig */}
+          <svg width="60" height="80" viewBox="0 0 24 24" fill="none" stroke="#C9963A" strokeWidth="1.5" opacity="0.10" style={{ transform: "rotate(10deg)" }} className="mt-2">
+            <path d="M12 22V2M12 16c-3-2-6-1-6-1s-1 3 2 4M12 10c3-2 6-1 6-1s1 3-2 4M12 4c-3-2-6-1-6-1s-1 3 2 4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+
         <FloatingGlobules count={10} opacity={0.2} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center flex flex-col items-center">
           <span className="inline-block border border-white/30 text-white text-sm px-4 py-1.5 rounded-full mb-4">🌿 About</span>
-          <h1 className="text-white mb-4">Dr. Sharda Tawale</h1>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">MD (Homeopath) · IIM Bangalore · 25+ Years · Pune, Maharashtra</p>
+          <h1 className="text-white mb-6">Dr. Sharda Tawale</h1>
+          
+          {/* Layer 7: Credential Pills */}
+          <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
+            <div className="flex items-center gap-1.5 border border-white/15 rounded-full px-3.5 py-1.5 shadow-sm" style={{ background: "rgba(255,255,255,0.08)" }}>
+              <span className="text-[14px]">🎓</span>
+              <span className="text-white text-xs font-medium tracking-wide">MD (Homeopath)</span>
+            </div>
+            <div className="flex items-center gap-1.5 border border-white/15 rounded-full px-3.5 py-1.5 shadow-sm" style={{ background: "rgba(255,255,255,0.08)" }}>
+              <span className="text-[14px]">🏛️</span>
+              <span className="text-white text-xs font-medium tracking-wide">IIM Bangalore</span>
+            </div>
+            <div className="flex items-center gap-1.5 border border-white/15 rounded-full px-3.5 py-1.5 shadow-sm" style={{ background: "rgba(255,255,255,0.08)" }}>
+              <span className="text-[14px]">⏳</span>
+              <span className="text-white text-xs font-medium tracking-wide">25+ Years</span>
+            </div>
+            <div className="flex items-center gap-1.5 border border-white/15 rounded-full px-3.5 py-1.5 shadow-sm" style={{ background: "rgba(255,255,255,0.08)" }}>
+              <span className="text-[14px]">📍</span>
+              <span className="text-white text-xs font-medium tracking-wide">Pune, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Layer 8: Bottom Wave Transition */}
+        <div aria-hidden className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-[70px] block" preserveAspectRatio="none">
+            <path d="M0,0 C400,80 800,0 1440,60 L1440,100 L0,100 Z" fill="#ffffff"/>
+          </svg>
         </div>
       </section>
 
@@ -39,10 +121,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ScrollReveal direction="left">
-              <div className="relative">
+              <div className="relative w-full max-w-md mx-auto lg:mx-0">
                 <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-secondary/20 -z-0" />
-                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4] max-w-md">
-                  <Image src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=800&fit=crop" alt="Dr. Sharda Tawale" fill className="object-cover" sizes="400px" />
+                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4]">
+                  <Image src="/dr-sharda.jpg" alt="Dr. Sharda Tawale" fill className="object-cover" sizes="400px" />
                 </div>
               </div>
             </ScrollReveal>

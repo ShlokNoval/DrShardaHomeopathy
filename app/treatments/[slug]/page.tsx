@@ -1,4 +1,4 @@
-﻿import { treatments, categoryLabels } from "@/data/treatments";
+import { treatments, categoryLabels, diseaseImages } from "@/data/treatments";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { AlertCircle, Leaf, Stethoscope, ArrowLeft, ArrowRight } from "lucide-react";
@@ -30,20 +30,35 @@ export default function TreatmentDetail({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark py-16 sm:py-20 overflow-hidden">
-        <FloatingGlobules count={8} opacity={0.15} />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <Link href="/treatments" className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm mb-6 transition-colors">
-            <ArrowLeft size={16} /> Back to Treatments
-          </Link>
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="text-4xl">{treatment.icon}</span>
-            <span className="text-sm font-medium text-secondary bg-secondary/20 px-3 py-1 rounded-full">
-              {categoryLabels[treatment.category]}
-            </span>
+      <section className="relative bg-[#0F3D22] py-20 sm:py-28 overflow-hidden">
+        {/* Disease Image Background Overlay */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url('${diseaseImages[treatment.slug] || "/conditions/homeopathy-default.jpg"}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(8px)'
+          }}
+        />
+        
+        <div className="absolute inset-0 bg-black/20" />
+        
+        <FloatingGlobules count={8} opacity={0.3} />
+        <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
+          <div className="bg-white/95 backdrop-blur-sm p-8 md:p-12 rounded-3xl shadow-2xl border border-white/20">
+            <Link href="/treatments" className="inline-flex items-center gap-2 text-gray-600 hover:text-[#0F3D22] text-sm mb-6 transition-colors">
+              <ArrowLeft size={16} /> Back to Treatments
+            </Link>
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <span className="text-4xl drop-shadow-sm">{treatment.icon}</span>
+              <span className="text-sm font-medium text-[#C9963A] bg-[#C9963A]/10 border border-[#C9963A]/20 px-4 py-1.5 rounded-full">
+                {categoryLabels[treatment.category]}
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-playfair font-bold text-[#0F3D22] mb-4 leading-tight">{treatment.name}</h1>
+            <p className="text-gray-700 text-lg max-w-2xl mx-auto">{treatment.shortDesc}</p>
           </div>
-          <h1 className="text-white mb-4">{treatment.name}</h1>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">{treatment.shortDesc}</p>
         </div>
       </section>
 

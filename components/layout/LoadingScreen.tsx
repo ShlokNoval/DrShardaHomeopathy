@@ -4,12 +4,15 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function LoadingScreen() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
+  const [isReturning, setIsReturning] = useState(false);
 
   useEffect(() => {
     const hasLoaded = sessionStorage.getItem("sharda_loaded");
-    if (!hasLoaded) {
-      setShow(true);
+    if (hasLoaded) {
+      setIsReturning(true);
+      setShow(false);
+    } else {
       const timer = setTimeout(() => {
         setShow(false);
         sessionStorage.setItem("sharda_loaded", "true");
@@ -17,6 +20,8 @@ export default function LoadingScreen() {
       return () => clearTimeout(timer);
     }
   }, []);
+
+  if (isReturning) return null;
 
   return (
     <AnimatePresence>

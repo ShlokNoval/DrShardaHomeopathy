@@ -71,12 +71,12 @@ export default function TestimonialsPage() {
           position: "absolute", top: 12, left: 24, zIndex: 0, pointerEvents: "none",
           fontSize: 280, lineHeight: 1, fontFamily: "Georgia, 'Playfair Display', serif",
           color: "rgba(255,255,255,0.04)", userSelect: "none", fontWeight: 700,
-        }}>"</div>
+        }}>&quot;</div>
         <div aria-hidden style={{
           position: "absolute", bottom: 12, right: 24, zIndex: 0, pointerEvents: "none",
           fontSize: 280, lineHeight: 1, fontFamily: "Georgia, 'Playfair Display', serif",
           color: "rgba(255,255,255,0.04)", userSelect: "none", fontWeight: 700,
-        }}>"</div>
+        }}>&quot;</div>
 
         {/* ── Layer 5: Left botanical SVG ── */}
         <div aria-hidden style={{
@@ -190,16 +190,7 @@ export default function TestimonialsPage() {
           <span style={{ fontSize: 22, opacity: 0.4, marginTop: -8 }}>🌿</span>
         </div>
 
-        {/* ── Layer 7: Prescription Pad Watermark ── */}
-        <div className="deco-side" aria-hidden style={{
-          position: "absolute", top: "45%", right: -20, zIndex: 0, pointerEvents: "none",
-          fontSize: 36, fontFamily: "Georgia, 'Playfair Display', serif",
-          color: "rgba(255,255,255,0.04)", fontWeight: 700, userSelect: "none",
-          transform: "rotate(-12deg) translateY(-50%)", whiteSpace: "nowrap",
-          transformOrigin: "right center"
-        }}>
-          Dr. Sharda Homeopathy
-        </div>
+
 
         {/* ── Photo Layer: Right circular stack + connectors ── */}
         <div className="deco-side" aria-hidden style={{ position: "absolute", right: 20, top: 0, bottom: 0, width: 120, zIndex: 1, pointerEvents: "none", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center", paddingTop: 60, paddingBottom: 60 }}>

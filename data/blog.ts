@@ -1,4 +1,4 @@
-﻿export type BlogPost = {
+export type BlogPost = {
   slug: string;
   title: string;
   category: string;
@@ -118,11 +118,11 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2024-09-20",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=800",
+    featuredImage: "/conditions/homeopathy-default.jpg",
   },
   {
     slug: "child-recurrent-tonsillitis-different-doctor",
-    title: "Why Your Child's Recurrent Tonsillitis Needs a Different Kind of Doctor",
+    title: "Children's Recurrent Infections avoid steroids/ antibiotics: Go for Natural medicines",
     category: "Children's Health",
     excerpt: "If your child gets tonsillitis every few weeks, repeated antibiotics aren't the answer. Learn how homeopathy can break the cycle and potentially avoid surgery.",
     content: `
@@ -277,7 +277,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "homeopathy-for-stress-and-anxiety",
-    title: "Homeopathy for Stress and Anxiety: Dr. Sharda Explains",
+    title: "Homeopathy for Stress, Anxiety and Sleeplessness: Dr. Sharda Explains",
     category: "Mental Wellness",
     excerpt: "In today's fast-paced world, stress and anxiety are at epidemic levels. Learn how homeopathy offers a gentle, effective approach to mental wellness without side effects.",
     content: `

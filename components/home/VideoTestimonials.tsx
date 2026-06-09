@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 // TODO: Replace MP4s with compressed WebM versions for 60% smaller file size
 
@@ -42,6 +42,10 @@ function ConditionPill({ label }: { label: string }) {
         padding: "2px 10px",
         letterSpacing: "0.04em",
         whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
+        display: "inline-block",
+        maxWidth: "100%",
       }}
     >
       {label}
@@ -447,6 +451,7 @@ export default function VideoTestimonials() {
                 style={{
                   flex: "0 0 calc((100% - 3 * 12px) / 3.5)",
                   scrollSnapAlign: "start",
+                  minWidth: 0,
                 }}
               >
                 <VideoCard

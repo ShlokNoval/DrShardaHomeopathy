@@ -14,7 +14,15 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden">
+        <Image
+          src="/insights-bg2.png"
+          alt="Health Insights Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
         <FloatingGlobules count={10} opacity={0.2} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
           <span className="inline-block border border-white/30 text-white text-sm px-4 py-1.5 rounded-full mb-4">📝 Blog</span>

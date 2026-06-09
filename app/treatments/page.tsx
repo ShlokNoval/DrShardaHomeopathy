@@ -20,12 +20,29 @@ export default function TreatmentsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark py-20 overflow-hidden">
-        <FloatingGlobules count={10} opacity={0.2} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-          <span className="inline-block border border-white/30 text-white text-sm px-4 py-1.5 rounded-full mb-4">🧬 Treatments</span>
-          <h1 className="text-white mb-4">Conditions We Treat</h1>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">Expert homeopathic treatment for 50+ conditions across 9 speciality areas</p>
+      <section className="relative py-24 sm:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('/treatments-hero.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 30%',
+          }}
+        />
+        {/* Very subtle dark vignette so it's not washed out, but image is 100% visible */}
+        <div className="absolute inset-0 z-0 bg-black/20" />
+
+        <div className="absolute inset-0 z-0">
+          {/* Globules are optional here, maybe we don't need them if the image is clear, but let's keep them faint */}
+        </div>
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+          <div className="backdrop-blur-md bg-white/85 border border-white/50 p-10 sm:p-14 rounded-3xl shadow-2xl">
+            <span className="inline-block border border-primary/30 text-primary font-semibold text-sm px-4 py-1.5 rounded-full mb-4 bg-primary/5">🧬 Treatments</span>
+            <h1 className="text-charcoal mb-4">Conditions We Treat</h1>
+            <p className="text-charcoal/80 text-lg max-w-2xl mx-auto font-medium">Expert homeopathic treatment for 50+ conditions across 9 speciality areas</p>
+          </div>
         </div>
       </section>
 
