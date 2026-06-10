@@ -149,7 +149,7 @@ export default function RootLayout({
         </a>
         <LoadingScreen />
         <Navbar />
-        <main id="main-content">{children}</main>
+        <main id="main-content" className="overflow-x-hidden w-full max-w-[100vw]">{children}</main>
         <Footer />
         <WhatsAppFloating />
         <ChatWidget />
