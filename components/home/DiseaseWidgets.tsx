@@ -96,7 +96,7 @@ export default function DiseaseWidgets() {
         </div>
 
         {/* Disease Grid */}
-        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           <AnimatePresence mode="popLayout">
             {displayed.map((t) => {
               const Icon = CategoryIcons[t.category];

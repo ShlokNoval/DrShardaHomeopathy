@@ -84,18 +84,18 @@ export default function Navbar() {
             : "bg-white/80 backdrop-blur-md"
           }`}
       >
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group min-w-0 flex-shrink">
             <Image
               src="/logo.png"
               alt="Sharda Homeopathy Logo"
               width={38}
               height={38}
-              className="object-contain"
+              className="object-contain flex-shrink-0"
               priority
             />
-            <span className="font-playfair text-xl font-bold text-primary group-hover:text-primary-light transition-colors">
+            <span className="font-playfair text-base sm:text-lg lg:text-xl font-bold text-primary group-hover:text-primary-light transition-colors truncate">
               Dr. Sharda Homeopathy
             </span>
           </Link>
@@ -149,10 +149,10 @@ export default function Navbar() {
           </div>
 
           {/* CTA + Mobile Toggle */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             <Link
               href="/appointment"
-              className="hidden sm:inline-flex btn-primary text-sm"
+              className="hidden sm:inline-flex btn-primary text-xs sm:text-sm whitespace-nowrap px-3 sm:px-6 py-2 sm:py-3"
             >
               Book Appointment
             </Link>

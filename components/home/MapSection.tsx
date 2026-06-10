@@ -54,9 +54,9 @@ export default function MapSection() {
                   <div>
                     <h4 className="font-semibold text-charcoal mb-2">Clinic Timings</h4>
                     <div className="text-sm space-y-1">
-                      <p className="flex justify-between gap-4">
+                      <p className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4">
                         <span className="text-muted">Monday – Saturday</span>
-                        <span className="text-charcoal font-medium">10:30 AM – 12:30 PM, 5:00 PM – 7:30 PM</span>
+                        <span className="text-charcoal font-medium text-xs sm:text-sm">10:30 AM – 12:30 PM, 5:00 PM – 7:30 PM</span>
                       </p>
                       <p className="flex justify-between gap-4">
                         <span className="text-muted">Sunday</span>

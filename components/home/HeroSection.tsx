@@ -543,20 +543,20 @@ export default function HeroSection() {
         {/* ══════════════════════════════════════════════
             MAIN CONTENT
         ══════════════════════════════════════════════ */}
-        <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto px-4 w-full pt-20 pb-12 lg:py-0 lg:mt-0">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center w-full">
+        <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto px-4 w-full pt-6 sm:pt-10 pb-8 lg:py-0 lg:mt-0">
+          <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center w-full">
 
             {/* Left Column - Text */}
             <ScrollReveal direction="left">
               <div className="flex flex-col">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 border border-[#C9963A]/40 bg-white/10 backdrop-blur-md text-white text-sm font-medium px-4 py-2 rounded-full mb-6 shadow-sm w-fit">
+                <div className="inline-flex items-center gap-2 border border-[#C9963A]/40 bg-white/10 backdrop-blur-md text-white text-sm font-medium px-4 py-2 rounded-full mb-4 sm:mb-6 shadow-sm w-fit">
                   <span>🌿</span>
                   <span>Trusted Homeopathic Care</span>
                 </div>
 
-                <h1 className="mb-5 leading-tight">
-                  <span className="font-playfair text-5xl sm:text-6xl lg:text-[70px] text-white block relative w-fit mb-3">
+                <h1 className="mb-3 sm:mb-5 leading-tight">
+                  <span className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-[70px] text-white block relative w-fit mb-2 sm:mb-3">
                     Heal Naturally.
                     <svg
                       className="absolute w-[105%] h-4 -bottom-2 -left-1 text-[#C9963A]"
@@ -572,12 +572,12 @@ export default function HeroSection() {
                       />
                     </svg>
                   </span>
-                  <span className="font-sans font-bold text-4xl sm:text-5xl lg:text-[54px] tracking-tight text-white block mt-4">
+                  <span className="font-sans font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[54px] tracking-tight text-white block mt-3 sm:mt-4">
                     Live Completely.
                   </span>
                 </h1>
 
-                <p className="text-white/80 text-lg sm:text-xl max-w-xl mb-8 leading-relaxed font-light">
+                <p className="text-white/80 text-base sm:text-lg md:text-xl max-w-xl mb-5 sm:mb-8 leading-relaxed font-light">
                   Expert homeopathic care for 50+ conditions by Dr. Sharda Tawale.
                   <br className="hidden sm:block" />
                   <span className="sm:hidden"> </span>
@@ -606,7 +606,7 @@ export default function HeroSection() {
 
             {/* Right Column - Doctor Image */}
             <ScrollReveal direction="right" delay={0.2}>
-              <div className="flex flex-col gap-12 lg:gap-0 w-full items-center lg:items-end">
+              <div className="flex flex-col gap-6 sm:gap-8 lg:gap-0 w-full items-center lg:items-end">
                 <div className="relative flex justify-center lg:justify-end">
                   <div className="relative z-10">
 
@@ -654,7 +654,7 @@ export default function HeroSection() {
                   </div>
 
                   {/* Double ring + glow */}
-                  <div className="relative w-[260px] h-[260px] sm:w-[380px] sm:h-[380px] rounded-full p-2 border-[4px] border-white/10 ring-2 ring-[#C9963A]/50 ring-offset-4 ring-offset-[#1B5E35] shadow-[0_0_60px_rgba(201,150,58,0.25)]">
+                  <div className="relative w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[380px] md:h-[380px] rounded-full p-2 border-[4px] border-white/10 ring-2 ring-[#C9963A]/50 ring-offset-4 ring-offset-[#1B5E35] shadow-[0_0_60px_rgba(201,150,58,0.25)]">
                     {/* Floral ornament top */}
                     <div className="absolute -top-8 left-1/2 -translate-x-1/2 text-[#C9963A] z-20 bg-[#1B5E35] px-2 rounded-full">
                       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -672,13 +672,13 @@ export default function HeroSection() {
                         fill
                         className="object-cover"
                         priority
-                        sizes="(max-width: 768px) 260px, 380px"
+                        sizes="(max-width: 640px) 220px, (max-width: 768px) 300px, 380px"
                       />
                     </div>
                   </div>
 
                   {/* Floating Social Proof Card */}
-                  <div className="absolute -bottom-6 -left-4 sm:bottom-6 sm:-left-12 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl p-4 flex items-center gap-3 border border-gray-100 z-30 hover:-translate-y-2 transition-transform duration-300">
+                  <div className="absolute -bottom-6 -left-4 sm:bottom-4 sm:-left-6 md:bottom-6 md:-left-12 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl p-3 sm:p-4 flex items-center gap-2 sm:gap-3 border border-gray-100 z-30 hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex -space-x-2">
                       <div className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white overflow-hidden relative">
                         <Image src="https://picsum.photos/100/100?random=1" alt="Patient" fill className="object-cover" />
@@ -725,7 +725,7 @@ export default function HeroSection() {
         </div>
 
         {/* ── Stats row - bottom ── */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pb-12 pt-8 lg:pt-0 sm:pb-16 mt-8 lg:mt-0">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pb-8 pt-4 sm:pb-12 sm:pt-6 lg:pt-0 mt-4 lg:mt-0">
           <div className="flex flex-wrap gap-3 text-white justify-center lg:justify-start">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-[#C9963A]/30 px-4 py-2.5 rounded-full shadow-sm hover:-translate-y-1 transition-transform">
               <Star size={16} className="text-[#C9963A] fill-[#C9963A]" />
