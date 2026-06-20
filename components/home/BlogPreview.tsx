@@ -8,6 +8,7 @@ import { Calendar, Clock } from "lucide-react";
 export default function BlogPreview() {
   const latestPosts = blogPosts.slice(0, 3);
 
+  return (
     <ScrollReveal className="hidden md:block">
       <section className="relative bg-cream-alt py-16 sm:py-24 overflow-hidden">
         <Image
