@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import { getWhatsAppUrl } from "@/lib/utils";
