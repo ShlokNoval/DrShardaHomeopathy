@@ -2,15 +2,28 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { treatments, categoryLabels, type TreatmentCategory } from "@/data/treatments";
+import { treatments, categoryLabels, type TreatmentCategory, diseaseImages } from "@/data/treatments";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import FloatingGlobules from "@/components/shared/FloatingGlobules";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { Sparkles, Wind, Apple, Activity, Baby, HeartPulse, Coffee, ArrowRight, Brain, Ear } from "lucide-react";
 
 const categories: ("all" | TreatmentCategory)[] = [
   "all", "skin", "respiratory", "digestive", "joint", "children", "womens", "lifestyle", "mental-wellness", "ent",
 ];
+
+const CategoryIcons: Record<string, any> = {
+  skin: Sparkles,
+  respiratory: Wind,
+  digestive: Apple,
+  joint: Activity,
+  children: Baby,
+  womens: HeartPulse,
+  lifestyle: Coffee,
+  "mental-wellness": Brain,
+  ent: Ear,
+  all: Activity,
+};
 
 export default function TreatmentsPage() {
   const [active, setActive] = useState<"all" | TreatmentCategory>("all");
@@ -72,7 +85,9 @@ export default function TreatmentsPage() {
           {/* Grid */}
           <motion.div layout className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <AnimatePresence mode="popLayout">
-              {filtered.map((t) => (
+              {filtered.map((t) => {
+                const Icon = CategoryIcons[t.category] || Activity;
+                return (
                 <motion.div
                   key={t.slug}
                   layout
@@ -83,24 +98,51 @@ export default function TreatmentsPage() {
                 >
                   <Link
                     href={`/treatments/${t.slug}`}
-                    className="block bg-white rounded-2xl p-6 border border-transparent hover:border-primary/30 card-hover group h-full"
+                    className="group relative block h-[220px] rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-[#4ADE80]/50 transition-all duration-300 transform hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(74,222,128,0.15)] bg-[#1B5E35]"
                   >
-                    <div className="flex items-start justify-between mb-3">
-                      <span className="text-3xl">{t.icon}</span>
-                      <span className="text-xs font-medium text-secondary bg-secondary/10 px-2.5 py-1 rounded-full">
-                        {categoryLabels[t.category]}
+                    {/* Background Image */}
+                    <img
+                      src={diseaseImages[t.slug] || "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=400&h=300"}
+                      alt={t.name}
+                      className="absolute inset-0 w-full h-full object-cover transition-all duration-350 group-hover:blur-[3px] group-hover:brightness-[0.4]"
+                    />
+
+                    {/* Default State Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#00140A]/90 via-[#00140A]/30 to-black/10 transition-opacity duration-300 group-hover:opacity-0" />
+
+                    {/* Category Pill */}
+                    <div className="absolute top-3 left-3 bg-black/30 backdrop-blur-md border border-[#C9963A]/60 text-white text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full z-10 transition-opacity duration-300 group-hover:opacity-0">
+                      {categoryLabels[t.category]}
+                    </div>
+
+                    {/* Icon */}
+                    <div className="absolute top-3 right-3 text-white/60 z-10 transition-opacity duration-300 group-hover:opacity-0">
+                      <Icon className="w-5 h-5" />
+                    </div>
+
+                    {/* Default State Name */}
+                    <div className="absolute bottom-4 left-4 right-4 z-10 transition-all duration-300 group-hover:opacity-0 group-hover:translate-y-4">
+                      <h4 className="text-white font-bold text-lg leading-tight drop-shadow-md">
+                        {t.name}
+                      </h4>
+                    </div>
+
+                    {/* Hover State: Frosted Overlay */}
+                    <div className="absolute inset-0 flex flex-col justify-end p-5 bg-black/20 backdrop-blur-[2px] opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-350 z-20">
+                      <h4 className="text-white font-bold text-xl mb-1.5 drop-shadow-md">
+                        {t.name}
+                      </h4>
+                      <p className="text-white/90 text-sm line-clamp-2 mb-4 leading-relaxed drop-shadow-sm">
+                        {t.shortDesc}
+                      </p>
+                      <span className="text-[#C9963A] text-sm font-bold flex items-center gap-1 group/btn w-fit">
+                        Learn More <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                       </span>
                     </div>
-                    <h3 className="font-sans font-semibold text-lg text-charcoal group-hover:text-primary transition-colors mb-2">
-                      {t.name}
-                    </h3>
-                    <p className="text-muted text-sm leading-relaxed mb-4">{t.shortDesc}</p>
-                    <span className="inline-flex items-center gap-1 text-primary text-sm font-medium group-hover:gap-2 transition-all">
-                      Learn more <ArrowRight size={14} />
-                    </span>
                   </Link>
                 </motion.div>
-              ))}
+              );
+              })}
             </AnimatePresence>
           </motion.div>
         </div>

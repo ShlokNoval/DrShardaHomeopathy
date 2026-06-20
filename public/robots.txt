@@ -7,4 +7,3 @@ Host: https://www.drshardahomoeopathy.com
 
 # Sitemaps
 Sitemap: https://www.drshardahomoeopathy.com/sitemap.xml
-# Trigger Vercel
