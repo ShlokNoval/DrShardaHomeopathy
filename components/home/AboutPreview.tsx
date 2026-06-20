@@ -25,7 +25,7 @@ export default function AboutPreview() {
                 <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl border-2 border-primary/20 -z-0" />
                 <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4]">
                   <Image
-                    src="/dr-sharda.jpg"
+                    src="/dr-sharda-hero.jpg"
                     alt="Dr. Sharda Tawale - Homeopathic Doctor in Pune"
                     fill
                     className="object-cover"

@@ -667,7 +667,7 @@ export default function HeroSection() {
 
                     <div className="relative w-full h-full rounded-full overflow-hidden bg-[#2E7D50]/20">
                       <Image
-                        src="/dr-sharda-hero.jpg"
+                        src="/dr-sharda.jpg"
                         alt="Dr. Sharda Tawale - Homeopathic Physician in Pune"
                         fill
                         className="object-cover"
