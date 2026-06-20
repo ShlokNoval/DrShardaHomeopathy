@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import { getWhatsAppUrl } from "@/lib/utils";
@@ -74,7 +74,7 @@ export default function WhyHomeopathy() {
             </h2>
 
             {/* Proof Strip */}
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mt-10">
+            <div className="hidden md:flex flex-wrap justify-center gap-3 sm:gap-6 mt-10">
               {[
                 "98% Patient Satisfaction",
                 "10,000+ Treated",

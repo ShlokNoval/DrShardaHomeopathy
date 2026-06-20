@@ -422,7 +422,7 @@ export default function HeroSection() {
         style={{ minHeight: "calc(100vh - 88px)" }}
       >
         {/* ── Trust pills pinned at very top ── */}
-        <div className="relative z-20">
+        <div className="relative z-20 hidden md:block">
           <TrustPills />
         </div>
 
@@ -678,7 +678,7 @@ export default function HeroSection() {
                   </div>
 
                   {/* Floating Social Proof Card */}
-                  <div className="absolute -bottom-6 -left-4 sm:bottom-4 sm:-left-6 md:bottom-6 md:-left-12 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl p-3 sm:p-4 flex items-center gap-2 sm:gap-3 border border-gray-100 z-30 hover:-translate-y-2 transition-transform duration-300">
+                  <div className="hidden sm:flex absolute -bottom-6 -left-4 sm:bottom-4 sm:-left-6 md:bottom-6 md:-left-12 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl p-3 sm:p-4 items-center gap-2 sm:gap-3 border border-gray-100 z-30 hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex -space-x-2">
                       <div className="w-8 h-8 rounded-full bg-gray-200 border-2 border-white overflow-hidden relative">
                         <Image src="https://picsum.photos/100/100?random=1" alt="Patient" fill className="object-cover" />
@@ -725,7 +725,7 @@ export default function HeroSection() {
         </div>
 
         {/* ── Stats row - bottom ── */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 w-full pb-8 pt-4 sm:pb-12 sm:pt-6 lg:pt-0 mt-4 lg:mt-0">
+        <div className="relative z-10 hidden sm:block max-w-7xl mx-auto px-4 w-full pb-8 pt-4 sm:pb-12 sm:pt-6 lg:pt-0 mt-4 lg:mt-0">
           <div className="flex flex-wrap gap-3 text-white justify-center lg:justify-start">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md border border-[#C9963A]/30 px-4 py-2.5 rounded-full shadow-sm hover:-translate-y-1 transition-transform">
               <Star size={16} className="text-[#C9963A] fill-[#C9963A]" />
