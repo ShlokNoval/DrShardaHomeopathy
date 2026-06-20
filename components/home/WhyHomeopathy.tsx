@@ -98,7 +98,7 @@ export default function WhyHomeopathy() {
             <path d="M200 300 C 400 300 400 500 600 500" stroke="#1B5E35" strokeWidth="2" strokeDasharray="8 8" fill="none" />
           </svg>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {reasons.map((reason, i) => (
               <ScrollReveal key={i} delay={i * 0.1} className={reason.colSpan}>
                 <div className="group relative h-full flex flex-col p-8 sm:p-10 rounded-[2rem] bg-white/70 backdrop-blur-[8px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-white border-l-[4px] border-l-[#C9963A] hover:border-l-[#1B5E35] hover:shadow-[0_12px_40px_rgba(27,94,53,0.08)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
