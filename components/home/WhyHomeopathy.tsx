@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import ScrollReveal from "@/components/shared/ScrollReveal";
 import { getWhatsAppUrl } from "@/lib/utils";
@@ -47,12 +47,12 @@ export default function WhyHomeopathy() {
   return (
     <section className="relative bg-[#FAFAF7] py-20 sm:py-32 overflow-hidden">
       {/* Background Botanical Illustration */}
-      <div 
-        className="absolute inset-0 opacity-[0.04] pointer-events-none z-0 mix-blend-multiply" 
-        style={{ 
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none z-0 mix-blend-multiply"
+        style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 120C40 100 80 50 120 20C90 40 70 80 60 120Z M65 90C85 80 100 100 110 120C90 110 70 110 65 90Z M62 50C85 40 100 50 110 70C90 60 70 60 62 50Z' fill='%231B5E35'/%3E%3C/svg%3E")`,
           backgroundSize: "400px"
-        }} 
+        }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4">
@@ -63,7 +63,7 @@ export default function WhyHomeopathy() {
               <Leaf className="text-[#C9963A] w-6 h-6 rotate-12" />
             </div>
             <h2 className="text-4xl sm:text-5xl font-playfair mb-6 tracking-tight text-slate-900 relative inline-block">
-              Why 10,000+ Families{" "}
+              10,000+ Families{" "}
               <span className="text-[#1B5E35] font-serif relative whitespace-nowrap">
                 Trust Homeopathy
                 {/* Hand-drawn SVG underline */}
@@ -102,7 +102,7 @@ export default function WhyHomeopathy() {
             {reasons.map((reason, i) => (
               <ScrollReveal key={i} delay={i * 0.1} className={reason.colSpan}>
                 <div className="group relative h-full flex flex-col p-8 sm:p-10 rounded-[2rem] bg-white/70 backdrop-blur-[8px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-white border-l-[4px] border-l-[#C9963A] hover:border-l-[#1B5E35] hover:shadow-[0_12px_40px_rgba(27,94,53,0.08)] hover:-translate-y-1.5 transition-all duration-500 overflow-hidden">
-                  
+
                   {/* Faint Background Number */}
                   <div className="absolute top-4 right-6 text-[80px] font-black text-[#1B5E35]/5 select-none font-playfair tracking-tighter transition-transform duration-500 group-hover:scale-110">
                     0{i + 1}
@@ -112,11 +112,11 @@ export default function WhyHomeopathy() {
                     <div className="w-14 h-14 mb-6 rounded-full bg-[#1B5E35]/5 group-hover:bg-[#C9963A]/10 flex items-center justify-center transition-colors duration-500">
                       <reason.icon className="w-7 h-7 text-[#1B5E35] transition-transform duration-500 group-hover:scale-110" strokeWidth={1.5} />
                     </div>
-                    
+
                     <h4 className="font-bold text-[#1B5E35] text-xl mb-3 pr-8">
                       {reason.title}
                     </h4>
-                    
+
                     <p className="text-[#555] leading-relaxed text-sm sm:text-base">
                       {reason.desc}
                     </p>
