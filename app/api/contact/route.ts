@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSupabaseAdmin } from "@/lib/supabaseAdmin";
 import { getResend } from "@/lib/resend";
 import { generateAdminContactEmail } from "@/lib/emailTemplates";
-import { sendWhatsAppNotification } from "@/lib/whatsapp";
-
 export async function POST(req: NextRequest) {
   try {
     const data = await req.json();
@@ -33,9 +31,6 @@ export async function POST(req: NextRequest) {
         html: generateAdminContactEmail({ name, email, phone, disease, message }),
       });
     }
-
-    // 3. Send WhatsApp Notification to the Doctor
-    await sendWhatsAppNotification('contact', data);
 
     return NextResponse.json({ success: true });
   } catch (error) {

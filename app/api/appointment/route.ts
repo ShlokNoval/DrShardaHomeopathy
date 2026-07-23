@@ -5,7 +5,6 @@ import {
   generateAdminAppointmentEmail,
   generatePatientConfirmationEmail,
 } from "@/lib/emailTemplates";
-import { sendWhatsAppNotification } from "@/lib/whatsapp";
 
 export async function POST(req: NextRequest) {
   try {
@@ -60,9 +59,6 @@ export async function POST(req: NextRequest) {
         });
       }
     }
-
-    // 4. Send WhatsApp Notification to the Doctor
-    await sendWhatsAppNotification('appointment', data);
 
     return NextResponse.json({ success: true });
   } catch (error) {
