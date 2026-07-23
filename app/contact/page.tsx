@@ -60,6 +60,11 @@ export default function ContactPage() {
                   💬 Chat with us on WhatsApp
                 </a>
 
+                {/* Call Us CTA */}
+                <a href={`tel:${(process.env.NEXT_PUBLIC_CLINIC_PHONE || "+91-9881255055").replace(/[^+\d]/g, "")}`} className="block bg-primary text-white rounded-2xl p-6 text-center font-semibold hover:bg-primary-dark transition-colors">
+                  📞 Call Us Directly
+                </a>
+
                 {/* Map */}
                 <div className="rounded-2xl overflow-hidden shadow-sm aspect-video">
                   <iframe src={process.env.NEXT_PUBLIC_GOOGLE_MAPS_EMBED_URL || "https://maps.google.com/maps?q=Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"} width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" title="Clinic location" />

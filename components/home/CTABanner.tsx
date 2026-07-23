@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { getWhatsAppUrl } from "@/lib/utils";
 
 export default function CTABanner() {
@@ -18,6 +18,12 @@ export default function CTABanner() {
 
           {/* Right - Actions */}
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+            <a
+              href={`tel:${(process.env.NEXT_PUBLIC_CLINIC_PHONE || "+91-9881255055").replace(/[^+\d]/g, "")}`}
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary-dark font-semibold px-6 py-3.5 rounded-full hover:bg-gray-100 transition-colors text-sm shadow-lg"
+            >
+              📞 Call Us
+            </a>
             <a
               href={getWhatsAppUrl("Hi Dr. Sharda, I'd like to discuss a health concern.")}
               target="_blank"
