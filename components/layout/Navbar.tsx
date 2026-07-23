@@ -150,6 +150,14 @@ export default function Navbar() {
 
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+            <a
+              href={`tel:${(process.env.NEXT_PUBLIC_CLINIC_PHONE || "+91-9881255055").replace(/[^+\d]/g, "")}`}
+              className="flex items-center justify-center gap-1.5 sm:gap-2 bg-green-50 text-primary hover:bg-green-100 transition-colors rounded-full px-3 py-2 sm:px-5 sm:py-2.5 font-semibold text-xs sm:text-sm border border-primary/20"
+              aria-label="Call Us"
+            >
+              <Phone size={16} />
+              <span className="hidden sm:inline">Call Us</span>
+            </a>
             <Link
               href="/appointment"
               className="hidden sm:inline-flex btn-primary text-xs sm:text-sm whitespace-nowrap px-3 sm:px-6 py-2 sm:py-3"
@@ -213,12 +221,19 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.05 * navLinks.length }}
-                  className="mt-6"
+                  className="mt-6 flex flex-col gap-3 w-full max-w-xs px-4"
                 >
+                  <a
+                    href={`tel:${(process.env.NEXT_PUBLIC_CLINIC_PHONE || "+91-9881255055").replace(/[^+\d]/g, "")}`}
+                    onClick={() => setMobileOpen(false)}
+                    className="flex items-center justify-center gap-2 bg-white text-primary text-lg font-semibold px-8 py-3.5 rounded-full w-full shadow-md"
+                  >
+                    <Phone size={20} /> Call Us Now
+                  </a>
                   <Link
                     href="/appointment"
                     onClick={() => setMobileOpen(false)}
-                    className="btn-primary text-lg px-8 py-4"
+                    className="btn-primary text-lg px-8 py-3.5 w-full text-center"
                   >
                     📅 Book Appointment
                   </Link>
