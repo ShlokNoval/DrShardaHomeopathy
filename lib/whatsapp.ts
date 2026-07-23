@@ -1,11 +1,13 @@
 // lib/whatsapp.ts
 
 export async function sendWhatsAppNotification(type: 'appointment' | 'contact', data: any) {
-  const phone = process.env.CALLMEBOT_PHONE;
-  const apikey = process.env.CALLMEBOT_API_KEY;
+  const idInstance = process.env.GREEN_API_ID;
+  const apiTokenInstance = process.env.GREEN_API_TOKEN;
+  // The phone number to receive the messages (e.g., 919881255055)
+  const phone = process.env.GREEN_API_PHONE;
 
-  if (!phone || !apikey) {
-    console.warn("WhatsApp notifications skipped: CALLMEBOT_PHONE or CALLMEBOT_API_KEY not set in environment.");
+  if (!idInstance || !apiTokenInstance || !phone) {
+    console.warn("WhatsApp notifications skipped: Green-API credentials not set in environment.");
     return;
   }
 
@@ -27,17 +29,26 @@ export async function sendWhatsAppNotification(type: 'appointment' | 'contact', 
       `*Message:* ${data.message}`;
   }
 
-  // URL encode the message
-  const encodedMessage = encodeURIComponent(messageText);
-  
-  // CallMeBot Free API URL
-  const url = `https://api.callmebot.com/whatsapp.php?phone=${phone}&text=${encodedMessage}&apikey=${apikey}`;
+  // Green-API expects the phone number with @c.us at the end for regular chats
+  const chatId = `${phone.replace(/[^0-9]/g, '')}@c.us`;
 
-  // 2. Send the message
+  const url = `https://api.green-api.com/waInstance${idInstance}/sendMessage/${apiTokenInstance}`;
+
+  // 2. Send the message via Green-API
   try {
-    const response = await fetch(url, { method: "GET" });
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chatId: chatId,
+        message: messageText
+      })
+    });
+
     if (!response.ok) {
-      console.error("Failed to send WhatsApp message via CallMeBot", await response.text());
+      console.error("Failed to send WhatsApp message via Green-API", await response.text());
     }
   } catch (error) {
     console.error("WhatsApp API error:", error);
