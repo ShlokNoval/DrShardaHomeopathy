@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/shared/ScrollReveal";
-import { Calendar, ArrowRight, Star, Users, Clock, ChevronDown } from "lucide-react";
+import { Calendar, ArrowRight, Star, Users, Clock, ChevronDown, MessageCircle } from "lucide-react";
 
 /* ─── Static trust micro-pills ───────────────────────────────────── */
 const TRUST_PILLS = [
@@ -549,10 +549,29 @@ export default function HeroSection() {
             {/* Left Column - Text */}
             <ScrollReveal direction="left">
               <div className="flex flex-col">
-                {/* Badge */}
-                <div className="inline-flex items-center gap-2 border border-[#C9963A]/40 bg-white/10 backdrop-blur-md text-white text-sm font-medium px-4 py-2 rounded-full mb-4 sm:mb-6 shadow-sm w-fit">
-                  <span>🌿</span>
-                  <span>Trusted Homeopathic Care</span>
+                {/* #1 Rank Badge */}
+                <div className="flex flex-wrap items-center gap-2 mb-4 sm:mb-5">
+                  <div
+                    style={{
+                      background: "linear-gradient(135deg, #C9963A 0%, #E8C96D 50%, #C9963A 100%)",
+                      borderRadius: 999,
+                      padding: "5px 16px 5px 10px",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 6,
+                      boxShadow: "0 2px 16px rgba(201,150,58,0.45), inset 0 1px 0 rgba(255,255,255,0.3)",
+                      border: "1px solid rgba(255,255,255,0.25)",
+                    }}
+                  >
+                    <span style={{ fontSize: 16 }}>🏆</span>
+                    <span style={{ color: "#0F3D22", fontSize: 12, fontWeight: 800, letterSpacing: "0.04em", whiteSpace: "nowrap", textTransform: "uppercase" }}>
+                      #1 Best Homeopathy Dr. In Pune
+                    </span>
+                  </div>
+                  <div className="inline-flex items-center gap-2 border border-[#C9963A]/40 bg-white/10 backdrop-blur-md text-white text-xs font-medium px-3 py-1.5 rounded-full shadow-sm">
+                    <span>🌿</span>
+                    <span>Trusted Homeopathic Care</span>
+                  </div>
                 </div>
 
                 <h1 className="mb-3 sm:mb-5 leading-tight">
@@ -577,29 +596,61 @@ export default function HeroSection() {
                   </span>
                 </h1>
 
-                <p className="text-white/80 text-base sm:text-lg md:text-xl max-w-xl mb-5 sm:mb-8 leading-relaxed font-light">
+                <p className="text-white/80 text-base sm:text-lg md:text-xl max-w-xl mb-4 sm:mb-6 leading-relaxed font-light">
                   Expert homeopathic care for 50+ conditions by Dr. Sharda Tawale.
                   <br className="hidden sm:block" />
                   <span className="sm:hidden"> </span>
-                  Safe, natural, and lasting results.
+                  Safe, natural, and lasting results — no side effects.
                 </p>
 
+                {/* SEO Keyword strip */}
+                <div className="flex flex-wrap gap-1.5 mb-5 sm:mb-7">
+                  {["Best Homeopathy Doctor Pune", "25+ Yrs Experience", "10,000+ Cured", "No Side Effects"].map((kw) => (
+                    <span
+                      key={kw}
+                      style={{
+                        background: "rgba(255,255,255,0.07)",
+                        border: "1px solid rgba(201,150,58,0.30)",
+                        borderRadius: 6,
+                        fontSize: 11,
+                        color: "rgba(255,255,255,0.65)",
+                        padding: "3px 10px",
+                        letterSpacing: "0.02em",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {kw}
+                    </span>
+                  ))}
+                </div>
+
                 {/* CTA Buttons (Desktop) */}
-                <div className="hidden lg:flex flex-row gap-4 mb-0">
+                <div className="hidden lg:flex flex-row flex-wrap gap-3 mb-0">
                   <Link
                     href="/appointment"
-                    className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#C9963A] to-[#E8C96D] hover:from-[#b58532] hover:to-[#d4b55c] text-[#0F3D22] text-base font-bold px-8 py-4 rounded-full transition-transform hover:scale-105 shadow-lg shadow-[#C9963A]/20"
+                    className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#C9963A] to-[#E8C96D] hover:from-[#b58532] hover:to-[#d4b55c] text-[#0F3D22] text-base font-bold px-7 py-3.5 rounded-full transition-transform hover:scale-105 shadow-lg shadow-[#C9963A]/20"
                   >
-                    <Calendar size={20} />
+                    <Calendar size={18} />
                     Book Appointment
                   </Link>
                   <Link
                     href="/treatments"
-                    className="inline-flex items-center justify-center gap-2 border-2 border-[#C9963A] text-white hover:bg-[#C9963A]/10 text-base font-semibold px-8 py-4 rounded-full transition-colors"
+                    className="inline-flex items-center justify-center gap-2 border-2 border-[#C9963A] text-white hover:bg-[#C9963A]/10 text-base font-semibold px-7 py-3.5 rounded-full transition-colors"
                   >
                     Explore Treatments
-                    <ArrowRight size={20} />
+                    <ArrowRight size={18} />
                   </Link>
+                  {/* WhatsApp CTA */}
+                  <a
+                    href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "91XXXXXXXXXX"}?text=${encodeURIComponent("Hello Dr. Sharda, I found your website and would like to enquire about treatment.")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 text-white text-base font-semibold px-7 py-3.5 rounded-full transition-transform hover:scale-105"
+                    style={{ background: "#25D366", boxShadow: "0 4px 16px rgba(37,211,102,0.35)" }}
+                  >
+                    <MessageCircle size={18} />
+                    WhatsApp Us
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -703,7 +754,7 @@ export default function HeroSection() {
               </div>
 
               {/* CTA Buttons (Mobile) */}
-              <div className="flex lg:hidden flex-col w-full max-w-[340px] gap-4">
+              <div className="flex lg:hidden flex-col w-full max-w-[340px] gap-3">
                 <Link
                   href="/appointment"
                   className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#C9963A] to-[#E8C96D] hover:from-[#b58532] hover:to-[#d4b55c] text-[#0F3D22] text-base font-bold px-6 py-4 rounded-full transition-transform shadow-lg shadow-[#C9963A]/20"
@@ -711,6 +762,17 @@ export default function HeroSection() {
                   <Calendar size={20} />
                   Book Appointment
                 </Link>
+                {/* WhatsApp CTA — mobile */}
+                <a
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "91XXXXXXXXXX"}?text=${encodeURIComponent("Hello Dr. Sharda, I found your website and would like to enquire about treatment.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 text-white text-base font-bold px-6 py-4 rounded-full transition-transform"
+                  style={{ background: "#25D366", boxShadow: "0 4px 16px rgba(37,211,102,0.30)" }}
+                >
+                  <MessageCircle size={20} />
+                  WhatsApp Us
+                </a>
                 <Link
                   href="/treatments"
                   className="w-full inline-flex items-center justify-center gap-2 border-2 border-[#C9963A] text-white hover:bg-[#C9963A]/10 text-base font-semibold px-6 py-4 rounded-full transition-colors"
