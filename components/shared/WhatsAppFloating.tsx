@@ -13,54 +13,43 @@ export default function WhatsAppFloating() {
 
   return (
     <>
-      {/* Backdrop to close panel on mobile */}
+      {/* Invisible backdrop — closes panel when tapping outside on mobile */}
       {open && (
         <div
           onClick={() => setOpen(false)}
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 9997,
-            background: "transparent",
-          }}
+          style={{ position: "fixed", inset: 0, zIndex: 9997 }}
         />
       )}
 
       <div
         style={{
           position: "fixed",
-          /* Raised well above any bottom widgets/nav bars */
-          bottom: 100,
+          bottom: 90,          /* well above any bottom bar / third-party widgets */
           right: 20,
           zIndex: 9999,
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-end",
-          gap: 10,
-          /* Prevent interaction with the backdrop from reaching here */
-          pointerEvents: "auto",
+          gap: 8,
         }}
       >
-        {/* ── Expanded action panel ────────────────────────────── */}
-        {/*  Desktop: show on hover  |  Mobile: show when open===true */}
+        {/* ── Expanded action panel (tap-to-toggle on mobile, hover on desktop) ── */}
         <div
-          className="group-wa-panel"
           style={{
             display: "flex",
             flexDirection: "column",
             gap: 8,
             opacity: open ? 1 : 0,
-            transform: open ? "translateY(0)" : "translateY(10px)",
+            transform: open ? "translateY(0)" : "translateY(8px)",
             pointerEvents: open ? "auto" : "none",
             transition: "opacity 0.22s ease, transform 0.22s ease",
           }}
         >
-          {/* WhatsApp Message button */}
+          {/* WhatsApp Message */}
           <a
             href={msgUrl}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Message us on WhatsApp"
             onClick={() => setOpen(false)}
             style={{
               display: "flex",
@@ -69,43 +58,35 @@ export default function WhatsAppFloating() {
               background: "#fff",
               border: "1.5px solid #25D366",
               borderRadius: 999,
-              padding: "8px 18px 8px 10px",
+              padding: "8px 16px 8px 10px",
               boxShadow: "0 4px 18px rgba(37,211,102,0.25)",
               textDecoration: "none",
               whiteSpace: "nowrap",
-              minWidth: 170,
             }}
           >
             <span
               style={{
-                width: 32,
-                height: 32,
-                borderRadius: "50%",
+                width: 30, height: 30, borderRadius: "50%",
                 background: "#25D366",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                display: "flex", alignItems: "center", justifyContent: "center",
                 flexShrink: 0,
               }}
             >
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="white">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
                 <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
               </svg>
             </span>
             <div>
               <p style={{ margin: 0, fontSize: 10, color: "#888", fontWeight: 500, lineHeight: 1 }}>WhatsApp</p>
-              <p style={{ margin: 0, fontSize: 13, color: "#1B5E35", fontWeight: 700, lineHeight: 1.4 }}>
-                Send Message
-              </p>
+              <p style={{ margin: 0, fontSize: 13, color: "#1B5E35", fontWeight: 700, lineHeight: 1.4 }}>Send Message</p>
             </div>
           </a>
 
-          {/* WhatsApp Call button */}
+          {/* WhatsApp Call */}
           <a
             href={callUrl}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Call us on WhatsApp"
             onClick={() => setOpen(false)}
             style={{
               display: "flex",
@@ -114,22 +95,17 @@ export default function WhatsAppFloating() {
               background: "#fff",
               border: "1.5px solid #128C7E",
               borderRadius: 999,
-              padding: "8px 18px 8px 10px",
+              padding: "8px 16px 8px 10px",
               boxShadow: "0 4px 18px rgba(18,140,126,0.22)",
               textDecoration: "none",
               whiteSpace: "nowrap",
-              minWidth: 170,
             }}
           >
             <span
               style={{
-                width: 32,
-                height: 32,
-                borderRadius: "50%",
+                width: 30, height: 30, borderRadius: "50%",
                 background: "#128C7E",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                display: "flex", alignItems: "center", justifyContent: "center",
                 flexShrink: 0,
               }}
             >
@@ -144,13 +120,17 @@ export default function WhatsAppFloating() {
           </a>
         </div>
 
-        {/* ── Main trigger row: label + pulsing icon ───────────── */}
+        {/* ── Main button row ─────────────────────────────────────── */}
         <div
-          style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer" }}
           onClick={() => setOpen((v) => !v)}
+          style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer" }}
         >
-          {/* Label pill — left of icon */}
+          {/*
+            Label — HIDDEN on mobile (< 640px), VISIBLE on desktop.
+            On mobile the icon alone is shown; the expanded panel pops up on tap.
+          */}
           <div
+            className="hidden sm:block"
             style={{
               background: "#1B5E35",
               color: "white",
@@ -160,38 +140,26 @@ export default function WhatsAppFloating() {
               borderRadius: 999,
               whiteSpace: "nowrap",
               boxShadow: "0 2px 10px rgba(0,0,0,0.20)",
-              letterSpacing: "0.02em",
               userSelect: "none",
-              /* Always visible, never clipped */
-              flexShrink: 0,
             }}
           >
             Chat / Call on WhatsApp
           </div>
 
-          {/* Pulse + WhatsApp icon */}
+          {/* Pulsing WhatsApp circle */}
           <div style={{ position: "relative", width: 56, height: 56, flexShrink: 0 }}>
-            {/* Pulse ring */}
             <span
               style={{
-                position: "absolute",
-                inset: 0,
-                borderRadius: "50%",
+                position: "absolute", inset: 0, borderRadius: "50%",
                 background: "#25D366",
                 animation: "waPulse 2.5s ease-out infinite",
               }}
             />
-            {/* Icon circle */}
             <div
               style={{
-                position: "relative",
-                width: 56,
-                height: 56,
-                borderRadius: "50%",
+                position: "relative", width: 56, height: 56, borderRadius: "50%",
                 background: "linear-gradient(135deg, #25D366 60%, #128C7E)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                display: "flex", alignItems: "center", justifyContent: "center",
                 boxShadow: "0 4px 20px rgba(37,211,102,0.45)",
                 transition: "transform 0.2s ease",
                 transform: open ? "scale(1.08)" : "scale(1)",
@@ -207,9 +175,9 @@ export default function WhatsAppFloating() {
 
       <style>{`
         @keyframes waPulse {
-          0%   { transform: scale(1); opacity: 0.6; }
-          70%  { transform: scale(1.6); opacity: 0; }
-          100% { transform: scale(1.6); opacity: 0; }
+          0%   { transform: scale(1);   opacity: 0.6; }
+          70%  { transform: scale(1.6); opacity: 0;   }
+          100% { transform: scale(1.6); opacity: 0;   }
         }
       `}</style>
     </>
