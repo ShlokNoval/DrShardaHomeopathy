@@ -16,7 +16,7 @@ export default function BlogPage() {
     <>
       <section className="relative py-20 overflow-hidden">
         <Image
-          src="/insights-bg2.png"
+          src="/blog-banner.png"
           alt="Health Insights Background"
           fill
           className="object-cover"
