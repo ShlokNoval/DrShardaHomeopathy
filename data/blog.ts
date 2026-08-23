@@ -153,7 +153,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>What to Expect from Homeopathic Treatment</h2>
       <ul>
-        <li><strong>First 2–4 weeks:</strong> Infections become milder and resolve faster</li>
+        <li><strong>First 1 week:</strong> Infections become milder and resolve faster</li>
         <li><strong>1–3 months:</strong> The gap between infections increases noticeably</li>
         <li><strong>3–6 months:</strong> Most children experience a dramatic reduction in episodes</li>
         <li><strong>6–12 months:</strong> Long-term immune strengthening takes hold</li>
