@@ -6,11 +6,25 @@ import { getWhatsAppUrl } from "@/lib/utils";
 export default function WhatsAppFloating() {
   const [open, setOpen] = useState(false);
   const [showLabel, setShowLabel] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowLabel(false), 5000);
-    return () => clearTimeout(timer);
+    const hasLoaded = sessionStorage.getItem("sharda_loaded");
+    if (hasLoaded) {
+      setIsLoaded(true);
+      const timer = setTimeout(() => setShowLabel(false), 5000);
+      return () => clearTimeout(timer);
+    } else {
+      const loadTimer = setTimeout(() => {
+        setIsLoaded(true);
+        // Start the label fade timer ONLY after the component actually appears
+        setTimeout(() => setShowLabel(false), 5000);
+      }, 2200);
+      return () => clearTimeout(loadTimer);
+    }
   }, []);
+
+  if (!isLoaded) return null;
 
   const phone = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "91XXXXXXXXXX";
   const msgUrl = getWhatsAppUrl(
