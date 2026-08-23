@@ -1,10 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getWhatsAppUrl } from "@/lib/utils";
 
 export default function WhatsAppFloating() {
   const [open, setOpen] = useState(false);
+  const [showLabel, setShowLabel] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowLabel(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const phone = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "91XXXXXXXXXX";
   const msgUrl = getWhatsAppUrl(
     "Hello Dr. Sharda, I found your website and would like to enquire about treatment."
@@ -150,18 +157,22 @@ export default function WhatsAppFloating() {
             </div>
           </div>
 
-          {/* Label - clearly visible on all screens, sits to the RIGHT of icon */}
+          {/* Label - clearly visible initially, fades out after 5 seconds */}
           <div
             style={{
               background: "#1B5E35",
               color: "white",
               fontSize: 11,
               fontWeight: 700,
-              padding: "6px 14px",
+              padding: showLabel ? "6px 14px" : "0px",
               borderRadius: 999,
               whiteSpace: "nowrap",
-              boxShadow: "0 2px 10px rgba(0,0,0,0.20)",
+              boxShadow: showLabel ? "0 2px 10px rgba(0,0,0,0.20)" : "none",
               userSelect: "none",
+              opacity: showLabel ? 1 : 0,
+              maxWidth: showLabel ? "200px" : "0px",
+              overflow: "hidden",
+              transition: "all 0.4s ease-in-out",
             }}
           >
             Chat / Call on WhatsApp
