@@ -1602,38 +1602,40 @@ export const blogPosts: BlogPost[] = [
     category: "Skin Health",
     excerpt: "Excessive hair fall, thinning hair, or alopecia areata? Dr. Sharda's constitutional homeopathy addresses the root cause - hormonal, nutritional, or stress-related - for real regrowth.",
     content: `
-      
 <div style="background: rgba(43, 92, 61, 0.05); border-left: 4px solid #2B5C3D; padding: 1rem 1.5rem; margin-bottom: 2rem; border-radius: 0 8px 8px 0;">
   <p style="margin: 0; color: #1a3b26; font-size: 1.05rem;">
     <strong>Looking for the Best Homeopathy Treatment for Hair Fall?</strong><br/>
     Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Hair Fall treatment in Pune, offering natural, safe, and lasting results.
   </p>
 </div>
-<h2>💆 Hair Fall - Your Hair Is Trying to Tell You Something</h2>
-      <p>Seeing handfuls of hair on your pillow, comb, or shower drain is alarming. But hair fall is almost always a symptom of something deeper - a hormonal imbalance, nutritional deficiency, thyroid issue, or stress response. The best homeopathy treatment for hair fall in Pune doesn't just apply remedies to the scalp - it treats the internal cause that's triggering the shedding.</p>
 
-      <h2>Types of Hair Fall We Treat</h2>
-      <ul>
-        <li>Alopecia Areata - patchy hair loss (autoimmune)</li>
-        <li>Telogen Effluvium - diffuse shedding after stress, illness, or pregnancy</li>
-        <li>Androgenetic Alopecia - hormonal pattern hair loss</li>
-        <li>PCOD-related hair thinning</li>
-        <li>Thyroid-related hair loss</li>
-        <li>Post-fever and post-COVID hair shedding</li>
-      </ul>
+<h2>Understanding Hair Fall</h2>
+<p>Hair fall (alopecia) is a very common concern that affects both men and women. While losing 50-100 strands a day is a normal part of the hair growth cycle, excessive shedding, thinning, or bald patches require medical attention. Rather than just treating the symptom superficially, it is essential to understand the underlying causes.</p>
 
-      <h2>Homeopathic Remedies for Hair Fall</h2>
-      <ul>
-        <li><strong>Phosphorus:</strong> For hair falling in patches or diffusely; dandruff with itching; burning scalp</li>
-        <li><strong>Natrum Muriaticum:</strong> For hair fall after grief, stress, or hormonal changes; greasy scalp</li>
-        <li><strong>Silicea:</strong> For hair fall from nutritional deficiency; weak, brittle hair with tendency to split</li>
-        <li><strong>Fluoric Acid:</strong> For alopecia areata with hair falling in patches; new hair dry and brittle</li>
-        <li><strong>Lycopodium:</strong> For premature baldness at temples; dandruff; associated with digestive issues</li>
-      </ul>
+<h3>Common Causes of Hair Loss</h3>
+<ul>
+  <li><strong>Hormonal Imbalances:</strong> Conditions like thyroid disorders, PCOD/PCOS, and menopause can trigger severe hair fall.</li>
+  <li><strong>Nutritional Deficiencies:</strong> Lack of iron (anemia), Vitamin D, Vitamin B12, and proteins directly weaken hair roots.</li>
+  <li><strong>Stress and Lifestyle:</strong> High emotional stress, poor sleep, and a sedentary lifestyle contribute to rapid shedding.</li>
+  <li><strong>Genetic Factors:</strong> Male or female pattern baldness (androgenetic alopecia) has a strong hereditary link.</li>
+  <li><strong>Chemical Exposure:</strong> Harsh shampoos, excessive styling, and chemical treatments damage the hair shaft.</li>
+</ul>
 
-      <h2>Dr. Sharda's Note</h2>
-      <p>"Hair fall often has multiple contributing factors. I conduct a thorough assessment including hormonal screening recommendations and nutritional evaluation. Most patients see reduced hair fall within 6-8 weeks and new growth beginning within 3-4 months. Patience and consistency are key - hair grows slowly, but it does come back."</p>
-    `,
+<h2>The Homeopathic Approach to Hair Fall</h2>
+<p>Homeopathy offers a deeply holistic approach to treating hair fall. Instead of relying on topical serums that only provide temporary relief, homeopathic medicines address the internal root cause—whether it is stress, hormonal imbalance, or poor nutrient absorption.</p>
+
+<p>A trained homeopath evaluates your unique physical constitution, medical history, and emotional state before prescribing a remedy. This individualized approach ensures that the body's internal environment is corrected, naturally halting excessive hair fall and promoting regrowth where follicles are still viable.</p>
+
+<h3>Why Choose Homeopathy?</h3>
+<ul>
+  <li><strong>Treats the Root Cause:</strong> Fixes underlying issues like hormonal imbalance or stress rather than just topical symptoms.</li>
+  <li><strong>Safe & Natural:</strong> 100% natural medicines with absolutely no harsh chemicals or side effects.</li>
+  <li><strong>Long-Lasting Results:</strong> By correcting internal health, homeopathy offers permanent and sustainable solutions.</li>
+  <li><strong>Improves Overall Health:</strong> The holistic treatment often resolves accompanying issues like dandruff, scalp itching, or fatigue.</li>
+</ul>
+
+<p>If you are struggling with severe hair fall, premature graying, or thinning, early intervention is key. A personalized homeopathic treatment plan can help restore your hair's natural vitality and your confidence.</p>
+`,
     author: "Dr. Sharda Tawale",
     date: "2024-04-13",
     readTime: "7 min read",

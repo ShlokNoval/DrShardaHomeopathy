@@ -15,7 +15,7 @@ const milestones = [
   { year: "2001", event: "Began practicing homeopathy, driven by a passion for natural healing" },
   { year: "2005", event: "Completed MD in Homeopathy with specialization in chronic conditions" },
   { year: "2010", event: "Crossed 2,000+ successfully treated patients" },
-  { year: "2015", event: "Completed General Management Programme from IIM Bangalore (GS 10K)" },
+  { year: "2022", event: "Completed General Management Programme from IIM Bangalore (GS 10K)" },
   { year: "2020", event: "Expanded to online consultations for patients across India" },
   { year: "2025", event: "10,000+ patients treated with 4.9/5 satisfaction rating" },
 ];

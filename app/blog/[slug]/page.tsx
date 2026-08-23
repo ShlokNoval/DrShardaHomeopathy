@@ -48,7 +48,7 @@ export default function BlogDetail({ params }: Props) {
 
       {/* Content */}
       <section className="bg-white py-12 sm:py-16">
-        <article className="max-w-3xl mx-auto px-4 prose prose-lg prose-headings:font-playfair prose-headings:text-charcoal prose-p:text-muted prose-a:text-primary prose-li:text-muted prose-strong:text-charcoal" dangerouslySetInnerHTML={{ __html: post.content }} />
+        <article className="max-w-3xl mx-auto px-4 prose prose-base prose-headings:font-playfair prose-headings:text-charcoal prose-h2:text-2xl prose-h3:text-xl prose-p:text-muted prose-a:text-primary prose-li:text-muted prose-strong:text-charcoal" dangerouslySetInnerHTML={{ __html: post.content }} />
       </section>
 
       {/* Related Posts */}
