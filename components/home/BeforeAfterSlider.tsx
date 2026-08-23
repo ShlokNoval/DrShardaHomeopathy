@@ -184,7 +184,7 @@ export default function BeforeAfterSlider() {
           </h2>
           <div className="space-y-3">
             <p className="text-[14px] text-[#FAF8F3] font-medium leading-relaxed">
-              Documented results from Dr. Sharda&apos;s patients — real skin, real healing.
+              Documented results from Dr. Sharda&apos;s patients - real skin, real healing.
             </p>
             <div className="relative pt-3 border-t border-[#C9963A]/20">
               <p className="text-[10px] text-white/50 italic tracking-wide">

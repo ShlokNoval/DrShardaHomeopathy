@@ -68,7 +68,7 @@ let bottomPart = splitContent[1];
 let regex = /\{\s*slug:\s*"([^"]+)",\s*title:\s*"([^"]+)",\s*category:\s*"([^"]+)",\s*excerpt:\s*"([^"]+)",\s*content:\s*`([\s\S]*?)`,\s*author:\s*"([^"]+)",\s*date:\s*"([^"]+)",\s*readTime:\s*"([^"]+)",\s*featuredImage:\s*"([^"]+)",?\s*\}/g;
 
 bottomPart = bottomPart.replace(regex, (match, slug, title, category, excerpt, contentStr, author, date, readTime, featuredImage) => {
-    let diseaseMatch = title.match(/Best Homeopathy (?:Treatment for |for )?(.*?)(?: in Pune)? — (.*)/i);
+    let diseaseMatch = title.match(/Best Homeopathy (?:Treatment for |for )?(.*?)(?: in Pune)? - (.*)/i);
     let newTitle = title;
     let diseaseName = "";
     
@@ -78,7 +78,7 @@ bottomPart = bottomPart.replace(regex, (match, slug, title, category, excerpt, c
         newTitle = `Understanding ${diseaseName}: ${subtitle}`;
     } else {
         newTitle = title.replace(/Best Homeopathy Treatment for /i, 'Understanding ').replace(/ in Pune/i, '');
-        let parts = newTitle.split('—');
+        let parts = newTitle.split('-');
         if (parts.length > 1) {
             let extracted = title.match(/(?:for )?(.*?)(?: in Pune)/i);
             if (extracted) diseaseName = extracted[1].trim();

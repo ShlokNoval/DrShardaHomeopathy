@@ -13,7 +13,7 @@ export default function WhatsAppFloating() {
 
   return (
     <>
-      {/* Invisible backdrop — closes panel when tapping outside on mobile */}
+      {/* Invisible backdrop - closes panel when tapping outside on mobile */}
       {open && (
         <div
           onClick={() => setOpen(false)}
@@ -125,7 +125,7 @@ export default function WhatsAppFloating() {
           onClick={() => setOpen((v) => !v)}
           style={{ display: "flex", alignItems: "center", gap: 8, cursor: "pointer" }}
         >
-          {/* Pulsing WhatsApp circle — leftmost element */}
+          {/* Pulsing WhatsApp circle - leftmost element */}
           <div style={{ position: "relative", width: 56, height: 56, flexShrink: 0 }}>
             <span
               style={{
@@ -150,7 +150,7 @@ export default function WhatsAppFloating() {
             </div>
           </div>
 
-          {/* Label — clearly visible on all screens, sits to the RIGHT of icon */}
+          {/* Label - clearly visible on all screens, sits to the RIGHT of icon */}
           <div
             style={{
               background: "#1B5E35",

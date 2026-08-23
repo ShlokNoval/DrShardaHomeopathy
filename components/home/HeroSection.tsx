@@ -762,7 +762,7 @@ export default function HeroSection() {
                   <Calendar size={20} />
                   Book Appointment
                 </Link>
-                {/* WhatsApp CTA — mobile */}
+                {/* WhatsApp CTA - mobile */}
                 <a
                   href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "91XXXXXXXXXX"}?text=${encodeURIComponent("Hello Dr. Sharda, I found your website and would like to enquire about treatment.")}`}
                   target="_blank"
