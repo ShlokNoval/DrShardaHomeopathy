@@ -798,7 +798,7 @@ export default function ChatWidget() {
       <div
         style={{
           position: "fixed",
-          bottom: 88,
+          bottom: 24,
           right: 24,
           zIndex: 55,
           display: "flex",

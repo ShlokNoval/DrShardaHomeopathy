@@ -600,7 +600,7 @@ export default function HeroSection() {
                   Expert homeopathic care for 50+ conditions by Dr. Sharda Tawale.
                   <br className="hidden sm:block" />
                   <span className="sm:hidden"> </span>
-                  Safe, natural, and lasting results — no side effects.
+                  Safe, natural, and lasting results - no side effects.
                 </p>
 
                 {/* SEO Keyword strip */}
