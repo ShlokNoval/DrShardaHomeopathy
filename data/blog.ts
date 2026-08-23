@@ -263,15 +263,16 @@ export const blogPosts: BlogPost[] = [
 
   // ─── NEW TREATMENT-SPECIFIC BLOGS (48 posts) ─────────────────────────────
 
+
   // 1. PSORIASIS
   {
-    slug: "best-homeopathy-treatment-for-psoriasis-in-pune",
-    title: "Best Homeopathy Treatment for Psoriasis in Pune — End the Flare Cycle",
+    slug: "understanding-psoriasis-end-the-flare-cycle",
+    title: "Understanding Psoriasis: End the Flare Cycle",
     category: "Skin Health",
     excerpt: "Discover why Dr. Sharda Tawale's clinic is the best choice for psoriasis treatment in Pune. Learn how homeopathy heals psoriasis from the root — no steroids, no side effects.",
     content: `
-      <h2>🏆 Why Homeopathy Is the Best Treatment for Psoriasis</h2>
-      <p>Psoriasis is more than a skin condition — it's your immune system sending out an SOS signal. Steroid creams may quiet the signal temporarily, but they never silence the alarm. At Sharda Homeopathy Clinic, Pune, we treat psoriasis from its immunological root, helping your body correct the error that triggers those painful, scaly flare-ups.</p>
+      <h2>🏆 The Homeopathic Approach to Psoriasis</h2>
+      <p>Psoriasis is more than a skin condition — it's your immune system sending out an SOS signal. Steroid creams may quiet the signal temporarily, but they never silence the alarm. At Sharda Homeopathy Clinic, Pune, we treat psoriasis from its immunological root, helping your body correct the error that triggers those painful, scaly flare-ups. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Psoriasis treatment in Pune.</p>
 
       <h2>What Makes Our Psoriasis Treatment Different?</h2>
       <ul>
@@ -312,23 +313,23 @@ export const blogPosts: BlogPost[] = [
       <h2>Dr. Sharda's Note</h2>
       <p>"Psoriasis does not have to define your life. I have seen patients who were told there was 'no cure' achieve long periods of clear skin through homeopathic treatment. My approach combines careful case analysis with constitutional remedies and practical guidance. We treat you, not just your skin."</p>
 
-      <p><strong>📍 Sharda Homeopathy Clinic, Pune | Best Homeopathy for Psoriasis in Pune</strong></p>
+      
     `,
     author: "Dr. Sharda Tawale",
     date: "2025-01-10",
     readTime: "8 min read",
-    featuredImage: "/blog/psoriasis.png",
+    featuredImage: "/conditions/Psoriasis.jpeg",
   },
 
   // 2. ECZEMA
   {
-    slug: "best-homeopathy-treatment-for-eczema-in-pune",
-    title: "Best Homeopathy Treatment for Eczema in Pune — Calm the Itch Permanently",
+    slug: "understanding-eczema-calm-the-itch-permanently",
+    title: "Understanding Eczema: Calm the Itch Permanently",
     category: "Skin Health",
     excerpt: "Eczema's relentless itch doesn't have to be a life sentence. Dr. Sharda Tawale's homeopathic treatment tackles atopic dermatitis at its root, delivering lasting skin calm.",
     content: `
       <h2>🌿 The Eczema Struggle Is Real — And Solvable</h2>
-      <p>That constant itch, the sleepless nights, the red, weeping patches that never seem to heal completely — eczema (atopic dermatitis) impacts every aspect of life. The good news? The best homeopathy treatment for eczema in Pune at Sharda Homeopathy Clinic addresses the root cause: your immune system's hypersensitivity response.</p>
+      <p>That constant itch, the sleepless nights, the red, weeping patches that never seem to heal completely — eczema (atopic dermatitis) impacts every aspect of life. The good news? The best homeopathy treatment for eczema in Pune at Sharda Homeopathy Clinic addresses the root cause: your immune system's hypersensitivity response. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Eczema treatment in Pune.</p>
 
       <h2>Why Steroid Creams Aren't the Answer</h2>
       <p>Topical steroids suppress the skin's reaction but do nothing for the underlying allergy mechanism. Over time, the skin becomes dependent on steroids, and withdrawal causes rebound flares worse than the original condition. Homeopathy breaks this cycle by gently resetting your immune response.</p>
@@ -368,18 +369,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-01-15",
     readTime: "7 min read",
-    featuredImage: "/blog/eczema.png",
+    featuredImage: "/conditions/Skin Eczema.jpeg",
   },
 
   // 3. ACNE
   {
-    slug: "best-homeopathy-treatment-for-acne-in-pune",
-    title: "Best Homeopathy Treatment for Acne in Pune — Clear Skin, Naturally",
+    slug: "understanding-acne-clear-skin-naturally",
+    title: "Understanding Acne: Clear Skin, Naturally",
     category: "Skin Health",
     excerpt: "Stubborn acne and hormonal breakouts ruining your confidence? Dr. Sharda Tawale's homeopathic treatment clears acne by fixing the hormonal and digestive root cause.",
     content: `
       <h2>✨ Acne Is a Message from Inside — Homeopathy Reads It</h2>
-      <p>Every pimple tells a story. Whether it's hormonal acne along the jawline, stress-triggered breakouts across the forehead, or digestive acne on the cheeks — your skin is reflecting an internal imbalance. The best homeopathy treatment for acne in Pune doesn't just dry out pimples — it addresses what's creating them in the first place.</p>
+      <p>Every pimple tells a story. Whether it's hormonal acne along the jawline, stress-triggered breakouts across the forehead, or digestive acne on the cheeks — your skin is reflecting an internal imbalance. The best homeopathy treatment for acne in Pune doesn't just dry out pimples — it addresses what's creating them in the first place. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Acne treatment in Pune.</p>
 
       <h2>Why Conventional Acne Treatments Often Fail</h2>
       <p>Antibiotics, retinoids, and topical benzoyl peroxide work temporarily but often cause side effects — dry skin, sun sensitivity, gut disruption — and acne frequently returns once the treatment stops. Hormonal acne in women is particularly resistant to topical treatments alone.</p>
@@ -411,18 +412,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-01-20",
     readTime: "7 min read",
-    featuredImage: "/blog/acne.png",
+    featuredImage: "/conditions/Body Acne.jpeg",
   },
 
   // 4. VITILIGO
   {
-    slug: "best-homeopathy-treatment-for-vitiligo-in-pune",
-    title: "Best Homeopathy Treatment for Vitiligo in Pune — Restore Your Skin's Color",
+    slug: "understanding-vitiligo-restore-your-skin-s-color",
+    title: "Understanding Vitiligo: Restore Your Skin's Color",
     category: "Skin Health",
     excerpt: "Vitiligo white patches spreading across your skin? Dr. Sharda Tawale's homeopathic approach halts the spread and stimulates re-pigmentation — naturally and safely.",
     content: `
       <h2>🌟 Vitiligo: There Is Hope Beyond Camouflage</h2>
-      <p>Vitiligo — those white patches spreading unpredictably across the skin — affects not just the body but the mind. The condition is an autoimmune process where the immune system mistakenly destroys melanocytes (pigment cells). The best homeopathy treatment for vitiligo in Pune at Sharda Clinic targets this immune dysfunction at its root.</p>
+      <p>Vitiligo — those white patches spreading unpredictably across the skin — affects not just the body but the mind. The condition is an autoimmune process where the immune system mistakenly destroys melanocytes (pigment cells). The best homeopathy treatment for vitiligo in Pune at Sharda Clinic targets this immune dysfunction at its root. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Vitiligo treatment in Pune.</p>
 
       <h2>What Homeopathy Achieves in Vitiligo</h2>
       <ul>
@@ -458,18 +459,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-01-25",
     readTime: "7 min read",
-    featuredImage: "/blog/vitiligo.png",
+    featuredImage: "/conditions/Vitiligo.jpeg",
   },
 
   // 5. URTICARIA
   {
-    slug: "best-homeopathy-treatment-for-urticaria-hives-in-pune",
-    title: "Best Homeopathy Treatment for Urticaria (Hives) in Pune — Stop the Itch",
+    slug: "understanding-urticaria-hives-stop-the-itch",
+    title: "Understanding Urticaria (Hives): Stop the Itch",
     category: "Skin Health",
     excerpt: "Chronic urticaria hives disrupting your life? Dr. Sharda Tawale's homeopathic treatment addresses the allergic root cause for lasting relief from recurring hives.",
     content: `
       <h2>🛡️ Chronic Urticaria: When Your Immune System Overreacts</h2>
-      <p>Those sudden, raised, intensely itchy welts that appear and disappear — urticaria (hives) — can be one of the most unpredictable and frustrating skin conditions to live with. Chronic urticaria lasting more than 6 weeks affects approximately 1-3% of the population. The best homeopathy treatment for urticaria in Pune targets the allergic tendency that fuels these reactions.</p>
+      <p>Those sudden, raised, intensely itchy welts that appear and disappear — urticaria (hives) — can be one of the most unpredictable and frustrating skin conditions to live with. Chronic urticaria lasting more than 6 weeks affects approximately 1-3% of the population. The best homeopathy treatment for urticaria in Pune targets the allergic tendency that fuels these reactions. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Urticaria (Hives) treatment in Pune.</p>
 
       <h2>Why Antihistamines Aren't Enough</h2>
       <p>Antihistamines block histamine release after the reaction begins — they don't prevent future reactions or reduce your body's hypersensitivity. Many patients end up taking daily antihistamines for years with significant quality-of-life impact. Homeopathy works upstream — desensitizing the immune system to reduce reactivity at its source.</p>
@@ -498,18 +499,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-02-01",
     readTime: "6 min read",
-    featuredImage: "/blog/urticaria.png",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/EMminor2010.JPG/330px-EMminor2010.JPG",
   },
 
   // 6. ASTHMA
   {
-    slug: "best-homeopathy-treatment-for-asthma-in-pune",
-    title: "Best Homeopathy Treatment for Asthma in Pune — Breathe Freely Again",
+    slug: "understanding-asthma-breathe-freely-again",
+    title: "Understanding Asthma: Breathe Freely Again",
     category: "Respiratory",
     excerpt: "Asthma limiting your life and exercise? Dr. Sharda's homeopathic treatment reduces attack frequency, improves lung function, and helps reduce inhaler dependency safely.",
     content: `
       <h2>💨 Asthma Doesn't Have to Hold You Back</h2>
-      <p>Waking up at 3 AM struggling to breathe, canceling plans because of weather changes, always carrying an inhaler — asthma can be deeply limiting. The best homeopathy treatment for asthma in Pune at Sharda Clinic doesn't just open airways in the moment — it works to reduce the frequency and severity of attacks by strengthening your respiratory immunity.</p>
+      <p>Waking up at 3 AM struggling to breathe, canceling plans because of weather changes, always carrying an inhaler — asthma can be deeply limiting. The best homeopathy treatment for asthma in Pune at Sharda Clinic doesn't just open airways in the moment — it works to reduce the frequency and severity of attacks by strengthening your respiratory immunity. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Asthma treatment in Pune.</p>
 
       <h2>How Homeopathy Helps Asthma</h2>
       <ul>
@@ -538,18 +539,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-02-05",
     readTime: "7 min read",
-    featuredImage: "/blog/asthma.png",
+    featuredImage: "/conditions/asthma.jpg",
   },
 
   // 7. ALLERGIC RHINITIS
   {
-    slug: "best-homeopathy-treatment-for-allergic-rhinitis-in-pune",
-    title: "Best Homeopathy Treatment for Allergic Rhinitis in Pune — End Endless Sneezing",
+    slug: "understanding-allergic-rhinitis-end-endless-sneezing",
+    title: "Understanding Allergic Rhinitis: End Endless Sneezing",
     category: "Respiratory",
     excerpt: "Morning sneezing marathons and constant runny nose? Dr. Sharda's homeopathic treatment desensitizes your immune system for lasting relief from nasal allergies.",
     content: `
       <h2>🤧 Allergic Rhinitis — More Than Just a Runny Nose</h2>
-      <p>If your mornings start with sneezing attacks, if you carry tissues everywhere, if you can't remember the last time you breathed clearly — allergic rhinitis is robbing you of quality of life. The best homeopathy treatment for allergic rhinitis in Pune works by resetting your immune system's hypersensitivity to allergens.</p>
+      <p>If your mornings start with sneezing attacks, if you carry tissues everywhere, if you can't remember the last time you breathed clearly — allergic rhinitis is robbing you of quality of life. The best homeopathy treatment for allergic rhinitis in Pune works by resetting your immune system's hypersensitivity to allergens. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Allergic Rhinitis treatment in Pune.</p>
 
       <h2>What Causes Allergic Rhinitis</h2>
       <ul>
@@ -578,18 +579,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-02-10",
     readTime: "6 min read",
-    featuredImage: "/blog/allergic-rhinitis.png",
+    featuredImage: "/conditions/allergic-rhinitis.jpg",
   },
 
   // 8. SINUSITIS
   {
-    slug: "best-homeopathy-treatment-for-sinusitis-in-pune",
-    title: "Best Homeopathy Treatment for Sinusitis in Pune — Clear Sinuses, No Surgery",
+    slug: "understanding-sinusitis-clear-sinuses-no-surgery",
+    title: "Understanding Sinusitis: Clear Sinuses, No Surgery",
     category: "Respiratory",
     excerpt: "Chronic sinus infections, facial pain, and congestion? Dr. Sharda's homeopathic sinusitis treatment offers drug-free relief and prevents recurrence without surgery.",
     content: `
       <h2>😤 Chronic Sinusitis: When the Pressure Never Lifts</h2>
-      <p>The dull ache around your eyes, the heavy forehead, the thick discharge that never quite clears — chronic sinusitis is relentlessly uncomfortable. For patients who've been through multiple antibiotic courses without lasting relief, the best homeopathy treatment for sinusitis in Pune offers a fundamentally different approach: strengthening sinus immunity rather than repeatedly attacking bacteria.</p>
+      <p>The dull ache around your eyes, the heavy forehead, the thick discharge that never quite clears — chronic sinusitis is relentlessly uncomfortable. For patients who've been through multiple antibiotic courses without lasting relief, the best homeopathy treatment for sinusitis in Pune offers a fundamentally different approach: strengthening sinus immunity rather than repeatedly attacking bacteria. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Sinusitis treatment in Pune.</p>
 
       <h2>The Problem with Repeated Antibiotics for Sinusitis</h2>
       <p>Most chronic sinusitis is triggered by allergies and inflammation, not bacterial infection. Antibiotics treat the secondary bacterial component but do nothing for the allergic mucosal inflammation that creates the conditions for infection. This is why sinusitis keeps coming back. Homeopathy addresses the underlying allergic and inflammatory tendency.</p>
@@ -612,18 +613,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-02-15",
     readTime: "6 min read",
-    featuredImage: "/blog/sinusitis.png",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sinusitis_cdc.png/330px-Sinusitis_cdc.png",
   },
 
   // 9. TONSILLITIS
   {
-    slug: "best-homeopathy-treatment-for-tonsillitis-in-pune",
-    title: "Best Homeopathy for Tonsillitis in Pune — Avoid Surgery, Build Immunity",
+    slug: "understanding-tonsillitis-avoid-surgery-build-immunity",
+    title: "Understanding Tonsillitis: Avoid Surgery, Build Immunity",
     category: "ENT & Throat",
     excerpt: "Recurring tonsillitis and tonsillectomy recommended? Dr. Sharda's homeopathy strengthens throat immunity to reduce infections and help you avoid the operating table.",
     content: `
       <h2>🏥 Avoid Surgery — Give Homeopathy a Chance First</h2>
-      <p>Your child just had their third tonsillitis episode this month, and the ENT has mentioned tonsillectomy. Before scheduling surgery, consider what homeopathy can achieve. The best homeopathy treatment for tonsillitis in Pune works by strengthening the tonsils' own immune function — turning a recurrently infected tonsil into a properly functioning immune organ.</p>
+      <p>Your child just had their third tonsillitis episode this month, and the ENT has mentioned tonsillectomy. Before scheduling surgery, consider what homeopathy can achieve. The best homeopathy treatment for tonsillitis in Pune works by strengthening the tonsils' own immune function — turning a recurrently infected tonsil into a properly functioning immune organ. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Tonsillitis treatment in Pune.</p>
 
       <h2>Why Tonsils Are Worth Protecting</h2>
       <p>Tonsils are the immune system's first responders — they intercept pathogens entering through the mouth and throat. Removing them may reduce throat infections but leaves the body's first-line defense permanently compromised. Research shows tonsillectomized children have higher rates of asthma and respiratory conditions in adulthood.</p>
@@ -643,18 +644,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-02-20",
     readTime: "6 min read",
-    featuredImage: "/blog/tonsillitis.png",
+    featuredImage: "/conditions/Tonsilitis and Adenoid.jpeg",
   },
 
   // 10. IBS
   {
-    slug: "best-homeopathy-treatment-for-ibs-in-pune",
-    title: "Best Homeopathy Treatment for IBS in Pune — Calm Your Gut, Calm Your Life",
+    slug: "understanding-ibs-calm-your-gut-calm-your-life",
+    title: "Understanding IBS: Calm Your Gut, Calm Your Life",
     category: "Digestive Health",
     excerpt: "IBS cramping, bloating, and unpredictable bowel habits stealing your peace? Dr. Sharda's homeopathic approach heals the gut-brain connection for lasting digestive calm.",
     content: `
       <h2>🧘 IBS: When Stress Lives in Your Gut</h2>
-      <p>Irritable Bowel Syndrome affects the quality of life profoundly — the unpredictable cramping, the rushing to bathrooms, the bloating that makes you avoid social situations. IBS is not just a digestive problem; it's a gut-brain dysregulation. The best homeopathy treatment for IBS in Pune addresses both axes of this complex condition.</p>
+      <p>Irritable Bowel Syndrome affects the quality of life profoundly — the unpredictable cramping, the rushing to bathrooms, the bloating that makes you avoid social situations. IBS is not just a digestive problem; it's a gut-brain dysregulation. The best homeopathy treatment for IBS in Pune addresses both axes of this complex condition. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for IBS treatment in Pune.</p>
 
       <h2>The Gut-Brain Connection in IBS</h2>
       <p>The gut has its own nervous system (the "second brain") with more neurons than the spinal cord. In IBS, this enteric nervous system becomes hypersensitive to stress, food, and emotional states. Homeopathy uniquely treats both the mental-emotional state and the gut sensitivity simultaneously.</p>
@@ -677,18 +678,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-03-01",
     readTime: "7 min read",
-    featuredImage: "/blog/ibs.png",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Irritable_bowel_syndrome.jpg/330px-Irritable_bowel_syndrome.jpg",
   },
 
   // 11. GASTRITIS
   {
-    slug: "best-homeopathy-treatment-for-gastritis-in-pune",
-    title: "Best Homeopathy Treatment for Gastritis in Pune — Heal Your Stomach Naturally",
+    slug: "understanding-gastritis-heal-your-stomach-naturally",
+    title: "Understanding Gastritis: Heal Your Stomach Naturally",
     category: "Digestive Health",
     excerpt: "Burning stomach pain, acidity, and heartburn every day? Dr. Sharda's homeopathic gastritis treatment heals your stomach lining and breaks the antacid dependency cycle.",
     content: `
       <h2>🔥 Gastritis: Your Stomach Is Asking for Help</h2>
-      <p>That burning sensation after every meal, the acid rising into your chest, the nausea that makes eating feel like a burden — gastritis doesn't just cause physical discomfort, it affects your relationship with food. The best homeopathy treatment for gastritis in Pune at Sharda Clinic heals the stomach lining from within, restoring healthy digestion without creating antacid dependency.</p>
+      <p>That burning sensation after every meal, the acid rising into your chest, the nausea that makes eating feel like a burden — gastritis doesn't just cause physical discomfort, it affects your relationship with food. The best homeopathy treatment for gastritis in Pune at Sharda Clinic heals the stomach lining from within, restoring healthy digestion without creating antacid dependency. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Gastritis treatment in Pune.</p>
 
       <h2>The Antacid Trap</h2>
       <p>Antacids and PPIs (proton pump inhibitors) work by reducing stomach acid — but stomach acid is essential for digestion, nutrient absorption, and killing harmful bacteria. Long-term acid suppression can lead to vitamin B12 deficiency, increased infection risk, and paradoxically, worse acid reflux when the medication is stopped. Homeopathy addresses why your stomach is producing excess acid, rather than just blocking its production.</p>
@@ -711,18 +712,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-03-05",
     readTime: "6 min read",
-    featuredImage: "/blog/gastritis.png",
+    featuredImage: "/conditions/gastritis.jpg",
   },
 
   // 12. CONSTIPATION
   {
-    slug: "best-homeopathy-treatment-for-constipation-in-pune",
-    title: "Best Homeopathy Treatment for Constipation in Pune — Natural, Lasting Relief",
+    slug: "understanding-constipation-natural-lasting-relief",
+    title: "Understanding Constipation: Natural, Lasting Relief",
     category: "Digestive Health",
     excerpt: "Chronic constipation and laxative dependency? Dr. Sharda's homeopathy restores your gut's natural rhythm without harsh laxatives or side effects.",
     content: `
       <h2>⚙️ Constipation: Getting Your Gut Moving Again</h2>
-      <p>Chronic constipation is far more common than people admit — and far more damaging than most realize. Beyond the discomfort, untreated constipation contributes to piles, diverticular disease, and toxin accumulation. The best homeopathy treatment for constipation in Pune doesn't reach for laxatives — it gently restores your gut's natural peristaltic rhythm.</p>
+      <p>Chronic constipation is far more common than people admit — and far more damaging than most realize. Beyond the discomfort, untreated constipation contributes to piles, diverticular disease, and toxin accumulation. The best homeopathy treatment for constipation in Pune doesn't reach for laxatives — it gently restores your gut's natural peristaltic rhythm. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Constipation treatment in Pune.</p>
 
       <h2>Why Laxatives Are a Trap</h2>
       <p>Stimulant laxatives work by forcing the bowel muscles to contract. Over time, the muscles become reliant on the chemical stimulus and lose their natural tone — leading to worsening constipation without the laxative. This is laxative dependency, and millions of people are trapped in it. Homeopathy restores natural bowel motility.</p>
@@ -751,18 +752,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-03-10",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&auto=format&fit=crop",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Constipation.JPG/330px-Constipation.JPG",
   },
 
   // 13. PILES & FISSURE
   {
-    slug: "best-homeopathy-treatment-for-piles-fissure-in-pune",
-    title: "Best Homeopathy Treatment for Piles & Fissure in Pune — No Surgery Needed",
+    slug: "understanding-piles-fissure-no-surgery-needed",
+    title: "Understanding Piles & Fissure: No Surgery Needed",
     category: "Digestive Health",
     excerpt: "Painful piles and anal fissures making daily life miserable? Dr. Sharda's homeopathic treatment provides natural healing — reducing pain, bleeding, and the need for surgery.",
     content: `
       <h2>💊 Piles & Fissure — A Condition Nobody Talks About (But Should)</h2>
-      <p>Piles (hemorrhoids) and anal fissures cause significant suffering that people suffer in silence — embarrassment prevents them from seeking timely help. The best homeopathy treatment for piles and fissure in Pune addresses the root cause (usually chronic constipation and venous weakness) while healing the existing inflammation and tears.</p>
+      <p>Piles (hemorrhoids) and anal fissures cause significant suffering that people suffer in silence — embarrassment prevents them from seeking timely help. The best homeopathy treatment for piles and fissure in Pune addresses the root cause (usually chronic constipation and venous weakness) while healing the existing inflammation and tears. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Piles & Fissure treatment in Pune.</p>
 
       <h2>Grades of Piles and What Can Be Treated</h2>
       <ul>
@@ -789,18 +790,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-03-15",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&auto=format&fit=crop",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Internal_and_external_hemorrhoids.png/330px-Internal_and_external_hemorrhoids.png",
   },
 
   // 14. ARTHRITIS
   {
-    slug: "best-homeopathy-treatment-for-arthritis-in-pune",
-    title: "Best Homeopathy Treatment for Arthritis in Pune — Joint Freedom Is Possible",
+    slug: "understanding-arthritis-joint-freedom-is-possible",
+    title: "Understanding Arthritis: Joint Freedom Is Possible",
     category: "Joint Health",
     excerpt: "Arthritis pain stiffening your joints and limiting your movement? Dr. Sharda's homeopathy reduces inflammation, improves mobility, and slows disease progression naturally.",
     content: `
       <h2>🦴 Arthritis: Reclaiming Your Mobility</h2>
-      <p>When every morning starts with stiffness, when climbing stairs feels like climbing a mountain, when joint pain determines your plans — arthritis has taken over too much of your life. The best homeopathy treatment for arthritis in Pune works to reduce inflammation, ease pain, and slow the progression of joint damage without the digestive side effects of long-term NSAIDs.</p>
+      <p>When every morning starts with stiffness, when climbing stairs feels like climbing a mountain, when joint pain determines your plans — arthritis has taken over too much of your life. The best homeopathy treatment for arthritis in Pune works to reduce inflammation, ease pain, and slow the progression of joint damage without the digestive side effects of long-term NSAIDs. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Arthritis treatment in Pune.</p>
 
       <h2>Types of Arthritis We Treat</h2>
       <ul>
@@ -826,18 +827,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-03-20",
     readTime: "7 min read",
-    featuredImage: "/blog/arthritis.png",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Rheumatoid_Arthritis.JPG/330px-Rheumatoid_Arthritis.JPG",
   },
 
   // 15. BACK PAIN
   {
-    slug: "best-homeopathy-treatment-for-back-pain-in-pune",
-    title: "Best Homeopathy Treatment for Back Pain in Pune — Straighten Up Naturally",
+    slug: "understanding-back-pain-straighten-up-naturally",
+    title: "Understanding Back Pain: Straighten Up Naturally",
     category: "Joint Health",
     excerpt: "Chronic back pain from disc problems, poor posture, or muscle spasm? Dr. Sharda's homeopathic treatment relieves pain and corrects the root cause without addictive painkillers.",
     content: `
       <h2>🏋️ Back Pain — Pune's Most Common Health Complaint</h2>
-      <p>In Pune's IT corridors and corporate offices, back pain has become almost epidemic. Hours at desks, poor ergonomics, and sedentary lifestyles create the perfect conditions for chronic spinal problems. The best homeopathy treatment for back pain in Pune addresses the structural, inflammatory, and muscular components simultaneously.</p>
+      <p>In Pune's IT corridors and corporate offices, back pain has become almost epidemic. Hours at desks, poor ergonomics, and sedentary lifestyles create the perfect conditions for chronic spinal problems. The best homeopathy treatment for back pain in Pune addresses the structural, inflammatory, and muscular components simultaneously. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Back Pain treatment in Pune.</p>
 
       <h2>Types of Back Pain We Successfully Treat</h2>
       <ul>
@@ -864,18 +865,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-03-25",
     readTime: "6 min read",
-    featuredImage: "/blog/back-pain.png",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Spinal_column_curvature-en.svg/330px-Spinal_column_curvature-en.svg.png",
   },
 
   // 16. SCIATICA
   {
-    slug: "best-homeopathy-treatment-for-sciatica-in-pune",
-    title: "Best Homeopathy Treatment for Sciatica in Pune — Silence the Nerve Pain",
+    slug: "understanding-sciatica-silence-the-nerve-pain",
+    title: "Understanding Sciatica: Silence the Nerve Pain",
     category: "Joint Health",
     excerpt: "Shooting pain from your lower back down to your foot? Dr. Sharda's homeopathic sciatica treatment reduces nerve inflammation and gets you back to pain-free movement.",
     content: `
       <h2>⚡ Sciatica — The Pain That Follows You Everywhere</h2>
-      <p>The searing, shooting pain that starts in the lower back and travels through the buttock down to the foot — sciatica is not just a back problem. It's a nerve problem. The best homeopathy treatment for sciatica in Pune reduces sciatic nerve inflammation and addresses the underlying disc or muscle compression causing it.</p>
+      <p>The searing, shooting pain that starts in the lower back and travels through the buttock down to the foot — sciatica is not just a back problem. It's a nerve problem. The best homeopathy treatment for sciatica in Pune reduces sciatic nerve inflammation and addresses the underlying disc or muscle compression causing it. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Sciatica treatment in Pune.</p>
 
       <h2>Understanding Your Sciatica</h2>
       <p>Sciatica occurs when the sciatic nerve (the longest nerve in the body) becomes compressed or irritated. The most common causes are herniated discs, piriformis syndrome (muscle compression), and spinal stenosis. Treatment effectiveness depends on accurately identifying your specific cause.</p>
@@ -895,18 +896,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-04-01",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&auto=format&fit=crop",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Sciatic_nerve2.jpg/330px-Sciatic_nerve2.jpg",
   },
 
   // 17. GOUT
   {
-    slug: "best-homeopathy-treatment-for-gout-in-pune",
-    title: "Best Homeopathy Treatment for Gout in Pune — Tame Your Uric Acid Naturally",
+    slug: "understanding-gout-tame-your-uric-acid-naturally",
+    title: "Understanding Gout: Tame Your Uric Acid Naturally",
     category: "Joint Health",
     excerpt: "Agonizing gout attacks in your big toe or joints? Dr. Sharda's homeopathy reduces uric acid naturally and prevents future attacks with lasting metabolic correction.",
     content: `
       <h2>🦶 Gout — The Condition That Wakes You at 3 AM</h2>
-      <p>The sudden, excruciating pain in the big toe (or ankle, knee, or wrist) that often strikes in the middle of the night — gout is caused by uric acid crystals depositing in joints. The best homeopathy treatment for gout in Pune addresses both the acute attack and the chronic uric acid metabolism disorder that causes them.</p>
+      <p>The sudden, excruciating pain in the big toe (or ankle, knee, or wrist) that often strikes in the middle of the night — gout is caused by uric acid crystals depositing in joints. The best homeopathy treatment for gout in Pune addresses both the acute attack and the chronic uric acid metabolism disorder that causes them. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Gout treatment in Pune.</p>
 
       <h2>Why Gout Keeps Recurring</h2>
       <p>Standard treatment (NSAIDs for acute attacks, allopurinol for prevention) manages symptoms but doesn't address the dietary and metabolic patterns that cause hyperuricemia. Gout is a lifestyle-metabolic disorder that requires a comprehensive approach.</p>
@@ -933,18 +934,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-04-05",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
+    featuredImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Gout_Signs_and_Symptoms.jpg/330px-Gout_Signs_and_Symptoms.jpg",
   },
 
   // 18. BEDWETTING
   {
-    slug: "best-homeopathy-treatment-for-bedwetting-in-pune",
-    title: "Best Homeopathy Treatment for Bedwetting in Pune — Dry Nights for Your Child",
+    slug: "understanding-bedwetting-dry-nights-for-your-child",
+    title: "Understanding Bedwetting: Dry Nights for Your Child",
     category: "Children's Health",
     excerpt: "Your child's bedwetting causing embarrassment and anxiety? Dr. Sharda's gentle homeopathic treatment strengthens bladder control naturally, with no drugs and lasting results.",
     content: `
       <h2>🌙 Bedwetting — A Problem with a Gentle Solution</h2>
-      <p>Bedwetting (nocturnal enuresis) affects millions of children worldwide and is never, ever the child's fault. It's a developmental condition where the bladder-brain communication hasn't fully matured. The best homeopathy treatment for bedwetting in Pune is gentle, completely safe, and remarkably effective — without the side effects of medications like desmopressin.</p>
+      <p>Bedwetting (nocturnal enuresis) affects millions of children worldwide and is never, ever the child's fault. It's a developmental condition where the bladder-brain communication hasn't fully matured. The best homeopathy treatment for bedwetting in Pune is gentle, completely safe, and remarkably effective — without the side effects of medications like desmopressin. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Bedwetting treatment in Pune.</p>
 
       <h2>When Bedwetting Becomes a Concern</h2>
       <ul>
@@ -978,18 +979,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-04-10",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1620188526357-cf27b2c04de1?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/bedwetting.jpg",
   },
 
   // 19. RECURRENT COLDS
   {
-    slug: "best-homeopathy-treatment-for-recurrent-colds-in-children-pune",
-    title: "Boost Your Child's Immunity — Best Homeopathy for Recurrent Colds in Pune",
+    slug: "boost-your-child-s-immunity-best-homeopathy-for-recurrent-colds",
+    title: "Boost Your Child's Immunity — Best Homeopathy for Recurrent Colds",
     category: "Children's Health",
     excerpt: "Is your child sick every month? Dr. Sharda's constitutional homeopathy builds lasting immune strength, reducing colds, coughs, and ear infections naturally.",
     content: `
       <h2>🛡️ Breaking the Cycle of Constant Childhood Illness</h2>
-      <p>If your child seems to be perpetually sick — one cold barely resolved before the next begins — this isn't bad luck. It's a pattern indicating immune weakness that can be effectively treated. The best homeopathy for recurrent colds and infections in children works by rebuilding the foundation of their immune system.</p>
+      <p>If your child seems to be perpetually sick — one cold barely resolved before the next begins — this isn't bad luck. It's a pattern indicating immune weakness that can be effectively treated. The best homeopathy for recurrent colds and infections in children works by rebuilding the foundation of their immune system. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Boost Your Child's Immunity — Best Homeopathy for Recurrent Colds treatment in Pune.</p>
 
       <h2>The Antibiotic Cycle Problem</h2>
       <p>Each antibiotic course disrupts the gut microbiome, which forms 70% of the immune system. This creates a vicious cycle: antibiotics → gut disruption → weaker immunity → more frequent infections → more antibiotics. Homeopathy breaks this cycle by strengthening immunity naturally.</p>
@@ -1009,18 +1010,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-04-15",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1535572290543-960a8046f5af?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/recurrent-colds.jpg",
   },
 
   // 20. ADHD
   {
-    slug: "best-homeopathy-treatment-for-adhd-in-pune",
-    title: "Homeopathy for ADHD in Pune — Natural Focus Without Stimulant Drugs",
+    slug: "homeopathy-for-adhd-natural-focus-without-stimulant-drugs",
+    title: "Homeopathy for ADHD — Natural Focus Without Stimulant Drugs",
     category: "Children's Health",
     excerpt: "Your child struggling with focus, hyperactivity, and ADHD? Dr. Sharda's homeopathic ADHD treatment improves attention and behaviour gently, without Ritalin-like side effects.",
     content: `
       <h2>🎯 ADHD — Helping Your Child Shine</h2>
-      <p>ADHD is not a discipline problem — it's a neurological difference that, with the right support, can be managed effectively. The best homeopathy treatment for ADHD in Pune provides a safe, natural alternative (or complement) to stimulant medications, helping children focus, regulate their emotions, and reach their potential.</p>
+      <p>ADHD is not a discipline problem — it's a neurological difference that, with the right support, can be managed effectively. The best homeopathy treatment for ADHD in Pune provides a safe, natural alternative (or complement) to stimulant medications, helping children focus, regulate their emotions, and reach their potential. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for ADHD treatment in Pune.</p>
 
       <h2>How Homeopathy Approaches ADHD</h2>
       <p>Homeopathy doesn't suppress ADHD symptoms chemically — it works with the child's unique neurological makeup to improve self-regulation. Treatment considers the child's complete behavioral profile, fears, preferences, and temperament. Every ADHD child is different, and the remedy must match the individual precisely.</p>
@@ -1043,18 +1044,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-04-20",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/adhd.jpg",
   },
 
   // 21. GROWTH ISSUES
   {
-    slug: "best-homeopathy-for-child-growth-issues-in-pune",
-    title: "Homeopathy for Child Growth Issues in Pune — Help Your Child Thrive",
+    slug: "homeopathy-for-child-growth-issues-help-your-child-thrive",
+    title: "Homeopathy for Child Growth Issues — Help Your Child Thrive",
     category: "Children's Health",
     excerpt: "Is your child shorter or lighter than expected for their age? Dr. Sharda's homeopathic treatment improves nutrition absorption, appetite, and healthy growth naturally.",
     content: `
       <h2>📈 Every Child Deserves to Reach Their Full Potential</h2>
-      <p>When your child consistently falls below growth percentile charts, or when their appetite is so poor they barely eat, or when frequent illness seems to be stealing their energy for growth — it's time to act. The best homeopathy for child growth issues in Pune targets the nutritional, hormonal, and immune barriers standing between your child and healthy development.</p>
+      <p>When your child consistently falls below growth percentile charts, or when their appetite is so poor they barely eat, or when frequent illness seems to be stealing their energy for growth — it's time to act. The best homeopathy for child growth issues in Pune targets the nutritional, hormonal, and immune barriers standing between your child and healthy development. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Child Growth Issues treatment in Pune.</p>
 
       <h2>What Causes Growth Problems in Children</h2>
       <ul>
@@ -1081,18 +1082,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-04-25",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/growth-issues.jpg",
   },
 
   // 22. PCOD/PCOS
   {
-    slug: "best-homeopathy-treatment-for-pcod-pcos-in-pune",
-    title: "Best Homeopathy Treatment for PCOD/PCOS in Pune — Balance Your Hormones",
+    slug: "understanding-pcod-pcos-balance-your-hormones",
+    title: "Understanding PCOD/PCOS: Balance Your Hormones",
     category: "Women's Health",
     excerpt: "PCOD/PCOS disrupting your periods, causing acne and weight gain? Dr. Sharda's homeopathy regulates hormones, restores ovulation, and addresses all PCOS symptoms naturally.",
     content: `
       <h2>🌸 PCOD/PCOS — Your Hormones Can Be Rebalanced</h2>
-      <p>PCOS is not a life sentence. Affecting 1 in 5 Indian women, this hormonal disorder causes irregular periods, acne, hair loss, weight gain, and fertility challenges. The best homeopathy treatment for PCOD/PCOS in Pune goes beyond symptom management to correct the hormonal imbalance at its root — without the long-term reliance on birth control pills or metformin.</p>
+      <p>PCOS is not a life sentence. Affecting 1 in 5 Indian women, this hormonal disorder causes irregular periods, acne, hair loss, weight gain, and fertility challenges. The best homeopathy treatment for PCOD/PCOS in Pune goes beyond symptom management to correct the hormonal imbalance at its root — without the long-term reliance on birth control pills or metformin. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for PCOD/PCOS treatment in Pune.</p>
 
       <h2>What Homeopathy Achieves in PCOD</h2>
       <ul>
@@ -1127,18 +1128,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-05-01",
     readTime: "8 min read",
-    featuredImage: "https://images.unsplash.com/photo-1551884170-09fb70a3a2ed?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/Hairfall and PCOD.jpeg",
   },
 
   // 23. THYROID
   {
-    slug: "best-homeopathy-treatment-for-thyroid-disorders-in-pune",
-    title: "Best Homeopathy for Thyroid Disorders in Pune — Balance Your Metabolism",
+    slug: "understanding-thyroid-disorders-balance-your-metabolism",
+    title: "Understanding Thyroid Disorders: Balance Your Metabolism",
     category: "Women's Health",
     excerpt: "Hypothyroidism or hyperthyroidism affecting your weight, energy, and mood? Dr. Sharda's homeopathic thyroid treatment supports natural thyroid function alongside conventional care.",
     content: `
       <h2>🦋 Your Thyroid — The Butterfly That Controls Everything</h2>
-      <p>The thyroid gland influences virtually every metabolic process in the body. When it's underactive (hypothyroidism), you feel sluggish, gain weight, and struggle with brain fog. When overactive (hyperthyroidism), you're anxious, lose weight rapidly, and your heart races. The best homeopathy treatment for thyroid disorders in Pune works alongside conventional thyroid medication to optimize function and reduce symptoms.</p>
+      <p>The thyroid gland influences virtually every metabolic process in the body. When it's underactive (hypothyroidism), you feel sluggish, gain weight, and struggle with brain fog. When overactive (hyperthyroidism), you're anxious, lose weight rapidly, and your heart races. The best homeopathy treatment for thyroid disorders in Pune works alongside conventional thyroid medication to optimize function and reduce symptoms. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Thyroid Disorders treatment in Pune.</p>
 
       <h2>How Homeopathy Supports Thyroid Health</h2>
       <ul>
@@ -1164,18 +1165,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-05-05",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/Thyroid Tumour.jpeg",
   },
 
   // 24. INFERTILITY
   {
-    slug: "best-homeopathy-treatment-for-infertility-in-pune",
-    title: "Homeopathy for Infertility in Pune — A Natural Path to Parenthood",
+    slug: "homeopathy-for-infertility-a-natural-path-to-parenthood",
+    title: "Homeopathy for Infertility — A Natural Path to Parenthood",
     category: "Women's Health",
     excerpt: "Struggling to conceive? Dr. Sharda's holistic homeopathic approach optimizes reproductive health, addresses hormonal barriers, and supports your fertility journey naturally.",
     content: `
       <h2>👶 The Dream of Parenthood — Homeopathy Can Help</h2>
-      <p>Infertility affects approximately 10-15% of couples and carries a profound emotional burden. The best homeopathy treatment for infertility in Pune takes a holistic approach — optimizing the body's reproductive function naturally, addressing hormonal imbalances, and supporting the emotional journey that accompanies fertility challenges.</p>
+      <p>Infertility affects approximately 10-15% of couples and carries a profound emotional burden. The best homeopathy treatment for infertility in Pune takes a holistic approach — optimizing the body's reproductive function naturally, addressing hormonal imbalances, and supporting the emotional journey that accompanies fertility challenges. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Infertility treatment in Pune.</p>
 
       <h2>How Homeopathy Supports Fertility</h2>
       <ul>
@@ -1202,18 +1203,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-05-10",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/infertility.jpg",
   },
 
   // 25. MENSTRUAL DISORDERS
   {
-    slug: "best-homeopathy-for-menstrual-disorders-in-pune",
-    title: "Best Homeopathy for Menstrual Disorders in Pune — Pain-Free, Regular Periods",
+    slug: "understanding-menstrual-disorders-pain-free-regular-periods",
+    title: "Understanding Menstrual Disorders: Pain-Free, Regular Periods",
     category: "Women's Health",
     excerpt: "Painful periods, heavy bleeding, or irregular cycles? Dr. Sharda's homeopathic treatment restores hormonal balance and natural menstrual regularity — no hormonal pills.",
     content: `
       <h2>🌺 Menstrual Health — You Deserve Comfort Every Month</h2>
-      <p>Painful periods, flooding heavy bleeding, cycles that arrive unpredictably, or months of absence — menstrual disorders are far too normalized in women's healthcare. "Just take a painkiller and get on with it" is not good enough. The best homeopathy for menstrual disorders in Pune restores natural hormonal balance and menstrual rhythm.</p>
+      <p>Painful periods, flooding heavy bleeding, cycles that arrive unpredictably, or months of absence — menstrual disorders are far too normalized in women's healthcare. "Just take a painkiller and get on with it" is not good enough. The best homeopathy for menstrual disorders in Pune restores natural hormonal balance and menstrual rhythm. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Menstrual Disorders treatment in Pune.</p>
 
       <h2>Conditions We Treat</h2>
       <ul>
@@ -1240,18 +1241,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-05-15",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/menstrual-disorders.jpg",
   },
 
   // 26. DIABETES
   {
-    slug: "homeopathy-for-diabetes-management-in-pune",
-    title: "Homeopathy for Diabetes Management in Pune — Natural Support for Blood Sugar",
+    slug: "homeopathy-for-diabetes-management-natural-support-for-blood-sugar",
+    title: "Homeopathy for Diabetes Management — Natural Support for Blood Sugar",
     category: "Lifestyle Health",
     excerpt: "Managing diabetes and its complications? Dr. Sharda's complementary homeopathic approach supports blood sugar control, improves energy, and reduces diabetic complications.",
     content: `
       <h2>🩸 Diabetes — Managing It Better with Homeopathy</h2>
-      <p>Let's be clear from the start: homeopathy does not replace your diabetes medication. What it does — powerfully — is support better blood sugar management, reduce complications, improve energy, and enhance quality of life alongside your conventional treatment. The best homeopathy for diabetes management in Pune offers exactly this integrative approach.</p>
+      <p>Let's be clear from the start: homeopathy does not replace your diabetes medication. What it does — powerfully — is support better blood sugar management, reduce complications, improve energy, and enhance quality of life alongside your conventional treatment. The best homeopathy for diabetes management in Pune offers exactly this integrative approach. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Diabetes Management treatment in Pune.</p>
 
       <h2>What Homeopathy Can Do for Diabetics</h2>
       <ul>
@@ -1278,18 +1279,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-05-20",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/diabetes-management.png",
   },
 
   // 27. HYPERTENSION
   {
-    slug: "homeopathy-for-hypertension-in-pune",
-    title: "Homeopathy for Hypertension in Pune — Natural Support for Blood Pressure",
+    slug: "homeopathy-for-hypertension-natural-support-for-blood-pressure",
+    title: "Homeopathy for Hypertension — Natural Support for Blood Pressure",
     category: "Lifestyle Health",
     excerpt: "High blood pressure affecting your heart health? Dr. Sharda's complementary homeopathic approach supports blood pressure management, reduces stress, and protects your cardiovascular system.",
     content: `
       <h2>❤️ High Blood Pressure — The Silent Threat You Can Address</h2>
-      <p>Hypertension is called the "silent killer" because it causes no symptoms until it's already damaged your heart, kidneys, or brain. The best homeopathy for hypertension in Pune works as a complementary approach — supporting blood pressure management alongside your prescribed medication while addressing the stress, metabolic, and lifestyle root causes.</p>
+      <p>Hypertension is called the "silent killer" because it causes no symptoms until it's already damaged your heart, kidneys, or brain. The best homeopathy for hypertension in Pune works as a complementary approach — supporting blood pressure management alongside your prescribed medication while addressing the stress, metabolic, and lifestyle root causes. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Hypertension treatment in Pune.</p>
 
       <h2>Root Causes We Address</h2>
       <ul>
@@ -1315,18 +1316,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-05-25",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/hypertension.png",
   },
 
   // 28. MIGRAINE
   {
-    slug: "best-homeopathy-treatment-for-migraine-in-pune",
-    title: "Best Homeopathy Treatment for Migraine in Pune — Freedom from Headaches",
+    slug: "understanding-migraine-freedom-from-headaches",
+    title: "Understanding Migraine: Freedom from Headaches",
     category: "Lifestyle Health",
     excerpt: "Debilitating migraines ruining your days? Dr. Sharda's homeopathic migraine treatment reduces attack frequency, duration, and intensity — addressing your unique triggers.",
     content: `
       <h2>💫 Migraine — More Than Just a Headache</h2>
-      <p>A migraine attack is a full neurological event — throbbing pain, nausea, vomiting, light and sound sensitivity, sometimes visual aura — that can last for days. The best homeopathy treatment for migraine in Pune identifies your specific migraine pattern and triggers, selecting remedies that reduce not just the pain but the underlying neurological hypersensitivity.</p>
+      <p>A migraine attack is a full neurological event — throbbing pain, nausea, vomiting, light and sound sensitivity, sometimes visual aura — that can last for days. The best homeopathy treatment for migraine in Pune identifies your specific migraine pattern and triggers, selecting remedies that reduce not just the pain but the underlying neurological hypersensitivity. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Migraine treatment in Pune.</p>
 
       <h2>Your Migraine Pattern Matters</h2>
       <p>In homeopathy, the way each person experiences migraine determines the remedy. We analyze:</p>
@@ -1353,18 +1354,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-06-01",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/migraine.jpg",
   },
 
   // 29. HAIR FALL
   {
-    slug: "best-homeopathy-treatment-for-hair-fall-in-pune",
-    title: "Best Homeopathy Treatment for Hair Fall in Pune — Stop the Shedding",
+    slug: "understanding-hair-fall-stop-the-shedding",
+    title: "Understanding Hair Fall: Stop the Shedding",
     category: "Skin Health",
     excerpt: "Excessive hair fall, thinning hair, or alopecia areata? Dr. Sharda's constitutional homeopathy addresses the root cause — hormonal, nutritional, or stress-related — for real regrowth.",
     content: `
       <h2>💆 Hair Fall — Your Hair Is Trying to Tell You Something</h2>
-      <p>Seeing handfuls of hair on your pillow, comb, or shower drain is alarming. But hair fall is almost always a symptom of something deeper — a hormonal imbalance, nutritional deficiency, thyroid issue, or stress response. The best homeopathy treatment for hair fall in Pune doesn't just apply remedies to the scalp — it treats the internal cause that's triggering the shedding.</p>
+      <p>Seeing handfuls of hair on your pillow, comb, or shower drain is alarming. But hair fall is almost always a symptom of something deeper — a hormonal imbalance, nutritional deficiency, thyroid issue, or stress response. The best homeopathy treatment for hair fall in Pune doesn't just apply remedies to the scalp — it treats the internal cause that's triggering the shedding. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Hair Fall treatment in Pune.</p>
 
       <h2>Types of Hair Fall We Treat</h2>
       <ul>
@@ -1391,18 +1392,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-06-05",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/alopecia areata.jpeg",
   },
 
   // 30. ANXIETY, STRESS & DEPRESSION
   {
-    slug: "best-homeopathy-for-anxiety-stress-depression-pune",
-    title: "Homeopathy for Anxiety, Stress & Depression in Pune — Find Your Calm",
+    slug: "homeopathy-for-anxiety-stress-depression-find-your-calm",
+    title: "Homeopathy for Anxiety, Stress & Depression — Find Your Calm",
     category: "Mental Wellness",
     excerpt: "Chronic anxiety, overwhelming stress, or depression affecting your life? Dr. Sharda's homeopathic treatment calms the nervous system and restores emotional balance — no dependency.",
     content: `
       <h2>🌿 Mental Wellness — Homeopathy Meets the Mind-Body Connection</h2>
-      <p>Anxiety, stress, and depression are among the most prevalent health challenges in modern India — and Pune's high-pressure IT and academic environment makes them even more common. The best homeopathy for anxiety and stress in Pune treats the whole person — calming the nervous system, addressing the physical manifestations of stress, and building resilience from within.</p>
+      <p>Anxiety, stress, and depression are among the most prevalent health challenges in modern India — and Pune's high-pressure IT and academic environment makes them even more common. The best homeopathy for anxiety and stress in Pune treats the whole person — calming the nervous system, addressing the physical manifestations of stress, and building resilience from within. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Anxiety, Stress & Depression treatment in Pune.</p>
 
       <h2>Why Homeopathy for Mental Wellness?</h2>
       <ul>
@@ -1428,18 +1429,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-06-10",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/anxiety-stress-depression.jpg",
   },
 
   // 31. INSOMNIA
   {
-    slug: "best-homeopathy-treatment-for-insomnia-in-pune",
-    title: "Best Homeopathy for Insomnia in Pune — Restore Deep, Natural Sleep",
+    slug: "understanding-insomnia-restore-deep-natural-sleep",
+    title: "Understanding Insomnia: Restore Deep, Natural Sleep",
     category: "Mental Wellness",
     excerpt: "Tossing and turning all night? Dependent on sleeping pills? Dr. Sharda's homeopathic insomnia treatment restores natural, restorative sleep without medication dependency.",
     content: `
       <h2>🌙 Sleep — Your Body's Greatest Healer</h2>
-      <p>Chronic insomnia doesn't just leave you tired — it erodes immunity, cognitive function, emotional resilience, and physical health. The best homeopathy treatment for insomnia in Pune identifies the specific nature of your sleep problem and treats its root cause — whether it's racing thoughts, pain, hormones, or grief — restoring natural sleep without chemical dependency.</p>
+      <p>Chronic insomnia doesn't just leave you tired — it erodes immunity, cognitive function, emotional resilience, and physical health. The best homeopathy treatment for insomnia in Pune identifies the specific nature of your sleep problem and treats its root cause — whether it's racing thoughts, pain, hormones, or grief — restoring natural sleep without chemical dependency. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Insomnia treatment in Pune.</p>
 
       <h2>Different Types of Insomnia Treated</h2>
       <ul>
@@ -1466,18 +1467,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-06-15",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/insomnia.jpg",
   },
 
   // 32. LACK OF CONCENTRATION
   {
-    slug: "homeopathy-for-concentration-memory-improvement-pune",
-    title: "Homeopathy for Poor Concentration & Memory in Pune — Sharpen Your Mind",
+    slug: "homeopathy-for-poor-concentration-memory-sharpen-your-mind",
+    title: "Homeopathy for Poor Concentration & Memory — Sharpen Your Mind",
     category: "Mental Wellness",
     excerpt: "Brain fog, forgetfulness, poor focus affecting your performance? Dr. Sharda's homeopathy improves concentration, memory, and mental clarity — for students and professionals alike.",
     content: `
       <h2>🧠 Your Brain Can Perform Better — Naturally</h2>
-      <p>In a competitive world where focus and memory determine academic and professional success, cognitive fatigue has become an epidemic. Whether you're a student struggling with exam concentration, a professional experiencing burnout-related brain fog, or an elder concerned about memory decline — the best homeopathy for concentration improvement in Pune addresses the root cause.</p>
+      <p>In a competitive world where focus and memory determine academic and professional success, cognitive fatigue has become an epidemic. Whether you're a student struggling with exam concentration, a professional experiencing burnout-related brain fog, or an elder concerned about memory decline — the best homeopathy for concentration improvement in Pune addresses the root cause. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Poor Concentration & Memory treatment in Pune.</p>
 
       <h2>Causes of Poor Concentration We Address</h2>
       <ul>
@@ -1510,13 +1511,13 @@ export const blogPosts: BlogPost[] = [
 
   // 33. AUTISM
   {
-    slug: "homeopathy-for-autism-supportive-care-pune",
-    title: "Homeopathy as Supportive Care for Autism in Pune — Calm, Connect, Communicate",
+    slug: "homeopathy-as-supportive-care-for-autism-calm-connect-communicate",
+    title: "Homeopathy as Supportive Care for Autism — Calm, Connect, Communicate",
     category: "Children's Health",
     excerpt: "Supporting a child with autism? Dr. Sharda's homeopathic care reduces sensory sensitivities, improves sleep, eases anxiety, and supports better communication as a complement to therapy.",
     content: `
       <h2>🌈 Supporting Autism — A Complementary Pathway</h2>
-      <p>Autism Spectrum Disorder (ASD) presents differently in every child. Homeopathy does not claim to cure autism — but as complementary supportive care alongside speech therapy, occupational therapy, and behavioral therapy, it can make a meaningful difference in a child's daily life. The best homeopathy for autism support in Pune focuses on reducing co-occurring challenges — anxiety, sleep problems, digestive issues, and sensory sensitivities.</p>
+      <p>Autism Spectrum Disorder (ASD) presents differently in every child. Homeopathy does not claim to cure autism — but as complementary supportive care alongside speech therapy, occupational therapy, and behavioral therapy, it can make a meaningful difference in a child's daily life. The best homeopathy for autism support in Pune focuses on reducing co-occurring challenges — anxiety, sleep problems, digestive issues, and sensory sensitivities. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy as Supportive Care for Autism treatment in Pune.</p>
 
       <h2>What Homeopathy Can Improve in Autism</h2>
       <ul>
@@ -1538,18 +1539,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-06-25",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/autism.png",
   },
 
   // 34. CHRONIC FATIGUE
   {
-    slug: "best-homeopathy-for-chronic-fatigue-weakness-pune",
-    title: "Homeopathy for Chronic Fatigue & Weakness in Pune — Reclaim Your Energy",
+    slug: "homeopathy-for-chronic-fatigue-weakness-reclaim-your-energy",
+    title: "Homeopathy for Chronic Fatigue & Weakness — Reclaim Your Energy",
     category: "Mental Wellness",
     excerpt: "Persistent exhaustion despite rest? Chronic fatigue ruining your quality of life? Dr. Sharda's constitutional homeopathy identifies the root and restores your vital energy.",
     content: `
       <h2>⚡ Chronic Fatigue — Not in Your Head, and Very Treatable</h2>
-      <p>When rest doesn't restore you, when the smallest tasks exhaust you, when your body feels heavy even after a full night's sleep — this is not laziness or weakness of character. Chronic fatigue syndrome and persistent weakness are real, often complex conditions. The best homeopathy for chronic fatigue in Pune identifies whether the root is post-viral, hormonal, adrenal, nutritional, or emotional — and addresses it precisely.</p>
+      <p>When rest doesn't restore you, when the smallest tasks exhaust you, when your body feels heavy even after a full night's sleep — this is not laziness or weakness of character. Chronic fatigue syndrome and persistent weakness are real, often complex conditions. The best homeopathy for chronic fatigue in Pune identifies whether the root is post-viral, hormonal, adrenal, nutritional, or emotional — and addresses it precisely. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Chronic Fatigue & Weakness treatment in Pune.</p>
 
       <h2>Types of Chronic Fatigue We Treat</h2>
       <ul>
@@ -1576,18 +1577,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-07-01",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/chronic-fatigue.jpg",
   },
 
   // 35. SPONDYLITIS
   {
-    slug: "best-homeopathy-for-spondylitis-cervical-pain-pune",
-    title: "Best Homeopathy for Spondylitis in Pune — Free Your Spine",
+    slug: "understanding-spondylitis-free-your-spine",
+    title: "Understanding Spondylitis: Free Your Spine",
     category: "Joint Health",
     excerpt: "Cervical spondylitis, neck stiffness, or spinal pain from desk work? Dr. Sharda's homeopathic treatment reduces inflammation, relieves nerve compression, and improves spinal mobility.",
     content: `
       <h2>🖥️ Spondylitis — The IT Professional's Hidden Epidemic</h2>
-      <p>In Pune's technology sector, cervical and lumbar spondylitis has reached epidemic proportions. Hours hunched over screens create the perfect conditions for spinal degeneration. The best homeopathy for spondylitis in Pune addresses not just the pain but the degenerative process itself — slowing joint breakdown and reducing nerve irritation.</p>
+      <p>In Pune's technology sector, cervical and lumbar spondylitis has reached epidemic proportions. Hours hunched over screens create the perfect conditions for spinal degeneration. The best homeopathy for spondylitis in Pune addresses not just the pain but the degenerative process itself — slowing joint breakdown and reducing nerve irritation. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Spondylitis treatment in Pune.</p>
 
       <h2>Types of Spondylitis We Treat</h2>
       <ul>
@@ -1613,18 +1614,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-07-05",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/spondylitis.png",
   },
 
   // 36. OBESITY
   {
-    slug: "homeopathy-for-obesity-weight-management-pune",
-    title: "Homeopathy for Obesity & Weight Management in Pune — Lose Weight Naturally",
+    slug: "homeopathy-for-obesity-weight-management-lose-weight-naturally",
+    title: "Homeopathy for Obesity & Weight Management — Lose Weight Naturally",
     category: "Lifestyle Health",
     excerpt: "Struggling to lose weight despite diet and exercise? Dr. Sharda's constitutional homeopathy addresses the metabolic, hormonal, and emotional root causes of weight gain.",
     content: `
       <h2>⚖️ Weight Management — It's Not Just Willpower</h2>
-      <p>If you've tried every diet and exercise plan and still can't lose weight, there's likely a deeper metabolic, hormonal, or emotional factor at play. The best homeopathy for obesity and weight management in Pune identifies these root causes — thyroid sluggishness, insulin resistance, emotional eating, cortisol-driven fat storage — and addresses them constitutionally.</p>
+      <p>If you've tried every diet and exercise plan and still can't lose weight, there's likely a deeper metabolic, hormonal, or emotional factor at play. The best homeopathy for obesity and weight management in Pune identifies these root causes — thyroid sluggishness, insulin resistance, emotional eating, cortisol-driven fat storage — and addresses them constitutionally. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Obesity & Weight Management treatment in Pune.</p>
 
       <h2>Root Causes We Address</h2>
       <ul>
@@ -1651,18 +1652,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-07-10",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/obesity.jpg",
   },
 
   // 37. LOW IMMUNITY
   {
-    slug: "homeopathy-for-low-immunity-boost-in-pune",
-    title: "Homeopathy for Low Immunity in Pune — Build Your Natural Defence",
+    slug: "homeopathy-for-low-immunity-build-your-natural-defence",
+    title: "Homeopathy for Low Immunity — Build Your Natural Defence",
     category: "Lifestyle Health",
     excerpt: "Frequently sick, slow to recover, always tired? Dr. Sharda's constitutional homeopathy strengthens your immune system from within for lasting protection.",
     content: `
       <h2>🛡️ Immunity — Your Body's Greatest Defense</h2>
-      <p>A strong immune system is the foundation of all health. When immunity is compromised, every pathogen becomes a threat. The best homeopathy for low immunity in Pune excels at immune modulation — gently stimulating the body's own defense mechanisms without overstimulation or side effects. Unlike immunity "boosters" that temporarily spike immune activity, constitutional homeopathy builds lasting immune resilience.</p>
+      <p>A strong immune system is the foundation of all health. When immunity is compromised, every pathogen becomes a threat. The best homeopathy for low immunity in Pune excels at immune modulation — gently stimulating the body's own defense mechanisms without overstimulation or side effects. Unlike immunity "boosters" that temporarily spike immune activity, constitutional homeopathy builds lasting immune resilience. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Low Immunity treatment in Pune.</p>
 
       <h2>Signs of Low Immunity</h2>
       <ul>
@@ -1689,18 +1690,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-07-15",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1535572290543-960a8046f5af?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/low-immunity.png",
   },
 
   // 38. MUSCLE PAIN & FIBROMYALGIA
   {
-    slug: "homeopathy-for-muscle-pain-fibromyalgia-pune",
-    title: "Homeopathy for Muscle Pain & Fibromyalgia in Pune — Ease the Ache",
+    slug: "homeopathy-for-muscle-pain-fibromyalgia-ease-the-ache",
+    title: "Homeopathy for Muscle Pain & Fibromyalgia — Ease the Ache",
     category: "Joint Health",
     excerpt: "Widespread muscle pain, tender points, and exhaustion from fibromyalgia? Dr. Sharda's homeopathic treatment reduces pain, improves sleep, and addresses the nervous system root.",
     content: `
       <h2>💪 Muscle Pain — When Your Body Speaks in Pain Language</h2>
-      <p>Whether it's post-exertion myalgia or the complex, widespread pain of fibromyalgia — muscle pain is debilitating and often poorly understood. The best homeopathy for muscle pain and fibromyalgia in Pune addresses the central sensitization (nervous system pain amplification) that underlies fibromyalgia, as well as the inflammatory and nutritional causes of myalgia.</p>
+      <p>Whether it's post-exertion myalgia or the complex, widespread pain of fibromyalgia — muscle pain is debilitating and often poorly understood. The best homeopathy for muscle pain and fibromyalgia in Pune addresses the central sensitization (nervous system pain amplification) that underlies fibromyalgia, as well as the inflammatory and nutritional causes of myalgia. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Muscle Pain & Fibromyalgia treatment in Pune.</p>
 
       <h2>Understanding Fibromyalgia</h2>
       <p>Fibromyalgia is not "all in the head." It's a real condition where the nervous system becomes hypersensitive to pain signals, amplifying normal sensations into pain. It's associated with poor sleep, cognitive fog ("fibro fog"), fatigue, and widespread tenderness at specific points. Treatment must address this central sensitization.</p>
@@ -1720,18 +1721,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-07-20",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/muscle-pain.jpg",
   },
 
   // 39. LIVER DISORDERS
   {
-    slug: "homeopathy-for-liver-disorders-fatty-liver-pune",
-    title: "Homeopathy for Liver Disorders & Fatty Liver in Pune — Protect Your Liver",
+    slug: "homeopathy-for-liver-disorders-fatty-liver-protect-your-liver",
+    title: "Homeopathy for Liver Disorders & Fatty Liver — Protect Your Liver",
     category: "Digestive Health",
     excerpt: "Fatty liver, elevated enzymes, or hepatitis? Dr. Sharda's homeopathic liver treatment supports liver regeneration, reduces inflammation, and improves enzyme levels naturally.",
     content: `
       <h2>🌿 Your Liver — The Body's Most Hardworking Organ</h2>
-      <p>The liver performs over 500 functions — detoxification, protein synthesis, metabolism of fats, carbohydrates, and medications. When it's compromised by fatty deposits, inflammation, or infection, the effects ripple through the entire body. The best homeopathy for liver disorders in Pune provides supportive protection and regeneration while dietary and lifestyle changes create the foundation for healing.</p>
+      <p>The liver performs over 500 functions — detoxification, protein synthesis, metabolism of fats, carbohydrates, and medications. When it's compromised by fatty deposits, inflammation, or infection, the effects ripple through the entire body. The best homeopathy for liver disorders in Pune provides supportive protection and regeneration while dietary and lifestyle changes create the foundation for healing. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Liver Disorders & Fatty Liver treatment in Pune.</p>
 
       <h2>Liver Conditions We Address</h2>
       <ul>
@@ -1758,18 +1759,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-07-25",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/liver-disorders.png",
   },
 
   // 40. KIDNEY STONE
   {
-    slug: "homeopathy-for-kidney-stone-treatment-pune",
-    title: "Homeopathy for Kidney Stones in Pune — Dissolve Stones, Prevent Recurrence",
+    slug: "homeopathy-for-kidney-stones-dissolve-stones-prevent-recurrence",
+    title: "Homeopathy for Kidney Stones — Dissolve Stones, Prevent Recurrence",
     category: "Lifestyle Health",
     excerpt: "Kidney stone pain and fear of recurrence? Dr. Sharda's homeopathic treatment helps expel small stones, relieves renal colic pain, and corrects the metabolic tendency preventing future stones.",
     content: `
       <h2>🔴 Kidney Stones — Addressing the Cause, Not Just the Crisis</h2>
-      <p>Renal colic is described as one of the most severe pains a human being can experience. But kidney stones are highly preventable once the underlying metabolic tendency is corrected. The best homeopathy for kidney stones in Pune addresses both the acute stone and the chronic tendency to form new ones — offering relief and real prevention.</p>
+      <p>Renal colic is described as one of the most severe pains a human being can experience. But kidney stones are highly preventable once the underlying metabolic tendency is corrected. The best homeopathy for kidney stones in Pune addresses both the acute stone and the chronic tendency to form new ones — offering relief and real prevention. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Kidney Stones treatment in Pune.</p>
 
       <h2>Types of Kidney Stones</h2>
       <ul>
@@ -1794,18 +1795,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-07-30",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/kidney-stone.jpg",
   },
 
   // 41. SKIN GLOW & ANTI-AGING
   {
-    slug: "homeopathy-for-skin-glow-anti-aging-pune",
-    title: "Homeopathy for Skin Glow & Anti-Aging in Pune — Beauty From Within",
+    slug: "homeopathy-for-skin-glow-anti-aging-beauty-from-within",
+    title: "Homeopathy for Skin Glow & Anti-Aging — Beauty From Within",
     category: "Skin Health",
     excerpt: "Dull, aging skin, pigmentation, or uneven tone? Dr. Sharda's inside-out homeopathic approach restores natural skin radiance and youthfulness — no harsh chemicals.",
     content: `
       <h2>✨ Glowing Skin Starts from the Inside</h2>
-      <p>The skin reflects your internal health — gut function, hormone balance, nutrition, and stress levels all show on your face. Chemical creams treat the surface while the internal imbalance continues to age and dull your skin. The best homeopathy for skin glow and anti-aging in Pune works from the inside out — correcting the internal environment that determines your skin's health and appearance.</p>
+      <p>The skin reflects your internal health — gut function, hormone balance, nutrition, and stress levels all show on your face. Chemical creams treat the surface while the internal imbalance continues to age and dull your skin. The best homeopathy for skin glow and anti-aging in Pune works from the inside out — correcting the internal environment that determines your skin's health and appearance. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Skin Glow & Anti-Aging treatment in Pune.</p>
 
       <h2>Internal Factors Affecting Skin Quality</h2>
       <ul>
@@ -1832,18 +1833,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-08-01",
     readTime: "6 min read",
-    featuredImage: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/skin-glow.jpg",
   },
 
   // 42. TONSILS & ADENOID
   {
-    slug: "homeopathy-for-tonsils-adenoid-avoid-surgery-pune",
-    title: "Homeopathy for Enlarged Tonsils & Adenoids in Pune — Avoid Surgery",
+    slug: "homeopathy-for-enlarged-tonsils-adenoids-avoid-surgery",
+    title: "Homeopathy for Enlarged Tonsils & Adenoids — Avoid Surgery",
     category: "ENT & Throat",
     excerpt: "Child struggling with enlarged tonsils or adenoids? Tonsillectomy recommended? Dr. Sharda's homeopathic treatment shrinks enlarged tissue and prevents infection — often avoiding surgery.",
     content: `
       <h2>✋ Before You Say Yes to Surgery — Try Homeopathy</h2>
-      <p>Enlarged tonsils and adenoids in children are extremely common, often causing mouth breathing, snoring, recurrent infections, and hearing difficulties. Homeopathic treatment has an excellent track record in reducing tonsil and adenoid enlargement, helping many children avoid surgical removal. The best homeopathy for tonsils and adenoids in Pune works by strengthening local immune function and reducing chronic inflammation.</p>
+      <p>Enlarged tonsils and adenoids in children are extremely common, often causing mouth breathing, snoring, recurrent infections, and hearing difficulties. Homeopathic treatment has an excellent track record in reducing tonsil and adenoid enlargement, helping many children avoid surgical removal. The best homeopathy for tonsils and adenoids in Pune works by strengthening local immune function and reducing chronic inflammation. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Enlarged Tonsils & Adenoids treatment in Pune.</p>
 
       <h2>Signs That Tonsils/Adenoids Are Problematic</h2>
       <ul>
@@ -1870,18 +1871,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-08-03",
     readTime: "6 min read",
-    featuredImage: "/blog/tonsillitis.png",
+    featuredImage: "/conditions/Tonsilitis and Adenoid.jpeg",
   },
 
   // 43. ENT DISORDERS
   {
-    slug: "homeopathy-for-ent-disorders-tinnitus-vertigo-pune",
-    title: "Homeopathy for ENT Disorders — Tinnitus, Vertigo & More in Pune",
+    slug: "homeopathy-for-ent-disorders-tinnitus-vertigo-more",
+    title: "Homeopathy for ENT Disorders — Tinnitus, Vertigo & More",
     category: "ENT & Throat",
     excerpt: "Ringing in ears, dizziness, nasal polyps, or voice problems? Dr. Sharda's holistic homeopathic approach treats all ENT conditions by strengthening local immunity and reducing inflammation.",
     content: `
       <h2>👂 ENT Health — When Ears, Nose, and Throat Speak</h2>
-      <p>The ears, nose, and throat are intimately connected — inflammation or infection in one often affects the others. The best homeopathy for ENT disorders in Pune treats this interconnected system holistically, addressing the chronic inflammatory and allergic tendencies that underlie most ENT conditions.</p>
+      <p>The ears, nose, and throat are intimately connected — inflammation or infection in one often affects the others. The best homeopathy for ENT disorders in Pune treats this interconnected system holistically, addressing the chronic inflammatory and allergic tendencies that underlie most ENT conditions. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for ENT Disorders — Tinnitus, Vertigo & More treatment in Pune.</p>
 
       <h2>ENT Conditions We Successfully Treat</h2>
       <ul>
@@ -1913,13 +1914,13 @@ export const blogPosts: BlogPost[] = [
 
   // 44. HYPERACIDITY
   {
-    slug: "best-homeopathy-for-hyperacidity-ulcers-pune",
-    title: "Best Homeopathy for Hyperacidity & Digestive Ulcers in Pune — End the Burn",
+    slug: "understanding-hyperacidity-digestive-ulcers-end-the-burn",
+    title: "Understanding Hyperacidity & Digestive Ulcers: End the Burn",
     category: "Digestive Health",
     excerpt: "Severe heartburn, acid reflux, or stomach ulcers? Dr. Sharda's homeopathic treatment heals gastric mucosa permanently — breaking the antacid cycle for good.",
     content: `
       <h2>🔥 Hyperacidity — Your Stomach Doesn't Have to Burn</h2>
-      <p>The burning sensation rising up from your stomach, the sour taste in your mouth, the heartburn that wakes you at night — hyperacidity and acid reflux are among the most common digestive complaints. The best homeopathy for hyperacidity in Pune heals the gastric lining, corrects the acid-secretion mechanism, and breaks the antacid dependency cycle permanently.</p>
+      <p>The burning sensation rising up from your stomach, the sour taste in your mouth, the heartburn that wakes you at night — hyperacidity and acid reflux are among the most common digestive complaints. The best homeopathy for hyperacidity in Pune heals the gastric lining, corrects the acid-secretion mechanism, and breaks the antacid dependency cycle permanently. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Hyperacidity & Digestive Ulcers treatment in Pune.</p>
 
       <h2>The Antacid-Rebound Problem</h2>
       <p>PPIs (omeprazole, pantoprazole) are among the world's most prescribed drugs — and among the most over-prescribed. Long-term use depletes vitamin B12, magnesium, and calcium, increases infection risk, and causes "acid rebound" when stopped — a temporary worsening that drives continued use. Homeopathy provides genuine healing of the underlying mechanism.</p>
@@ -1939,18 +1940,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-08-07",
     readTime: "6 min read",
-    featuredImage: "/blog/gastritis.png",
+    featuredImage: "/conditions/hyperacidity.jpg",
   },
 
   // 45. CANCER SUPPORTIVE CARE
   {
-    slug: "homeopathy-cancer-supportive-care-pune",
-    title: "Homeopathy for Cancer Supportive Care in Pune — Walk the Journey with Support",
+    slug: "homeopathy-for-cancer-supportive-care-walk-the-journey-with-support",
+    title: "Homeopathy for Cancer Supportive Care — Walk the Journey with Support",
     category: "Supportive Care",
     excerpt: "Going through cancer treatment? Dr. Sharda's compassionate homeopathic supportive care reduces chemo side effects, rebuilds immunity, and improves quality of life during your cancer journey.",
     content: `
       <h2>🎗️ Homeopathy as a Cancer Journey Companion</h2>
-      <p>Let's be completely transparent: homeopathy does not treat cancer directly — it is not an alternative to oncology. What homeopathy offers cancer patients is profound complementary support — reducing the side effects of chemotherapy and radiation, rebuilding immune resilience, addressing emotional distress, improving sleep and appetite, and helping patients feel more like themselves during a profoundly difficult journey.</p>
+      <p>Let's be completely transparent: homeopathy does not treat cancer directly — it is not an alternative to oncology. What homeopathy offers cancer patients is profound complementary support — reducing the side effects of chemotherapy and radiation, rebuilding immune resilience, addressing emotional distress, improving sleep and appetite, and helping patients feel more like themselves during a profoundly difficult journey. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for Cancer Supportive Care treatment in Pune.</p>
 
       <h2>What Homeopathy Can Do During Cancer Treatment</h2>
       <ul>
@@ -1982,18 +1983,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-08-08",
     readTime: "8 min read",
-    featuredImage: "https://images.unsplash.com/photo-1576765608866-5b51046452be?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/cancer.jpg",
   },
 
   // 46. HIGH CHOLESTEROL
   {
-    slug: "homeopathy-for-high-cholesterol-heart-care-pune",
-    title: "Homeopathy for High Cholesterol & Heart Care in Pune — Protect Your Heart",
+    slug: "homeopathy-for-high-cholesterol-heart-care-protect-your-heart",
+    title: "Homeopathy for High Cholesterol & Heart Care — Protect Your Heart",
     category: "Lifestyle Health",
     excerpt: "High cholesterol putting your heart at risk? Dr. Sharda's integrative homeopathic approach supports healthy lipid levels and cardiovascular health alongside lifestyle changes.",
     content: `
       <h2>❤️ Cholesterol — Understanding Your Heart's Best Friend and Foe</h2>
-      <p>Cholesterol is essential for life — but in excess, it silently damages your arteries. High LDL (bad) cholesterol and low HDL (good) cholesterol significantly increase the risk of heart attack and stroke. The best homeopathy for high cholesterol and heart care in Pune works as an integrative approach — supporting healthy lipid metabolism alongside diet and exercise changes.</p>
+      <p>Cholesterol is essential for life — but in excess, it silently damages your arteries. High LDL (bad) cholesterol and low HDL (good) cholesterol significantly increase the risk of heart attack and stroke. The best homeopathy for high cholesterol and heart care in Pune works as an integrative approach — supporting healthy lipid metabolism alongside diet and exercise changes. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Homeopathy for High Cholesterol & Heart Care treatment in Pune.</p>
 
       <h2>How Homeopathy Supports Cholesterol Management</h2>
       <ul>
@@ -2028,18 +2029,18 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-08-09",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/high-cholesterol.jpg",
   },
 
   // 47. NAIL DEFORMATION
   {
-    slug: "homeopathy-for-nail-deformation-fungal-infection-pune",
-    title: "Homeopathy for Nail Deformation & Fungal Nail Infections in Pune",
+    slug: "homeopathy-for-nail-deformation-fungal-nail-infections",
+    title: "Homeopathy for Nail Deformation & Fungal Nail Infections",
     category: "Skin Health",
     excerpt: "Brittle, discolored, or deformed nails from fungal infection or systemic issues? Dr. Sharda's constitutional homeopathy promotes healthy nail regrowth from the root cause.",
     content: `
       <h2>💅 Nail Health — A Window to Your Internal Health</h2>
-      <p>Nails can reveal a great deal about your internal health status. Brittle, ridged, discolored, or thickened nails often indicate nutritional deficiencies, fungal infections, psoriasis involvement, or systemic conditions. The best homeopathy for nail deformation in Pune addresses the specific cause — whether infectious, nutritional, or autoimmune — to promote healthy nail regeneration.</p>
+      <p>Nails can reveal a great deal about your internal health status. Brittle, ridged, discolored, or thickened nails often indicate nutritional deficiencies, fungal infections, psoriasis involvement, or systemic conditions. The best homeopathy for nail deformation in Pune addresses the specific cause — whether infectious, nutritional, or autoimmune — to promote healthy nail regeneration. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for this condition treatment in Pune.</p>
 
       <h2>Nail Conditions We Treat</h2>
       <ul>
@@ -2071,13 +2072,13 @@ export const blogPosts: BlogPost[] = [
 
   // 48. MELASMA
   {
-    slug: "best-homeopathy-for-melasma-pigmentation-pune",
-    title: "Best Homeopathy for Melasma & Pigmentation in Pune — Fade Spots Naturally",
+    slug: "understanding-melasma-pigmentation-fade-spots-naturally",
+    title: "Understanding Melasma & Pigmentation: Fade Spots Naturally",
     category: "Skin Health",
     excerpt: "Melasma dark patches and facial pigmentation affecting your confidence? Dr. Sharda's inside-out homeopathic approach corrects hormonal pigmentation without harsh bleaching creams.",
     content: `
       <h2>☀️ Melasma — Dark Patches That Deserve Gentle, Natural Treatment</h2>
-      <p>Melasma — those stubborn brown or blue-grey patches typically appearing on cheeks, forehead, and nose — is one of the most frustrating skin conditions because it's driven by hormones and sun exposure, not just topical factors. Bleaching creams may lighten patches temporarily, but melasma returns without addressing the hormonal root. The best homeopathy for melasma in Pune corrects the internal hormonal trigger that causes excess pigmentation.</p>
+      <p>Melasma — those stubborn brown or blue-grey patches typically appearing on cheeks, forehead, and nose — is one of the most frustrating skin conditions because it's driven by hormones and sun exposure, not just topical factors. Bleaching creams may lighten patches temporarily, but melasma returns without addressing the hormonal root. The best homeopathy for melasma in Pune corrects the internal hormonal trigger that causes excess pigmentation. For those seeking expert care, Dr. Sharda Homeopathy is widely recognized as the best homeopathy clinic for Melasma & Pigmentation treatment in Pune.</p>
 
       <h2>Understanding Melasma's Root Causes</h2>
       <ul>
@@ -2107,6 +2108,6 @@ export const blogPosts: BlogPost[] = [
     author: "Dr. Sharda Tawale",
     date: "2025-08-11",
     readTime: "7 min read",
-    featuredImage: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop",
+    featuredImage: "/conditions/Melasma.jpeg",
   },
 ];
